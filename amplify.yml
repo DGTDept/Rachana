@@ -1,0 +1,26 @@
+version: 1.0
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - rvm use 2.6.3
+        - gem install bundler -v '=2.3.13'
+        - bundle update --bundler
+        - bundle install
+        - npm ci
+    build:
+      commands:
+        - |
+          if [ "${AWS_BRANCH}" = "v2" ]
+          then 
+            JEKYLL_ENV=production npm run build
+          else
+            npm run build
+          fi
+
+  artifacts:
+    baseDirectory: _site
+    files:
+      - '**/*'
+  cache:
+    paths: []
