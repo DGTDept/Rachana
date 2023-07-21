@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
 
-.sgds {
+.cgds {
     &.navbar {
         padding: 0 calc(#{$spacer * 2}) 0;
         @include media-breakpoint-down(lg){

@@ -5,7 +5,7 @@
     </div>
     <hr>
     <div class="offcanvas-body menu">
-        <nav class="sidenav sgds list-unstyled open2">
+        <nav class="sidenav cgds list-unstyled open2">
             {% for item in site.data.navigation %}
             {%- assign class = nil -%}
             {%- assign show = nil -%}
@@ -16,14 +16,14 @@
 
             <li class="sidenav-item">
                 {% if item.has-collection == false %}
-                <a role="button" class="sgds btn {{class}}" href="{{item.url}}">
+                <a role="button" class="cgds btn {{class}}" href="{{item.url}}">
                     {{item.title | capitalize}}
                 </a>
                 {% endif %}
                 {% for collection in site.collections %}
                 {% assign id = collection.category | append: '-off-canvas-collapse' %}
                 {% if item.title == collection.category %}
-                <button class="sgds btn collapsed {{ class }}" type="button" data-bs-toggle="collapse"
+                <button class="cgds btn collapsed {{ class }}" type="button" data-bs-toggle="collapse"
                     data-bs-target="#{{id}}" aria-expanded="false" aria-controls="{{id}}">
                     {{ collection.category | capitalize | replace: '-', ' '}}
                     <i class="bi bi-chevron-down"></i>
@@ -48,13 +48,13 @@
             </li>
             {% endfor %}
             <li class="sidenav-item">
-                <a role="button" class="sgds btn" href="{{site.github-link}}">
+                <a role="button" class="cgds btn" href="{{site.github-link}}">
                     <i class="bi bi-github h3 mb-0"></i> Github
                 </a>
                 
             </li>
             <li class="sidenav-item">
-                <a role="button" class="sgds btn" href="{{site.react-storybook}}">
+                <a role="button" class="cgds btn" href="{{site.react-storybook}}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 13 16" fill="none">
                         <mask id="mask0_1438_4436" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="16">
                         <path d="M0.49517 14.7122L0.000574853 1.53345C-0.0157597 1.09821 0.317968 0.729349 0.752668 0.70218L11.9621 0.0015905C12.4046 -0.026064 12.7857 0.310212 12.8133 0.752685C12.8144 0.769356 12.8149 0.786055 12.8149 0.802758V15.1633C12.8149 15.6067 12.4555 15.966 12.0122 15.966C12.0002 15.966 11.9882 15.9658 11.9762 15.9652L1.26132 15.484C0.844019 15.4653 0.510836 15.1296 0.49517 14.7122Z" fill="white"/>
