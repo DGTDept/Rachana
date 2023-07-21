@@ -4,7 +4,7 @@
         <h1 class="title">{{page.title}}</h1>
         <p>{{page.description}}</p>
 
-        <div class="sgds form-control-group mt-4">
+        <div class="cgds form-control-group mt-4">
             <input
                 type="text"
                 class="form-control"
@@ -28,7 +28,7 @@
                 {%- endif -%} {% assign react = nil %} {% if item.react %} {%
                 assign react = 'react' %} {% endif %}
                 <div
-                    class="sgds card"
+                    class="cgds card"
                     data-groups="['{{item.category}}', '{{react}}']"
                     data-title="{{item.title}}"
                 >
@@ -50,19 +50,19 @@
                         </a>
                         <p class="card-text">{{item.description}}</p>
                         {% if item.category == 'mandatory' %}
-                        <span class="sgds badge badge-light bg-danger"
+                        <span class="cgds badge badge-light bg-danger"
                             >{{item.category | capitalize}}</span
                         >
                         {% elsif item.category == 'required' %}
-                        <span class="sgds badge badge-light bg-success"
+                        <span class="cgds badge badge-light bg-success"
                             >{{item.category | capitalize}}</span
                         >
                         {% else %}
-                        <span class="sgds badge badge-light bg-primary"
+                        <span class="cgds badge badge-light bg-primary"
                             >{{item.category | capitalize}}</span
                         >
                         {% endif %} {% if item.react %}
-                        <span class="sgds badge badge-light bg-success"
+                        <span class="cgds badge badge-light bg-success"
                             >ReactJS</span
                         >
                         {% endif %}

@@ -1,9 +1,12 @@
 aside{
      
-     &:not(.toc-container){
-
+    &:not(.toc-container){ 
+        /* Add some styles here */
+        // background-color: var(--sgds-gray-100);
+        // padding: 10px;
     }
-    .sgds.sidenav{
+
+    .cgds.sidenav{
         padding: 1rem;
         background-color: var(--sgds-gray-100);
        

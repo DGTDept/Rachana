@@ -1,4 +1,4 @@
-.sgds {
+.cgds {
     &.sidenav {
         width: $sidenav-width;
         font-size: $sidenav-fontsize;
@@ -7,7 +7,7 @@
             +.sidenav-item {
                 margin-top: $sidenav-item-spacing;
             }
-            .sgds.btn {
+            .cgds.btn {
                 color: $sidenav-color;
                 font-size: inherit;
 

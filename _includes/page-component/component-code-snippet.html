@@ -5,9 +5,9 @@
 {% endif %} {% if include.compDescTop %}
 <div class="desc-top">{{include.compDescTop}}</div>
 {% endif %}
-<div class="sgds-example">{{include.code}}</div>
+<div class="cgds-example">{{include.code}}</div>
 <div
-    class="sgds accordion code-snippet no-toc-section"
+    class="cgds accordion code-snippet no-toc-section"
     id="example-{{include.compName}}"
 >
     <div class="accordion-item">
@@ -30,7 +30,7 @@
             data-bs-parent="#example-{{include.compName}}"
         >
             <div class="accordion-body accordion-body-codesnippet">
-                <button class="sgds btn btn-outline-light btn-sm btn-copy">Copy</button>
+                <button class="cgds btn btn-outline-light btn-sm btn-copy">Copy</button>
                 {%- highlight html -%} {% if include.code-react %}
                 {{include.code-react}} {% elsif include.code %} {{include.code}}
                 {% endif %} {%- endhighlight -%}
