@@ -129,10 +129,10 @@ This section contains the anatomy of all variants
 <section name="section-anatomy">
     <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
     <div class="section-sub">
-        <div class="sgds-example-image-container">
-            <div class="sgds-example-image-grid">
+        <div class="cgds-example-image-container">
+            <div class="cgds-example-image-grid">
                 <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/anatomy-card-1.svg" alt="">
-                <div class="sgds-example-image-subgrid">
+                <div class="cgds-example-image-subgrid">
                     <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/anatomy-card-2.svg" alt="">
                     <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/anatomy-card-3.svg" alt="">
                     <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/anatomy-card-4.svg" alt="">
@@ -148,7 +148,7 @@ This section contains the anatomy of all variants
     </div>
 </section>
 ```
-> ```.sgds-example-image-grid``` 
+> ```.cgds-example-image-grid``` 
 >
 > This contain your main image for Anatomy
 >
@@ -173,10 +173,10 @@ This section contains the spacing of all variants
     <div class="section-sub">
         <h3 class="subtitle fw-bold" id="within-the-card">Within the card</h3>
         <p>Ensure that there is a min 24px spacing inside of the card and 16px vertical spacing between content. </p>
-        <div class="sgds-example-image-container">
-            <div class="sgds-example-image-grid">
+        <div class="cgds-example-image-container">
+            <div class="cgds-example-image-grid">
                 <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/spacing-within-1.svg" alt="">
-                <div class="sgds-example-image-subgrid">
+                <div class="cgds-example-image-subgrid">
                     <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/spacing-within-2.svg" alt="">
                     <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/spacing-within-3.svg" alt="">
                     <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/spacing-within-4.svg" alt="">

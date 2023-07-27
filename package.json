@@ -1,10 +1,10 @@
 {
-  "name": "@govtechsg/sgds",
+  "name": "@dgc/cgds",
   "version": "2.1.1",
-  "description": "Design System unites Singapore Government digital services around a common visual language and user experience",
+  "description": "Design System unites Cambodia Government digital services around a common visual language and user experience",
   "repository": {
     "type": "git",
-    "url": "https://github.com/govtechsg/sgds.git"
+    "url": "https://git.anakotlab.com/cgds/cgds/-/tree/dev-v1"
   },
   "license": "MIT",
   "author": "Tey Liang Tai",

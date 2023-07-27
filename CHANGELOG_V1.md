@@ -101,7 +101,7 @@ We will be pushing up additional components and features in the upcoming months.
 - Added tag documentation
 
 ### Fixes and updates
-- Update SGDS logo and favicon
+- Update CGDS logo and favicon
 - Fixes for search page
 - Style / layout fixes
 - Upgraded to Jekyll 4.0
@@ -212,7 +212,7 @@ We will be pushing up additional components and features in the upcoming months.
 ### Fixes
 
 - #83 Main nav language selector gets misaligned when viewport is too wide (>1800px)
-- #85 Documentation for SGDS Steps
+- #85 Documentation for CGDS Steps
 - Fixed Masthead example
 
 ## [1.3.2] - 🗓️ 27-08-2019
