@@ -1,7 +1,7 @@
 ---
 title: Customise with SASS
 layout: layout-sidenav
-description: Use <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">Sass</a> to customise how SGDS looks and behaves in your project
+description: Use <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">Sass</a> to customise how CGDS looks and behaves in your project
 ---
 {% capture sass-folder-structure %}
 site-folder/
@@ -14,7 +14,7 @@ site-folder/
 
 {% capture include-all-parts %}
 // Custom.scss
-// Option A: Include all of SGDS theme
+// Option A: Include all of CGDS theme
 
 // Include any default variable overrides here
 
@@ -25,14 +25,14 @@ site-folder/
 
 {% capture include-parts %}
 /// Custom.scss
-// Option B: Include parts of SGDS
+// Option B: Include parts of CGDS
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "~{{site.sgds-package-name}}/sass/functions";
 
 // 2. Include any default variable overrides here
 
-// 3. Include remainder of required SGDS stylesheets
+// 3. Include remainder of required CGDS stylesheets
 @import "~{{site.sgds-package-name}}/sass/variables";
 
 // 4. Include any default map overrides here
@@ -142,11 +142,11 @@ $body-color: #111;
   {% include page-component/component-header.html %}
 
   <section name="section-source-file">
-    <h2 class="title fw-bold" id="anatomy">Working with SGDS's source files</h2>
+    <h2 class="title fw-bold" id="anatomy">Working with CGDS's source files</h2>
     <div class="section-sub">
-      <p>The Sass source files for sgds can be found in the folder<br><code>node_modules/{{site.sgds-package-name}}/sass</code></p>
+      <p>The Sass source files for cgds can be found in the folder<br><code>node_modules/{{site.sgds-package-name}}/sass</code></p>
       {% highlight bash %}{{sass-folder-structure}}{% endhighlight %}
-      <div role="alert" class="fade d-flex align-items-center alert alert-info show sgds">
+      <div role="alert" class="fade d-flex align-items-center alert alert-info show cgds">
         <div>
           <i class="bi bi-exclamation-circle me-2"></i>
           Whenever possible, avoid modifying the core sass files in <code>{{site.sgds-package-name}}/sass/</code>
@@ -165,7 +165,7 @@ $body-color: #111;
       {% highlight css %}{{include-all-parts}}{% endhighlight %}
     </div>
     <div class="section-sub">
-      <h3 class="title fw-bold" id="anatomy">Include parts of SGDS</h3>
+      <h3 class="title fw-bold" id="anatomy">Include parts of CGDS</h3>
       {% highlight css %}{{include-parts}}{% endhighlight %}
 
         <p>If you are using Webpack, u can omit the <code>node_modules</code> directory</p>
@@ -175,7 +175,7 @@ $body-color: #111;
     <section name="section-design-tokens">
       <h2 class="title fw-bold" id="anatomy">Variables</h2>
       <p>
-        You can find the complete list of  variables inside <code>{{site.sgds-package-name}}/sass/_variables.scss</code> or in our <a href="{{site.github-sgds-variables}}" target="_blank" rel="noopener noreferrer">SGDS github repo</a>
+        You can find the complete list of  variables inside <code>{{site.sgds-package-name}}/sass/_variables.scss</code> or in our <a href="{{site.github-sgds-variables}}" target="_blank" rel="noopener noreferrer">CGDS github repo</a>
       </p>
       <p>Here's an example that changes the <code>background-color</code> and color for the <code>body</code> when importing and compiling <code>sgds-theme</code> via npm:</p>
         {% highlight scss %}{{sgds-variable-example}}{% endhighlight %}
