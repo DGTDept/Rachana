@@ -1,9 +1,9 @@
 # Cambodia Government Design System
 [![npm](https://img.shields.io/npm/v/@govtechsg/sgds.svg)](https://www.npmjs.com/package/@govtechsg/sgds)
 
-The [Cambodia Government Design System](https://www.designsystem.tech.gov.sg) was developed to empower teams in creating fast, accessible and mobile-friendly digital services.
+The [Cambodia Government Design System](https://www.designsystem.tech.gov.kh) was developed to empower teams in creating fast, accessible and mobile-friendly digital services.
 
-Visit our [CGDS React storybook](https://react.designsystem.tech.gov.sg)
+Visit our [CGDS React storybook](https://react.designsystem.tech.gov.kh)
 
 ***
 
@@ -23,7 +23,7 @@ Visit our [CGDS React storybook](https://react.designsystem.tech.gov.sg)
 
 ### Vanilla JavaScript
 
-CGDS components makes use of [bootstrap v5.1.3 js library](https://getbootstrap.com/docs/5.1/getting-started/javascript/) as an external dependency. If you only need the visual parts of CGDS, or if you are [using frontend frameworks like React](https://react.designsystem.tech.gov.sg), you do not need to import this.
+CGDS components makes use of [bootstrap v5.1.3 js library](https://getbootstrap.com/docs/5.1/getting-started/javascript/) as an external dependency. If you only need the visual parts of CGDS, or if you are [using frontend frameworks like React](https://react.designsystem.tech.gov.kh), you do not need to import this.
 
 
 >`@govtechsg/sgds` uses `bootstrap-icons` for certain components like Form but it is not ship with it. Install `bootstrap-icons` or use CDN if you need it. Please refer to [bootstrap-icons](bootstrap-icons) for usage instructions.
@@ -43,7 +43,7 @@ CGDS components makes use of [bootstrap v5.1.3 js library](https://getbootstrap.
 </body>
 ```
 
-For more information, please refer to the [components documentation](https://www.designsystem.tech.gov.sg/components).
+For more information, please refer to the [components documentation](https://www.designsystem.tech.gov.kh/components).
 
 ### Via NPM
 
