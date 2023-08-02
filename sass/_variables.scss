@@ -35,13 +35,10 @@ $grays: ("100": $gray-100,
 
 // scss-docs-start color-variables
 $blue: #1C4076; // primary
-// $blue: #1f69ff !default; //secondary
-
 $indigo: #6610f2 !default;
 $purple: #5925DC !default;
 $pink: #d63384 !default;
 $red: #D7260F !default;
-// $orange: #fd7e14 !default;
 $orange: #EE7D22; // secondary
 $yellow: #F79009 !default;
 $green: #0A8217 !default;
@@ -120,7 +117,7 @@ $blue-900: #002266 !default;
 // $indigo-800: shade-color($indigo, 60%) !default;
 // $indigo-900: shade-color($indigo, 80%) !default;
 
-//Primary(From SG)
+//Primary color for SG is purple not CG
 $purple-100: #ECE6FB !default;
 $purple-200: #C7B6F3 !default;
 $purple-300: #A386EC !default;
@@ -202,17 +199,7 @@ $cyan-700: #0c5b97!default;
 $cyan-800: #0a4776 !default;
 $cyan-900: #08395e !default;
 
-// scss-docs-start gray-colors-map 
-// $primarys: ("primary-100": $purple-100,
-//   "primary-200": $purple-200,
-//   "primary-300": $purple-300,
-//   "primary-400": $purple-400,
-//   "primary-500": $purple-500,
-//   "primary-600": $purple-600,
-//   "primary-700": $purple-700,
-//   "primary-800": $purple-800,
-//   "primary-900": $purple-900) !default;
-// scss-docs-start gray-colors-map (Implement)
+// scss-docs-start gray-colors-map
 $primarys: ("primary-100": $blue-100,
   "primary-200": $blue-200,
   "primary-300": $blue-300,
@@ -1487,7 +1474,7 @@ $popover-arrow-outer-color: fade-in($popover-border-color, .05) !default;
 // scss-docs-end popover-variables
 
 //Sidenav
-$sidenav-color: $primary !default;
+$sidenav-color: $secondary !default;
 $sidenav-fontsize: 1rem !default;
 $sidenav-width: auto !default;
 $sidenav-item-spacing: 1rem !default;

@@ -4,7 +4,7 @@
   "description": "Design System unites Cambodia Government digital services around a common visual language and user experience",
   "repository": {
     "type": "git",
-    "url": "https://git.anakotlab.com/cgds/cgds/-/tree/dev-v1"
+    "url": "https://git.anakotlab.com/cgds/cgds.git"
   },
   "license": "MIT",
   "author": "Tey Liang Tai",
