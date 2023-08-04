@@ -10,16 +10,60 @@
         }
         min-height: 80px;
         align-items: stretch;
+        
+        header {
+            padding-top: $navbar-header-padding-x;
+            padding-bottom: $navbar-header-padding-y;
+            padding-right: $navbar-header-padding-right;
+            padding-left: $navbar-header-padding-left;
+            display: flex;
+            .social {
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        display: inline-block;
+                        margin-right: 0.6rem;
+                        padding-right: 0.6rem;
+                        border-right: 1px solid #f3f3f32b;
+                        a {
+                            color: #e9ecef;
+                            i {
+                                font-size: 1.35rem;
+                                &:hover {
+                                    color: $secondary;
+                                    border-color: $secondary;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+            .search-icon {
+                i {
+                    font-size: 1.35rem;
+                    margin-bottom: .3rem;
+                    color: #e9ecef;
+                    cursor: pointer;
+                    &:hover {
+                        color: $secondary;
+                        border-color: $secondary;
+                    }
+                }
+            }
+        }
 
         a.navbar-brand {
             display: flex;
             align-items: center;
-            padding-bottom: $navbar-border-bottom-height;
+            padding-bottom: $navbar-border-bottom-height;  
         }
 
         .navbar-collapse {
             align-items: stretch;
         }
+        
 
         .nav-item {
             &.has-megamenu {
@@ -27,7 +71,7 @@
             }
 
             a.nav-link {
-                color: #344054;
+                color: $gray-100;
                 border-bottom: $navbar-border-bottom-height solid transparent;
                 min-height: 100%;
                 display: flex;
