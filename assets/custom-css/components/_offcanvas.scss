@@ -1,10 +1,10 @@
 .offcanvas {
     hr {
-        color: rgba(var(--sgds-white-rgb),0.7);
+        color: rgba(var(--cgds-white-rgb),0.7);
         margin: 0;
     }
 
-    background-color: var(--sgds-primary);
+    background-color: var(--cgds-primary);
 
     &-start {
         border: 0;
@@ -18,7 +18,7 @@
     &-body {
         // padding:0 0 1.5rem;
         flex-grow: 0;
-        color: var(--sgds-gray-300);
+        color: var(--cgds-gray-300);
 
         .list-group {
             border-radius: 0;
@@ -28,17 +28,17 @@
             overflow-Y: auto;
             height: calc(100vh - 7.5rem - 6.75rem);
 
-            .sgds.sidenav {
+            .cgds.sidenav {
                 margin-left: -1.5rem;
                 margin-right: -1.5rem;
 
                 li.sidenav-item {
-                    .sgds.btn {
+                    .cgds.btn {
                         padding-right: 2.5rem;
-                        color: var(--sgds-gray-300);
+                        color: var(--cgds-gray-300);
 
                         &.active {
-                            color: var(--sgds-gray-100);
+                            color: var(--cgds-gray-100);
 
                             &:hover {
                                 font-weight: bold;
@@ -51,18 +51,18 @@
 
                         &:hover {
                             font-weight: normal;
-                            color: var(--sgds-gray-100);
+                            color: var(--cgds-gray-100);
                         }
                     }
 
                     .collapse,
                     .collapsing {
                         a.nav-link {
-                            color: var(--sgds-gray-300);
+                            color: var(--cgds-gray-300);
 
                             &:hover,
                             &.active {
-                                color: var(--sgds-gray-100);
+                                color: var(--cgds-gray-100);
                             }
 
                             &.active {
@@ -75,7 +75,7 @@
         }
 
         a[target="_blank"] {
-            color: var(--sgds-gray-300)
+            color: var(--cgds-gray-300)
         }
     }
 }

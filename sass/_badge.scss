@@ -1,6 +1,6 @@
 @import "~bootstrap/scss/badge";
 
-.sgds {
+.cgds {
   &.badge {
     // Set max badge to expand until h3 size
     font-size: min($badge-font-size, $badge-font-size-max);
@@ -23,16 +23,16 @@
     @each $color,
     $value in $theme-colors {
       &.bg-#{$color} {
-        --sgds-bg-opacity: 0.1;
+        --cgds-bg-opacity: 0.1;
 
         @if $color=="light" {
-          color: var(--sgds-gray-500);
-          border: 1px solid var(--sgds-gray-500);
+          color: var(--cgds-gray-500);
+          border: 1px solid var(--cgds-gray-500);
         }
 
         @else {
-          color: var(--sgds-#{$color});
-          border: 1px solid var(--sgds-#{$color});
+          color: var(--cgds-#{$color});
+          border: 1px solid var(--cgds-#{$color});
         }
       }
     }

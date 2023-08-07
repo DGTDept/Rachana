@@ -1,5 +1,5 @@
 # Contributing
-Welcome to SGDS! You are welcome to file issues or make pull requests to help build better websites that serve the citizens of Singapore.
+Welcome to CGDS! You are welcome to file issues or make pull requests to help build better websites that serve the citizens of Singapore.
 
 ## Raising an Issue
 We recommend that you follow the template provided when raising the issue. Do feel free to furnish your post with screenshots that may help us understand the issue better.

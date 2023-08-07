@@ -1,9 +1,9 @@
-.sgds-example {
-    border: 1px solid var(--sgds-gray-400);
+.cgds-example {
+    border: 1px solid var(--cgds-gray-400);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 2rem;
-    background-color: var(--sgds-gray-100);
+    background-color: var(--cgds-gray-100);
     &:last-child {
         border-top: none;
     }
@@ -18,12 +18,12 @@
     }
 }
 
-[class*="sgds-example"] {
+[class*="cgds-example"] {
     margin-top: 1rem;
 }
 
 // compopnent-specific
-.sgds-example {
+.cgds-example {
     &.highlight {
         padding: 0;
         figure {
@@ -42,7 +42,7 @@
     }
 
     // Card specific
-    .sgds.card {
+    .cgds.card {
         width: 20rem;
         @media (max-width: 36rem) {
             width: 100%;
@@ -62,12 +62,12 @@
     }
 }
 
-.sgds-example-image {
+.cgds-example-image {
     &-container {
         overflow-x: auto;
         display: grid;
         padding: 2rem;
-        background-color: var(--sgds-gray-100);
+        background-color: var(--cgds-gray-100);
         place-items: center;
         margin-bottom: 1rem;
         border-radius: $border-radius;

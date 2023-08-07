@@ -7,7 +7,7 @@ layout: layout-default
 {% endif %}
 <section class="wrapper layout-sidenav {{class}}">
     <aside aria-label="Side Navigation Container">
-        <nav class="sgds sidenav" aria-label="Side Navigation">
+        <nav class="cgds sidenav" aria-label="Side Navigation">
             <ul class="list-unstyled mb-0">
                 {% assign collections = site.collections | sort: 'order' %}
                 {% for collection in collections %}
@@ -20,7 +20,7 @@ layout: layout-default
                 {%- assign class = 'active' -%}
                 {%- endif -%}
                 <li class="sidenav-item">
-                    <a role="button" class="sgds btn {{class}}" href="{{item.url}}">{{item.title}}</a>
+                    <a role="button" class="cgds btn {{class}}" href="{{item.url}}">{{item.title}}</a>
                 </li>
                 {% endfor %}
                 {% endif %}

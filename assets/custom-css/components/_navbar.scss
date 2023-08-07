@@ -1,8 +1,8 @@
-.sgds{
+.cgds{
     &.navbar{
-        background-color: rgba(255,255,255, 0.8);
+        background-image: $bs-gradient;
 
-        border-bottom: 1px solid rgba(var(--sgds-body-color-rgb),0.2);
+        border-bottom: 1px solid rgba(var(--cgds-body-color-rgb),0.2);
         .navbar-nav{
             gap:1rem;
         }

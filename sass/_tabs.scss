@@ -1,4 +1,4 @@
-.sgds{
+.cgds{
     &.nav-tabs{
         border-bottom: none;
         gap: 2rem;
@@ -48,10 +48,10 @@
                     background-color: $white;
                     i,span{
                         &.left{
-                            margin-right: $nav-sgds-tabs-icon-padding;
+                            margin-right: $nav-cgds-tabs-icon-padding;
                         }
                         &.right{
-                            margin-left: $nav-sgds-tabs-icon-padding;
+                            margin-left: $nav-cgds-tabs-icon-padding;
                         }
                     }
                     &.active,&:hover{
@@ -81,7 +81,7 @@
         }
     }
     &.tab-content{
-        padding-top: $nav-sgds-tabs-padding-y;
-        padding-bottom: $nav-sgds-tabs-padding-y;
+        padding-top: $nav-cgds-tabs-padding-y;
+        padding-bottom: $nav-cgds-tabs-padding-y;
     }
 }

@@ -6,11 +6,11 @@ published: false
 ---
 
 {% capture payment-pattern %}
-<div class="sgds form-group mb-3">
+<div class="cgds form-group mb-3">
     <label for="nameOnCard" class="form-label">Name on Card</label>
     <input type="text" class="form-control" id="nameOnCard" autocomplete="name">
 </div>
-<div class="sgds form-group mb-3">
+<div class="cgds form-group mb-3">
     <label for="cardNumber" class="form-label">Card Number</label>
     <div id="cardNumberText" class="form-text">Enter the 16-digit number on the card</div>
     <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="19" class="form-control" id="cardNumber"
@@ -18,13 +18,13 @@ published: false
         oninput="this.value = creditCardFormatter(event)">
 </div>
 <div class="row">
-    <div class="sgds col form-group mb-3">
+    <div class="cgds col form-group mb-3">
         <label for="expiryDate" class="form-label">Expiry Date</label>
         <div id="expiryDateText" class="form-text">MM/YY</div>
         <input type="text" class="form-control" id="expiryDate" autocomplete="cc-exp" pattern="[0-9]{2}/[0-9]{2}"
             maxlength="5" aria-describedby="expiryDateText" onkeypress="formatDate()">
     </div>
-    <div class="sgds col form-group mb-3">
+    <div class="cgds col form-group mb-3">
         <label for="cvv" class="form-label">CVV</label>
         <div id="cvvText" class="form-text">The 3-digit number at the back of the card</div>
         <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3" class="form-control" id="cvv"

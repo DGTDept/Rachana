@@ -9,7 +9,7 @@ toc: true
 ---
 
 {% capture default-tabs %}
-<ul class="sgds nav nav-tabs" id="myTab" role="tablist">
+<ul class="cgds nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
       aria-controls="home" aria-selected="true">Home</button>
@@ -23,7 +23,7 @@ toc: true
       aria-controls="contact" aria-selected="false">Contact</button>
   </li>
 </ul>
-<div class="sgds tab-content" id="myTabContent">
+<div class="cgds tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Tab 1. Lorem ipsum dolor
     sit amet, consectetur adipisicing elit. Sit, accusantium!</div>
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Tab 2. Lorem ipsum dolor sit
@@ -35,7 +35,7 @@ toc: true
 
 {% capture basic-toggle-tabs %}
 <!-- Add variant="tabs-basic-toggle" -->
-<ul class="sgds nav nav-tabs" id="myTab" role="tablist" variant="tabs-basic-toggle">
+<ul class="cgds nav nav-tabs" id="myTab" role="tablist" variant="tabs-basic-toggle">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home1" type="button" role="tab"
       aria-controls="home" aria-selected="true"><i class="bi bi-house left"></i>Home</button>
@@ -44,7 +44,7 @@ toc: true
     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile1" type="button" role="tab"
       aria-controls="profile" aria-selected="false">
       Profile
-      <span class="sgds badge bg-light text-dark right">99</span>
+      <span class="cgds badge bg-light text-dark right">99</span>
     </button>
   </li>
   <li class="nav-item" role="presentation">
@@ -52,7 +52,7 @@ toc: true
       aria-controls="contact" aria-selected="false">Contact<i class="bi bi-telephone right"></i></button>
   </li>
 </ul>
-<div class="sgds tab-content" id="myTabContent">
+<div class="cgds tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio inventore commodi iure at doloribus architecto sed animi cumque fuga quod exercitationem iste consequatur similique molestiae ab, rerum amet quam laboriosam?</p>
   </div>
@@ -94,7 +94,7 @@ toc: true
 
 {% capture info-toggle-tabs %}
 <!-- Add variant="tabs-info-toggle" -->
-<ul class="sgds nav nav-tabs" id="myTab" role="tablist" variant="tabs-info-toggle">
+<ul class="cgds nav nav-tabs" id="myTab" role="tablist" variant="tabs-info-toggle">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="home-tab2" data-bs-toggle="tab" data-bs-target="#home2" type="button" role="tab"
       aria-controls="home" aria-selected="true">
@@ -116,7 +116,7 @@ toc: true
     </button>
   </li>
 </ul>
-<div class="sgds tab-content" id="myTabContent">
+<div class="cgds tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio inventore commodi iure at doloribus architecto sed animi cumque fuga quod exercitationem iste consequatur similique molestiae ab, rerum amet quam laboriosam?</p>
   </div>
@@ -162,9 +162,9 @@ $nav-tabs-link-hover-border-color: $gray-200 $gray-200 $nav-tabs-border-color !d
 $nav-tabs-link-active-color: $gray-700 !default;
 $nav-tabs-link-active-bg: $body-bg !default;
 $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
-$nav-sgds-tabs-active-border-color: $link-color !default;
-$nav-sgds-tabs-padding-y: $spacer !default;
-$nav-sgds-tabs-icon-padding: $spacer !default;
+$nav-cgds-tabs-active-border-color: $link-color !default;
+$nav-cgds-tabs-padding-y: $spacer !default;
+$nav-cgds-tabs-icon-padding: $spacer !default;
 {% endcapture %}
 
 <!-- Page starts here -->
@@ -192,8 +192,8 @@ $nav-sgds-tabs-icon-padding: $spacer !default;
             <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
             <h3 class="title fw-bold" id="anatomy-default">Default tabs</h3>
             <div class="section-sub">
-                <div class="sgds-example-image-container">
-                    <div class="sgds-example-image-grid">
+                <div class="cgds-example-image-container">
+                    <div class="cgds-example-image-grid">
                         <img src="{{site.baseurl}}/assets/img/component/tab/anatomy-defaulttab.svg" alt="default tab">
                     </div>
                 </div>
@@ -211,8 +211,8 @@ $nav-sgds-tabs-icon-padding: $spacer !default;
         <section name="section-anatomy">
           <h3 class="title fw-bold" id="anatomy-toggle">Basic toggle tabs</h3>
           <div class="section-sub">
-            <div class="sgds-example-image-container">
-                <div class="sgds-example-image-grid">
+            <div class="cgds-example-image-container">
+                <div class="cgds-example-image-grid">
                     <img src="{{site.baseurl}}/assets/img/component/tab/anatomy-toggletab.svg" alt="toggle tab">
                 </div>
             </div>
@@ -233,8 +233,8 @@ $nav-sgds-tabs-icon-padding: $spacer !default;
       <section name="section-anatomy">
         <h3 class="title fw-bold" id="anatomy-info-toggle">Info toggle tabs</h3>
         <div class="section-sub">
-          <div class="sgds-example-image-container">
-              <div class="sgds-example-image-grid">
+          <div class="cgds-example-image-container">
+              <div class="cgds-example-image-grid">
                   <img src="{{site.baseurl}}/assets/img/component/tab/anatomy-infotoggle.svg" alt="info toggle tab">
               </div>
           </div>
@@ -259,8 +259,8 @@ $nav-sgds-tabs-icon-padding: $spacer !default;
             <h2 class="title fw-bold" id="spacing">Spacing</h2>
             <h3 class="title fw-bold" id="spacing-default">Default tabs</h3>
             <div class="section-sub">
-                <div class="sgds-example-image-container">
-                    <div class="sgds-example-image-grid">
+                <div class="cgds-example-image-container">
+                    <div class="cgds-example-image-grid">
                         <img src="{{site.baseurl}}/assets/img/component/tab/spacing-defaulttab.svg" alt="default tabs spacing">
                     </div>
                 </div>
@@ -272,8 +272,8 @@ $nav-sgds-tabs-icon-padding: $spacer !default;
         <section name="section-spacing">
           <h3 class="title fw-bold" id="spacing-toggle">Basic toggle tabs</h3>
           <div class="section-sub">
-              <div class="sgds-example-image-container">
-                  <div class="sgds-example-image-grid">
+              <div class="cgds-example-image-container">
+                  <div class="cgds-example-image-grid">
                       <img src="{{site.baseurl}}/assets/img/component/tab/spacing-toggletab.svg" alt="toggle tabs spacing">
                   </div>
               </div>
@@ -285,8 +285,8 @@ $nav-sgds-tabs-icon-padding: $spacer !default;
       <section name="section-spacing">
         <h3 class="title fw-bold" id="spacing-info-toggle">Info toggle tabs</h3>
         <div class="section-sub">
-            <div class="sgds-example-image-container">
-                <div class="sgds-example-image-grid">
+            <div class="cgds-example-image-container">
+                <div class="cgds-example-image-grid">
                     <img src="{{site.baseurl}}/assets/img/component/tab/spacing-infotoggle.svg" alt="info toggle tabs spacing">
                 </div>
             </div>

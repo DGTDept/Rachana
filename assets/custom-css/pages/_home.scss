@@ -21,13 +21,13 @@ section.wrapper{
                     .image-stack.image-grid{
                         height: 32.5rem;
                         img{
-                            filter: drop-shadow(0 0 0.9rem var(--sgds-gray-300));
+                            filter: drop-shadow(0 0 0.9rem var(--cgds-gray-300));
                         }
                         @include media-breakpoint-down(lg){
                             margin-top: 1rem;
                             height: auto;
                             img{
-                                filter: drop-shadow(0 0 0.5rem var(--sgds-gray-300));
+                                filter: drop-shadow(0 0 0.5rem var(--cgds-gray-300));
                             }
                         }
                         
@@ -85,15 +85,15 @@ section.wrapper{
                             background: hsl(228, 38%, 97%);
                             border: none;
                             &-eyebrow{
-                                color: var(--sgds-primary);
+                                color: var(--cgds-primary);
                                 margin-bottom: 4px;
                                 font-weight: bold;
                             }
                             &-body{
                                 padding: 30px 50px;
-                                color: var(--sgds-gray-600);
+                                color: var(--cgds-gray-600);
                                 a{
-                                    color: var(--sgds-primary);
+                                    color: var(--cgds-primary);
                                     font-weight: bold;
                                 }
                             }

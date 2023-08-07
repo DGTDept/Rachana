@@ -1,17 +1,20 @@
 aside{
      
-     &:not(.toc-container){
-
+    &:not(.toc-container){ 
+        /* Add some styles here */
+        // background-color: var(--cgds-gray-100);
+        // padding: 10px;
     }
-    .sgds.sidenav{
+
+    .cgds.sidenav{
         padding: 1rem;
-        background-color: var(--sgds-gray-100);
+        background-color: var(--cgds-gray-100);
        
         a{
             text-decoration: none;
-            color: var(--sgds-gray-500);
+            color: var(--cgds-gray-500);
             &:hover{
-                color: var(--sgds-gray-700);
+                color: var(--cgds-gray-700);
             }
         }
 
