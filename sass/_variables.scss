@@ -54,7 +54,7 @@ $colors: ("blue": $blue,
   "purple": $purple,
   "pink": $pink,
   "red": $red,
-  // "orange": $orange,
+  "orange": $orange,
   "yellow": $yellow,
   "green": $green,
   // "teal": $teal,
@@ -1407,7 +1407,7 @@ $accordion-button-bg: $accordion-bg !default;
 $accordion-transition: $btn-transition,
 border-radius .15s ease !default;
 $accordion-button-active-bg: none !default;
-$accordion-button-active-color: $purple-500 !default;
+$accordion-button-active-color: $orange-500 !default;
 
 $accordion-button-focus-border-color: $input-focus-border-color !default;
 $accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;
