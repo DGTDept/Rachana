@@ -1,6 +1,6 @@
 @import '~bootstrap/scss/forms/input-group';
 
-.sgds {
+.cgds {
   &.input-group {
     .input-group-text {
       .form-check-input {
@@ -10,7 +10,7 @@
   }
 }
 
-.sgds {
+.cgds {
   &.input-group {
     &[variant="quantity-toggle"] {
       input::-webkit-outer-spin-button,
