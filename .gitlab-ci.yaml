@@ -1,0 +1,9 @@
+stages:
+- sonar
+
+sonarqube-check:
+  stage: sonar
+  image: sonarsource/sonar-scanner-cli
+  allow_failure: false
+  script:
+    - sonar-scanner -X -Dsonar.host.url=$SONAR_URL -Dsonar.login=$SONAR_TOKEN -Dsonar.projectKey=$CI_PROJECT_NAME -Dsonar.projectName=$CI_PROJECT_NAME
