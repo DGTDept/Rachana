@@ -773,7 +773,7 @@ $footer-color: $gray-100 !default;
 $footer-title-header: h3 !default;
 $footer-description-color: $gray-400 !default;
 $footer-link-color: $gray-300 !default;
-$footer-link-hover-color: $footer-color !default;
+$footer-link-hover-color: $highlight !default;
 // $footer-top-bg-color: $gray-900 !default;
 $footer-top-bg-color: $blue !default;
 $footer-top-padding: calc(#{$spacer} * 3) 0 calc(#{$spacer} * 1.5) !default;
