@@ -17,9 +17,9 @@
             {%- endif -%}
             {%- if item.title == "get-started" -%}
             <li class="nav-item align-self-center">
-                <a class="cgds btn header-getstart btn-secondary btn-sm" aria-current="page" href="{{item.url}}">{{item.title | capitalize | replace: '-', ' '}}</a>
-              </li>
-              {%- else -%}
+                <a class="cgds btn btn-secondary btn-sm" aria-current="page" href="{{item.url}}">{{item.title | capitalize | replace: '-', ' '}}</a>
+            </li>
+            {%- else -%}
             <li class="nav-item">
                 <a class="nav-link {{class}}" aria-current="page" href="{{item.url}}">
                     {% if item.title == 'FAQs' %}
