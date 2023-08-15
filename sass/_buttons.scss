@@ -1,2 +1,137 @@
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/button-group";
+
+//
+// Base styles
+//
+// $body-color: #8585;
+
+.btn {
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    line-height: $btn-line-height;
+    color: $body-color;
+    text-align: center;
+    text-decoration: if($link-decoration==none, null, none);
+    white-space: $btn-white-space;
+    vertical-align: middle;
+    cursor: if($enable-button-pointers, pointer, null);
+    user-select: none;
+    background-color: transparent;
+    border: $btn-border-width solid transparent;
+    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+    @include transition($btn-transition);
+    border-radius: 20px;
+
+    &:hover {
+        color: $body-color;
+        text-decoration: if($link-hover-decoration==underline, none, null);
+    }
+
+    .btn-check:focus+&,
+    &:focus {
+        outline: 0;
+        box-shadow: $btn-focus-box-shadow;
+    }
+
+    .btn-check:checked+&,
+    .btn-check:active+&,
+    &:active,
+    &.active {
+        @include box-shadow($btn-active-box-shadow);
+
+        &:focus {
+            @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+        }
+    }
+
+    &:disabled,
+    &.disabled,
+    fieldset:disabled & {
+        pointer-events: none;
+        opacity: $btn-disabled-opacity;
+        @include box-shadow(none);
+    }
+}
+
+
+//
+// Alternate buttons
+//
+
+// scss-docs-start btn-variant-loops
+@each $color,
+$value in $theme-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+    .btn.secondary {
+        background-color: $yellow-500;
+    }
+    .btn-primary:hover {
+        // background-color: $btn-secondary-hover-color;
+        background-color: $yellow-600;
+        color: white;
+        border-color: $yellow-400;
+    }
+    // .btn-secondary:hover {
+    //     // background-color: $btn-secondary-hover-color;
+    //     background-color: $primary;
+    //     color: white;
+    //     border-color: $yellow-400;
+    // }
+}
+
+
+@each $color,
+$value in $theme-colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
+}
+
+// scss-docs-end btn-variant-loops
+
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.btn-link {
+    font-weight: $font-weight-normal;
+    color: $btn-link-color;
+    text-decoration: $link-decoration;
+
+    &:hover {
+        color: $btn-link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+
+    &:focus {
+        text-decoration: $link-hover-decoration;
+    }
+
+    &:disabled,
+    &.disabled {
+        color: $btn-link-disabled-color;
+    }
+
+    // No need for an active state here
+}
+
+
+//
+// Button Sizes
+//
+
+.btn-lg {
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
+    border-radius: 20px;
+}
+
+.btn-sm {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+    border-radius: 20px;
+}
