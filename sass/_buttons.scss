@@ -66,21 +66,11 @@ $value in $theme-colors {
     .btn-#{$color} {
         @include button-variant($value, $value);
     }
-    .btn.secondary {
-        background-color: $yellow-500;
-    }
     .btn-primary:hover {
-        // background-color: $btn-secondary-hover-color;
         background-color: $yellow-600;
         color: white;
         border-color: $yellow-400;
     }
-    // .btn-secondary:hover {
-    //     // background-color: $btn-secondary-hover-color;
-    //     background-color: $primary;
-    //     color: white;
-    //     border-color: $yellow-400;
-    // }
 }
 
 
