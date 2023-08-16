@@ -1,24 +1,21 @@
-aside{
-     
-    &:not(.toc-container){ 
-        /* Add some styles here */
-        // background-color: var(--cgds-gray-100);
-        // padding: 10px;
-    }
+aside {
 
-    .cgds.sidenav{
+    &:not(.toc-container) {}
+
+    .cgds.sidenav {
         padding: 1rem;
         background-color: var(--cgds-gray-100);
-       
-        a{
+
+        a {
             text-decoration: none;
             color: var(--cgds-gray-500);
-            &:hover{
+
+            &:hover {
                 color: var(--cgds-gray-700);
             }
         }
 
-        .sidenav-item + .sidenav-item{
+        .sidenav-item+.sidenav-item {
             margin-top: 0;
         }
 
