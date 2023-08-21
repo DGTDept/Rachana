@@ -506,9 +506,9 @@ $utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg") !defau
 // Style anchor elements.
 
 $link-color: $secondary !default;
-$link-decoration: underline !default;
+$link-decoration: none !default;
 $link-shade-percentage: 20% !default;
-$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color: $highlight !default;
 $link-hover-decoration: null !default;
 
 $stretched-link-pseudo-element: after !default;
@@ -1376,7 +1376,8 @@ $placeholder-opacity-min: .2 !default;
 // scss-docs-start card-variables
 $card-spacer-y: 1.5rem !default;
 $card-spacer-x: 1.5rem !default;
-$card-title-spacer-y: $spacer * .5 !default;
+$card-title-spacer-y: $spacer * .625 !default;
+$card-text-spacer-y: $spacer !default;
 $card-border-width: $border-width !default;
 $card-border-color: $gray-400 !default;
 $card-border-radius: $border-radius !default;

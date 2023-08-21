@@ -4,32 +4,36 @@
 .cgds {
     &.navbar {
         padding: 0 calc(#{$spacer * 2}) 0;
-        @include media-breakpoint-down(lg){
+
+        @include media-breakpoint-down(lg) {
             padding: 0 $navbar-mobile-padding-y 0;
             overflow-x: scroll;
         }
+
         min-height: 80px;
         align-items: stretch;
-        
+
         header {
-            padding-top: $navbar-header-padding-x;
-            padding-bottom: $navbar-header-padding-y;
-            padding-right: $navbar-header-padding-right;
-            padding-left: $navbar-header-padding-left;
             display: flex;
+            padding: 0 !important;
+
             .social {
                 ul {
                     margin: 0;
                     padding: 0;
+
                     li {
                         display: inline-block;
                         margin-right: 0.6rem;
                         padding-right: 0.6rem;
                         border-right: 1px solid #f3f3f32b;
+
                         a {
                             color: #e9ecef;
+
                             i {
                                 font-size: 1.35rem;
+
                                 &:hover {
                                     color: $highlight;
                                     border-color: $highlight;
@@ -40,12 +44,14 @@
                     }
                 }
             }
+
             .search-icon {
                 i {
                     font-size: 1.35rem;
                     margin-bottom: .3rem;
                     color: #e9ecef;
                     cursor: pointer;
+
                     &:hover {
                         color: $highlight;
                         border-color: $highlight;
@@ -57,13 +63,13 @@
         a.navbar-brand {
             display: flex;
             align-items: center;
-            padding-bottom: $navbar-border-bottom-height;  
+            padding-bottom: $navbar-border-bottom-height;
         }
 
         .navbar-collapse {
             align-items: stretch;
         }
-        
+
 
         .nav-item {
             &.has-megamenu {
