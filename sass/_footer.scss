@@ -54,8 +54,7 @@
           .social-icon{
             ul {
               li {
-                @include media-breakpoint-up(lg) {
-                  display: inline-block;
+                display: inline-block;
                   cursor: $form-range-track-cursor;
                   a {
                     margin-left: 1px;
@@ -74,8 +73,6 @@
                     background-color: $footer-link-hover-color;
                     color: $white;
                   }
-
-                }
 
                 +li {
                   @include media-breakpoint-up(lg) {
