@@ -34,18 +34,19 @@ $grays: ("100": $gray-100,
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue: #1C4076; // primary
+$blue: #1C4076 !default;
 $indigo: #6610f2 !default;
 $purple: #5925DC !default;
 $pink: #d63384 !default;
 $red: #D7260F !default;
-$orange: #EE7D22; // secondary
+$orange: #EE7D22 !default;
 $yellow: #F79009 !default;
 $green: #0A8217 !default;
 $teal: #20c997 !default;
 $cyan: #0F71BB !default; //link
-$deepskyblue: #3da3cf !default;
-$navy: #003a8a !default;
+$deepskyblue: #3da3cf; // secondary
+$navy: #003a8a; // primary 
+$highlight: #f07d03 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -65,8 +66,8 @@ $colors: ("blue": $blue,
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $blue !default;
-$secondary: $orange !default;
+$primary: $navy !default;
+$secondary: $deepskyblue !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -97,8 +98,7 @@ $min-contrast-ratio: 4.5 !default;
 $color-contrast-dark: $black !default;
 $color-contrast-light: $white !default;
 
-// fusv-disable secondary
-// Primary
+// Blue
 $blue-100: #EBF1FF !default;
 $blue-200: #D3E2FF !default;
 $blue-300: #99BBFF !default;
@@ -118,6 +118,17 @@ $blue-900: #002266 !default;
 // $indigo-700: shade-color($indigo, 40%) !default;
 // $indigo-800: shade-color($indigo, 60%) !default;
 // $indigo-900: shade-color($indigo, 80%) !default;
+
+// Navy Color Primary
+$navy-100:	#E3F2FD !default;
+$navy-200:	#BBDEFB !default;
+$navy-300:	#90CAF9 !default;
+$navy-400:	#64B5F6 !default;
+$navy-500:	$navy !default;
+$navy-600:	#2196F3 !default;
+$navy-700:	$blue-700 !default;
+$navy-800:	$blue-800 !default;
+$navy-900:	$blue-900 !default;
 
 //Primary color for SG is purple not CG
 $purple-100: #ECE6FB !default;
@@ -202,15 +213,15 @@ $cyan-800: #0a4776 !default;
 $cyan-900: #08395e !default;
 
 // scss-docs-start gray-colors-map
-$primarys: ("primary-100": $blue-100,
-  "primary-200": $blue-200,
-  "primary-300": $blue-300,
-  "primary-400": $blue-400,
-  "primary-500": $blue-500,
-  "primary-600": $blue-600,
-  "primary-700": $blue-700,
-  "primary-800": $blue-800,
-  "primary-900": $blue-900) !default;
+$primarys: ("primary-100": navy-100,
+  "primary-200": $navy-200,
+  "primary-300": $navy-300,
+  "primary-400": $navy-400,
+  "primary-500": $navy-500,
+  "primary-600": $navy-600,
+  "primary-700": $navy-700,
+  "primary-800": $navy-800,
+  "primary-900": $navy-900) !default;
 
 $secondarys: ("secondary-100": $orange-100,
   "secondary-200": $orange-200,
@@ -494,7 +505,7 @@ $utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg") !defau
 //
 // Style anchor elements.
 
-$link-color: $cyan-600 !default;
+$link-color: $secondary !default;
 $link-decoration: underline !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
@@ -762,7 +773,7 @@ $footer-color: $gray-100 !default;
 $footer-title-header: h3 !default;
 $footer-description-color: $gray-400 !default;
 $footer-link-color: $gray-300 !default;
-$footer-link-hover-color: $footer-color !default;
+$footer-link-hover-color: $highlight !default;
 // $footer-top-bg-color: $gray-900 !default;
 $footer-top-bg-color: $blue !default;
 $footer-top-padding: calc(#{$spacer} * 3) 0 calc(#{$spacer} * 1.5) !default;
@@ -1480,7 +1491,7 @@ $popover-arrow-outer-color: fade-in($popover-border-color, .05) !default;
 // scss-docs-end popover-variables
 
 //Sidenav
-$sidenav-color: $secondary !default;
+$sidenav-color: $highlight !default;
 $sidenav-fontsize: 1rem !default;
 $sidenav-width: auto !default;
 $sidenav-item-spacing: 1rem !default;
@@ -1663,8 +1674,8 @@ $breadcrumb-item-padding-x: .5rem !default;
 $breadcrumb-margin-bottom: 1rem !default;
 $breadcrumb-bg: null !default;
 $breadcrumb-divider-color: $gray-600 !default;
-$breadcrumb-active-color: $gray-600 !default;
-$breadcrumb-divider: quote("/") !default;
+$breadcrumb-active-color: $highlight !default;
+$breadcrumb-divider: quote(">") !default;
 $breadcrumb-divider-flipped: $breadcrumb-divider !default;
 $breadcrumb-border-radius: null !default;
 // scss-docs-end breadcrumb-variables

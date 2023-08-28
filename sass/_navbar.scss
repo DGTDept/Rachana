@@ -31,8 +31,8 @@
                             i {
                                 font-size: 1.35rem;
                                 &:hover {
-                                    color: $secondary;
-                                    border-color: $secondary;
+                                    color: $highlight;
+                                    border-color: $highlight;
                                 }
                             }
 
@@ -47,8 +47,8 @@
                     color: #e9ecef;
                     cursor: pointer;
                     &:hover {
-                        color: $secondary;
-                        border-color: $secondary;
+                        color: $highlight;
+                        border-color: $highlight;
                     }
                 }
             }
@@ -83,16 +83,16 @@
 
                 &.active,
                 &:hover {
-                    color: $secondary;
-                    border-color: $secondary;
+                    color: $highlight;
+                    border-color: $highlight
                 }
 
                 &.dropdown-toggle {
                     gap: 0.75rem;
 
                     &.show {
-                        color: $secondary;
-                        border-bottom: $navbar-border-bottom-height solid $secondary;
+                        color: $highlight;
+                        border-bottom: $navbar-border-bottom-height solid $highlight;
                     }
                 }
             }
