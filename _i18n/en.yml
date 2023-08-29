@@ -1,0 +1,10 @@
+langs:
+  en: English
+  kh: Khmer
+global: 
+  page: Page
+titles:
+  component: Component
+  getStart: Get Start
+  pattern: Pattern Overview
+  template: Templates Overview

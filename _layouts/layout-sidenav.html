@@ -20,12 +20,17 @@ layout: layout-default
                 {%- assign class = 'active' -%}
                 {%- endif -%}
                 <li class="sidenav-item">
+                    {% if site.lang == 'kh' %}
+                    <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}/kh{{item.url}}">{{item.title}}</a>
+                    {%else %} 
                     <a role="button" class="cgds btn {{class}}" href="{{item.url}}">{{item.title}}</a>
+                    {% endif %}
                 </li>
                 {% endfor %}
                 {% endif %}
                 {% endfor %}
             </ul>
+            
         </nav>
     </aside>
     <article>

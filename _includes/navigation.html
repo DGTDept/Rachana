@@ -70,6 +70,14 @@
                 </div>
 
             </li>
+            <li class="nav-item">
+                {% if site.lang == 'kh' %}
+                <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}{{page.url}}">EN</a>
+                {%else %} 
+                <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}/kh{{page.url}}">KH</a>
+                {% endif %}
+                <!-- <a class="nav-link" aria-current="page" href="{{site.react-storybook}}"> kh</a> -->
+            </li>
         </ul>
     </div>
 </nav>
