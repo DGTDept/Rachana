@@ -46,7 +46,7 @@
                             href="/{{page.pageCategory}}/{{item.title | replace: ' ', '-' | downcase}}"
                         >
                             <div class="h5 text-primary card-title">
-                                {{item.title}}
+                                {% t item.title %}
                             </div>
                         </a>
                         <p class="card-text">{{item.description}}</p>
