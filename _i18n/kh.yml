@@ -1,10 +1,66 @@
 langs: 
-  en: Englishh
-  kh: KHmerr
+  en: English
+  kh: Khmer
 global: 
-  page: ខ្មែរ
+  page: ខ្មែរ   ### Why cannot remove this point
+  overview: ទិដ្ឋភាពទូទៅ
 titles:
-  component: សរុបន័យប្រអប់
+  about: អំពី
+  component: ទិដ្ឋភាពទូទៅនៃសមាសភាគ
   getStart: ការចាប់ផ្តើម
   pattern: ផាធន់
   template: តម្រង់
+  faqs: សំនួរ
+  home: ផ្ទះ
+  privacy-statement: សេចក្តីថ្លែងការណ៍ឯកជនភាពរបស់ទីភ្នាក់ងាររដ្ឋាភិបាល
+  product-sites: បញ្ជីគេហទំព័រផលិតផល
+  terms-of-use: លក្ខខណ្ឌនៃការប្រើប្រាស់
+headers:
+  #### Header of Component 
+  accordion: ស្រោមសំបុត្រ
+  alert: ការជូនដំណឹង
+  badge: ផ្លាកសញ្ញា 
+  breadcrumb: តំណជំហាន 
+  button: ប៊ូតុង 
+  card: កាត 
+  checkbox: ប្រអប់ធីក 
+  combo-box: ប្រអប់ខេមបូ
+  dropdown: ប៊ូតុងទម្លាក់ចុះ 
+  file-upload: ផ្ទុកឡើងឯកសា 
+  footer: បាតកថា 
+  main-navigation: របាខាងលើ 
+  modal: ផ្លាងជូនដំណឹង 
+  banner: បដាផ្លូវការរដ្ឋាភិបាល 
+  pagination: ការរៀបចំទំព័រ 
+  progress: របា​ វឌ្ឍនភាព 
+  toggle: ចំនួនបន្ថែម នឹង បន្ថយ
+  radio: ប៊ូតុងមូល
+  side-navigation: របាសងខាង
+  stepper: ជំហាននៃដំណើរការ 
+  table: តារាង 
+  tabs: ផ្ទាំង
+  text-area: តំបន់បញ្ចូលអត្ថបទ 
+  text-input: តំបន់បញ្ចូលសញ្ញាសម្កាល់ 
+  toast: ដំណឹងសាររហ័ស 
+  tooltip: ព័ត៌មានជំនួយ
+  #### Header of Patterns
+  address: អាស័យដ្ឋាន
+  date: កាលបរិច្ឆេទ 
+  email: អុីម៊ែល
+  error-summary: ការសង្ខេបកំហុស
+  name: ឈ្មោះ
+  payment: ការបង់ប្រាក់ 
+  phone-number: លេខទូរស័ព្ទ
+  #### Header of Templates
+  collapsible-page-form: ទំព័រនៃទម្រង់ដែរអាចបត់បែនបាន
+  detail-page-basic: ទំព័រលម្អិតមូលដ្ឋាន
+  detail-page-side-nav-extended: ទំព័រលម្អិតដែរភ្ជាប់ជាមួយរបាសងខាង
+  detail-page-side-nav: ទំព័រលម្អិតដែរភ្ជាប់ជាមួយរបាតែម្ខាង
+  landing-page: ទំព័រវាល
+  multi-page-form: ទម្រង់ភ្ជាប់ជាមួយទំព័រច្រើន
+  single-page-form: ទម្រង់ភ្ជាប់ជាមួយទំព័រតែមួយ
+  #### Header of get start 
+  customise-with-sass: កែសម្រួលជាមួយសាស
+  installation: ការតំឡើង
+  ui-kit: កញ្ចប់នៃការរចនាផ្នែកខាងមុខ
+  faqs: សំនួរ
