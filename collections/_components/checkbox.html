@@ -109,17 +109,42 @@ $form-check-inline-margin-end: 1rem !default;
         </div>
     </section>
 
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/anatomy-checkbox.svg"
-                        alt="Checkbox Anatomy">
+        <!-- Anatomy Section -->
+        <section name="section-anatomy">
+            <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
+            <div class="section-sub">
+                <div class="cgds-example-image-container">
+                    <div class="cgds-example-image-grid">
+                        <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/anatomy-checkbox.svg" alt="Checkbox Anatomy">
+                    </div>
                 </div>
             </div>
-            <ol>
+        </section>
+
+        <!-- Spacing Section -->
+        <section name="section-spacing">
+            <h2 class="title fw-bold" id="spacing">Spacing</h2>
+            <div class="section-sub">
+                <div class="cgds-example-image-container">
+                    <div class="cgds-example-image-grid">
+                        <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-checkbox.svg" alt="Checkbox Spacing">
+                    </div>
+                </div>
+                <p><b>Within the checkbox</b><br>
+                    Ensure that there is at least 16px of horizontal spacing between the checkbox and the label.</p>
+            </div>
+        </section>
+
+        <!-- Usage guidelines Section -->
+        <section name="section-usage-guidelines">
+            <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
+            <p class="fw-bold mb-0">Checkboxes should be used:</p>
+            <ul>
+                <li>When you want users to select multiple items from a predetermined list of items.</li>
+                <li>When your users need to see all available options at once.</li>
+            </ul>
+            <p class="fw-bold mb-0">Checkboxes should not be used:</p>
+            <ul>
                 <li>
                     <b>Checkbox:</b> Allows users to select and deselect the checkbox.
                 </li>

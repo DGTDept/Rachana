@@ -4,10 +4,17 @@ langs:
 global: 
   page: ខ្មែរ   ### Why cannot remove this point
   overview: ទិដ្ឋភាពទូទៅ
+navigation:
+  about: អំពី
+  components: សមាសភាគ
+  templates: តម្រង់
+  patterns: ផាធន់
+  faqs: សំនួរ
+  get-started: ការចាប់ផ្តើម
 titles:
   about: អំពី
   component: ទិដ្ឋភាពទូទៅនៃសមាសភាគ
-  getStart: ការចាប់ផ្តើម
+  get-start: ការចាប់ផ្តើម
   pattern: ផាធន់
   template: តម្រង់
   faqs: សំនួរ
@@ -30,11 +37,11 @@ headers:
   footer: បាតកថា 
   main-navigation: របាខាងលើ 
   modal: ផ្លាងជូនដំណឹង 
-  banner: បដាផ្លូវការរដ្ឋាភិបាល 
+  official-government-banner: បដាផ្លូវការរដ្ឋាភិបាល 
   pagination: ការរៀបចំទំព័រ 
   progress: របា​ វឌ្ឍនភាព 
-  toggle: ចំនួនបន្ថែម នឹង បន្ថយ
-  radio: ប៊ូតុងមូល
+  quantity-toggle: ចំនួនបន្ថែម នឹង បន្ថយ
+  radio-button: ប៊ូតុងមូល
   side-navigation: របាសងខាង
   stepper: ជំហាននៃដំណើរការ 
   table: តារាង 

@@ -4,10 +4,17 @@ langs:
 global: 
   page: Page  ### Why cannot remove this point
   overview: Overview
+navigation:
+  about: About
+  components: Components
+  templates: Templates 
+  patterns: Patterns 
+  faqs: FAQs
+  get-started: Get started
 titles:
   about: About
   component: Component Overview
-  getStart: Get Start
+  get-start: Get Start
   pattern: Pattern Overview
   template: Templates Overview
   faqs: FAQs
@@ -30,11 +37,11 @@ headers:
   footer: Footer 
   main-navigation: Main Navigation 
   modal: Modal 
-  banner: Official Government Banner 
+  official-government-banner: Official Government Banner 
   pagination: Pagination 
   progress: Progress Bar 
-  toggle: Quantity Toggle 
-  radio: Radio Button 
+  quantity-toggle: Quantity Toggle 
+  radio-button: Radio Button 
   side-navigation: Side Navigation
   stepper: Stepper 
   table: Table 
