@@ -2,7 +2,6 @@ langs:
   en: English
   kh: Khmer
 global: 
-  page: Page  ### Why cannot remove this point
   overview: Overview
 navigation:
   about: About
@@ -39,7 +38,7 @@ headers:
   modal: Modal 
   official-government-banner: Official Government Banner 
   pagination: Pagination 
-  progress: Progress Bar 
+  progress-bar: Progress Bar 
   quantity-toggle: Quantity Toggle 
   radio-button: Radio Button 
   side-navigation: Side Navigation

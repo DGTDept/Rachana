@@ -19,39 +19,23 @@
             {%- endif -%}
             {%- if item.title == "get-started" -%}
             <li class="nav-item align-self-center">
-                <!-- {% if site.lang == 'kh' %}
-                <a class="cgds btn btn-primary btn-sm" aria-current="page"
-                    href="{{item.url}}">{{item.title | capitalize | replace: '-', ' '}}</a>
-                {%else %} 
-                <a class="cgds btn btn-primary btn-sm" aria-current="page"
-                    href="/en{{item.url}}">{{item.title | capitalize | replace: '-', ' '}}</a>
-                {% endif %} -->
+
                 {% if site.lang == 'kh' %}
                 <a class="cgds btn btn-primary btn-sm" aria-current="page"
                     href="{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
-                {%else %} 
+                {%else %}
                 <a class="cgds btn btn-primary btn-sm" aria-current="page"
                     href="/en{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
                 {% endif %}
-                <!-- <a class="cgds btn btn-primary btn-sm" aria-current="page"
-                    href="{{item.url}}">{{item.title | capitalize | replace: '-', ' '}}</a> -->
-            </li>
-            {%- else -%}
+                {%- else -%}
             <li class="nav-item">
                 {% if site.lang == 'kh' %}
                 <a class="nav-link {{class}}" aria-current="page"
                     href="{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
-                {%else %} 
+                {%else %}
                 <a class="nav-link {{class}}" aria-current="page"
                     href="/en{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
                 {% endif %}
-                <!-- <a class="nav-link {{class}}" aria-current="page" href="{{item.url}}">
-                    {% if item.title == 'FAQs' %}
-                    {{item.title}}
-                    {% else %}
-                    {{item.title | capitalize}}
-                    {% endif %}
-                </a> -->
             </li>
             {%- endif -%}
             {% endfor %}
@@ -95,10 +79,9 @@
             <li class="nav-item">
                 {% if site.lang == 'kh' %}
                 <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}/en{{page.url}}">EN</a>
-                {%else %} 
+                {%else %}
                 <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}{{page.url}}">KH</a>
                 {% endif %}
-                <!-- <a class="nav-link" aria-current="page" href="{{site.react-storybook}}"> kh</a> -->
             </li>
         </ul>
     </div>
