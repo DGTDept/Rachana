@@ -21,8 +21,9 @@ layout: layout-default
                 {%- endif -%}
                 <li class="sidenav-item">
                     {% if site.lang == 'en' %}
-                    <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}/en{{item.url}}">{% t item.title %}</a>
-                    {%else %} 
+                    <a role="button" class="cgds btn {{class}}"
+                        href="{{site.baseurl_root }}/en{{item.url}}">{% t item.title %}</a>
+                    {%else %}
                     <a role="button" class="cgds btn {{class}}" href="{{item.url}}">{% t item.title %}</a>
                     {% endif %}
                 </li>
@@ -30,7 +31,7 @@ layout: layout-default
                 {% endif %}
                 {% endfor %}
             </ul>
-            
+
         </nav>
     </aside>
     <article>
@@ -40,12 +41,12 @@ layout: layout-default
 
     {% if page.overview == null %}
     <aside class="toc-container" aria-label="Table of Content">
-        
-            <div class="toc-wrapper">
-                <div class="h4">On this page</div>
-                {% toc %}
-            </div>
-        
+
+        <div class="toc-wrapper">
+            <div class="h4">On this page</div>
+            {% toc %}
+        </div>
+
     </aside>
     {% endif %}
 </section>
