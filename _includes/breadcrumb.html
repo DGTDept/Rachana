@@ -16,7 +16,10 @@
             {% assign breadcrumbs_sections = breadcrumbs_sections | append: '/' | append: splitted_url_parts[i] %}
             <li class="breadcrumb-item {{class}}">
                 <a href="{{ site.baseurl }}{{breadcrumbs_sections}}">
-                {{ splitted_url_parts[i] | capitalize | replace: "-", " "}} 
+                <!-- {{ splitted_url_parts[i] | capitalize | replace: "-", " "}}  -->
+                {% assign t = splitted_url_parts[i] %}
+                {{site.translations[site.lang].navigation.[t]}}
+
                 </a>
             </li>
             

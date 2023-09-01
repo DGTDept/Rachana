@@ -135,5 +135,5 @@ jekyll_get_json:
   - data: npm-data-prev-ver
     json: 'https://registry.npmjs.org/-/v1/search?text=@govtechsg/sgds'
 
-languages: ['en', 'kh']
+languages: ['kh', 'en']
 exclude_from_localizations: ['javascript', 'images', 'css', 'html']

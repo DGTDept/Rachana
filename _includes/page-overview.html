@@ -35,20 +35,32 @@
                 >
                     {% if include.img != 'noImg' %}
                     <img
-                        src="/assets/img/{{page.pageCategory}}-overview/{{item.title | downcase | replace: ' ', '-'}}.png"
+                        src="/assets/img/{{page.pageCategory}}-overview/{{item.title | downcase | replace: ' ', '-' | remove: 'headers.'}}.png"
                         class="card-img-top"
-                        alt="{{item.title | append: ' image' }}"
+                        alt="{{item.title | append: ' image' | remove: 'headers.'}}"
                     />
                     {% endif %}
                     <div class="card-body">
+                        {% if site.lang == 'en' %}
                         <a
                             class="stretched-link link-primary"
-                            href="/{{page.pageCategory}}/{{item.title | replace: ' ', '-' | downcase}}"
+                            href="/en/{{page.pageCategory}}/{{item.title | replace: ' ', '-' | downcase | remove: 'headers.'}}"
                         >
                             <div class="h5 text-primary card-title">
                                 {% t item.title %}
                             </div>
                         </a>
+                        {%else %}
+                        <a
+                            class="stretched-link link-primary"
+                            href="/{{page.pageCategory}}/{{item.title | replace: ' ', '-' | downcase | remove: 'headers.'}}"
+                        >
+                            <div class="h5 text-primary card-title">
+                                {% t item.title %}
+                            </div>
+                        </a>
+                        {% endif %}
+
                         <p class="card-text">{{item.description}}</p>
                         {% if item.category == 'mandatory' %}
                         <span class="cgds badge badge-light bg-danger"
