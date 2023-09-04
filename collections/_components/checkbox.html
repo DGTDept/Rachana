@@ -38,19 +38,18 @@ toc: true
 {% endcapture %}
 
 {% capture checkbox-with-label %}
-
 <h5>Label</h5>
 <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="checkboxOne" />
-    <label class="form-check-label" for="checkboxOne"> Checkbox </label>
+    <input class="form-check-input" type="checkbox" value="" id="checkbox1" />
+    <label class="form-check-label" for="checkbox1"> Checkbox </label>
 </div>
 <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="checkboxTwo" />
-    <label class="form-check-label" for="checkboxTwo"> Checkbox </label>
+    <input class="form-check-input" type="checkbox" value="" id="checkbox2" />
+    <label class="form-check-label" for="checkbox2"> Checkbox </label>
 </div>
 <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="checkboxThree" />
-    <label class="form-check-label" for="checkboxThree"> Checkbox </label>
+    <input class="form-check-input" type="checkbox" value="" id="checkbox3" />
+    <label class="form-check-label" for="checkbox3"> Checkbox </label>
 </div>
 {% endcapture %}
 
@@ -96,22 +95,19 @@ $form-check-inline-margin-end: 1rem !default;
 <!-- Page starts here -->
 <div class="page-component">
 
-        <!-- Example Section -->
-        <section name="section-examples">
-            <h2 class="title fw-bold" id="example">Examples</h2>
-            <div class="section-sub">
-                {% include page-component/component-code-snippet.html compName="checkbox-examples" code=checkbox-examples %}
-            </div>
-        </section>
-        
-        <!-- Section with Label -->
-        <section name="section-examples">
-            <h2 class="title fw-bold" id="example">Checkbox with Label</h2>
-            <div class="section-sub">
-                {% include page-component/component-code-snippet.html compName="checkbox-with-label" code=checkbox-with-label %}
-            </div>
-        </section>
+    <!-- Generated header from front end matters -->
+    {% include page-component/component-header.html %}
 
+    <!-- Example Section -->
+    <section name="section-examples">
+        <h2 class="title fw-bold" id="example">Examples</h2>
+        <div class="section-sub">
+            {% include page-component/component-code-snippet.html compTitle="With no label" compName="checkbox-examples" code=checkbox-examples %}
+        </div>
+        <div class="section-sub">
+            {% include page-component/component-code-snippet.html compTitle="With label" compName="checkbox-with-label" code=checkbox-with-label %}
+        </div>
+    </section>
 
         <!-- Anatomy Section -->
         <section name="section-anatomy">
@@ -123,32 +119,7 @@ $form-check-inline-margin-end: 1rem !default;
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Spacing Section -->
-        <section name="section-spacing">
-            <h2 class="title fw-bold" id="spacing">Spacing</h2>
-            <div class="section-sub">
-                <div class="cgds-example-image-container">
-                    <div class="cgds-example-image-grid">
-                        <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-checkbox.svg" alt="Checkbox Spacing">
-                    </div>
-                </div>
-                <p><b>Within the checkbox</b><br>
-                    Ensure that there is at least 16px of horizontal spacing between the checkbox and the label.</p>
-            </div>
-        </section>
-
-        <!-- Usage guidelines Section -->
-        <section name="section-usage-guidelines">
-            <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
-            <p class="fw-bold mb-0">Checkboxes should be used:</p>
-            <ul>
-                <li>When you want users to select multiple items from a predetermined list of items.</li>
-                <li>When your users need to see all available options at once.</li>
-            </ul>
-            <p class="fw-bold mb-0">Checkboxes should not be used:</p>
-            <ul>
+            <ol>
                 <li>
                     <b>Checkbox:</b> Allows users to select and deselect the checkbox.
                 </li>
