@@ -35,6 +35,7 @@ plugins:
   - jekyll-toc
   - jekyll-get-json
   - jekyll-sitemap
+  - jekyll-multiple-languages-plugin
 
 collections_dir: collections
 collections:
@@ -124,7 +125,7 @@ toc:
   list_id: toc # Default: "toc"
   list_class: toc # Default: "section-nav"
   no_toc_section_class: 
-    - sgds-example
+    - cgds-example
     - code-snippet
   sublist_class: toc-sublist # Default: no class for sublists
   item_class: toc-item # Default: "toc-entry"
@@ -133,3 +134,6 @@ toc:
 jekyll_get_json: 
   - data: npm-data-prev-ver
     json: 'https://registry.npmjs.org/-/v1/search?text=@govtechsg/sgds'
+
+languages: ['kh', 'en']
+exclude_from_localizations: ['javascript', 'images', 'css', 'html']

@@ -25,8 +25,8 @@
                         }
                     }
                     &.active,&:hover{
-                        border-color: $primary;
-                        color: $primary;
+                        border-color: $highlight;
+                        color: $highlight;
                         font-weight: $font-weight-bold;
                     }
                 }
@@ -55,7 +55,8 @@
                     }
                     &.active,&:hover{
                         color: $white;
-                        background-color: $link-color;
+                        // background-color: $link-color;
+                        background-color: $navy;
                     }
                 }
             }
@@ -71,7 +72,7 @@
                     border-color: transparent;
                     border: none;
                     &.active{
-                        border-bottom: $navbar-border-bottom-height solid $link-color;
+                        border-bottom: $navbar-border-bottom-height solid $highlight;
                         font-weight: $font-weight-bold;
                         background-color: transparent;
                     }

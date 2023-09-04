@@ -11,7 +11,7 @@
 - title: templates
   url: /templates/
   has-collection: true
-- title: FAQs
+- title: faqs
   url: /faqs/ 
   beta: true
   has-collection: false

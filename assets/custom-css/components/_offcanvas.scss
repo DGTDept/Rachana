@@ -39,9 +39,11 @@
 
                         &.active {
                             color: var(--cgds-gray-100);
+                            border-left: $navbar-border-bottom-height solid $sidenav-color;
 
                             &:hover {
                                 font-weight: bold;
+                                border-left: $navbar-border-bottom-height solid $sidenav-color;
                             }
                         }
 
@@ -52,6 +54,7 @@
                         &:hover {
                             font-weight: normal;
                             color: var(--cgds-gray-100);
+                            border-left: $navbar-border-bottom-height solid $sidenav-color;
                         }
                     }
 
@@ -63,6 +66,7 @@
                             &:hover,
                             &.active {
                                 color: var(--cgds-gray-100);
+                                border-left: $navbar-border-bottom-height solid $sidenav-color;
                             }
 
                             &.active {
