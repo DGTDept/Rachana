@@ -24,7 +24,7 @@ toc: true
             <label class="form-check-label" for="checkboxActive">
                 Active
             </label>
-        </div>   
+        </div>
     </div>
     <div class="col">
         <div class="form-check">
@@ -38,19 +38,18 @@ toc: true
 {% endcapture %}
 
 {% capture checkbox-with-label %}
-
 <h5>Label</h5>
 <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="checkboxOne" />
-    <label class="form-check-label" for="checkboxOne"> Checkbox </label>
+    <input class="form-check-input" type="checkbox" value="" id="checkbox1" />
+    <label class="form-check-label" for="checkbox1"> Checkbox </label>
 </div>
 <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="checkboxTwo" />
-    <label class="form-check-label" for="checkboxTwo"> Checkbox </label>
+    <input class="form-check-input" type="checkbox" value="" id="checkbox2" />
+    <label class="form-check-label" for="checkbox2"> Checkbox </label>
 </div>
 <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="checkboxThree" />
-    <label class="form-check-label" for="checkboxThree"> Checkbox </label>
+    <input class="form-check-input" type="checkbox" value="" id="checkbox3" />
+    <label class="form-check-label" for="checkbox3"> Checkbox </label>
 </div>
 {% endcapture %}
 
@@ -73,12 +72,20 @@ $form-check-input-focus-box-shadow: $input-btn-focus-box-shadow !default;
 $form-check-input-checked-color: $component-active-color !default;
 $form-check-input-checked-bg-color: $component-active-bg !default;
 $form-check-input-checked-border-color: $form-check-input-checked-bg-color !default;
-$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#{$form-check-input-checked-color}' viewBox='0 0 16 16'><path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z'/></svg>") !default;
-$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24'
+    height='24' fill='#{$form-check-input-checked-color}' viewBox='0 0 16 16'>
+    <path
+        d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
+    </svg>") !default;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'>
+    <circle r='2' fill='#{$form-check-input-checked-color}' /></svg>") !default;
 $form-check-input-indeterminate-color: $component-active-color !default;
 $form-check-input-indeterminate-bg-color: $component-active-bg !default;
 $form-check-input-indeterminate-border-color: $form-check-input-indeterminate-bg-color !default;
-$form-check-input-indeterminate-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-indeterminate-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") !default;
+$form-check-input-indeterminate-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'
+    viewBox='0 0 20 20'>
+    <path fill='none' stroke='#{$form-check-input-indeterminate-color}' stroke-linecap='round' stroke-linejoin='round'
+        stroke-width='3' d='M6 10h8' /></svg>") !default;
 $form-check-input-disabled-opacity: .5 !default;
 $form-check-label-disabled-opacity: $form-check-input-disabled-opacity !default;
 $form-check-btn-check-disabled-opacity: $btn-disabled-opacity !default;
@@ -87,26 +94,20 @@ $form-check-inline-margin-end: 1rem !default;
 
 <!-- Page starts here -->
 <div class="page-component">
-        
-        <!-- Generated header from front end matters -->
-        {% include page-component/component-header.html %}
 
-        <!-- Example Section -->
-        <section name="section-examples">
-            <h2 class="title fw-bold" id="example">Examples</h2>
-            <div class="section-sub">
-                {% include page-component/component-code-snippet.html compName="checkbox-examples" code=checkbox-examples %}
-            </div>
-        </section>
-        
-        <!-- Section with Label -->
-        <section name="section-examples">
-            <h2 class="title fw-bold" id="example">Checkbox with Label</h2>
-            <div class="section-sub">
-                {% include page-component/component-code-snippet.html compName="checkbox-with-label" code=checkbox-with-label %}
-            </div>
-        </section>
+    <!-- Generated header from front end matters -->
+    {% include page-component/component-header.html %}
 
+    <!-- Example Section -->
+    <section name="section-examples">
+        <h2 class="title fw-bold" id="example">Examples</h2>
+        <div class="section-sub">
+            {% include page-component/component-code-snippet.html compTitle="With no label" compName="checkbox-examples" code=checkbox-examples %}
+        </div>
+        <div class="section-sub">
+            {% include page-component/component-code-snippet.html compTitle="With label" compName="checkbox-with-label" code=checkbox-with-label %}
+        </div>
+    </section>
 
         <!-- Anatomy Section -->
         <section name="section-anatomy">
@@ -117,16 +118,17 @@ $form-check-inline-margin-end: 1rem !default;
                         <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/anatomy-checkbox.svg" alt="Checkbox Anatomy">
                     </div>
                 </div>
-                <ol>
-                    <li>
-                        <b>Checkbox:</b> Allows users to select and deselect the checkbox.
-                    </li>
-                    <li>
-                        <b>Label:</b> Informs the user what the option is for the checkbox.
-                    </li>
-                </ol>
             </div>
-        </section>
+            <ol>
+                <li>
+                    <b>Checkbox:</b> Allows users to select and deselect the checkbox.
+                </li>
+                <li>
+                    <b>Label:</b> Informs the user what the option is for the checkbox.
+                </li>
+            </ol>
+        </div>
+    </section>
 
         <!-- Spacing Section -->
         <section name="section-spacing">
@@ -137,51 +139,55 @@ $form-check-inline-margin-end: 1rem !default;
                         <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-checkbox.svg" alt="Checkbox Spacing">
                     </div>
                 </div>
-                <p><b>Within the checkbox</b><br>
-                    Ensure that there is at least 16px of horizontal spacing between the checkbox and the label.</p>
             </div>
-        </section>
+            <p><b>Within the checkbox</b><br>
+                Ensure that there is at least 16px of horizontal spacing between the checkbox and the label.</p>
+        </div>
+    </section>
 
-        <!-- Usage guidelines Section -->
-        <section name="section-usage-guidelines">
-            <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
-            <p class="fw-bold mb-0">Checkboxes should be used:</p>
-            <ul>
-                <li>When you want users to select multiple items from a predetermined list of items.</li>
-                <li>When your users need to see all available options at once.</li>
-            </ul>
-            <p class="fw-bold mb-0">Checkboxes should not be used:</p>
-            <ul>
-                <li>
-                    When selecting 1 option from a predetermined list of items. Using radio buttons would be more appropriate.
-                </li>
-            </ul>
-        </section>
+    <!-- Usage guidelines Section -->
+    <section name="section-usage-guidelines">
+        <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
+        <p class="fw-bold mb-0">Checkboxes should be used:</p>
+        <ul>
+            <li>When you want users to select multiple items from a predetermined list of items.</li>
+            <li>When your users need to see all available options at once.</li>
+        </ul>
+        <p class="fw-bold mb-0">Checkboxes should not be used:</p>
+        <ul>
+            <li>
+                When selecting 1 option from a predetermined list of items. Using radio buttons would be more
+                appropriate.
+            </li>
+        </ul>
+    </section>
 
-        <!-- Usability guidelines Section -->
-        <section name="section-usability-guidelines">
-            <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
-            <p>
-                <b>List available options vertically</b><br>
-                It is recommended to list options vertically as horizontal listings may confuse users and make it difficult to tell which label belongs to which option.
-            </p>
-            <p>
-                <b>Use logical labels</b><br>
-                Ensure that labels for checkboxes and groups are clear to the user.
-            </p>
-            <p>
-                <b>Logical ordering</b><br>
-                Ensure that options provided are organised in a meaningful way as this would help users to find the options easily.
-            </p>
-            <p>
-                <b>Ensure there is enough spacing</b><br>
-                Space options out and ensure there is adequate space for touch devices or mobile screens.
-            </p>
-        </section>
+    <!-- Usability guidelines Section -->
+    <section name="section-usability-guidelines">
+        <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
+        <p>
+            <b>List available options vertically</b><br>
+            It is recommended to list options vertically as horizontal listings may confuse users and make it difficult
+            to tell which label belongs to which option.
+        </p>
+        <p>
+            <b>Use logical labels</b><br>
+            Ensure that labels for checkboxes and groups are clear to the user.
+        </p>
+        <p>
+            <b>Logical ordering</b><br>
+            Ensure that options provided are organised in a meaningful way as this would help users to find the options
+            easily.
+        </p>
+        <p>
+            <b>Ensure there is enough spacing</b><br>
+            Space options out and ensure there is adequate space for touch devices or mobile screens.
+        </p>
+    </section>
 
-        <!-- Design token Section -->
-        <section name="section-design-tokens">
-            <h2 class="title fw-bold" id="design-tokens">{{page.title}} design tokens</h2>
-            {%- highlight sass -%}{{checkbox-design-tokens}}{%- endhighlight -%}
-        </section>
+    <!-- Design token Section -->
+    <section name="section-design-tokens">
+        <h2 class="title fw-bold" id="design-tokens">{{page.title}} design tokens</h2>
+        {%- highlight sass -%}{{checkbox-design-tokens}}{%- endhighlight -%}
+    </section>
 </div>
