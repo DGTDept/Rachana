@@ -1,0 +1,71 @@
+langs:
+  en: English
+  kh: Khmer
+global: 
+  overview: Overview
+navigation:
+  about: About
+  components: Components
+  templates: Templates 
+  patterns: Patterns 
+  faqs: FAQs
+  get-started: Get started
+titles:
+  about: About
+  component: Component Overview
+  get-start: Get Start
+  pattern: Pattern Overview
+  template: Templates Overview
+  faqs: FAQs
+  home: Home
+  privacy-statement: Government Agency Privacy Statement
+  product-sites: Product site list
+  terms-of-use: Terms of Use 
+headers:  
+  #### Header of Component
+  accordion: Accordion
+  alert: Alert
+  badge: Badge 
+  breadcrumb: Breadcrumb 
+  button: Button 
+  card: Card 
+  checkbox: CheckBox 
+  combo-box: Cambo Box 
+  dropdown: Dropdown 
+  file-upload: File Upload 
+  footer: Footer 
+  main-navigation: Main Navigation 
+  modal: Modal 
+  official-government-banner: Official Government Banner 
+  pagination: Pagination 
+  progress-bar: Progress Bar 
+  quantity-toggle: Quantity Toggle 
+  radio-button: Radio Button 
+  side-navigation: Side Navigation
+  stepper: Stepper 
+  table: Table 
+  tabs: Tabs
+  text-area: Text Area 
+  text-input: Text Input 
+  toast: Toast 
+  tooltip: Tooltip 
+    #### Header of Patterns
+  address: Address
+  date: Date
+  email: Email Address
+  error-summary: Error Summary 
+  name: Name 
+  payment: Payment 
+  phone-number: Phone Number 
+  #### Header of Templates
+  collapsible-page-form: Collapsible Page Form
+  detail-page-basic: Detail Page Basic
+  detail-page-side-nav-extended: Detail Page Side Nav Extended
+  detail-page-side-nav: Detail Page Side Nav
+  landing-page: Landing Page
+  multi-page-form: Multi Page Form
+  single-page-form: Single Page Form
+  #### Header of get start 
+  customise-with-sass: Customise with SASS
+  installation: Installation
+  ui-kit: UI Kit

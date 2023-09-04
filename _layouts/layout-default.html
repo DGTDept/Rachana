@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{site.lang}}">
 {% include head.html %}
+
 <body>
-    {% if page.title == 'home' %}
+
+    {% if page.title == 'Home' %}
     <div class="position-absolute hero-bg"></div>
     {% endif %}
     <div class="sticky-top">
@@ -17,4 +19,5 @@
     <script src="/assets/js/bundle.js"></script>
     <script src="/assets/js/vendor.js"></script>
 </body>
+
 </html>

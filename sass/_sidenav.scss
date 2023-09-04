@@ -3,6 +3,10 @@
         width: $sidenav-width;
         font-size: $sidenav-fontsize;
         list-style: none;
+        ul {
+            list-style-type: none;  
+            padding-left: 0;
+        }
         .sidenav-item {
             +.sidenav-item {
                 margin-top: $sidenav-item-spacing;

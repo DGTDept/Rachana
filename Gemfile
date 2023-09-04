@@ -8,6 +8,7 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from', "~>0.16"
   gem 'jekyll-toc'
   gem 'jekyll-sitemap'
+  gem 'jekyll-multiple-languages-plugin'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

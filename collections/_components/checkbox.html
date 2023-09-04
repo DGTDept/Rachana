@@ -1,5 +1,5 @@
 ---
-title: Checkbox
+title: headers.checkbox
 description: This component is used when you require users to select multiple items from a list.
 layout: layout-sidenav
 category: general
@@ -36,6 +36,24 @@ toc: true
     </div>
 </div>
 {% endcapture %}
+
+{% capture checkbox-with-label %}
+
+<h5>Label</h5>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="checkboxOne" />
+    <label class="form-check-label" for="checkboxOne"> Checkbox </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="checkboxTwo" />
+    <label class="form-check-label" for="checkboxTwo"> Checkbox </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="checkboxThree" />
+    <label class="form-check-label" for="checkboxThree"> Checkbox </label>
+</div>
+{% endcapture %}
+
 
 {% capture checkbox-design-tokens %}
 $form-check-input-width: 1.125em !default;
@@ -80,6 +98,15 @@ $form-check-inline-margin-end: 1rem !default;
                 {% include page-component/component-code-snippet.html compName="checkbox-examples" code=checkbox-examples %}
             </div>
         </section>
+        
+        <!-- Section with Label -->
+        <section name="section-examples">
+            <h2 class="title fw-bold" id="example">Checkbox with Label</h2>
+            <div class="section-sub">
+                {% include page-component/component-code-snippet.html compName="checkbox-with-label" code=checkbox-with-label %}
+            </div>
+        </section>
+
 
         <!-- Anatomy Section -->
         <section name="section-anatomy">
@@ -87,7 +114,7 @@ $form-check-inline-margin-end: 1rem !default;
             <div class="section-sub">
                 <div class="cgds-example-image-container">
                     <div class="cgds-example-image-grid">
-                        <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/anatomy-checkbox.svg" alt="Checkbox Anatomy">
+                        <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/anatomy-checkbox.svg" alt="Checkbox Anatomy">
                     </div>
                 </div>
                 <ol>
@@ -107,7 +134,7 @@ $form-check-inline-margin-end: 1rem !default;
             <div class="section-sub">
                 <div class="cgds-example-image-container">
                     <div class="cgds-example-image-grid">
-                        <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase}}/spacing-checkbox.svg" alt="Checkbox Spacing">
+                        <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-checkbox.svg" alt="Checkbox Spacing">
                     </div>
                 </div>
                 <p><b>Within the checkbox</b><br>
