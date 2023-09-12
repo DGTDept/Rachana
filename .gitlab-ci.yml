@@ -12,8 +12,13 @@ sonarqube-check:
 staging-deploy:
   stage: staging-deploy
   image: ruby:2.7.6-slim
-  script:
+  before_script:
     - apt-get update -qq && apt-get install -y build-essential
+    - curl -sL https://deb.nodesource.com/setup_16.17 -o /tmp/nodesource_setup.sh
+    - bash /tmp/nodesource_setup.sh
+    - apt install nodejs
+  script:
+    - npm install
     - bundle install
     - bundle exec jekyll build
     - scp -r _site/* $DEST_FOLDER_URL
