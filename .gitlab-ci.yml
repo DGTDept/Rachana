@@ -1,5 +1,6 @@
 stages:
 - sonar
+- staging-deploy
 
 sonarqube-check:
   stage: sonar
@@ -7,3 +8,13 @@ sonarqube-check:
   allow_failure: false
   script:
     - sonar-scanner -X -Dsonar.host.url=$SONAR_URL -Dsonar.login=$SONAR_TOKEN -Dsonar.projectKey=$CI_PROJECT_NAME -Dsonar.projectName=$CI_PROJECT_NAME
+
+staging-deploy:
+  stage: staging-deploy
+  image: ruby:2.7.6-slim
+  script:
+    - bundle install
+    - bundle exec jekyll build
+    # - scp -r _site/* $DEST_FOLDER_URL
+  only:
+  - dev
