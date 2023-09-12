@@ -13,8 +13,9 @@ staging-deploy:
   stage: staging-deploy
   image: ruby:2.7.6-slim
   script:
+    - apt-get update -qq && apt-get install -y build-essential
     - bundle install
     - bundle exec jekyll build
-    # - scp -r _site/* $DEST_FOLDER_URL
+    - scp -r _site/* $DEST_FOLDER_URL
   only:
   - dev
