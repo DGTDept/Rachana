@@ -3,14 +3,17 @@
         width: $sidenav-width;
         font-size: $sidenav-fontsize;
         list-style: none;
+
         ul {
-            list-style-type: none;  
+            list-style-type: none;
             padding-left: 0;
         }
+
         .sidenav-item {
             +.sidenav-item {
                 margin-top: $sidenav-item-spacing;
             }
+
             .cgds.btn {
                 color: $sidenav-color;
                 font-size: inherit;
@@ -42,16 +45,26 @@
                 &.inactive {
                     color: inherit;
                     border-color: transparent;
+
                     i {
                         transform: rotate(0deg);
                     }
                 }
 
-                &:hover,
-                &.active{
+                &:hover {
+                    color: $sidenav-color;
+                    @include gradient-bg($side-link-hover-bg);
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+
+                &.active {
                     color: $sidenav-color;
                     border-left-color: $sidenav-color;
                     font-weight: $font-weight-bold;
+                    @include gradient-bg($side-link-hover-bg);
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
                 }
 
             }
@@ -73,7 +86,11 @@
                         margin-top: $sidenav-item-spacing;
                     }
 
-                    &.active,
+                    &.active {
+                        color: $sidenav-color;
+                        font-weight: $font-weight-bold;
+                    }
+
                     &:hover {
                         color: $sidenav-color;
                     }
