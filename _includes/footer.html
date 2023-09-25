@@ -1,16 +1,42 @@
 <footer class="cgds footer">
     <section class="footer-top">
         <div class="container-fluid">
-            <div class="row footer-header">
-                <div class="col col-lg-6 col-md-12">
-                    <div class="title">Cambodia Government Design System</div>
-                    <div class="description">
-                        {{site.description}}
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="widget flex-column">
+                        <div class="logo">
+                            <img src="/assets/uncompressed_images/logo_dgc_square.svg" alt="dgc logo">
+                        </div>
+                        <div class="social-icon">
+                            <ul>
+                                <li>
+                                    <a href="{{site.facebook-link}}">
+                                        <i class="bi bi-facebook" target="_blank"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{site.youtube-link}}">
+                                        <i class="bi bi-youtube" target="_blank"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{site.telegram-link}}">
+                                        <i class="bi bi-telegram" target="_blank"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{site.tiktok-link}}">
+                                        <i class="bi bi-tiktok" target="_blank"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row footer-items">
-                <div class="col-xxl-2 col-md-4 mb-3">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="title h3">
+                        Quick Link
+                    </div>
                     <ul class="links">
                         <li><a href="/about/">About Us</a></li>
                         <li><a href="/components/">Components</a></li>
@@ -19,51 +45,66 @@
                         <li><a href="/faqs/">FAQs</a></li>
                     </ul>
                 </div>
-                
-                <div class="col-xxl-2 col-md-4 mb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="title h3">
+                        Contacts
+                    </div>
                     <ul class="links">
-                        <li><a href="{{site.github-link}}" target="_blank" rel="noopener noreferrer">CGDS GitLab Repo</a></li>
-                        <li><a href="{{site.react-storybook}}" target="_blank" rel="noopener noreferrer">CGDS React Storybook</a></li>
-                        <li><a href="https://v1.designsystem.tech.gov.sg">CGDS v1.4.0</a></li>
-                        <li><a href="https://v1.react.designsystem.tech.gov.sg">CGDS React v1</a></li>
-                        <li><a href="https://www.developer.tech.gov.sg" target="_blank" rel="noopener noreferrer">Cambodia Government Developer Portal</a></li>
-                        <li><a href="https://www.isomer.gov.sg" target="_blank" rel="noopener noreferrer">Isomer</a></li>
+                        <li>
+                            <a class="d-flex flex-nowrap" href="{{site.location}}" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <div class="lh-1">
+                                    Building 13, Monivong Blvd, Sangkat <br>Srah Chak, Khan Daun Penh
+                                    Phnom Penh, <br>Cambodia, 120210
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex flex-nowrap" href="mailto:info@dgc.gov.kh" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div class="lh-1">
+                                    info@dgc.gov.kh
+                                </div>
+
+                            </a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div class="row footer-contact-links">
-                <div class="col">
-                    <div class="d-flex justify-content-lg-end">
-                        <ul>
-                            <li><a href="{{site.contact-us}}" target="_blank" rel="noopener noreferrer">Contact</a></li>
-                            <li><a href="{{site.feedback-form}}" target="_blank" rel="noopener noreferrer">Feedback</a></li>
-                            <li><a href="https://www.reach.gov.sg/" target="_blank"
-                                    rel="noopener noreferrer">Reach.gov.sg</a></li>
-                        </ul>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="title h3">
+                        Other Links
                     </div>
+                    <ul class="links">
+                        <li><a href="{{site.mptc-link}}" target="_blank" rel="noopener noreferrer">Ministry of Post and
+                                Telecommunications</a></li>
+                        <li><a href="{{site.dgc-link}}" target="_blank" rel="noopener noreferrer">Digital Government
+                                Committee</a></li>
+                        <li><a href="{{site.github-link}}" target="_blank" rel="noopener noreferrer">CGDS GitLab
+                                Repo</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="footer-bottom">
         <div class="container-fluid">
-            <div class="row footer-mandatory-links">
-                <div class="col">
-                    <ul>
-                        <li><a href="https://tech.gov.sg/report_vulnerability" target="_blank"
-                                rel="noopener noreferrer">Report Vulnerability</a></li>
-                        <li><a href="/privacy/">Privacy Statement</a></li>
-                        <li><a href="/terms-of-use/">Terms of use</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="row footer-copyrights">
                 <div class="col">
-                    <div class="d-flex justify-content-lg-end text-end">
-                        © 2022 Government of Cambodia<br>
-                        Last Updated {{site.time | date_to_string -}}
+                    <div class="d-flex justify-content-lg-start text-start">
+                        DGC © 2023 ~ All rights reserved. Digital Government Committee.<br>
                     </div>
+                </div>
+                <div class="col">
+                    <dev class="justify-content-lg-end text-end">
+                        <ul>
+                            <li><a href="" target="_blank" rel="noopener noreferrer">Report Vulnerability</a></li>
+                            <li><a href="/privacy/">Privacy Statement</a></li>
+                            <li><a href="/terms-of-use/">Terms of use</a></li>
+                        </ul>
+
+                    </dev>
                 </div>
             </div>
         </div>
