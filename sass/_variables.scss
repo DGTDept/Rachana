@@ -1524,10 +1524,11 @@ $popover-arrow-outer-color: fade-in($popover-border-color, .05) !default;
 // scss-docs-end popover-variables
 
 //Sidenav
-$sidenav-color: $highlight !default;
+$sidenav-color: $primary !default;
 $sidenav-fontsize: 1rem !default;
 $sidenav-width: auto !default;
 $sidenav-item-spacing: 1rem !default;
+$side-link-hover-bg: rgba($primary, .1) !default;
 $sidenav-btn-border-width: $navbar-border-bottom-height !default;
 $sidenav-btn-padding-x: 0.5rem;
 $sidenav-btn-padding-y: 0.5rem;
