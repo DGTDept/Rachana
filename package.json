@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "author": "Tey Liang Tai",
-  "main": "css/sgds.css",
+  "main": "css/cgds.css",
   "files": [
     "sass",
     "css"

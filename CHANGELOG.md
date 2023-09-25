@@ -39,11 +39,11 @@ update accordingly to the new documentation
 - **main nav**: allow x scrolling for expanded main nav when not in hamburger mode
 - **card**: quantity toggle mobile responsiveness
 - **masthead**: update cdn link to fetch latest
-- **card docs**: removed wrapper from single cards,removed sgds-example card group class
+- **card docs**: removed wrapper from single cards,removed cgds-example card group class
 - **card doc**: standardise card with in example
 - **card docs**: removed width prop in .card-group
 - **card docs**: updated html structure for action cards
-- **card docs**: added .sgds-example-card-grid wrapper to variants
+- **card docs**: added .cgds-example-card-grid wrapper to variants
 - **card doc**: add custom media query
 - **card doc**: revert card width
 - **card documentation**: update card group responsive
@@ -83,22 +83,22 @@ update accordingly to the new documentation
 - **pattern-overview**: rename images to lowercase
 - *****: add backslash for img path
 - **overview page**: remove previous img path, remove backslash for card links
-- **gitignore**: untrack sgds.css, came up after fixing merge conflicts
+- **gitignore**: untrack cgds.css, came up after fixing merge conflicts
 - merge conflicts:
-- *****: update build:lib folder, ignore css/sgds.css
+- *****: update build:lib folder, ignore css/cgds.css
 - **navigation**: update templates has-collection true
 - **about page**: remove target blank
 - **patterns**: isolated date input text with numeric inputmode:
 - **patterns**: handle credit card formatter backspace event
 - **breadcrumb**: add current page title
 - merge conflicts
-- **quantity-toggle**: add sgds selector to make webkit spinner disappear
+- **quantity-toggle**: add cgds selector to make webkit spinner disappear
 - **input-group**: revert changes in has-icon variant
 - *****: merge conflict
 - **patterns**: format credit card, change postal code attributes
 - **docs portal widget**: update cdn link
 - **forms**: rm default webkit spin buttons when aria-describedby cvv and credit card number
-- **packaging**: add sgds.css.map into dist files
+- **packaging**: add cgds.css.map into dist files
 - **inputgroup**: has-icon variant input borders
 - **selectable cards**: change html structure and update scss
 - **formcheckinput**: remove margin-top to center checks
@@ -109,9 +109,9 @@ update accordingly to the new documentation
 
 - *****: remove ./node_modules import statement for bootstrap imports
 - **sass**: move all files to sass root folder
-- **sgds**: remove bootstrap folder
-- **sgds.scss**: combine map-merge
-- **custom-css**: update sgds variable path
+- **cgds**: remove bootstrap folder
+- **cgds.scss**: combine map-merge
+- **custom-css**: update cgds variable path
 - **components/forms/utilities**: align file structure with bootstrap
 - **reboot/root/type**: import bootstrap dependencies
 - **sass/mixins**: import directly from module

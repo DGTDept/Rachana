@@ -9,7 +9,7 @@ site-folder/
 │   └── custom.scss
 └── node_modules/
     └── {{site.sgds-package-name}}/sass/
-        └── sgds.scss
+        └── cgds.scss
 {% endcapture %}
 
 {% capture include-all-parts %}
@@ -18,7 +18,7 @@ site-folder/
 
 // Include any default variable overrides here
 
-@import "~{{site.sgds-package-name}}/sass/sgds.scss";
+@import "~{{site.sgds-package-name}}/sass/cgds.scss";
 
 // Then add additional custom code here
 {% endcapture %}
