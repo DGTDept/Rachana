@@ -1,17 +1,30 @@
 @import "~bootstrap/scss/accordion";
 
-.cgds{
-    &.accordion{
-        .accordion-button{
+.cgds {
+    &.accordion {
+        .accordion-button {
             line-height: 2rem;
+
+            i {
+                margin-right: 1rem;
+                font-size: 24px;
+                color: $gray-500;
+            }
         }
-        .accordion-button:not(.collapsed){
-            font-weight: $font-weight-bold;
-            box-shadow: none;
+
+
+
+        .accordion-button:not(.collapsed) {
+            font-weight: $font-weight-bolder;
+            background-color: rgba($primary, 0.05);
+
+            i {
+                color: $primary;
+            }
         }
-        .accordion-body{
-            padding-bottom: 1.5rem;
-            padding-top: 0;
+
+        .accordion-body {
+            padding: 16px 24px;
             line-height: 2rem;
         }
     }
