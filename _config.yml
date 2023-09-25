@@ -115,8 +115,8 @@ exclude:
   - webpack.config.js
   - Gruntfile.js
   - amplify.yml
-  - sgds/sgds.scss
-  - sgds/sass
+  - cgds/cgds.scss
+  - cgds/sass
 
 sass:
   sass_dir: assets/custom-css

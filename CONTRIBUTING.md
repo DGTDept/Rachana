@@ -30,7 +30,7 @@ Test out the latest development build:
 
 ### Writing
 
-Stylings are written in scss only. To make changes to sgds stylings, edit files in `<rootDir>/sass/sgds-theme`. DO NOT edit files in `<rootDir>/sass/bootstrap` folder
+Stylings are written in scss only. To make changes to cgds stylings, edit files in `<rootDir>/sass/cgds-theme`. DO NOT edit files in `<rootDir>/sass/bootstrap` folder
 
 ## Commit standard 
 
