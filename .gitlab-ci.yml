@@ -23,7 +23,7 @@ staging-deploy:
   script:
     - npm install
     - bundle install
-    - bundle exec jekyll build
+    - npm run build
     - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r _site/* $DEST_FOLDER_URL
   only:
   - dev
