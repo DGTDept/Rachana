@@ -5,10 +5,10 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
-    "sgds": './src/sgds.js',
-    "sgds.util": './src/sgds.util.js',
-    "assets/js/bundle": './src/sgds.bundle.js',
-    "assets/js/vendor": './src/sgds.vendor.js'
+    "cgds": './src/cgds.js',
+    "cgds.util": './src/cgds.util.js',
+    "assets/js/bundle": './src/cgds.bundle.js',
+    "assets/js/vendor": './src/cgds.vendor.js'
   },
   devtool: 'source-map',
   mode: "development",

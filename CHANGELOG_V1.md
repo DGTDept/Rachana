@@ -22,7 +22,7 @@ We will be pushing up additional components and features in the upcoming months.
 
 ## [1.3.21]
 ## 🗓️ 06-09-2021
-- Renamed `sgds-icon/sgds-variables.scss` to `sgds-icon/sgds-icon-variables.scss`  
+- Renamed `cgds-icon/cgds-variables.scss` to `cgds-icon/cgds-icon-variables.scss`  
 - Fixed duplicate `is-light` classes for tag component
 - [#229](https://github.com/GovTechSG/sgds/issues/229) Resolved hexadecimal for all state colors 
 - Fixed alignment helper interpolation
@@ -55,7 +55,7 @@ We will be pushing up additional components and features in the upcoming months.
 ### Added 3 default templates
 - [Template Overview](https://www.designsystem.gov.sg/templates/)
 ## 🗓️ 07-07-2021
-- Fixed sgds step marker height and width properties. 
+- Fixed cgds step marker height and width properties. 
 - Remove hero banner container width
 
 ## [1.3.19] - 🗓️ 05-07-2021
@@ -75,14 +75,14 @@ We will be pushing up additional components and features in the upcoming months.
 
 ## [1.3.16] - 🗓️ 01-10-2020
 
-- Removed left borders for `.sgds-menu-list li ul` elements so side nav is consistent with previous behaviour.
+- Removed left borders for `.cgds-menu-list li ul` elements so side nav is consistent with previous behaviour.
 
-### Documentation: sgds-menu
-- Accessibility fixes for sgds-menu
+### Documentation: cgds-menu
+- Accessibility fixes for cgds-menu
 - Replace `div.second-level-nav-div` with `li.second-level-nav-div`
 - All `li.second-level-nav-div` nav items should be children of `<ul>`
 
-### Documentation: sgds-masthead
+### Documentation: cgds-masthead
 1. Add aria-label for masthead
 
 ## [1.3.15] - 🗓️ 07-09-2020
@@ -168,7 +168,7 @@ We will be pushing up additional components and features in the upcoming months.
 - Added instructions for releasing. See [Readme.md](https://github.com/GovTechSG/sgds/blob/master/README.md)
 
 ### Fixes
-- Fixed missing gutters (left/right) for `sgds-container`
+- Fixed missing gutters (left/right) for `cgds-container`
 
 ## [1.3.6] - 🗓️ 18-10-2019
 
@@ -182,7 +182,7 @@ We will be pushing up additional components and features in the upcoming months.
 
 - #101 Masthead font-size scaling.
 - Masthead link now darkens upon hover.
-- sgds.js no longer initializes a sticky sidebar by default. This feature is not sgds's
+- cgds.js no longer initializes a sticky sidebar by default. This feature is not cgds's
   responsibility and its removal reduces the js library size greatly. Documentation for 
   this feature to follow.
 - Default colours for `info` and `link` classes have been updated.
@@ -205,8 +205,8 @@ We will be pushing up additional components and features in the upcoming months.
 ### Changes
 
 - Documentation re-org and improvements
-- Moved sgds-example and sgds-syntax classes out of sgds package.
-- #89 Added sgds prefix to navbar component
+- Moved cgds-example and cgds-syntax classes out of cgds package.
+- #89 Added cgds prefix to navbar component
 - Updated language selector example in docs to use `<select>` elements
 
 ### Fixes
@@ -218,7 +218,7 @@ We will be pushing up additional components and features in the upcoming months.
 ## [1.3.2] - 🗓️ 27-08-2019
 
 - Documentation updates
-- Improved IE compatibility for sgds.js.
+- Improved IE compatibility for cgds.js.
 
 ## [1.3.1] - 🗓️ 26-08-2019
 
@@ -236,17 +236,17 @@ We will be pushing up additional components and features in the upcoming months.
 #### Added
 
 - border with \$grey-light (same border color with default table)
-- border \$grey-light (same border color with default table) to `sgds-accordion-body`
-- `is-*color*` helper to `sgds-accordion`.
-- `is-*borderless*` helper to `sgds-accordion`.
-- `is-*small* , is-*medium* , is-*large*` helper to `sgds-accordion`.
+- border \$grey-light (same border color with default table) to `cgds-accordion-body`
+- `is-*color*` helper to `cgds-accordion`.
+- `is-*borderless*` helper to `cgds-accordion`.
+- `is-*small* , is-*medium* , is-*large*` helper to `cgds-accordion`.
 
 #### Changed
 
 - background color to white
 - background color to white
 - hover color to darken white
-- padding top/bottom (same padding with default size `sgds-button`)
+- padding top/bottom (same padding with default size `cgds-button`)
 
 ## [1.1.0] - 🗓️ 07-06-2019
 
