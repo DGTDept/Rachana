@@ -9,7 +9,9 @@
         {% if page.ready == false %}
         {% assign class = 'text-danger' %}
         {% endif %}
-        {% if page.description %}
+        {% if page.description contains 'description.' %}
+        <p class="header-component-description {{class}}">{% t page.description %}</p>
+        {% else if page.description %}
         <p class="header-component-description {{class}}">{{page.description}}</p>
         {% endif %}
         {% if page.source-grid %}
