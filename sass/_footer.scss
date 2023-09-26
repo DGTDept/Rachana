@@ -29,8 +29,15 @@
         height: auto;
         color: $footer-color;
 
+        @include media-breakpoint-down(lg) {
 
-        @media (min-width: 992px) {
+            img,
+            svg {
+                width: 292px;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
 
             img,
             svg {
@@ -38,19 +45,11 @@
             }
         }
 
-        @media (min-width: 1440px) {
+        @include media-breakpoint-up(xxl) {
 
             img,
             svg {
-                width: 350px;
-            }
-        }
-
-        @media (min-width: 2460px) {
-
-            img,
-            svg {
-                width: 500px;
+                width: 320px;
             }
         }
 
@@ -62,8 +61,6 @@
                 .row {
                     gap: 1.5rem;
                 }
-
-
 
                 @include media-breakpoint-down(sm) {
                     >div[class*="col"] {
