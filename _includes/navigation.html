@@ -1,88 +1,89 @@
-<nav class="cgds navbar navbar-expand-lg" aria-label="Main Navigation">
-    <a class="navbar-brand" href="/"><img src="/assets/uncompressed_images/logo cgds.svg" alt="Home" height="60"></a>
-    <div class="d-lg-none d-flex align-items-center">
+<nav class="cgds navbar flex-column navbar-expand-lg">
+    <header class="container d-flex flex-nowrap px-4 px-md-5">
+        <div class="w-100 d-flex align-items-center justify-content-between px-4 px-md-5 py-4 py-sm-6 py-md-3 py-lg-4">
+            <a class="navbar-brand" href="/"><img src="/assets/uncompressed_images/logo_dgc_rectangle.svg"
+                    alt="Home"></a>
+        </div>
+        <div class="d-flex align-items-center me-5">
+            <nav class="social d-flex me-3">
+                <ul id="menu-social-menu" class="d-flex">
+                    <li class="nav-icon-social">
+                        <a class="nav-link" aria-current="page" href="{{site.github-link}}">
+                            <i class="bi bi-gitlab" target="_blank" style="line-height: 1;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-        <dev-console-widget class="navbar-mobile-widget" iconColor="white" iconWidth="24px" iconHeight="24px">
-        </dev-console-widget>
-
-        <button class="navbar-toggler pb-0 pt-0 ps-3" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvas" aria-controls="offcanvas" aria-labelledby="offcanvas">
-            <i class="bi bi-list h1"></i>
-        </button>
-    </div>
-    <div class="collapse navbar-collapse navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-            {% for item in site.data.navigation %}
-            {%- assign class = nil -%}
-            {%- if page.url contains item.title -%}
-            {%- assign class = 'active' -%}
-            {%- endif -%}
-            {%- if item.title == "get-started" -%}
-            <li class="nav-item align-self-center">
-
+            <div class="d-flex flag-icon text-center me-2">
                 {% if site.lang == 'kh' %}
-                <a class="cgds btn btn-primary btn-sm" aria-current="page"
-                    href="{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
+                <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}/en{{page.url}}"><img
+                        src="/assets/uncompressed_images/united-kingdom-flag-icon.svg" width="32px" height="24px"
+                        alt="Home"></a>
                 {%else %}
-                <a class="cgds btn btn-primary btn-sm" aria-current="page"
-                    href="/en{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
+                <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}{{page.url}}"><img
+                        src="/assets/uncompressed_images/cambodia-flag-icon.svg" width="32px" height="24px"
+                        alt="Home"></a>
                 {% endif %}
-                {%- else -%}
-            <li class="nav-item">
-                {% if site.lang == 'kh' %}
-                <a class="nav-link {{class}}" aria-current="page"
-                    href="{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
-                {%else %}
-                <a class="nav-link {{class}}" aria-current="page"
-                    href="/en{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
-                {% endif %}
-            </li>
-            {%- endif -%}
-            {% endfor %}
-            <li class="nav-item">
-                <div class="vr h-100"></div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="{{site.github-link}}">
-                    <i class="bi bi-github h3 mb-0"></i>
-                    <span class="visually-hidden-focusable">CGDS Github repo</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="{{site.react-storybook}}">
-                    <span class="visually-hidden-focusable">CGDS React storybook</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 13 16" fill="none">
-                        <mask id="mask0_1438_4436" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                            width="13" height="16">
-                            <path
-                                d="M0.49517 14.7122L0.000574853 1.53345C-0.0157597 1.09821 0.317968 0.729349 0.752668 0.70218L11.9621 0.0015905C12.4046 -0.026064 12.7857 0.310212 12.8133 0.752685C12.8144 0.769356 12.8149 0.786055 12.8149 0.802758V15.1633C12.8149 15.6067 12.4555 15.966 12.0122 15.966C12.0002 15.966 11.9882 15.9658 11.9762 15.9652L1.26132 15.484C0.844019 15.4653 0.510836 15.1296 0.49517 14.7122Z"
-                                fill="white" />
-                        </mask>
-                        <g mask="url(#mask0_1438_4436)">
-                            <path
-                                d="M0.49517 14.7122L0.000574853 1.53345C-0.0157597 1.09821 0.317968 0.729349 0.752668 0.70218L11.9621 0.0015905C12.4046 -0.026064 12.7857 0.310212 12.8133 0.752685C12.8144 0.769356 12.8149 0.786055 12.8149 0.802758V15.1633C12.8149 15.6067 12.4555 15.966 12.0122 15.966C12.0002 15.966 11.9882 15.9658 11.9762 15.9652L1.26132 15.484C0.844019 15.4653 0.510836 15.1296 0.49517 14.7122Z"
-                                fill="white" />
-                            <path
-                                d="M9.4632 1.96248L9.53977 0.120952L11.0792 0L11.1455 1.89911C11.1478 1.9652 11.0961 2.02065 11.03 2.02296C11.0017 2.02395 10.9739 2.01487 10.9517 1.99735L10.3581 1.5297L9.65521 2.06286C9.60252 2.10283 9.52741 2.09251 9.48744 2.03982C9.47061 2.01765 9.46204 1.9903 9.4632 1.96248ZM7.49446 6.01782C7.49446 6.33013 9.59814 6.18045 9.88054 5.96107C9.88054 3.83432 8.73937 2.71675 6.64971 2.71675C4.56004 2.71675 3.38923 3.85171 3.38923 5.55415C3.38923 8.51924 7.39072 8.57599 7.39072 10.1933C7.39072 10.6473 7.16842 10.9169 6.67935 10.9169C6.04207 10.9169 5.79013 10.5914 5.81977 9.4848C5.81977 9.24474 3.38923 9.1699 3.31513 9.4848C3.12644 12.1665 4.79716 12.94 6.70899 12.94C8.56153 12.94 10.0139 11.9525 10.0139 10.1649C10.0139 6.98704 5.95315 7.07217 5.95315 5.49741C5.95315 4.85899 6.4274 4.77387 6.70899 4.77387C7.00539 4.77387 7.53892 4.82611 7.49446 6.01782Z"
-                                fill="var(--cgds-gray-600)" />
-                        </g>
-                    </svg>
-                </a>
-            </li>
+            </div>
 
-            <li class="nav-item align-self-center d-none d-lg-block" style="margin-top:-5px">
-                <div class="nav-link">
-                    <dev-console-widget iconColor="white" iconWidth="24px" iconHeight="24px"></dev-console-widget>
-                </div>
+            <nav class="social d-lg-block me-1">
+                <ul id="menu-social-menu" class="d-flex">
+                    <li class="nav-icon-social">
+                        <span class="cgds-line"></span>
+                    </li>
+                </ul>
+            </nav>
 
-            </li>
-            <li class="nav-item">
-                {% if site.lang == 'kh' %}
-                <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}/en{{page.url}}">EN</a>
-                {%else %}
-                <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}{{page.url}}">KH</a>
-                {% endif %}
-            </li>
-        </ul>
+            <ul class="navbar-nav">
+                {% for item in site.data.navigation %}
+                {%- assign class = nil -%}
+                {%- if page.url contains item.title -%}
+                {%- assign class = 'active' -%}
+                {%- endif -%}
+                {%- if item.title == "get-started" -%}
+                <li class="nav-item align-self-center">
+
+                    {% if site.lang == 'kh' %}
+                    <a class="cgds btn-gt {{class}}" aria-current="page"
+                        href="{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
+                    {%else %}
+                    <a class="cgds btn-gt {{class}}" aria-current="page"
+                        href="/en{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
+                    {% endif %}
+                    {%- else -%}
+                    {%- endif -%}
+                    {% endfor %}
+            </ul>
+
+            <div class="mobile-toggle d-flex align-items-center d-lg-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="px-4 px-md-5">
+        <div class="collapse navbar-collapse px-4 px-md-5" id="navbarNav">
+            <ul class="navbar-nav">
+                {% for item in site.data.navigation %}
+                {%- assign class = nil -%}
+                {%- if page.url contains item.title -%}
+                {%- assign class = 'active' -%}
+                {%- endif -%}
+
+                <li class="nav-item">
+                    {% if site.lang == 'kh' %}
+                    <a class="nav-link {{class}}" aria-current="page"
+                        href="{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
+                    {%else %}
+                    <a class="nav-link {{class}}" aria-current="page"
+                        href="/en{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </nav>
