@@ -9,7 +9,7 @@
         {% if page.ready == false %}
         {% assign class = 'text-danger' %}
         {% endif %}
-        {% if page.description contains 'description.' %}
+        {% if page.description contains 'descriptions.' %}
         <p class="header-component-description {{class}}">{% t page.description %}</p>
         {% else if page.description %}
         <p class="header-component-description {{class}}">{{page.description}}</p>
@@ -34,7 +34,7 @@
             <div>
                 <img src="{{site.baseurl}}/assets/img/component/storybook-icon.svg" alt=""> <a
                     href="{{site.react-storybook | append: page.react-link}}" target="_blank">View it on React
-                    Storybook</a>
+                Storybook</a>
             </div>
             {% endif %}
             {% if page.vue-link %}
