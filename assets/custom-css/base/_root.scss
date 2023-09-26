@@ -8,11 +8,12 @@ body,
 html {
     overflow-x: clip;
     width: 100%;
+    min-width: 575px;
 }
 
 body {
     position: relative;
-    padding-right: 0 !important
+    padding-right: 0 !important;
 }
 
 @import 'https://cdn.jsdelivr.net/npm/@govtechsg/sgds-masthead/dist/sgds-masthead/sgds-masthead.css';
