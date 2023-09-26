@@ -69,12 +69,3 @@ headers:
   customise-with-sass: Customise with SASS
   installation: Installation
   ui-kit: UI Kit
-descriptions:
-    accordion: A dropdown mechanism that allow users to either show or hide related content.
-    alert: Alerts provide short, timely, and relevant information for your users.
-    badge: Badges can be used to highlight important bits of information such as labels, notifications & status.
-    breadcrumb: Breadcrumbs help users to navigate and understand where they are on the current website or service.
-    button: Buttons communicate actions that users can take throughout your portal which can be used in places such as modals, forms and cards
-    card: Cards can be used for headers and footers, a wide variety of content, contain contextual background colors and images.
-    combo-box: This component is used when you require users to make one or more selections from a list
-    footer: The footer contains supporting information for your service at the bottom of your website.<br>All .gov.kh digital services shall contain a Global Footer Bar across all pages.<br>The Global Footer Bar should include the name of the digital service, contact information, a privacy statement and the terms of use.
