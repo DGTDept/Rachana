@@ -5,6 +5,7 @@ global:
   page: ខ្មែរ   ### Why cannot remove this point
   overview: ទិដ្ឋភាពទូទៅ
 navigation:
+  home: ទំព័រដើម
   about: អំពី
   components: សមាសភាគ
   templates: តម្រង់
