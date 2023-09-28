@@ -1,10 +1,5 @@
 @import '~bootstrap/scss/mixins/buttons';
 
-
-// $body-bg: #9b9b;
-// $body-color: #8585;
-
-
 //
 // Base styles
 //
@@ -24,12 +19,12 @@
     color: $color;
     @include gradient-bg($background);
     border-color: $border;
-    border-radius: 20px;
+    border-radius: 10px;
     @include box-shadow($btn-box-shadow);
 
     &:hover {
         color: $hover-color;
-        @include gradient-bg($hover-background);
+        @include gradient-bg($primary);
         border-color: $hover-border;
         text-decoration: none;
     }
@@ -37,7 +32,7 @@
     .btn-check:focus+&,
     &:focus {
         color: $hover-color;
-        @include gradient-bg($hover-background);
+        @include gradient-bg($primary );
         border-color: $hover-border;
 
 
@@ -94,7 +89,7 @@
     $active-color: color-contrast($active-background)) {
     color: $color;
     border-color: $color;
-    border-radius: 20px;
+    border-radius: 10px;
 
     &:hover {
         color: $color-hover;

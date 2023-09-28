@@ -22,7 +22,7 @@
     border: $btn-border-width solid transparent;
     @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
     @include transition($btn-transition);
-    border-radius: 20px;
+    border-radius: 10px;
 
     &:hover {
         color: $body-color;
