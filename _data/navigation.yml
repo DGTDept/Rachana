@@ -1,6 +1,6 @@
 # navigation data for navigation.html and off-canvas-menu.html
-- title: about
-  url: /about/
+- title: home
+  url: /
   has-collection: false
 - title: components
   url: /components/
@@ -11,10 +11,4 @@
 - title: templates
   url: /templates/
   has-collection: true
-- title: faqs
-  url: /faqs/ 
-  beta: true
-  has-collection: false
-- title: get-started
-  url: /get-started/
-  has-collection: true
+
