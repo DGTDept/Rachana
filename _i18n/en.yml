@@ -3,6 +3,10 @@ langs:
   kh: Khmer
 global:
   overview: Overview
+filters:
+  component: Filter Components
+  template: Filter Templates
+  pattern: Filter Patterns
 navigation:
   home: Home
   about: About
@@ -79,3 +83,4 @@ descriptions:
   card: Cards can be used for headers and footers, a wide variety of content, contain contextual background colors and images.
   combo-box: This component is used when you require users to make one or more selections from a list
   footer: The footer contains supporting information for your service at the bottom of your website.<br>All .gov.kh digital services shall contain a Global Footer Bar across all pages.<br>The Global Footer Bar should include the name of the digital service, contact information, a privacy statement and the terms of use.
+  component: Component reference is helpful for you to implement layouts, elements and components, using our CSS class and modifiers.<br />Each page provides you with comprehensive usage instructions, examples and guidelines.
