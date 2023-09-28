@@ -14,7 +14,6 @@
                     </li>
                 </ul>
             </nav>
-
             <div class="d-flex flag-icon text-center me-2">
                 {% if site.lang == 'kh' %}
                 <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}/en{{page.url}}"><img
@@ -26,7 +25,6 @@
                         alt="Home"></a>
                 {% endif %}
             </div>
-
             <nav class="social d-lg-block me-1">
                 <ul id="menu-social-menu" class="d-flex">
                     <li class="nav-icon-social">
@@ -34,28 +32,16 @@
                     </li>
                 </ul>
             </nav>
-
             <ul class="navbar-nav">
-                {% for item in site.data.navigation %}
                 {%- assign class = nil -%}
-                {%- if page.url contains item.title -%}
+                {%- if page.url contains 'get-started' -%}
                 {%- assign class = 'active' -%}
                 {%- endif -%}
-                {%- if item.title == "get-started" -%}
                 <li class="nav-item align-self-center">
-
-                    {% if site.lang == 'kh' %}
                     <a class="cgds btn-gt {{class}}" aria-current="page"
-                        href="{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
-                    {%else %}
-                    <a class="cgds btn-gt {{class}}" aria-current="page"
-                        href="/en{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
-                    {% endif %}
-                    {%- else -%}
-                    {%- endif -%}
-                    {% endfor %}
+                        href="/get-started/">{% t navigation.get-started %}</a>
+                </li>
             </ul>
-
             <div class="mobile-toggle d-flex align-items-center d-lg-none">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,10 +55,9 @@
             <ul class="navbar-nav">
                 {% for item in site.data.navigation %}
                 {%- assign class = nil -%}
-                {%- if page.url contains item.title -%}
+                {%- if page.url contains item.title or page.url == '/' and item.title == 'home' -%}
                 {%- assign class = 'active' -%}
                 {%- endif -%}
-
                 <li class="nav-item">
                     {% if site.lang == 'kh' %}
                     <a class="nav-link {{class}}" aria-current="page"

@@ -4,6 +4,7 @@ langs:
 global:
   overview: Overview
 navigation:
+  home: Home
   about: About
   components: Components
   templates: Templates
