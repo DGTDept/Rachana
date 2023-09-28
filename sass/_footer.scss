@@ -30,6 +30,12 @@
                 padding: $footer-top-padding;
                 background-color: $footer-top-bg-color;
 
+                .logo-container {
+                    @include media-breakpoint-down(lg) {
+                        width: 100%;
+                    }
+                }
+
                 .widget {
                     display: flex;
                     justify-content: center;
