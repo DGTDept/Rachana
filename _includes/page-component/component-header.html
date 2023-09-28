@@ -1,7 +1,6 @@
 {% include breadcrumb.html %}
 <!-- Section Component header -->
 <section name="section-component-header">
-
     {% assign pageHeader = page.title | downcase %}
     <header class="header-component">
         <h1 class="fw-bold" id="{{pageHeader}}-component">{% t page.title %}</h1>
@@ -9,14 +8,15 @@
         {% if page.ready == false %}
         {% assign class = 'text-danger' %}
         {% endif %}
+        
         {% if page.description contains 'descriptions.' %}
         <p class="header-component-description {{class}}">{% t page.description %}</p>
         {% else if page.description %}
         <p class="header-component-description {{class}}">{{page.description}}</p>
         {% endif %}
+
         {% if page.source-grid %}
         <div class="component-source-grid">
-
             {% if page.category == 'mandatory' %}
             <div><span class="cgds badge badge-light bg-danger">{{page.category | capitalize}}</span></div>
             {% elsif page.category == 'required' %}
@@ -27,16 +27,11 @@
 
             {% if page.github-link %}
             <div>
-                <i class="bi bi-github"></i> <a href="{{site.github-link}}" target="_blank">View it on Github</a>
+                <img src="{{site.baseurl}}/assets/img/component/gitlab-logo-500.svg" alt="" width="32" height="32"> <a
+                    href="{{site.github-link}}" target="_blank">View it on Gitlab</a>
             </div>
             {% endif %}
-            {% if page.react-link %}
-            <div>
-                <img src="{{site.baseurl}}/assets/img/component/storybook-icon.svg" alt=""> <a
-                    href="{{site.react-storybook | append: page.react-link}}" target="_blank">View it on React
-                Storybook</a>
-            </div>
-            {% endif %}
+
             {% if page.vue-link %}
             <div>
                 <img src="{{site.baseurl}}/assets/img/component/storybook-icon.svg" alt=""> <a

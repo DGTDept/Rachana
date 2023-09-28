@@ -20,7 +20,7 @@
                 aria-expanded="false"
                 aria-controls="collapse-{{include.compName}}"
             >
-                See Code
+                {% t global.see-code %}
             </button>
         </h2>
         <div
@@ -30,7 +30,7 @@
             data-bs-parent="#example-{{include.compName}}"
         >
             <div class="accordion-body accordion-body-codesnippet">
-                <button class="cgds btn btn-outline-light btn-sm btn-copy">Copy</button>
+                <button class="cgds btn btn-outline-light btn-sm btn-copy">{% t global.copy %}</button>
                 {%- highlight html -%} {% if include.code-react %}
                 {{include.code-react}} {% elsif include.code %} {{include.code}}
                 {% endif %} {%- endhighlight -%}
