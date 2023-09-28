@@ -31,22 +31,18 @@ layout: layout-default
                 {% endif %}
                 {% endfor %}
             </ul>
-
         </nav>
     </aside>
     <article>
         {{content}}
     </article>
 
-
     {% if page.overview == null %}
     <aside class="toc-container" aria-label="Table of Content">
-
         <div class="toc-wrapper">
-            <div class="h4">On this page</div>
+            <div class="h4">{% t sidebar.on-this-page %}</div>
             {% toc %}
         </div>
-
     </aside>
     {% endif %}
 </section>

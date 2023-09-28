@@ -2,12 +2,14 @@ langs:
   en: English
   kh: Khmer
 global:
-  page: ខ្មែរ   ### Why cannot remove this point
+  page: ខ្មែរ  
   overview: ទិដ្ឋភាពទូទៅ
+  see-code: មើលកូដ
+  copy: ចម្លង
 filters:
   component: ស្វែងរក សមាសភាគ
   template: ស្វែងរក តម្រង់
-  pattern: ស្វែងរក ផាធន់
+  pattern: ស្វែងរក ផាធន
 navigation:
   home: ទំព័រដើម
   about: អំពី
@@ -16,6 +18,8 @@ navigation:
   patterns: ផាធន
   faqs: សំនួរ
   get-started: ការចាប់ផ្តើម
+sidebar:
+  on-this-page: មាតិកា​
 titles:
   about: អំពីយើង
   component: ទិដ្ឋភាពទូទៅនៃសមាសភាគ
