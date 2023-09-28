@@ -3,6 +3,8 @@ langs:
   kh: Khmer
 global:
   overview: Overview
+  see-code: See Code
+  copy: Copy
 filters:
   component: Filter Components
   template: Filter Templates
@@ -15,6 +17,8 @@ navigation:
   patterns: Patterns
   faqs: FAQs
   get-started: Get started
+sidebar:
+  on-this-page: On this page 
 titles:
   about: About
   component: Component Overview
