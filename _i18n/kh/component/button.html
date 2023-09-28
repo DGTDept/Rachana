@@ -42,22 +42,22 @@ $btn-active-border-tint-amount:   10% !default;
 {% endcapture %}
 
 {% capture button-variants %}
-<button type="button" class="btn btn-primary cgds">គោល</button>
-<button type="button" class="btn btn-secondary cgds">រង</button>
-<button type="button" class="btn btn-success cgds">ជោគជ័យ</button>
-<button type="button" class="btn btn-danger cgds">គ្រោះថ្នាក់</button>
-<button type="button" class="btn btn-warning cgds">ការព្រមាន</button>
-<button type="button" class="btn btn-info cgds">ព័ត៍មាន</button>
-<button type="button" class="btn btn-light cgds">ភ្លឺ</button>
-<button type="button" class="btn btn-dark cgds">ងងឹត</button>
-<button type="button" class="btn btn-outline-primary cgds">ស៊ុមគោល</button>
-<button type="button" class="btn btn-outline-secondary cgds">ស៊ុមរង</button>
-<button type="button" class="btn btn-outline-success cgds">ស៊ុមជោគជ័យ</button>
-<button type="button" class="btn btn-outline-warning cgds">ស៊ុមព្រមាន</button>
-<button type="button" class="btn btn-outline-danger cgds">ស៊ុមគ្រោះថ្នាក់</button>
-<button type="button" class="btn btn-outline-info cgds">ស៊ុមព័ត៍មាន</button>
-<button type="button" class="btn btn-outline-light cgds">ស៊ុមភ្លឺ</button>
-<button type="button" class="btn btn-outline-dark cgds">ស៊ុមងងឹត</button>
+<button type="button" class="btn btn-primary cgds">ប៊ូតុងគោល</button>
+<button type="button" class="btn btn-secondary cgds">ប៊ូតុងរង</button>
+<button type="button" class="btn btn-success cgds">ប៊ូតុងជោគជ័យ</button>
+<button type="button" class="btn btn-danger cgds">ប៊ូតុងគ្រោះថ្នាក់</button>
+<button type="button" class="btn btn-warning cgds">ប៊ូតុងការព្រមាន</button>
+<button type="button" class="btn btn-info cgds">ប៊ូតុងប្រាប់ព័ត៍មាន</button>
+<button type="button" class="btn btn-light cgds">ប៊ូតុងភ្លឺ</button>
+<button type="button" class="btn btn-dark cgds">ប៊ូតុងងងឹត</button>
+<button type="button" class="btn btn-outline-primary cgds">ប៊ូតុងគ្មានផ្ទៃគោល</button>
+<button type="button" class="btn btn-outline-secondary cgds">ប៊ូតុងគ្មានផ្ទៃរង</button>
+<button type="button" class="btn btn-outline-success cgds">ប៊ូតុងគ្មានផ្ទៃជោគជ័យ</button>
+<button type="button" class="btn btn-outline-warning cgds">ប៊ូតុងគ្មានផ្ទៃព្រមាន</button>
+<button type="button" class="btn btn-outline-danger cgds">ប៊ូតុងគ្មានផ្ទៃគ្រោះថ្នាក់</button>
+<button type="button" class="btn btn-outline-info cgds">ប៊ូតុងគ្មានផ្ទៃប្រាប់ព័ត៍មាន</button>
+<button type="button" class="btn btn-outline-light cgds">ប៊ូតុងគ្មានផ្ទៃភ្លឺ</button>
+<button type="button" class="btn btn-outline-dark cgds">ប៊ូតុងគ្មានផ្ទៃងងឹត</button>
 {% endcapture %}
 
 {% capture button-size %}
@@ -75,12 +75,12 @@ $btn-active-border-tint-amount:   10% !default;
 {% capture button-disable %}
 <button disabled type="button" class="btn btn-primary cgds">ប៊ូតុងគោល</button>
 <button disabled type="button" class="btn btn-secondary cgds">ប៊ូតុងរង</button>
-<button disabled type="button" class="btn btn-outline-dark cgds">ប៊ូតុងរៀងជាស៊ុម</button>
+<button disabled type="button" class="btn btn-outline-dark cgds">ប៊ូតុងគ្មានផ្ទៃ</button>
 {% endcapture %}
 
 {% capture button-icon %}
-<button type="button" class="btn btn-primary cgds"><i class="bi bi-arrow-90deg-left"></i>ប៊ូតុងមានសញ្ញា</button>
-<button type="button" class="btn btn-primary btn-sm cgds"><i class="bi bi-arrow-90deg-left"></i>ប៊ូតុងមានសញ្ញា</button>
+<button type="button" class="btn btn-primary cgds"><i class="bi bi-arrow-90deg-left"></i>ប៊ូតុងធំមានសញ្ញា</button>
+<button type="button" class="btn btn-primary btn-sm cgds"><i class="bi bi-arrow-90deg-left"></i>ប៊ូតុងតូចមានសញ្ញា</button>
 {% endcapture %}
 
 <div class="page-component">
@@ -231,7 +231,7 @@ $btn-active-border-tint-amount:   10% !default;
     </section>
 
 <section name="section-design-tokens">
-    <h2 class="title fw-bold" id="design-tokens">Design tokens របស់{% t headers.button %}</h2>
+    <h2 class="title fw-bold" id="design-tokens">ខ្នាតសម្រាប់រចនារបស់ {% t headers.button %}</h2>
     {%- highlight sass -%}{{button-design-tokens}}{%- endhighlight -%}
 </section>
 
