@@ -1,0 +1,125 @@
+{% capture stepper-examples %}
+<div class="cgds stepper">
+    <div class="stepper-item is-completed">
+        <div class="stepper-marker">1</div>
+        <div class="stepper-detail">
+            <p><b>ឈ្មោះជំហាន</b></p>
+        </div>
+    </div>
+    <div class="stepper-item is-active">
+        <div class="stepper-marker">2</div>
+        <div class="stepper-detail">
+            <p><b>ឈ្មោះជំហាន</b></p>
+        </div>
+    </div>
+    <div class="stepper-item">
+        <div class="stepper-marker">3</div>
+        <div class="stepper-detail">
+            <p><b>ឈ្មោះជំហាន</b></p>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+
+{% capture stepper-design-tokens %}
+$steps-maker-default-color: $gray-400 !default;
+$steps-marker-default-border: .25rem solid $white !default;
+$steps-default-color: $gray-300 !default;
+$steps-completed-color: $primary !default;
+$steps-active-color: $primary !default;
+$steps-divider-height: .25rem !default;
+{% endcapture %}
+
+<!-- Page starts here -->
+<div class="page-component">
+
+    <!-- Generated header from front end matters -->
+    {% include page-component/component-header.html %}
+
+    <!-- Example Section -->
+    <section name="section-examples">
+        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+        <div class="section-sub">
+            {% include page-component/component-code-snippet.html compName="stepper-examples" code=stepper-examples %}
+        </div>
+    </section>
+
+    <!-- Anatomy Section -->
+    <section name="section-anatomy">
+        <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំរបស់{% t headers.stepper %}</h2>
+        <div class="section-sub">
+            <div class="cgds-example-image-container">
+                <div class="cgds-example-image-grid">
+                    <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/anatomy-stepper-1.svg" alt="Stepper Anatomy">
+                </div>
+            </div>
+            <ol>
+                <li>
+                    <b>លេខលំដាប់របស់ជំហាន៖</b> បង្ហាញពីលំដាប់លំដោយរបស់ដំណើរការ។
+                </li>
+                <li>
+                    <b>ឈ្មោះជំហាន៖</b> ប្រាប់អ្នកប្រើប្រាប់ពីគៅលបំណងរបស់ជំហាននីមួយៗ។
+                </li>
+                <li>
+                    <b>របាចង្អុលបង្ហាញ៖</b> របានេះតម្រៀបជំហានរបស់ដំណើរការតាមលំដាប់លំដោយ។
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Spacing Section -->
+    <section name="section-spacing">
+        <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+        <div class="section-sub">
+            <div class="cgds-example-image-container">
+                <div class="cgds-example-image-grid">
+                    <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-stepper-1.svg" alt="Stepper Spacing">
+                </div>
+            </div>
+            <p><b>នៅក្នុង{% t headers.stepper %}</b><br>
+                រក្សាគម្លាតយ៉ាងតិច 32px នៅលើអ័ក្សដេកចន្លោះជំហាននីមួយៗ។<br>
+                រក្សាគម្លាតយ៉ាងតិច 4px នៅលើអ័ក្សឈរចន្លោះរូបលេខលំដាប់របស់ជំហាន និងឈ្មោះជំហាន។</p>
+        </div>
+    </section>
+
+    <!-- Usage guidelines Section -->
+    <section name="section-usage-guidelines">
+        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+        <p class="fw-bold mb-0">{% t headers.stepper %}គួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+        <ul>
+            <li>មានជំហានច្រើននៅក្នុងទម្រង់បែបបទមួយ។</li>
+        </ul>
+        <p class="fw-bold mb-0">{% t headers.stepper %}មិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+        <ul>
+            <li>
+                ប្រសិនបើទម្រង់បែបបទមួយមានជំហានតិចជាងបីជំហាន យើងមិនចាំបាច់ត្រូវប្រើ{% t headers.stepper %}នោះទេ។
+            </li>
+        </ul>
+    </section>
+
+    <!-- Usability guidelines Section -->
+    <section name="section-usability-guidelines">
+        <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
+        <p>
+            <b>ឈ្មោះជំហានត្រូវសរសេរឱ្យខ្លី ប៉ុន្តែច្បាស់</b><br>
+            ឈ្មោះជំហានត្រូវប្រាប់អ្នកប្រើប្រាស់ពីគោលបំណងរបស់ជំហាននីមួយៗឱ្យបានច្បាស់លាស់ដោយប្រើតែពាក្យមួយឬពីរតែប៉ុណ្ណោះ។
+        </p>
+        <p>
+            <b>តម្រៀបជំហានតាមលំដាប់លំដោយត្រឹមត្រូវ</b><br>
+            បង្ហាញឈ្មោះជំហាននីមួយៗតាមលំដាប់ និងពីឆ្វេងទៅស្តាំដើម្បីបង្ហាញប្រាប់អ្នកប្រើប្រាស់ថាពួកគាត់កំពុងនៅក្នុងដំណើរការមួយដែលមានច្រើនជំហាន។
+            អនុញ្ញាតឱ្យពួកគាត់ត្រឡប់ក្រោយបានដើម្បីអាចកែប្រែបាន។
+        </p>
+        <p>
+            <b>រំលេចជំហានដែលពួកគាត់ស្ថិតនៅក្នុង</b><br>
+            ដើម្បីឱ្យអ្នកប្រើប្រាស់ដឹងថាពួកគាត់ស្ថិតនៅក្នុងជំហានណាមួយនាពេលឥឡូវនេះ។
+            ធ្វើបែបនេះអាចផ្តល់ព័ត៍មានមួយចំនួនទៅកាន់អ្នកប្រើប្រាស់ដូចជា បង្ហាញថាតើនៅពេលនេះពួកគាត់កំពុងស្ថិតនៅជំហានកាលទីប៉ុន្មាន និងនៅសល់ប៉ុន្មានជំហានទៀតដែលពួកគាត់ត្រូវបំពេញ។
+            ប្រើសញ្ញាបង្ហាញដូចជាសញ្ញាគ្រីសដើម្បីបញ្ជាក់ថាជំហានមុនៗត្រូវបានបញ្ចប់រួចរាល់ហើយ។
+        </p>
+    </section>
+
+    <!-- Design token Section -->
+    <section name="section-design-tokens">
+        <h2 class="title fw-bold" id="design-tokens">ខ្នាតសម្រាប់រចនារបស់{% t headers.stepper %}</h2>
+        {%- highlight sass -%}{{stepper-design-tokens}}{%- endhighlight -%}
+    </section>
+</div>

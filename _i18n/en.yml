@@ -88,5 +88,6 @@ descriptions:
   combo-box: This component is used when you require users to make one or more selections from a list
   footer: The footer contains supporting information for your service at the bottom of your website.<br>All .gov.kh digital services shall contain a Global Footer Bar across all pages.<br>The Global Footer Bar should include the name of the digital service, contact information, a privacy statement and the terms of use.
   component: Component reference is helpful for you to implement layouts, elements and components, using our CSS class and modifiers.<br />Each page provides you with comprehensive usage instructions, examples and guidelines.
+  stepper: Used to inform users which step they are at in a form or a process
   checkbox: This component is used when you require users to select multiple items from a list.
   file-upload: Allows users to upload files of various sizes and formats.
