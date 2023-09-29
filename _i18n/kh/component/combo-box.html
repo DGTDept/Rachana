@@ -1,0 +1,121 @@
+{% capture default-combo-box %}
+<iframe
+    src="https://react.designsystem.tech.gov.sg/iframe.html?singleStory=true&args=&id=components-combobox--default-story&viewMode=story&full=1&shortcuts=false&singleStory=true"
+    width="100%" height="400" bgColor="transparent" title="ComboBox"></iframe>
+{% endcapture %}
+
+{% capture default-combo-box-code %}
+import {
+Combobox,
+ComboboxProps,
+} from '@govtechsg/sgds-react/Combobox';
+
+export const ComboboxComponent = () => {
+const menuList = ['apple', 'orange', 'banana'];
+return <Combobox menuList={menuList} id="typeaheadExample" icon={<i className="bi bi-search"></i> } />;
+    };
+    {% endcapture %}
+
+
+    <!-- Page starts here -->
+    <div class="page-component">
+        <!-- Generated header from front end matters -->
+        {% include page-component/component-header.html %}
+
+        <!-- Example Section -->
+        <section name="section-examples">
+            <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+            <div class="section-sub">
+                {% include page-component/component-code-snippet.html
+                compName="default-combo-box" compTitle="ប្រអប់ជម្រើសតាមលំនាំដើម"
+                code=default-combo-box code-react=default-combo-box-code %}
+            </div>
+        </section>
+
+        <!-- Anatomy Section -->
+        <section name="section-anatomy">
+            <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំរបស់ប្រអប់ជម្រើស</h2>
+            <div class="section-sub">
+                <div class="cgds-example-image-container">
+                    <div class="cgds-example-image-grid">
+                        <img src="{{site.baseurl}}/assets/img/component/combo-box/anatomy-combo-box-1.svg"
+                             alt="Combo Box Anatomy" />
+                    </div>
+                </div>
+                <ol>
+                    <li>
+                        <b>ប្រធានបទ៖</b>
+                        ប្រាប់អ្នកប្រើប្រាស់ឱ្យដឹងអំពីប្រភេទនៃទិន្នន័យដែលនៅក្នុងប្រអប់ជម្រើស។
+                        ប្រធានបទត្រូវតែនៅពីក្រៅប្រអប់។
+                    </li>
+                    <li>
+                        <b>ការណែនាំ៖</b>
+                        ប្រាប់អ្នកប្រើប្រាស់ឱ្យដឹងអំពីប្រភេទនៃទិន្នន័យដែលពួកគាត់ត្រូវបញ្ចូលទៅក្នុងប្រអប់ជម្រើស។
+                    </li>
+                    <li><b>ជម្រើស៖</b> ជម្រើសទាំងអស់ដែលអ្នកប្រើប្រាស់អាចជ្រើសរើសបាន។</li>
+                    <li>
+                        <b>សញ្ញាទម្លាក់ចុះ៖</b> ប្រអប់ជម្រើសត្រូវតែមានសញ្ញាព្រួញចុះក្រោមនៅចុងខាងស្តាំ
+                        ដែលចុចវាជម្រើសទាំងអស់នៅក្នុងប្រអប់នឹងត្រូវបង្ហាញនិងដាក់ឱ្យអ្នកប្រើប្រាស់ជ្រើសរើស។
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Spacing Section -->
+        <section name="section-spacing">
+            <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+            <div class="section-sub">
+                <div class="cgds-example-image-container">
+                    <div class="cgds-example-image-grid">
+                        <img src="{{site.baseurl}}/assets/img/component/combo-box/spacing-combo-box-1.svg"
+                             alt="Combo Box Spacing" />
+                    </div>
+                </div>
+                <h3 class="subtitle fw-bold" id="within-the-combo-box">
+                    នៅក្នុងប្រអប់ជម្រើស
+                </h3>
+                <p>
+                    ត្រូវរក្សាគម្លាតយ៉ាងតិច 8px នៅលើអ័ក្សឈរ និង 16px នៅចុងសងខាងនៃអ័ក្សដេករបស់ប្រអប់។
+
+                </p>
+            </div>
+        </section>
+
+        <!-- Usage guidelines Section -->
+        <section name="section-usage-guidelines">
+            <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+            <p class="fw-bold mb-0">ប្រអប់ជម្រើសគួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+            <ul>
+                <li>អ្នកផ្តល់ជម្រើសមួយក្រុមស្ថិតនៅក្នុងប្រធានបទដូចគ្នាឱ្យអ្នកប្រើប្រាស់ជ្រើសរើស។</li>
+                <li>
+                    អ្នកផ្តល់ជម្រើសជាច្រើនដល់អ្នកប្រើប្រាស់ ហើយមិនអាចមានកន្លែងដាក់បង្ហាញជម្រើសទាំងអស់នោះនៅក្នុងទំព័រ។
+                </li>
+            </ul>
+            <p class="fw-bold mb-0">ប្រអប់ជម្រើសមិនគួរត្រូវបានប្រើប្រាស់នៅពេល:</p>
+            <ul>
+                <li>
+                    ជម្រើសមានតែពីរគត់គឺ "បាទ/ចាស" និង "ទេ"។ ករណីនេះគួរប្រើ
+                    <a href="{{site.baseurl}}/components/radio-button/">ប៊ូតុងមូល</a> ជំនួសវិញ។
+                </li>
+            </ul>
+        </section>
+
+        <!-- Usability guidelines Section -->
+        <section name="section-usability-guidelines">
+            <h2 class="title fw-bold" id="usability-guidelines">
+                គោលការណ៍ណែនាំនៃការរចនា            </h2>
+            <p>
+                <b>ប្រធានបទត្រូវសរសេរឱ្យច្បាស់និងចំណុច</b><br/>
+                ដើម្បីឱ្យអ្នកប្រើប្រាស់ងាយយល់ពីហេតុផលនៃការជ្រើសរើស។
+            </p>
+            <p>
+                <b>ប្រធានបទត្រូវនៅពីក្រៅប្រអប់</b><br />
+                ប្រធានបទគួរតែនៅពីលើឬនៅជិតប្រអប់ ប៉ុន្តែមិនមែននៅក្នុងប្រអប់ទេ។
+            </p>
+            <p>
+                <b>ផ្តល់ជម្រើសទូទៅមួយបើសិនជាអាច</b><br />
+                ជម្រើសទូទៅអាចជាជម្រើសដូចជា "អ្វីក៏បាន"។ ម្យ៉ាងទៀតគួរអនុញ្ញាតឱ្យអ្នកប្រើប្រាស់មិនជ្រើសរើសអ្វីទាំងអស់បើសិនជាអាច។
+            </p>
+        </section>
+    </div>
+
