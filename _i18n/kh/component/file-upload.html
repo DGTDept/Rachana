@@ -1,0 +1,152 @@
+
+{% capture fileupload %}
+<form class="">
+  <button type="button" class="btn btn-primary cgds">
+    <label for="fileupload1">
+      <i class="bi bi-upload me-2"></i> ជ្រើសរើសឯកសារ </label>
+    <input multiple type="file" id="fileupload1" class="d-none form-control" />
+  </button>
+  <ul class="fileupload-list cgds">
+    <li class="fileupload-list-item">
+      <i class="bi bi-check-lg me-2 check-icon"></i>
+      <span class="filename">Screenshot 2022-04-11 at 5.56.25 PM.png</span>
+      <i class="bi bi-x-circle ms-2 x-circle-icon"></i>
+    </li>
+    <li class="fileupload-list-item">
+      <i class="bi bi-check-lg me-2 check-icon"></i>
+      <span class="filename">Screenshot 2022-04-29 at 2.53.40 PM.png</span>
+      <i class="bi bi-x-circle ms-2 x-circle-icon"></i>
+    </li>
+    <li class="fileupload-list-item">
+      <i class="bi bi-check-lg me-2 check-icon"></i>
+      <span class="filename">Screenshot 2022-04-29 at 5.12.56 PM.png</span>
+      <i class="bi bi-x-circle ms-2 x-circle-icon"></i>
+    </li>
+  </ul>
+</form>
+{% endcapture %}
+
+{% capture hint-text %}
+<form class="">
+  <button type="button" class="btn btn-primary cgds">
+    <label for="fileupload2">
+      <i class="bi bi-upload me-2"></i>
+      ជ្រើសរើសឯកសារ
+    </label>
+    <input multiple type="file" id="fileupload2" class="d-none form-control" />
+  </button>
+  <p>This is a hint text</p>
+  <ul class="fileupload-list cgds">
+    <li class="fileupload-list-item">
+      <i class="bi bi-check-lg me-2 check-icon"></i>
+      <span class="filename">Screenshot 2022-04-11 at 5.56.25 PM.png</span>
+      <i class="bi bi-x-circle ms-2 x-circle-icon"></i>
+    </li>
+    <li class="fileupload-list-item">
+      <i class="bi bi-check-lg me-2 check-icon"></i>
+      <span class="filename">Screenshot 2022-04-29 at 2.53.40 PM.png</span>
+      <i class="bi bi-x-circle ms-2 x-circle-icon"></i>
+    </li>
+    <li class="fileupload-list-item">
+      <i class="bi bi-check-lg me-2 check-icon"></i>
+      <span class="filename">Screenshot 2022-04-29 at 5.12.56 PM.png</span>
+      <i class="bi bi-x-circle ms-2 x-circle-icon"></i>
+    </li>
+  </ul>
+</form>
+{% endcapture %}
+
+<div class="page-component">
+  {% include page-component/component-header.html %}
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="លំនាំដើម"
+      compName="fileupload" code=fileupload %}
+    </div>
+    <!-- Add addtional section-sub for more variants -->
+  </section>
+
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img
+            src="{{site.baseurl}}/assets/img/component/fileupload/anatomy-fileupload-1.svg"
+            alt="File Upload Anatomy"
+          />
+        </div>
+      </div>
+      <ol>
+        <li>
+          <b>រូបតំណាង (ដាក់ក៏បានមិនដាក់ក៏បាន):</b> ដាក់រូបតំណាងបញ្ចូលឯកសារដើម្បីប្រាប់អ្នកប្រើប្រាស់ថាប៊ូតុងមួយនេះគឺសម្រាប់ការបញ្ចូលឯកសារ។
+        </li>
+        <li><b>ប៊ូតុង:</b> ត្រូវប្រើប៊ូតុងមួយសម្រាប់សមាសភាគបញ្ចូលឯកសារមួយ។</li>
+        <li>
+          <b>ឯកសារដែលបានបញ្ចូល:</b> សម្រាប់បង្ហាញឯកសារដែលបានបញ្ចូលដោយអ្នកប្រើប្រាស់។
+        </li>
+        <li>
+          <b>សញ្ញាគ្រីស និង​ សញ្ញាខ្វែង:</b> សញ្ញាគ្រីសបង្ហាញថាអ្នកប្រើប្រាស់បានបញ្ចូលឯកសារដោយជោគជ័យ
+            ហើយសញ្ញាខ្វែងផ្តល់ជម្រើសឱ្យអ្នកប្រើប្រាស់ដកឯកសារណាមួយចេញទៅវិញក្នុងករណីចាំបាច់។
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img
+            class="img-fluid"
+            src="{{site.baseurl}}/assets/img/component/fileupload/spacing-fileupload-1.svg"
+            alt="File Upload Spacing"
+          />
+        </div>
+      </div>
+      <p><b>នៅក្នុងសមាសភាគបញ្ចូលឯកសារ</b><br>
+        ត្រូវរក្សាគម្លាតយ៉ាងតិច 16px នៅលើអ័ក្សឈរក្នុងចន្លោះរវាងប៊ូតុង និងសេចក្តីណែនាំ និងឯកសារដែលបានបញ្ចូល។
+          រក្សាគម្លាតយ៉ាងតិច 8px នៅចន្លោះ ឯកសារដែលបានបញ្ចូលនីមួយៗ។
+      </p>
+    </div>
+  </section>
+
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+    <p class="fw-bold mb-0">សមាសភាគបញ្ចូលឯកសារគួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ol>
+      <li>
+        ពេលអ្នកតម្រូវអ្នកប្រើប្រាស់ឱ្យបញ្ចូលនូវឯកសារចាំបាច់។ ឧទាហរណ៍ លិខិតបញ្ជាក់អត្តសញ្ញាណ។
+      </li>
+    </ol>
+    <p class="fw-bold mb-0">សមាសភាគបញ្ចូលឯកសារមិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ol>
+      <li>ពេលឯកសារនោះមិនចាំបាច់។</li>
+      <li>ពេលអ្នកតម្រូវអ្នកប្រើប្រាស់ឱ្យបញ្ចូលនូវឯកសារមានទំហំធំខ្លាំង។</li>
+    </ol>
+  </section>
+
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">
+        គោលការណ៍ណែនាំនៃការរចនា    </h2>
+    <p>
+      <b>បញ្ជាក់ពីប្រភេទនៃឯកសារដែលត្រូវបញ្ចូល</b><br/>
+      ធ្វើបែបនេះដើម្បីចៀសវាងកុំឱ្យអ្នកប្រើប្រាស់បញ្ចូលនូវឯកសារខុសប្រភេទដែលនាំឱ្យមានបញ្ហា។
+    </p>
+    <p>
+      <b>បញ្ជាក់ពីទំហំធំបំផុតដែលអាចបញ្ចូលនៃឯកសារ</b><br/>
+        ធ្វើបែបនេះដើម្បីចៀសវាងកុំឱ្យអ្នកប្រើប្រាស់បញ្ចូលនូវឯកសារធំហួសកម្រិតដែលនាំឱ្យមានបញ្ហា។
+    </p>
+    <p>
+      <b>មានសេចក្តីណែនាំច្បាស់លាស់</b><br/>
+        ធ្វើបែបនេះដើម្បីឱ្យអ្នកប្រើប្រាស់ដឹងថាតើអ្នកចង់បានឯកសារអ្វីពីអ្នកប្រើប្រាស់។
+    </p>
+  </section>
+</div>
+
