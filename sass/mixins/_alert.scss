@@ -1,1 +1,11 @@
 @import '~bootstrap/scss/mixins/alert';
+
+.alert-dismissible-link {
+    flex-shrink: 0;
+    justify-content: space-between;
+
+    .btn-close {
+        padding: ($modal-header-padding-y * .5) ($modal-header-padding-x * 1);
+        margin: ($modal-header-padding-y * -.5) ($modal-header-padding-x * -.5) ($modal-header-padding-y * -.5) auto;
+    }
+}
