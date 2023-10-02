@@ -89,4 +89,6 @@ descriptions:
   footer: The footer contains supporting information for your service at the bottom of your website.<br>All .gov.kh digital services shall contain a Global Footer Bar across all pages.<br>The Global Footer Bar should include the name of the digital service, contact information, a privacy statement and the terms of use.
   component: Component reference is helpful for you to implement layouts, elements and components, using our CSS class and modifiers.<br />Each page provides you with comprehensive usage instructions, examples and guidelines.
   checkbox: This component is used when you require users to select multiple items from a list.
+  side-navigation: The side navigation is used to display a list of links to move between pages within a related category. It is used as a secondary form of navigation where the primary navigation is located hierachically above the page frame.
+  checkbox: This component is used when you require users to select multiple items from a list.
   file-upload: Allows users to upload files of various sizes and formats.
