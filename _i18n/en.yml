@@ -90,4 +90,6 @@ descriptions:
   component: Component reference is helpful for you to implement layouts, elements and components, using our CSS class and modifiers.<br />Each page provides you with comprehensive usage instructions, examples and guidelines.
   stepper: Used to inform users which step they are at in a form or a process
   checkbox: This component is used when you require users to select multiple items from a list.
+  side-navigation: The side navigation is used to display a list of links to move between pages within a related category. It is used as a secondary form of navigation where the primary navigation is located hierachically above the page frame.
+  checkbox: This component is used when you require users to select multiple items from a list.
   file-upload: Allows users to upload files of various sizes and formats.
