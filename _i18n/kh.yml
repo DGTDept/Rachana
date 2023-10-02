@@ -12,11 +12,11 @@ filters:
   pattern: ស្វែងរក ផាធន
 navigation:
   home: ទំព័រដើម
-  about: អំពី
+  about: អំពីយើង
   components: សមាសភាគ
-  templates: តម្រង់
+  templates: ទម្រង់គំរូ
   patterns: ផាធន
-  faqs: សំនួរ
+  faqs: សំណួរ
   get-started: ការចាប់ផ្តើម
 sidebar:
   on-this-page: មាតិកា​
@@ -24,10 +24,10 @@ titles:
   about: អំពីយើង
   component: ទិដ្ឋភាពទូទៅនៃសមាសភាគ
   get-start: ការចាប់ផ្តើម
-  pattern: ផាធន់
-  template: តម្រង់
-  faqs: សំនួរ
-  home: ផ្ទះ
+  pattern: ផាធន
+  template: ទម្រង់គំរូ
+  faqs: សំណួរ
+  home: ទំព័រដើម
   privacy-statement: សេចក្តីថ្លែងការណ៍ឯកជនភាពរបស់ទីភ្នាក់ងាររដ្ឋាភិបាល
   product-sites: បញ្ជីគេហទំព័រផលិតផល
   terms-of-use: លក្ខខណ្ឌនៃការប្រើប្រាស់
