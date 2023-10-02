@@ -611,8 +611,8 @@ $border-color: $gray-400 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius: .3125rem !default;
-$border-radius-sm: 0.938rem !default;
+$border-radius: 0.4rem !default;
+$border-radius-sm: 0.6rem !default;
 $border-radius-lg: 1.25rem !default;
 $border-radius-pill: 50rem !default;
 // scss-docs-end border-radius-variables
@@ -1592,7 +1592,7 @@ $modal-content-color: null !default;
 $modal-content-bg: $white !default;
 $modal-content-border-color: $border-color !default;
 $modal-content-border-width: $border-width !default;
-$modal-content-border-radius: $border-radius-lg !default;
+$modal-content-border-radius: $border-radius !default;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
 $modal-content-box-shadow-xs: $box-shadow-sm !default;
 $modal-content-box-shadow-sm-up: $box-shadow !default;
