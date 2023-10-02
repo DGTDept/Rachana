@@ -4,7 +4,7 @@
     
     $alert-background: map-get($map: $value , $key: #{$state}-100);
     $alert-border: map-get($map: $value , $key: #{$state}-400);
-    $alert-color: $gray-600;
+    $alert-color: map-get($map: $value , $key: #{$state}-500);
 
     .alert-#{$state} {
       @include alert-variant($alert-background, $alert-border, $alert-color);
