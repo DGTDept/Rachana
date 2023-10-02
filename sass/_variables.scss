@@ -505,10 +505,10 @@ $utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg") !defau
 //
 // Style anchor elements.
 
-$link-color: $secondary !default;
+$link-color: $gray-600 !default;
 $link-decoration: none !default;
 $link-shade-percentage: 20% !default;
-$link-hover-color: $highlight !default;
+$link-hover-color: $primary !default;
 $link-hover-decoration: null !default;
 
 $stretched-link-pseudo-element: after !default;
@@ -1680,7 +1680,7 @@ $breadcrumb-item-padding-x: .5rem !default;
 $breadcrumb-margin-bottom: 1rem !default;
 $breadcrumb-bg: null !default;
 $breadcrumb-divider-color: $gray-600 !default;
-$breadcrumb-active-color: $highlight !default;
+$breadcrumb-active-color: $gray-600 !default;
 $breadcrumb-divider: quote(">") !default;
 $breadcrumb-divider-flipped: $breadcrumb-divider !default;
 $breadcrumb-border-radius: null !default;
