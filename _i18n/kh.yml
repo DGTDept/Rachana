@@ -1,6 +1,6 @@
 langs:
-    en: English
-    kh: Khmer
+  en: English
+  kh: Khmer
 global:
   page: ខ្មែរ
   overview: ទិដ្ឋភាពទូទៅ
@@ -19,7 +19,7 @@ navigation:
   faqs: សំណួរ
   get-started: ការចាប់ផ្តើម
 sidebar:
-    on-this-page: មាតិកា​
+  on-this-page: មាតិកា​
 titles:
   about: អំពីយើង
   component: ទិដ្ឋភាពទូទៅនៃសមាសភាគ
