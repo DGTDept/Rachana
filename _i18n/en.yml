@@ -90,6 +90,7 @@ descriptions:
   component: Component reference is helpful for you to implement layouts, elements, and components, using our CSS class and modifiers. Each page provides you with comprehensive usage instructions, examples, and guidelines.
   file-upload: Allows users to upload files of various sizes and formats.
   footer: The footer contains supporting information for your service at the bottom of your website. All .gov.kh digital services shall contain a Global Footer Bar across all pages. The Global Footer Bar should include the name of the digital service, contact information, a privacy statement, and the terms of use.
+  radio-button: Radio buttons allow the user to select one option from a set while seeing all available options.
   side-navigation: The side navigation is used to display a list of links to move between pages within a related category. It is used as a secondary form of navigation where the primary navigation is located hierarchically above the page frame.
   stepper: Used to inform users which step they are at in a form or a process.
   table: The use of a table is to organize a collection of data into readable rows.
