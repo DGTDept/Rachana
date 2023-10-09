@@ -1,10 +1,18 @@
 @import '~bootstrap/scss/root';
-:root{
+
+:root {
     --cgds-gutter-x: 1.5rem;
 
     // custom variables for section helper class _section.scss
 
-    @include media-breakpoint-up(lg) { 
+    body,
+    html {
+        overflow-x: clip;
+        width: 100%;
+        min-width: 575px;
+    }
+
+    @include media-breakpoint-up(lg) {
         --section-padding: 3rem 1.5rem;
         --section-padding-xs: 1rem 1.5rem;
         --section-padding-sm: 1.5rem 1.5rem;
