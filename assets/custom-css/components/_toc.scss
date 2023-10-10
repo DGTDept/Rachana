@@ -1,14 +1,24 @@
-.toc-wrapper{
+.toc-wrapper {
     @extend %aside-sticky;
-    a{
-        text-decoration: none;
+
+    a {
+        text-decoration: $link-hover-decoration;
+        color: $primary;
+
+        &:hover {
+            color: $highlight;
+            text-decoration: $link-hover-decoration;
+        }
+
     }
-    .toc{
+
+    .toc {
         padding-left: 1rem;
         list-style-type: none;
         border-left: 1px solid var(--cgds-gray-300);
         font-size: 0.875rem;
-        ul{
+
+        ul {
             list-style-type: none;
             padding-left: 1rem;
         }
