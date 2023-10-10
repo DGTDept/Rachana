@@ -16,6 +16,11 @@
         padding-right: 0.5rem;
     }
 
+    a {
+        color: $primary;
+        text-decoration: $link-decoration;
+    }
+
     // The separator between breadcrumbs (by default, a forward-slash: ">")
     +.breadcrumb-item {
         padding-left: $breadcrumb-item-padding-x;
