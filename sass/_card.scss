@@ -1,9 +1,24 @@
 @import "~bootstrap/scss/card";
 
 .cgds {
+    .card {
+        &-title {
+            font-weight: bold;
+        }
+
+        &-link {
+            color: $primary;
+
+            &:hover {
+              color: $highlight;
+            }
+        }
+    }
+
     &.card {
         a:not(.btn) {
             font-weight: $font-weight-bold;
+
             i {
                 vertical-align: middle;
                 padding-right: $spacer * .25;

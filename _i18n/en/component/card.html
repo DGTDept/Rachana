@@ -1,7 +1,7 @@
 {% capture base-card %}
 <div class="card cgds">
     <img class="card-img-top" alt="img alternate text goes here"
-        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
+        src="{{site.baseurl}}/assets/img/component/card/image-in-card.svg">
     <div class="card-body">
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         <h3 class="card-title">Card Title</h3>
@@ -19,7 +19,7 @@
 {% capture card-with-cta %}
 <div class="cgds-example-card-grid">
     <div class="card cgds"><img class="card-img-top" alt="img alternate text goes here"
-            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
+            src="{{site.baseurl}}/assets/img/component/card/image-in-card.svg">
         <div class="card-body">
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             <h3 class="card-title" href="#">Card Title</h3>
@@ -33,7 +33,7 @@
     </div>
     <div class="card cgds">
         <img class="card-img-top" alt="img alternate text goes here"
-            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
+            src="{{site.baseurl}}/assets/img/component/card/image-in-card.svg">
         <div class="card-body"><a class="card-link" href="#">
                 <h3 class="card-title">Card Title</h3>
             </a>
@@ -47,7 +47,7 @@
 {% capture informational-card %}
 <div class="card cgds">
     <img class="card-img-top" alt="img alternate text goes here"
-        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
+        src="{{site.baseurl}}/assets/img/component/card/image-in-card.svg">
     <div class="card-body">
         <h3 class="card-title">Card Title</h3>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -77,7 +77,7 @@
 
 {% capture stretched-link-card %}
 <div class="card cgds"><img class="card-img-top" alt="img alternate text goes here"
-        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
+        src="{{site.baseurl}}/assets/img/component/card/image-in-card.svg">
     <div class="card-body"><a class="card-link stretched-link" href="#">
             <h3 class="card-title">Card Title</h3>
         </a>
@@ -92,7 +92,7 @@
     <div class="card-group">
         <div class="card cgds">
             <img class="card-img-top" alt="img alternate text goes here"
-                src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
+                src="{{site.baseurl}}/assets/img/component/card/image-in-card.svg">
             <div class="card-body">
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 <h3 class="card-title">Card Title</h3>
@@ -108,7 +108,7 @@
         </div>
         <div class="card cgds">
             <img class="card-img-top" alt="img alternate text goes here"
-                src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
+                src="{{site.baseurl}}/assets/img/component/card/image-in-card.svg">
             <div class="card-body">
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 <h3 class="card-title">Card Title</h3>
@@ -239,14 +239,6 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
                     code=base-card 
                 %}
         </div>
-        <!-- <div class="section-sub">
-            {% 
-                    include page-component/component-code-snippet.html 
-                    compTitle="Card with image" 
-                    compName="card-with-image" 
-                    code=card-with-image 
-                %}
-        </div> -->
         <div class="section-sub">
             {% 
                     include page-component/component-code-snippet.html 
