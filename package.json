@@ -1,13 +1,16 @@
 {
-  "name": "@dgc/cgds",
-  "version": "2.1.1",
+  "name": "@cgds/cgds",
+  "version": "1.0.0",
   "description": "Design System unites Cambodia Government digital services around a common visual language and user experience",
   "repository": {
     "type": "git",
     "url": "https://git.anakotlab.com/cgds/cgds.git"
   },
+  "publishConfig": {
+    "@cgds:registry": "https://git.anakotlab.com/api/v4/projects/88/packages/npm/"
+  },
   "license": "MIT",
-  "author": "Tey Liang Tai",
+  "author": "DGC",
   "main": "css/cgds.css",
   "files": [
     "sass",
