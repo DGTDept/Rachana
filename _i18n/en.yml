@@ -101,3 +101,4 @@ descriptions:
   tooltip: Tooltips display more information when users hover over, focus on, or interact with an element.
   main-navigation: This component is the primary means that your users will use to navigate through your portal. It includes horizontal navigation and branding to identify your site.
   pagination: The pagination component is used to display a list of page numbers for your users, so that they can navigate to the next or previous page.
+  quantity-toggle: The quantity toggle component is used to increase or decrease an incremental venue, usually best used when the user needs to enter or adjust the quantity of a selected item.
