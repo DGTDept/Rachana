@@ -625,7 +625,7 @@ $box-shadow-inset: inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 
 $component-active-color: $white !default;
-$component-active-bg: $cyan-600 !default;
+$component-active-bg: $blue-500 !default;
 
 // scss-docs-start caret-variables
 $caret-width: .3em !default;
@@ -1364,7 +1364,7 @@ $pagination-padding-x-sm: .5rem !default;
 $pagination-padding-y-lg: .75rem !default;
 $pagination-padding-x-lg: 1.5rem !default;
 
-$pagination-color: $cyan !default;
+$pagination-color: $primary !default;
 $pagination-bg: $white !default;
 $pagination-border-width: $border-width !default;
 $pagination-border-radius: $border-radius !default;
