@@ -1,5 +1,3 @@
-
-
 {% capture quantity-toggle-left-disabled %}
 <div class="cgds input-group" variant="quantity-toggle">
     <button type="button" class="btn btn-primary btn-sm cgds" disabled><i class="bi bi-dash"></i></button>
@@ -18,7 +16,7 @@
 
 {% capture quantity-toggle-left-right-disabled %}
 <div class="cgds input-group" variant="quantity-toggle">
-    <button type="button" class="btn btn-primary btn-sm cgds" disabled" disabled><i class="bi bi-dash"></i></button>
+    <button type="button" class="btn btn-primary btn-sm cgds" disabled><i class="bi bi-dash"></i></button>
     <input id="quantityLeftRightDisabled" type="number" class="form-control text-center" value="2" disabled>
     <button type="button" class="btn btn-primary btn-sm cgds" disabled><i class="bi bi-plus"></i></button>
 </div>
@@ -34,7 +32,7 @@
 
 <!-- Page starts here -->
 <div class="page-component">
-        
+
         <!-- Generated header from front end matters -->
         {% include page-component/component-header.html %}
 
@@ -84,8 +82,8 @@
                         <img src="{{site.baseurl}}/assets/img/component/quantity-toggle/spacing-quantity-toggle-1.svg" alt="Quantity Toggle Spacing">
                     </div>
                 </div>
-                <p><b>Within the quantity toggle</b><br>
-                    Ensure that there is at least 16px of horizontal spacing withi the quantity toggle.</p>
+                <p><b>Within the {% t headers.quantity-toggle %}</b><br>
+                    Ensure that there is at least 16px of vertical spacing within the quantity toggle.</p>
             </div>
         </section>
 
@@ -106,7 +104,7 @@
         <section name="section-usability-guidelines">
             <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
             <p>
-                <b>Ensure that a default value is shown within the field.</b><br>
+                <b>Ensure that a default or current value is shown within the field.</b><br>
                 List the current value of the input so that user is able to know how much the value should increase/decrease upon clicking on up/down button.
             </p>
             <p>
