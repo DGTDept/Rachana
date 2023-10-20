@@ -1,24 +1,20 @@
 @import "~bootstrap/scss/alert";
 
-@each $state, $value in $theme-colors-set {
-    
-    $alert-background: map-get($map: $value , $key: #{$state}-100);
-    $alert-border: map-get($map: $value , $key: #{$state}-400);
-    $alert-color: map-get($map: $value , $key: #{$state}-500);
+@each $state,
+$value in $theme-colors-set {
+    $alert-background: map-get($map: $value, $key: #{$state}-100);
+    $alert-border: map-get($map: $value, $key: #{$state}-500);
+    $alert-color: $gray-600;
 
     .alert-#{$state} {
-      @include alert-variant($alert-background, $alert-border, $alert-color);
+        @include alert-variant($alert-background, $alert-border, $alert-color);
 
-      i{
-        color: map-get($map: $value , $key: #{$state}-600)
-      }
-    }
-  }
+        i:not(.primary) {
+            color: map-get($map: $value, $key: #{$state}-600);
+        }
 
-.cgds{
-  &.alert{
-    > i{
-      @extend .align-self-start;
+        i {
+            color: map-get($map: $value, $key: #{$state}-500);
+        }
     }
-  }
 }
