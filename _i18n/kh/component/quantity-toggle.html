@@ -1,5 +1,3 @@
-
-
 {% capture quantity-toggle-left-disabled %}
 <div class="cgds input-group" variant="quantity-toggle">
     <button type="button" class="btn btn-primary btn-sm cgds" disabled><i class="bi bi-dash"></i></button>
@@ -34,7 +32,7 @@
 
 <!-- Page starts here -->
 <div class="page-component">
-        
+
         <!-- Generated header from front end matters -->
         {% include page-component/component-header.html %}
 
@@ -51,13 +49,13 @@
                 {% include page-component/component-code-snippet.html compTitle="សងខាងមិនដំណើរការ" compName="quantity-toggle-left-right-disabled" code=quantity-toggle-left-right-disabled %}
             </div>
             <div class="section-sub">
-                {% include page-component/component-code-snippet.html compTitle="បានបើកដំណើរការ" compName="quantity-toggle-enabled" code=quantity-toggle-enabled %}
+                {% include page-component/component-code-snippet.html compTitle="បើកដំណើរការទាំងសងខាង" compName="quantity-toggle-enabled" code=quantity-toggle-enabled %}
             </div>
         </section>
 
         <!-- Anatomy Section -->
         <section name="section-anatomy">
-            <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
+            <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំរបស់{% t headers.quantity-toggle %}</h2>
             <div class="section-sub">
                 <div class="cgds-example-image-container">
                     <div class="cgds-example-image-grid">
@@ -66,10 +64,10 @@
                 </div>
                 <ol>
                     <li>
-                        <b>Quantity field:</b> Informs the user what the current value is.
+                        <b>បរិមាណ៖</b> បង្ហាញអ្នកប្រើប្រាស់ពីចំនួននា​ពេល​បច្ចុប្បន្ន។
                     </li>
                     <li>
-                        <b>Button:</b> Allows users to increase or decrease a value.
+                        <b>ប៊ូតុង៖</b> អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់ចុចបន្ថែម ឬបន្ថយចំនួន។
                     </li>
                 </ol>
             </div>
@@ -77,41 +75,41 @@
 
         <!-- Spacing Section -->
         <section name="section-spacing">
-            <h2 class="title fw-bold" id="spacing">Spacing</h2>
+            <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
             <div class="section-sub">
                 <div class="cgds-example-image-container">
                     <div class="cgds-example-image-grid">
                         <img src="{{site.baseurl}}/assets/img/component/quantity-toggle/spacing-quantity-toggle-1.svg" alt="Quantity Toggle Spacing">
                     </div>
                 </div>
-                <p><b>Within the quantity toggle</b><br>
-                    Ensure that there is at least 16px of horizontal spacing withi the quantity toggle.</p>
+                <p><b>នៅក្នុង{% t headers.quantity-toggle %}</b><br>
+                    រក្សាគម្លាតយ៉ាងតិច 16px នៅ​លើអ័ក្សឈរនៃគែមរបស់ប៊ូតុង។</p>
             </div>
         </section>
 
         <!-- Usage guidelines Section -->
         <section name="section-usage-guidelines">
-            <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
-            <p class="fw-bold mb-0">Quantity toggle should be used:</p>
+            <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+            <p class="fw-bold mb-0">{% t headers.quantity-toggle %}គួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
             <ul>
-                <li>When the numeric field needs to be adjusted by a small amount that can be done with only a few clicks.</li>
+                <li>ពេលបរិមាណត្រូវការបន្ថែម ឬបន្ថយចំនួនបន្តិចបន្តួច។</li>
             </ul>
-            <p class="fw-bold mb-0">Quantity toggle should not be used:</p>
+            <p class="fw-bold mb-0">{% t headers.quantity-toggle %}មិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
             <ul>
-                <li>The numeric field can take a large range of values.</li>
+                <li>ពេលបរិមាណត្រូវការបន្ថែម ឬបន្ថយចំនួនច្រើន។</li>
             </ul>
         </section>
 
         <!-- Usability guidelines Section -->
         <section name="section-usability-guidelines">
-            <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
+            <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
             <p>
-                <b>Ensure that a default value is shown within the field.</b><br>
-                List the current value of the input so that user is able to know how much the value should increase/decrease upon clicking on up/down button.
+                <b>បង្ហាញអ្នកប្រើប្រាស់ពីចំនួនចាប់ផ្តើមនិងចំនួនបច្ចុប្បន្ន</b><br>
+                ដាក់បង្ហាញចំនួនដែលអ្នកប្រើប្រាស់បានបញ្ចូល ដើម្បីពួកគាត់ងាយដឹងថាគាត់ត្រូវចុចប៊ូតុងបន្ថែម ឬបន្ថយប៉ុន្មានដងទៀតដើម្បីកំណត់បានចំនួនដែលពួកគាត់ចង់បាន។
             </p>
             <p>
-                <b>Enable the user to also choose to type a number in the field.</b><br>
-                User may prefer to type the value instead of clicking on the buttons, so such options should remain enabled.
+                <b>អនុញ្ញាតឱ្យពួកគាត់អាចចុចបញ្ចូលលេខចំនួនដោយផ្ទាល់ដៃបាន</b><br>
+                អ្នកប្រើប្រាស់អាចចង់ចុចបញ្ចូលលេខចំនួនដោយផ្ទាល់ដៃដោយផ្ទាល់ដៃតាមរយៈក្តារចុចរបស់គាត់ជាជាងការចុចប៊ូតុង ដូច្នេះគួរផ្តល់ជម្រើសនេះឱ្យពួកគាត់។
             </p>
         </section>
 </div>
