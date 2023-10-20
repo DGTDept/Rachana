@@ -98,5 +98,6 @@ descriptions:
   text-area: Text areas allow for the collection of input longer than a single line.
   text-input: Text inputs allow your users to enter letters, numbers, and symbols on a single line.
   toast: A toast notification is a lightweight popup message that appears temporarily over the main interface to provide brief feedback, notifications, or error message to the user.
-  tooltip: Tooltips display more information when users hover over, focus on, or interact with an element. 
+  tooltip: Tooltips display more information when users hover over, focus on, or interact with an element.
   main-navigation: This component is the primary means that your users will use to navigate through your portal. It includes horizontal navigation and branding to identify your site.
+  pagination: The pagination component is used to display a list of page numbers for your users, so that they can navigate to the next or previous page.

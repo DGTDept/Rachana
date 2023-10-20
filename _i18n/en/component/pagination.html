@@ -1,11 +1,7 @@
 {% capture with-texts-arrows %}
 <nav aria-label="Page navigation example">
     <ul class="pagination">
-        <li class="page-item">
-            <a class="page-link" href="#"
-                ><i class="bi bi-chevron-left"></i>Previous</a
-            >
-        </li>
+        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i>Previous</a></li>
         <li class="page-item active"><a class="page-link" href="#">1</a></li>
         <li class="page-item"><a class="page-link" href="#">2</a></li>
         <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -13,11 +9,7 @@
         <li class="page-item"><a class="page-link" href="#">5</a></li>
         <li class="page-item"><a class="page-link" href="#">...</a></li>
         <li class="page-item"><a class="page-link" href="#">12</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#"
-                >Next<i class="bi bi-chevron-right"></i
-            ></a>
-        </li>
+        <li class="page-item"><a class="page-link" href="#">Next<i class="bi bi-chevron-right"></i></a></li>
     </ul>
 </nav>
 {% endcapture %} {% capture with-texts %}
@@ -37,9 +29,7 @@
 {% endcapture %} {% capture with-arrows %}
 <nav aria-label="Page navigation example">
     <ul class="pagination">
-        <li class="page-item">
-            <a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a>
-        </li>
+        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
         <li class="page-item active"><a class="page-link" href="#">1</a></li>
         <li class="page-item"><a class="page-link" href="#">2</a></li>
         <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -47,11 +37,7 @@
         <li class="page-item"><a class="page-link" href="#">5</a></li>
         <li class="page-item"><a class="page-link" href="#">...</a></li>
         <li class="page-item"><a class="page-link" href="#">12</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#"
-                ><i class="bi bi-chevron-right"></i
-            ></a>
-        </li>
+        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
     </ul>
 </nav>
 {% endcapture %} {% capture pagination-design-tokens %} $pagination-padding-y:
@@ -137,10 +123,7 @@ $pagination-border-radius-lg: $border-radius-lg !default; {% endcapture %}
         <div class="section-sub">
             <div class="cgds-example-image-container">
                 <div class="cgds-example-image-grid">
-                    <img
-                        src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-pagination-1.svg"
-                        alt="Pagination Spacing"
-                    />
+                    <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-pagination-1.svg" alt="Pagination Spacing"/>
                 </div>
             </div>
             <p>
@@ -170,7 +153,7 @@ $pagination-border-radius-lg: $border-radius-lg !default; {% endcapture %}
             </li>
             <li>
                 The content is not part of the same set, consider using
-                <a href="{{site.baseurl}}/components/navigation/">navigation</a>
+                <a href="​​">navigation</a>
                 instead.
             </li>
             <li>Switching between slides or content in a carousel.</li>
@@ -183,20 +166,17 @@ $pagination-border-radius-lg: $border-radius-lg !default; {% endcapture %}
             Usability guidelines
         </h2>
         <p>
-            <b
-                >Show the total number of pages in the pagination set whenever
-                possible</b
-            ><br />
+            <b>Show the total number of pages in the pagination set whenever possible</b><br>
             Users should know the total number of pages or items. Truncation can
             be used when the number of pages exceeds the pagination display
             limit.
         </p>
         <p>
-            <b>Highlight the current page</b><br />
+            <b>Highlight the current page</b><br/>
             Pagination should highlight the page the user is currently on.
         </p>
         <p>
-            <b>Place pagination at the bottom of the set of results</b><br />
+            <b>Place pagination at the bottom of the set of results</b><br/>
             Do place pagination at the bottom of page so that users are able to
             navigate between pages.
         </p>

@@ -1,11 +1,7 @@
 {% capture with-texts-arrows %}
 <nav aria-label="Page navigation example">
     <ul class="pagination">
-        <li class="page-item">
-            <a class="page-link" href="#"
-                ><i class="bi bi-chevron-left"></i>ថយក្រោយ</a
-            >
-        </li>
+        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i>ថយក្រោយ</a></li>
         <li class="page-item active"><a class="page-link" href="#">១</a></li>
         <li class="page-item"><a class="page-link" href="#">២</a></li>
         <li class="page-item"><a class="page-link" href="#">៣</a></li>
@@ -13,11 +9,7 @@
         <li class="page-item"><a class="page-link" href="#">៥</a></li>
         <li class="page-item"><a class="page-link" href="#">...</a></li>
         <li class="page-item"><a class="page-link" href="#">១២</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#"
-                >បន្ទាប់<i class="bi bi-chevron-right"></i
-            ></a>
-        </li>
+        <li class="page-item"><a class="page-link" href="#">បន្ទាប់<i class="bi bi-chevron-right"></i></a></li>
     </ul>
 </nav>
 {% endcapture %} {% capture with-texts %}
@@ -37,9 +29,7 @@
 {% endcapture %} {% capture with-arrows %}
 <nav aria-label="Page navigation example">
     <ul class="pagination">
-        <li class="page-item">
-            <a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a>
-        </li>
+        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
         <li class="page-item active"><a class="page-link" href="#">១</a></li>
         <li class="page-item"><a class="page-link" href="#">២</a></li>
         <li class="page-item"><a class="page-link" href="#">៣</a></li>
@@ -47,11 +37,7 @@
         <li class="page-item"><a class="page-link" href="#">៥</a></li>
         <li class="page-item"><a class="page-link" href="#">...</a></li>
         <li class="page-item"><a class="page-link" href="#">១២</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#"
-                ><i class="bi bi-chevron-right"></i
-            ></a>
-        </li>
+        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
     </ul>
 </nav>
 {% endcapture %} {% capture pagination-design-tokens %} $pagination-padding-y:
@@ -87,45 +73,38 @@ $pagination-border-radius-lg: $border-radius-lg !default; {% endcapture %}
         <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
         <div class="section-sub">
             {% include page-component/component-code-snippet.html
-            compTitle="អក្សរនិងសញ្ញាព្រួញ" compName="with-texts-arrows"
+            compTitle="ភ្ជាប់ជាមួយអក្សរនិងសញ្ញា" compName="with-texts-arrows"
             code=with-texts-arrows %}
         </div>
         <div class="section-sub">
             {% include page-component/component-code-snippet.html
-            compTitle="ចំពោះតែអក្សរ" compName="with-texts" code=with-texts %}
+            compTitle="ភ្ជាប់ជាមួយអក្សរ" compName="with-texts" code=with-texts %}
         </div>
         <div class="section-sub">
             {% include page-component/component-code-snippet.html
-            compTitle="ចំពោះតែសញ្ញាព្រួញ" compName="with-arrows"
+            compTitle="ភ្ជាប់ជាមួយសញ្ញាព្រួញ" compName="with-arrows"
             code=with-arrows %}
         </div>
     </section>
 
     <!-- Anatomy Section -->
     <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
+        <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំរបស់ការរៀបចំទំព័រ</h2>
         <div class="section-sub">
             <div class="cgds-example-image-container">
                 <div class="cgds-example-image-grid">
-                    <img
-                        src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/anatomy-pagination-1.svg"
-                        alt="Pagination Anatomy"
-                    />
+                    <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/anatomy-pagination-1.svg" alt="Pagination Anatomy"/>
                 </div>
             </div>
             <ol>
                 <li>
-                    <b>Previous and next buttons:</b> Allows users to go
-                    backward or forward a page, can be text or icon, can be used
-                    individually depending on situation and space constraints.
+                    <b>ប៊ូតុងថយក្រោយ និង បន្ទាប់៖</b> អនុញ្ញាត​ឱ្យ​អ្នក​ប្រើប្រាស់​ថយ​ក្រោយ ឬ​បញ្ជូន​បន្ត​ទំព័រ​មួយ, អាច​ជា​អក្សរឬរូប​តំណាង, អាចប្រើតែមួយប្រសិនបើគ្មានកន្លែងគ្រប់គ្រាន់។
                 </li>
                 <li>
-                    <b>Numbering:</b> Allow users to skip to different pages
-                    anytime.
+                    <b>លេខរៀង៖</b> អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់រំលងទៅទំព័រផ្សេងៗបានគ្រប់ពេល។
                 </li>
                 <li>
-                    <b>Truncation:</b> When a threshold of pages is reached, the
-                    list is truncated using an ellipsis.
+                    <b>ការកាត់ចេញ៖</b> នៅពេលឈានដល់កម្រិតនៃទំព័រ បញ្ជីត្រូវបានកាត់បន្ថយដោយប្រើសញ្ញាចុច៣។
                 </li>
             </ol>
         </div>
@@ -133,72 +112,58 @@ $pagination-border-radius-lg: $border-radius-lg !default; {% endcapture %}
 
     <!-- Spacing Section -->
     <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">Spacing</h2>
+        <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
         <div class="section-sub">
             <div class="cgds-example-image-container">
                 <div class="cgds-example-image-grid">
-                    <img
-                        src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-pagination-1.svg"
-                        alt="Pagination Spacing"
-                    />
+                    <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-pagination-1.svg"​ alt="Pagination Spacing"/>
                 </div>
             </div>
             <p>
-                <b>Within the pagination</b><br />
-                Ensure that there is a min of 8px vertical spacing and 16px
-                horizontal spacing. Base height 48px.
+                <b>នៅខាងក្នុងទំព័រ</b><br />
+                ត្រូវប្រាកដថាមានគម្លាតបញ្ឈរ 8px និងគម្លាតផ្ដេក 16px។ កម្ពស់មូលដ្ឋាន 48px ។
             </p>
         </div>
     </section>
 
     <!-- Usage guidelines Section -->
     <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
-        <p class="fw-bold mb-0">Pagination should be used when:</p>
+        <h2 class="title fw-bold" id="usage-guidelines">ការណែនាំអំពីការប្រើប្រាស់</h2>
+        <p class="fw-bold mb-0">ការរៀបចំទំព័រ គួរតែត្រូវបានប្រើនៅពេលដែល៖</p>
         <ol>
             <li>
-                Long content can be separated into multiple pages that can be
-                navigated sequentially or by selecting a specific page within
-                the pagination set.
+                ខ្លឹមសារវែងអាចត្រូវបានបំបែកទៅជាទំព័រជាច្រើនដែលអាចស្វែងរកតាមលំដាប់លំដោយ ឬដោយជ្រើសរើសទំព័រជាក់លាក់មួយនៅក្នុងសំណុំទំព័រ។
             </li>
         </ol>
-        <p class="fw-bold mb-0">Pagination should not be used when:</p>
+        <p class="fw-bold mb-0">ការរៀបចំទំព័រ មិនគួរតែត្រូវបានប្រើនៅពេលដែល៖</p>
         <ol>
             <li>
-                The page has infinite scrolling, i.e. loading data as the user
-                scrolls down the page.
+                ទំព័រមាន Scrolling មិនអាចកំណត់បាន ពោលគឺការផ្ទុកទិន្នន័យ នៅពេលដែលអ្នកប្រើប្រាស់ Scroll ចុះក្រោមទំព័រ។
             </li>
             <li>
-                The content is not part of the same set, consider using
-                <a href="{{site.baseurl}}/components/navigation/">navigation</a>
-                instead.
+                ខ្លឹមសារមិនមែនជាផ្នែកនៃសំណុំតែមួយ,​ពិចារណាប្រើ
+                <a href="">របារខាងលើ</a>ជំនួសវិញ។
             </li>
-            <li>Switching between slides or content in a carousel.</li>
+            <li>ការផ្លាស់ប្តូររវាងបទបង្ហាញ ឬខ្លឹមសារនៅក្នុងរង្វិលជុំទំព័រតែមួយ។</li>
         </ol>
     </section>
 
     <!-- Usability guidelines Section -->
     <section name="section-usability-guidelines">
         <h2 class="title fw-bold" id="usability-guidelines">
-            Usability guidelines
+            គោលការណ៍ណែនាំនៃការប្រើប្រាស់
         </h2>
         <p>
-            <b
-                >Show the total number of pages in the pagination set whenever
-                possible</b
-            ><br />
-            Users should know the total number of pages or items. Truncation can
-            be used when the number of pages exceeds the pagination display
-            limit.
+            <b>បង្ហាញ​ចំនួន​ទំព័រ​សរុប​ក្នុង​ការ​កំណត់​ទំព័រ​គ្រប់​ពេល​ដែល​អាច​ធ្វើ​ទៅ​បាន។ </b><br>
+            អ្នកប្រើប្រាស់គួរតែដឹងពីចំនួនទំព័រ ឬធាតុសរុប។ ការកាត់ចេញអាចត្រូវបានប្រើនៅពេលដែលចំនួនទំព័រលើសពីដែនកំណត់បង្ហាញទំព័រ។
         </p>
         <p>
-            <b>Highlight the current page</b><br />
-            Pagination should highlight the page the user is currently on.
+            <b>លើកឡើងពីទំព័រថ្មីៗ</b><br />
+            ការរៀបចំទំព័រ​ គួរតែលើកឡើងពីទំព័រដែលអ្នកប្រើប្រាស់កំពុងបើក។
         </p>
         <p>
-            <b>Place pagination at the bottom of the set of results</b><br />
-            Do place pagination at the bottom of page so that users are able to
-            navigate between pages.
+            <b>ដាក់លេខនៃការរៀបចំទំព័រនៅខាងក្រោមនៃសំណុំលទ្ធផល</b><br/>
+            ដាក់ការរៀបចំទំព័រនៅផ្នែកខាងក្រោមនៃទំព័រ ដើម្បីឱ្យអ្នកប្រើប្រាស់អាចស្វែងរករវាងទំព័រនីមួយៗបាន។
         </p>
     </section>
 
