@@ -1,24 +1,25 @@
 # For Jekyll SEO
 title: Cambodia Government Design System
-description: >-
+description-en: >-
   The Cambodia Government Design System was developed to empower teams in creating fast, accessible and mobile-friendly digital services.
-logo: /assets/img/logo_sgds.png
-url: https://www.designsystem.tech.gov.sg
+description-kh: >-
+  ប្រព័ន្ធរចនារបស់រដ្ឋាភិបាលកម្ពុជា បង្កើតឡើងដើម្បីជាជំនួយដល់ក្រុមការងារឌីជីថលរដ្ឋាភិបាលកម្ពុជាអោយមានភាពឆាប់រហ័សក្នុងការបង្កើតថ្មី ងាយស្រួលប្រើប្រាស់ នឹងងាយស្រួលសម្គាល់ជាប្រព័ន្ធឌីជីថលរដ្ឋាភិបាលកម្ពុជា។
+logo: /assets/img/logo_dgc_rectangle.svg
+url: http://www.ds.anakotlab.com/
   
 # Site data
-sgds-version: 2.1.0
-sgds-package-name: >- 
-  @govtechsg/sgds
+cgds-version: 1.0.0
+cgds-package-name: >- 
+  @cgds/cgds
 bootstrap-version: 5.1.3
-request-component: "https://form.gov.sg/6136ea11658bea0012fc9e80"
+
 search_placeholder: "What are you looking for?"
-sreact-storybook: https://react.designsystem.tech.gov.sg
+
 
 #github links
-github-link: https://git.anakotlab.com/cgds/cgds.git
-github-sgds-variables: https://github.com/GovTechSG/sgds/blob/v2/sass/sgds-theme/_variables.scss
-github-changelog: https://github.com/GovTechSG/sgds/blob/v2/CHANGELOG.md
-github-release-note: https://github.com/GovTechSG/sgds/releases
+gitlab-link: https://git.anakotlab.com/cgds/cgds.git
+gitlab-cgds-variables: https://git.anakotlab.com/cgds/cgds/-/blob/dev/sass/_variables.scss
+gitlab-changelog: https://git.anakotlab.com/cgds/cgds/-/blob/dev/CHANGELOG.md
 
 #footer links
 report-vulnerability: "https://form.gov.kh/651cea27dc95760012665cbc"
@@ -30,12 +31,11 @@ telegram-link: https://t.me/digitalgovernmentcommittee
 tiktok-link: https://www.tiktok.com/@dg.committee
 linkedin-link: https://www.linkedin.com/company/dgcgovkh/
 location: https://www.google.com/maps/place/Ministry+of+Post+and+Telecommunications/@11.5752631,104.9148119,17z/data=!3m1!4b1!4m6!3m5!1s0x31095142eadcf8db:0xbd4e32a5eccddfb7!8m2!3d11.5752631!4d104.9173868!16s%2Fg%2F1yfdrw680?entry=ttu
-contact-us: "https://form.gov.sg/forms/govtech/5bc440ac507956000fdbae91"
-feedback-form: "https://form.gov.sg/#!/forms/govtech/5bd12c6668dbe7000fff9ace"
+feedback-form: "https://form.gov.kh/"
 bootstrap-version: 5.1.3
 
 #offcanvas link
-npm-link: https://www.npmjs.com/package/@govtechsg/sgds
+npm-link: https://www.npmjs.com/package/@cgds/cgds
 
 plugins:
   - jekyll-seo-tag
@@ -141,7 +141,7 @@ toc:
     
 jekyll_get_json: 
   - data: npm-data-prev-ver
-    json: 'https://registry.npmjs.org/-/v1/search?text=@govtechsg/sgds'
+    json: 'https://registry.npmjs.org/-/v1/search?text=@cgds/cgds'
 
 languages: ['kh', 'en']
 exclude_from_localizations: ['javascript', 'images', 'css', 'html']
