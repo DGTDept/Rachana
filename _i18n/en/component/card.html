@@ -232,53 +232,53 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
     <section name="section-examples">
         <h2 class="title fw-bold" id="example">Example</h2>
         <div class="section-sub">
-            {% 
-                    include page-component/component-code-snippet.html 
-                    compTitle="Base card" 
-                    compName="base-card" 
-                    code=base-card 
+            {%
+                    include page-component/component-code-snippet.html
+                    compTitle="Base card"
+                    compName="base-card"
+                    code=base-card
                 %}
         </div>
         <div class="section-sub">
-            {% 
-                    include page-component/component-code-snippet.html 
-                    compTitle="Card with Call To Action (CTA)" 
-                    compName="card-with-cta" 
-                    code=card-with-cta 
+            {%
+                    include page-component/component-code-snippet.html
+                    compTitle="Card with Call To Action (CTA)"
+                    compName="card-with-cta"
+                    code=card-with-cta
                 %}
         </div>
         <div class="section-sub">
-            {% 
-                    include page-component/component-code-snippet.html 
-                    compTitle="Informational card" 
-                    compName="informational-card" 
-                    code=informational-card 
+            {%
+                    include page-component/component-code-snippet.html
+                    compTitle="Informational card"
+                    compName="informational-card"
+                    code=informational-card
                 %}
         </div>
         <div class="section-sub">
-            {% 
-                    include page-component/component-code-snippet.html 
-                    compTitle="Customise card sub-components' HTML Elements" 
-                    compName="customise-card" 
-                    code=customise-card 
-                %}
-        </div>
-
-        <div class="section-sub">
-            {% 
-                    include page-component/component-code-snippet.html 
-                    compTitle="Stretched link" 
-                    compName="stretched-link-card" 
-                    code=stretched-link-card 
+            {%
+                    include page-component/component-code-snippet.html
+                    compTitle="Customise card sub-components' HTML Elements"
+                    compName="customise-card"
+                    code=customise-card
                 %}
         </div>
 
         <div class="section-sub">
-            {% 
-                    include page-component/component-code-snippet.html 
-                    compTitle="Card group" 
-                    compName="card-group" 
-                    code=card-group 
+            {%
+                    include page-component/component-code-snippet.html
+                    compTitle="Stretched link"
+                    compName="stretched-link-card"
+                    code=stretched-link-card
+                %}
+        </div>
+
+        <div class="section-sub">
+            {%
+                    include page-component/component-code-snippet.html
+                    compTitle="Card group"
+                    compName="card-group"
+                    code=card-group
                 %}
         </div>
 
@@ -306,6 +306,9 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
                     <b>Image (situational):</b> Gives context to the user as to what the card is about.
                 </li>
                 <li>
+                    <b>Timestamp :</b> Informs users about the freshness and credibility of the content presented in that card.
+                </li>
+                <li>
                     <b>Title:</b> Serves to let the user know exactly what the card is about, ideal to keep this short
                     and
                     to the point.
@@ -314,11 +317,10 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
                     <b>Description:</b> Serves to give users information on the card.
                 </li>
                 <li>
-                    <b>CTA (situational):</b> When you need users to take a action, this can be omitted if the card is
+                    <b>CTA (situational):</b> When you need users to take an action, this can be omitted if the card is
                     meant
-                    to display only information. Text link can be replaced by a button if needed if the situation calls
-                    for
-                    it.
+                    to display only information.
+                    Text link can be replaced by a button if needed and if the situation calls for it.
                 </li>
 
             </ol>
@@ -353,14 +355,14 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
                         alt="">
                 </div>
             </div>
-            <p>Used mainly for situations with subscriptions or when you require users to select a amount for a given
+            <p>Used mainly for situations with subscriptions or when you require users to select an amount for a given
                 item.
-                This allows users to select a item and decide on the quantity they want.</p>
+                This allows users to select an item and decide on the quantity they want.</p>
             <ol>
                 <li>
                     <b>Quantity toggle:</b> Allows users to select the amount they require.
                 <li>
-                    <b>Price (situational):</b> Displays the amount of a single item. Can be used to show total based on
+                    <b>Price :</b> Displays the amount of a single item. Can be used to show total based on
                     amount selected. Pricing can be omitted if you do not require it.
                 </li>
             </ol>
@@ -381,7 +383,7 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
             </div>
         </div>
         <p><b>Within the default</b><br />
-            Ensure that there is a min 24px spacing inside of the card and 16px vertical spacing between content.</p>
+            Ensure that there is a min 24px spacing inside the card and 10px vertical spacing between content.</p>
     </section>
 
     <section name="section-spacing">
@@ -395,7 +397,7 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
             </div>
         </div>
         <p><b>Within the action card</b><br />
-            Ensure that there is a min 24px spacing inside of the card and 16px vertical spacing between content. </p>
+            Ensure that there is a min 24px spacing inside the card and 16px vertical spacing between content. </p>
     </section>
 
     <section name="section-spacing">
@@ -409,7 +411,7 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
             </div>
         </div>
         <p><b>Within the action card with quantity toggle</b><br />
-            Ensure that there is a min 24px spacing inside of the card and 16px vertical spacing between content. </p>
+            Ensure that there is a min 24px spacing inside the card and 16px vertical spacing between content. </p>
     </section>
 
     <!-- Usage guidelines Section -->
@@ -422,7 +424,7 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
         </ol>
         <p class="fw-bold mb-0">Cards should not be used:</p>
         <ol>
-            <li>When you need to inform user about important changes. Use Alerts component instead.</li>
+            <li>When you need to inform user about important changes. Use an alert component instead.</li>
             <li>If the information contained within the card is not related.</li>
 
 
@@ -439,7 +441,7 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
             possible.</p>
         <p>
             <b>Use consistent elements when cards are arranged in a group</b><br>
-            For groups of cards, ensure the components used are consistent from card to card. Eg. Use the same height
+            For groups of cards, ensure the components used are consistent from card to card. E.g., Use the same height
             and width for each card on the page.</p>
         <p>
             <b>Card content should be summarised and easy to digest</b><br>
@@ -452,6 +454,5 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
         <h2 class="title fw-bold" id="design-tokens">{% t headers.card %} design tokens</h2>
         {%- highlight sass -%}{{card-design-tokens}}{%- endhighlight -%}
     </section>
-
 
 </div>
