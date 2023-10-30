@@ -31,7 +31,7 @@ capture modal-default %}
             <button type="button" class="btn-close" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            Woohoo, you're reading this text in a modal!
+            you're reading this text in a modal!
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-outline-dark cgds">
@@ -43,46 +43,28 @@ capture modal-default %}
         </div>
     </div>
 </div>
-{% endcapture %} {% capture modal-default-demo %}
+{% endcapture %}
+
+{% capture modal-default-demo %}
 <!-- Button trigger modal -->
-<button
-    type="button"
-    class="btn btn-primary cgds"
-    data-bs-toggle="modal"
-    data-bs-target="#exampleModal"
->
+<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Launch default modal
 </button>
 
 <!-- Modal -->
-<div
-    class="modal fade"
-    id="exampleModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title" id="exampleModalLabel">
-                    <i class="bi bi-exclamation-circle left me-2"></i>Modal
-                    title
+                    <i class="bi bi-exclamation-circle left me-2"></i>Modal title
                 </h3>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
             </div>
             <div class="modal-body">This is a modal</div>
             <div class="modal-footer">
-                <button
-                    type="button"
-                    class="btn btn-outline-dark cgds"
-                    data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-dark cgds" data-bs-dismiss="modal">
                     Close
                 </button>
                 <button type="button" class="btn btn-primary cgds">
@@ -92,41 +74,22 @@ capture modal-default %}
         </div>
     </div>
 </div>
-{% endcapture %} {% capture size-demo %}
+{% endcapture %}
+
+{% capture size-demo %}
 <!-- Button trigger modal -->
-<button
-    type="button"
-    class="btn btn-primary cgds"
-    data-bs-toggle="modal"
-    data-bs-target="#exampleModalSmall"
->
+<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalSmall">
     Launch small modal
 </button>
-<button
-    type="button"
-    class="btn btn-primary cgds"
-    data-bs-toggle="modal"
-    data-bs-target="#exampleModalMedium"
->
+<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalMedium">
     Launch large modal
 </button>
-<button
-    type="button"
-    class="btn btn-primary cgds"
-    data-bs-toggle="modal"
-    data-bs-target="#exampleModalLarge"
->
+<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalLarge">
     Launch Extra large modal
 </button>
 
 <!-- Modal -->
-<div
-    class="modal fade"
-    id="exampleModalSmall"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
->
+<div class="modal fade" id="exampleModalSmall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
@@ -134,20 +97,12 @@ capture modal-default %}
                     <i class="bi bi-exclamation-circle left me-2"></i>Modal
                     title
                 </h3>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
             </div>
             <div class="modal-body">This is a modal</div>
             <div class="modal-footer">
-                <button
-                    type="button"
-                    class="btn btn-outline-dark cgds"
-                    data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-dark cgds" data-bs-dismiss="modal">
                     Close
                 </button>
                 <button type="button" class="btn btn-primary cgds">
@@ -158,34 +113,19 @@ capture modal-default %}
     </div>
 </div>
 
-<div
-    class="modal fade"
-    id="exampleModalMedium"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
->
+<div class="modal fade" id="exampleModalMedium" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title" id="exampleModalLabel">
-                    <i class="bi bi-exclamation-circle left me-2"></i>Modal
-                    title
+                    <i class="bi bi-exclamation-circle left me-2"></i>Modal title
                 </h3>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
             </div>
             <div class="modal-body">This is a modal</div>
             <div class="modal-footer">
-                <button
-                    type="button"
-                    class="btn btn-outline-dark cgds"
-                    data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-dark cgds" data-bs-dismiss="modal">
                     Close
                 </button>
                 <button type="button" class="btn btn-primary cgds">
@@ -196,34 +136,18 @@ capture modal-default %}
     </div>
 </div>
 
-<div
-    class="modal fade"
-    id="exampleModalLarge"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
->
+<div class="modal fade" id="exampleModalLarge" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title" id="exampleModalLabel">
-                    <i class="bi bi-exclamation-circle left me-2"></i>Modal
-                    title
+                    <i class="bi bi-exclamation-circle left me-2"></i>Modal title
                 </h3>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">This is a modal</div>
             <div class="modal-footer">
-                <button
-                    type="button"
-                    class="btn btn-outline-dark cgds"
-                    data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-dark cgds" data-bs-dismiss="modal">
                     Close
                 </button>
                 <button type="button" class="btn btn-primary cgds">
@@ -233,38 +157,25 @@ capture modal-default %}
         </div>
     </div>
 </div>
-{% endcapture %} {% capture scrollable-demo %}
+{% endcapture %}
+
+{% capture scrollable-demo %}
 <!-- Button trigger modal -->
-<button
-    type="button"
-    class="btn btn-primary"
-    data-bs-toggle="modal"
-    data-bs-target="#exampleModalScrollable"
->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
     Launch scrollable modal
 </button>
 
 <!-- Modal -->
-<div
-    class="modal fade"
-    id="exampleModalScrollable"
-    tabindex="-1"
-    aria-labelledby="exampleModalScrollableTitle"
-    aria-modal="true"
->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableTitle"
+    aria-modal="true">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title" id="exampleModalScrollableTitle">
-                    <i class="bi bi-exclamation-circle left me-2"></i>Modal
-                    title
+                    <i class="bi bi-exclamation-circle left me-2"></i>Modal title
                 </h3>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
             </div>
             <div class="modal-body">
                 <p>
@@ -323,11 +234,7 @@ capture modal-default %}
                 </p>
             </div>
             <div class="modal-footer">
-                <button
-                    type="button"
-                    class="btn btn-outline-dark cgds"
-                    data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-dark cgds" data-bs-dismiss="modal">
                     Close
                 </button>
                 <button type="button" class="btn btn-primary">
@@ -337,46 +244,29 @@ capture modal-default %}
         </div>
     </div>
 </div>
-{% endcapture %} {% capture fullscreen-demo %}
+{% endcapture %}
+
+{% capture fullscreen-demo %}
 <!-- Button trigger modal -->
-<button
-    type="button"
-    class="btn btn-primary cgds"
-    data-bs-toggle="modal"
-    data-bs-target="#exampleModalFullscreen"
->
+<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
     Full screen
 </button>
 
 <!-- Modal -->
-<div
-    class="modal fade"
-    id="exampleModalFullscreen"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
->
+<div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title" id="exampleModalLabel">
-                    <i class="bi bi-exclamation-circle left me-2"></i>Modal
-                    title
+                    <i class="bi bi-exclamation-circle left me-2"></i>Modal title
                 </h3>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
             </div>
             <div class="modal-body">This is a modal</div>
             <div class="modal-footer">
-                <button
-                    type="button"
-                    class="btn btn-outline-dark cgds"
-                    data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-outline-dark cgds" data-bs-dismiss="modal">
                     Close
                 </button>
                 <button type="button" class="btn btn-primary cgds">
@@ -430,13 +320,9 @@ capture modal-default %}
         <div class="section-sub">
             <div class="cgds-example-image-container">
                 <div class="cgds-example-image-grid">
-                    <img
-                        src="{{site.baseurl}}/assets/img/component/modal/anatomy-modal.svg"
-                        alt="Modal Anatomy"
-                    />
+                    <img src="{{site.baseurl}}/assets/img/component/modal/anatomy-modal.svg" alt="Modal Anatomy" />
                 </div>
             </div>
-
             <ol>
                 <li>
                     <b>Icon (situational):</b> Serves to give more context to
@@ -467,11 +353,8 @@ capture modal-default %}
         <div class="section-sub">
             <div class="cgds-example-image-container">
                 <div class="cgds-example-image-grid">
-                    <img
-                        class="img-fluid"
-                        src="{{site.baseurl}}/assets/img/component/modal/spacing-modal.svg"
-                        alt="Modal Spacing"
-                    />
+                    <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/modal/spacing-modal.svg"
+                        alt="Modal Spacing" />
                 </div>
             </div>
             <p>
