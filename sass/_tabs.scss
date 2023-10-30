@@ -35,7 +35,7 @@
         &[variant="tabs-basic-toggle"]{
             gap: 0;
             li.nav-item{
-                
+
                 + li.nav-item{
                     margin-left: -2px;
                 }
@@ -68,11 +68,11 @@
                     padding-left: 0;
                     padding-right: 0;
                     background-color: transparent;
-                    color: $body-color;
+                    color: $primary;
                     border-color: transparent;
                     border: none;
                     &.active{
-                        border-bottom: $navbar-border-bottom-height solid $highlight;
+                        border-bottom: $navbar-border-bottom-height solid $primary;
                         font-weight: $font-weight-bold;
                         background-color: transparent;
                     }
