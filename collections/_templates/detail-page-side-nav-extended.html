@@ -8,193 +8,172 @@ toc: true
 <div style="background-color: white" class="overflow-auto">
 
     <!--Main Nav Component-->
-    <nav class="mt-4 cgds navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img
-                    src="https://www.developer.tech.gov.sg/assets/img/logo_color.svg"
-                    alt="Home"
-                />
-            </a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <i class="bi bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+    <nav class="cgds navbar flex-column navbar-expand-lg">
+        <header class="container d-flex flex-nowrap p-0">
+            <div
+                class="w-100 d-flex align-items-center justify-content-between px-4 px-md-5 py-4 py-sm-6 py-md-3 py-lg-4">
+                <a class="navbar-brand d-flex justify-content-start" href="#">
+                    <img src="/assets/uncompressed_images/logo_dgc_rectangle.svg" style="width: 495px" alt="Home"height="60">
+                </a>
+            </div>
+            <div class="d-flex align-items-center me-5">
+                <nav class="social d-flex me-3">
+                    <ul id="menu-social-menu" class="d-flex">
+                        <li class="nav-icon-social">
+                            <a class="nav-link" aria-current="page" href="">
+                                <i class="bi bi-github" target="_blank" style="line-height: 1;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="d-flex flag-icon text-center me-2">
+                    <a role="button" class="cgds btn" href="">
+                        <img src="/assets/uncompressed_images/cambodia-flag-icon.svg" width="32px" height="24px" alt="Home">
+                    </a>
+                </div>
+                <nav class="social d-lg-block me-1">
+                    <ul id="menu-social-menu" class="d-flex">
+                        <li class="nav-icon-social">
+                            <span class="cgds-line"></span>
+                        </li>
+                    </ul>
+                </nav>
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"
-                            >About</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Components</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Patterns</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Templates</a>
-                    </li>
-                    <li class="nav-item cgds dropdown">
-                        <a
-                            class="nav-link cgds dropdown-toggle"
-                            href="#"
-                            id="navbarDropdown"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                        >
-                            Theme customiser<i class="bi bi-chevron-down"></i>
-                        </a>
-                        <ul
-                            class="dropdown-menu"
-                            aria-labelledby="navbarDropdown"
-                        >
-                            <li>
-                                <a class="dropdown-item" href="#">Option 1</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item active" href="#"
-                                    >Option 2</a
-                                >
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Option 3</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Option 4</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item align-self-center d-none d-lg-block">
-                        <a class="nav-link" href="#"
-                            ><i class="bi bi-search"></i
-                        ></a>
-                    </li>
-                    <li class="nav-item align-self-center d-none d-lg-block">
-                        <a class="nav-link" href="#"
-                            ><i class="bi bi-grid-3x3-gap-fill"></i
-                        ></a>
+                    <li class="nav-item align-self-center">
+                        <a class="cgds btn-gt" aria-current="page" href="">Sign In</a>
                     </li>
                 </ul>
+                <div class="mobile-toggle d-flex align-items-center d-lg-none">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavExample1" aria-controls="navbarNavExample1" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="px-4 px-md-5">
+            <div class="collapse navbar-collapse px-4 px-md-5" id="navbarNavExample1">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Link</a>
+                    </li>
+                    <li class="nav-item cgds dropdown">
+                        <a class="nav-link cgds dropdown-toggle" href="" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="">Action</a></li>
+                            <li><a class="dropdown-item" href="">Another Action</a></li>
+                            <li><a class="dropdown-item" href="">Something</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="">Seperated Link</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item cgds dropdown has-megamenu">
+                        <a class="nav-link cgds dropdown-toggle" href="#" id="megamenu" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Megamenu<i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu megamenu p-3" aria-labelledby="megamenu">
+                            <div class="d-flex justify-content-start">
+                                <div>
+                                    <b>Co-create innovative digital solutions with the Government</b>
+                                    <p>Discover events, blogs, open-source technologies and other collaboration opportunities</p>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item" href="">Features</a>
+                                    <a class="dropdown-item" href="">Features</a>
+                                    <a class="dropdown-item" href="">Features</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item" href="#">Features</a>
+                                    <a class="dropdown-item" href="#">Features</a>
+                                    <a class="dropdown-item" href="#">Features</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item" href="#">Features</a>
+                                    <a class="dropdown-item" href="#">Features</a>
+                                    <a class="dropdown-item" href="#">Features</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="search-bar d-flex align-items-center ms-auto">
+                    <form class="w-100" action="">
+                        <div class="search-wrapper d-flex ps-2">
+                            <input type="text">
+                            <button>
+                                <i class="bi bi-search" target="_blank"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </nav>
     <div class="row m-8">
         <!-- Side Nav component -->
         <div class="col-lg-3 d-none d-lg-block">
-            <nav class="sidenav cgds list-unstyled open2">
-                <li class="sidenav-item">
-                    <button
-                        class="cgds btn collapsed active"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseExampleD"
-                        aria-expanded="false"
-                        aria-controls="collapseExampleD"
-                    >
-                        Sub menu
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-                    <div
-                        class="collapse show"
-                        id="collapseExampleD"
-                        data-bs-parent=".open2"
-                    >
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#" class="nav-link">Sub menu item</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link active"
-                                    >Sub menu item</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link">Sub menu item</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="sidenav-item">
-                    <button
-                        class="cgds btn collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseExampleE"
-                        aria-expanded="false"
-                        aria-controls="collapseExampleE"
-                    >
-                        Sub menu
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-                    <div
-                        class="collapse"
-                        id="collapseExampleE"
-                        data-bs-parent=".open2"
-                    >
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#" class="nav-link">Sub menu item</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link">Sub menu item</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link">Sub menu item</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="sidenav-item">
-                    <button
-                        class="cgds btn collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseExampleF"
-                        aria-expanded="false"
-                        aria-controls="collapseExampleF"
-                    >
-                        Sub menu
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-                    <div
-                        class="collapse"
-                        id="collapseExampleF"
-                        data-bs-parent=".open2"
-                    >
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#" class="nav-link">Sub menu item</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link">Sub menu item</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link">Sub menu item</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+            <nav class="sidenav cgds list-unstyled open1" aria-label="side-navigation menu">
+                <ul>
+                    <li class="sidenav-item">
+                        <button class="cgds btn collapsed active" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExampleA" aria-expanded="false" aria-controls="collapseExampleA">
+                            <i class="bi bi-layers"></i>Sub menu
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse show" id="collapseExampleA" data-bs-parent=".open1">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="nav-link">Sub menu item</a></li>
+                                <li><a href="#" class="nav-link active">Sub menu item</a></li>
+                                <li><a href="#" class="nav-link">Sub menu item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidenav-item">
+                        <button class="cgds btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExampleB" aria-expanded="false" aria-controls="collapseExampleB">
+                            <i class="bi bi-layers"></i>Sub menu
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="collapseExampleB" data-bs-parent=".open1">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="nav-link">Sub menu item</a></li>
+                                <li><a href="#" class="nav-link">Sub menu item</a></li>
+                                <li><a href="#" class="nav-link">Sub menu item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidenav-item">
+                        <button class="cgds btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExampleC" aria-expanded="false" aria-controls="collapseExampleC">
+                            <i class="bi bi-layers"></i>Sub menu
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="collapseExampleC" data-bs-parent=".open1">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="nav-link">Sub menu item</a></li>
+                                <li><a href="#" class="nav-link">Sub menu item</a></li>
+                                <li><a href="#" class="nav-link">Sub menu item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </nav>
         </div>
         <div class="col-lg-7">
             <!--Breadcrumb component-->
             <nav class="cgds" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i>Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Library</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                        Data
-                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
                 </ol>
             </nav>
             <!--Content section-->
@@ -219,14 +198,10 @@ toc: true
                 <h4>On this page</h4>
                 <ul style="list-style: none">
                     <li>
-                        <a href="#" style="text-decoration: none"
-                            >Page heading</a
-                        >
+                        <a href="#" style="text-decoration: none">Page heading</a>
                         <ul>
                             <li style="list-style: none">
-                                <a href="#" style="text-decoration: none"
-                                    >Overview</a
-                                >
+                                <a href="#" style="text-decoration: none">Overview</a>
                             </li>
                         </ul>
                     </li>
@@ -241,26 +216,48 @@ toc: true
     <footer class="cgds footer">
         <section class="footer-top">
             <div class="container-fluid">
-                <div class="row footer-header">
-                    <div class="col col-lg-6">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="widget flex-column">
+                            <div class="logo">
+                                <img src="/assets/uncompressed_images/logo_DGC_Square-new.svg" style="width: 200px"
+                                     alt="dgc logo">
+                            </div>
+                            <div class="social-icon">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="/assets/uncompressed_images/icon/Facebook.svg" alt="facebook-icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="/assets/uncompressed_images/icon/YouTube.svg" alt="youtube-icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="/assets/uncompressed_images/icon/Telegram.svg" alt="telegram-icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="/assets/uncompressed_images/icon/Tiktok.svg" alt="tiktok-icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="/assets/uncompressed_images/icon/Linkin.svg" alt="linkin-icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="title">
-                            Cambodia Government Design System
+                            Column 1
                         </div>
-                        <div class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Earum illo delectus laborum libero id ratione
-                            quibusdam tempora assumenda quas, pariatur cum
-                            minus, aliquid molestiae et nisi dolorem vitae
-                            molestias! Voluptate commodi aliquid iusto sequi sit
-                            eligendi, quod numquam nihil consectetur eaque error
-                            earum laudantium! Temporibus accusamus pariatur quod
-                            totam quia.
-                        </div>
-                    </div>
-                </div>
-                <div class="row footer-items">
-                    <div class="col-lg-3">
-                        <div class="title">Column 1</div>
                         <ul class="links">
                             <li><a href="">About Us</a></li>
                             <li><a href="">This is a super long link</a></li>
@@ -268,69 +265,48 @@ toc: true
                             <li><a href="">Test</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="title">Category 1</div>
-                        <ul class="links">
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">This is a super long link</a></li>
-                            <li><a href="">Test</a></li>
-                            <li><a href="">Test</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="title">Category 1</div>
-                        <ul class="links">
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">This is a super long link</a></li>
-                            <li><a href="">Test</a></li>
-                            <li><a href="">Test</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row footer-contact-links">
-                    <div class="col">
-                        <div class="d-flex justify-content-lg-end">
-                            <ul>
-                                <li><a href="">Contact</a></li>
-                                <li><a href="">Feedback</a></li>
-                                <li>
-                                    <a
-                                        href="https://www.reach.gov.sg/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        >Reach.gov.sg</a
-                                    >
-                                </li>
-                            </ul>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="title">
+                            Column 2
                         </div>
+                        <ul class="links">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">This is a super long link</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="title">
+                            Column 3
+                        </div>
+                        <ul class="links">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">This is a super long link</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
         <section class="footer-bottom">
             <div class="container-fluid">
-                <div class="row footer-mandatory-links">
-                    <div class="col">
-                        <ul>
-                            <li>
-                                <a
-                                    href="https://tech.gov.sg/report_vulnerability"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Report Vulnerability</a
-                                >
-                            </li>
-                            <li><a href="">Privacy</a></li>
-                            <li><a href="">Terms of use</a></li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="row footer-copyrights">
                     <div class="col">
-                        <div class="d-flex justify-content-lg-end">
-                            © 2022 Government of Cambodia. Last Updated 08 Feb
-                            2022
+                        <div class="d-flex justify-content-lg-start text-start">
+                            DGC © 2023 ~ All rights reserved. Digital Government Committee.<br>
                         </div>
+                    </div>
+                    <div class="col">
+                        <dev class="d-flex justify-content-lg-end text-end">
+                            <ul>
+                                <li><a href="" target="_blank"
+                                       rel="noopener noreferrer">Report Vulnerability</a></li>
+                                <li><a href="">Privacy Statement</a></li>
+                                <li><a href="">Terms of use</a></li>
+                            </ul>
+                        </dev>
                     </div>
                 </div>
             </div>
