@@ -90,6 +90,11 @@ descriptions:
   component: Component reference is helpful for you to implement layouts, elements, and components, using our CSS class and modifiers. Each page provides you with comprehensive usage instructions, examples, and guidelines.
   file-upload: Allows users to upload files of various sizes and formats.
   footer: The footer contains supporting information for your service at the bottom of your website. All .gov.kh digital services shall contain a Global Footer Bar across all pages. The Global Footer Bar should include the name of the digital service, contact information, a privacy statement, and the terms of use.
+  main-navigation: This component is the primary means that your users will use to navigate through your portal. It includes horizontal navigation and branding to identify your site.
+  modal: The modal component inform users about a specific task and may contain critical information which users then have to make a decision. E.g Accepting the T&Cs during signup
+  pagination: The pagination component is used to display a list of page numbers for your users, so that they can navigate to the next or previous page.
+  progress-bar: Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
+  quantity-toggle: The quantity toggle component is used to increase or decrease an incremental venue, usually best used when the user needs to enter or adjust the quantity of a selected item.
   radio-button: Radio buttons allow the user to select one option from a set while seeing all available options.
   side-navigation: The side navigation is used to display a list of links to move between pages within a related category. It is used as a secondary form of navigation where the primary navigation is located hierarchically above the page frame.
   stepper: Used to inform users which step they are at in a form or a process.
@@ -99,8 +104,5 @@ descriptions:
   text-input: Text inputs allow your users to enter letters, numbers, and symbols on a single line.
   toast: A toast notification is a lightweight popup message that appears temporarily over the main interface to provide brief feedback, notifications, or error message to the user.
   tooltip: Tooltips display more information when users hover over, focus on, or interact with an element.
-  main-navigation: This component is the primary means that your users will use to navigate through your portal. It includes horizontal navigation and branding to identify your site.
-  pagination: The pagination component is used to display a list of page numbers for your users, so that they can navigate to the next or previous page.
-  progress-bar: Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
-  quantity-toggle: The quantity toggle component is used to increase or decrease an incremental venue, usually best used when the user needs to enter or adjust the quantity of a selected item.
-  modal: The modal component inform users about a specific task and may contain critical information which users then have to make a decision. E.g Accepting the T&Cs during signup
+  # Below templates
+  detail-page-side-nav: Detail page with a side navigation menu.
