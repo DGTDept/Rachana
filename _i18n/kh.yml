@@ -70,8 +70,8 @@ headers:
   #### Header of Templates
   collapsible-page-form: ទម្រង់អាចបត់បែនបាន
   detail-page-basic: ទំព័រនៃព័ត៌មាន
-  detail-page-side-nav-extended: ទំព័រដែលមានរបារសងខាង
-  detail-page-side-nav: ទំព័រដែលមានរបារតែម្ខាង
+  detail-page-side-nav-extended: ទំព័រមានរបារសងខាង
+  detail-page-side-nav: ទំព័រមានរបារតែម្ខាង
   landing-page: ទំព័រដំបូង
   multi-page-form: ទម្រង់មានទំព័រច្រើន
   single-page-form: ទម្រង់មានទំព័រតែមួយ
@@ -108,3 +108,4 @@ descriptions:
   tooltip: វាបង្ហាញព័ត៌មានបន្ថែម ដែលនឹងលេចចេញមកក្រៅនៅពេលអ្នកប្រើប្រាស់hoverពីលើធាតុណាមួយ។
   # Below templates
   detail-page-side-nav: ទំព័រដែលប្រើសម្រាប់ភ្ជាប់ជាមួយនឹងបញ្ជីនៃរបារតែម្ខាង។
+  detail-page-side-nav-extended: សម្រាប់ប្រើជាមួយនឹងទំព័រមានរបារសងខាង និងតារាងមាតិកា។
