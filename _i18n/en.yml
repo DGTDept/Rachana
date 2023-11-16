@@ -106,3 +106,4 @@ descriptions:
   tooltip: Tooltips display more information when users hover over, focus on, or interact with an element.
   # Below templates
   detail-page-side-nav: Detail page with a side navigation menu.
+  detail-page-side-nav-extended: Detail page with a side navigation menu and table of contents.
