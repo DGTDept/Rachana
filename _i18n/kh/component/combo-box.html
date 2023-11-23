@@ -1,20 +1,78 @@
 {% capture default-combo-box %}
-<iframe
-    src="https://react.designsystem.tech.gov.sg/iframe.html?singleStory=true&args=&id=components-combobox--default-story&viewMode=story&full=1&shortcuts=false&singleStory=true"
-    width="100%" height="400" bgColor="transparent" title="ComboBox"></iframe>
+<label class="form-label" for="formSinglePageSelect1">Label</label>
+<div class="cgds combobox" id="formSinglePageSelect1">
+    <div class="placeholder">Select your favorite Taylor Swift song</div>
+    <i class="bi bi-chevron-down"></i>
+    <div class="option">
+        <label>
+            <input type="radio" name="example" />
+            <span>Sad Beautiful Tragic</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>You Belong with Me</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>cardigan</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>Wildest Dreams</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>Style</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>Last Kiss</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>Cruel Summer</span>
+        </label>
+    </div>
+</div>
 {% endcapture %}
 
 {% capture default-combo-box-code %}
-import {
-Combobox,
-ComboboxProps,
-} from '@govtechsg/sgds-react/Combobox';
-
-export const ComboboxComponent = () => {
-const menuList = ['apple', 'orange', 'banana'];
-return <Combobox menuList={menuList} id="typeaheadExample" icon={<i className="bi bi-search"></i> } />;
-    };
-    {% endcapture %}
+<label class="form-label" for="formSinglePageSelect1">Label</label>
+<div class="cgds combobox" id="formSinglePageSelect1">
+    <div class="placeholder">Select your favorite Taylor Swift song</div>
+    <i class="bi bi-chevron-down"></i>
+    <div class="option">
+        <label>
+            <input type="radio" name="example" />
+            <span>Sad Beautiful Tragic</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>You Belong with Me</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>cardigan</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>Wildest Dreams</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>Style</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>Last Kiss</span>
+        </label>
+        <label>
+            <input type="radio" name="example" />
+            <span>Cruel Summer</span>
+        </label>
+    </div>
+</div>
+{% endcapture %}
 
 
     <!-- Page starts here -->
