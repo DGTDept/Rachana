@@ -8,14 +8,14 @@ global:
   copy: ចម្លង
 filters:
   component: ស្វែងរក សមាសភាគ
-  template: ស្វែងរក តម្រង់
-  pattern: ស្វែងរក ផាធន
+  template: ស្វែងរក ពុម្ព
+  pattern: ស្វែងរក គំរូ
 navigation:
   home: ទំព័រដើម
   about: អំពីយើង
   components: សមាសភាគ
-  templates: ទម្រង់គំរូ
-  patterns: ផាធន
+  templates: ពុម្ព
+  patterns: គំរូ
   faqs: សំណួរ
   get-started: ការចាប់ផ្តើម
 sidebar:
@@ -24,8 +24,8 @@ titles:
   about: អំពីយើង
   component: ទិដ្ឋភាពទូទៅនៃសមាសភាគ
   get-start: ការចាប់ផ្តើម
-  pattern: ផាធន
-  template: ទម្រង់គំរូ
+  pattern: គំរូ
+  template: ពុម្ភ
   faqs: សំណួរ
   home: ទំព័រដើម
   privacy-statement: សេចក្តីថ្លែងការណ៍ឯកជនភាពរបស់ទីភ្នាក់ងាររដ្ឋាភិបាល
@@ -62,14 +62,14 @@ headers:
   #### Header of Patterns
   address: អាស័យដ្ឋាន
   date: កាលបរិច្ឆេទ
-  email: អុីម៊ែល
+  email: អុីមែល
   error-summary: ការសង្ខេបកំហុស
   name: ឈ្មោះ
   payment: ការបង់ប្រាក់
   phone-number: លេខទូរស័ព្ទ
   #### Header of Templates
   collapsible-page-form: ទម្រង់អាចបត់បែនបាន
-  detail-page-basic: ទំព័រនៃព័ត៌មាន
+  detail-page-basic: ទំព័រព័ត៌មានទូទៅ
   detail-page-side-nav-extended: ទំព័រមានរបារសងខាង
   detail-page-side-nav: ទំព័រមានរបារតែម្ខាង
   landing-page: ទំព័រដំបូង
@@ -108,4 +108,5 @@ descriptions:
   tooltip: វាបង្ហាញព័ត៌មានបន្ថែម ដែលនឹងលេចចេញមកក្រៅនៅពេលអ្នកប្រើប្រាស់hoverពីលើធាតុណាមួយ។
   # Below templates
   detail-page-side-nav: ទំព័រដែលប្រើសម្រាប់ភ្ជាប់ជាមួយនឹងបញ្ជីនៃរបារតែម្ខាង។
-  detail-page-side-nav-extended: សម្រាប់ប្រើជាមួយនឹងទំព័រមានរបារសងខាង និងតារាងមាតិកា។
+  detail-page-side-nav-extended: សម្រាប់ប្រើជាមួយនឹងទំព័រមានរបារសងខាង និងតារាងមាតិកា។  
+  detail-page-basic: ផ្តល់ព័ត៌មានផ្សេងៗអំពីផលិតផល ឬសេវាកម្មរបស់អ្នកទៅកាន់អ្នកប្រើប្រាស់ និងអតិថិជន។
