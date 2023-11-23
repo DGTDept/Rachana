@@ -1,16 +1,117 @@
-
 .cgds{
     &.combobox {
-        @extend .form-control-group;
-        justify-content: flex-end;
+        z-index: 1;
+        clear: both;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+        background: var(--white, #FFF);
+        display: block;
+        color: var(--greys-600, #344054);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-weight: 400;
+        flex: 1 0 0;
+        align-items: center;
 
-        > .form-control {
-            padding-left: $input-btn-padding-x;
-            padding-right: 3rem;
+        i {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
         }
 
-        > .dropdown-menu {
-            min-width: 100%;
+        input[type="radio"] {
+            position: absolute;
+            left: -9999px;
+        }
+
+        &:hover .placeholder {
+            border-radius: 8px 8px 0 0;
+        }
+
+        &:hover .option input[type="radio"] + span {
+            position: relative;
+            top: 0;
+            transition: all 250ms ease-in-out;
+        }
+
+        &:hover input[type="radio"] + span:hover {
+            background: #1C4076;
+            color: white;
+        }
+
+        &:hover input[type="radio"]:checked + span:hover {
+            background: white;
+        }
+
+        &:hover input[type="radio"]:checked + span {
+            border-radius: 0;
+        }
+
+        &:hover .option label:nth-last-of-type(1) input[type="radio"]:checked + span {
+            border-radius: 0 0 0.2em 0.2em;
+        }
+
+        &:hover .option {
+            max-height: 540px;
+        }
+
+        input[type="radio"] + span {
+            color: black;
+            background: white;
+            padding: 0.55em 1em;
+            display: block;
+            box-sizing: border-box;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="radio"]:checked + span {
+            background: white;
+            position: absolute;
+            top: 0em;
+            border-radius: 0.2em;
+        }
+
+        .placeholder {
+            width: 100%;
+            display: block;
+            background: white;
+            padding: 0.55em 1em;
+            box-sizing: border-box;
+            color: black;
+            border-radius: 0.2em;
+            line-height: 2;
+
+            .bi-chevron-down{
+                width: 16px;
+                height: 16px;
+                display: block;
+            }
+
+            label:nth-last-of-type(1) span{
+                border-radius:0 0 8px 8px;
+            }
+        }
+
+        .option {
+            position: absolute;
+            top: 0;
+            padding-top: 2.875em;
+            box-sizing: border-box;
+            width: 100%;
+            overflow: hidden;
+            max-height: 0;
+            transition: all 250ms ease;
+            border-radius: 8px;
+            border: 1px solid var(--greys-400, #98A2B3);
+            align-items: center;
+        }
+
+        label{
+            display: block;
+            height: 3em;
         }
     }
 }
+
