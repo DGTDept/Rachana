@@ -61,7 +61,7 @@ headers:
   #### Header of Patterns
   address: Address
   date: Date
-  email: Email Address
+  email-address: Email Address
   error-summary: Error Summary
   name: Name
   payment: Payment
