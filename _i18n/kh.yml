@@ -62,7 +62,7 @@ headers:
   #### Header of Patterns
   address: អាស័យដ្ឋាន
   date: កាលបរិច្ឆេទ
-  email: អុីមែល
+  email-address: អុីមែល
   error-summary: ការសង្ខេបកំហុស
   name: ឈ្មោះ
   payment: ការបង់ប្រាក់
