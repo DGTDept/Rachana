@@ -1,5 +1,6 @@
 
 import * as bootstrap from 'bootstrap';
+import "./_patternjs/date_picker"
 
 import "./_componentjs/combobox"
 
