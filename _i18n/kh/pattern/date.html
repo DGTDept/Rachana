@@ -1,0 +1,101 @@
+{% capture single-date-input %}
+<div class="cgds form-group">
+    <label class="form-label" for="dateInput">ថ្ងៃខែ​ឆ្នាំ​កំណើត</label>
+    <span class="form-text">ឧ.​ ថ្ងៃទី១០ ខែមិថុនា​​ ឆ្នាំ២០០០</span>
+</div>
+<cgds-datepicker></cgds-datepicker>
+{% endcapture %}
+
+{% capture isolated-date-input %}
+<div class="cgds row">
+    <div class="col form-group">
+      <label class="form-label" for="day">ថ្ងៃទី</label>
+      <input class="form-control" type="text" inputmode="numeric" pattern="[0-9]*" id="day" autocomplete="on" maxlength="2" onkeypress="return onlyNumberKey(event)" />
+    </div>
+    <div class="col form-group">
+      <label class="form-label" for="month">ខែ</label>
+      <input class="form-control" type="text" inputmode="numeric" pattern="[0-9]*" id="month" autocomplete="on" maxlength="2" onkeypress="return onlyNumberKey(event)"/>
+    </div>
+     <div class="col form-group">
+      <label class="form-label" for="year">ឆ្នាំ</label>
+      <input class="form-control" type="text" inputmode="numeric" pattern="[0-9]*" id="year" autocomplete="on" maxlength="4" onkeypress="return onlyNumberKey(event)"/>
+    </div>
+</div>
+{% endcapture %}
+
+<!-- Page starts here -->
+<div class="page-component">
+        
+    <!-- Generated header from front end matters -->
+    {% include page-component/component-header.html %}
+
+    <!-- Pattern Section -->
+    <section name="section-pattern">
+        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+        <div class="section-sub">
+            {% include page-component/component-code-snippet.html compTitle="ប្រអប់បញ្ចូលកាលបរិច្ឆេទតែមួយ" compName="single-date-input" code=single-date-input %}
+        </div>
+        <div class="section-sub">
+            {% include page-component/component-code-snippet.html compTitle="ប្រអប់បញ្ចូលកាលបរិច្ឆេទដាច់ដោយឡែកពីគ្នា" compName="isolated-date-input" code=isolated-date-input %}
+        </div>
+    </section>
+
+    <!-- Usage Guidelines Section -->
+    <section name="section-usage-guidelines">
+        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+        <strong>គំរូកាលបរិច្ឆេទគួរតែត្រូវបានប្រើ៖</strong>
+        <ul>
+            <li>នៅពេលដែលអ្នកតម្រូវឱ្យអ្នកប្រើប្រាស់បំពេញកាលបរិច្ឆេទសម្រាប់សេវាកម្មរបស់អ្នក។
+            
+                <ul>
+                    <li>សូមបញ្ជាក់យ៉ាងច្បាស់អំពីរបៀបដែលទិន្នន័យគួរតែត្រូវបានបំពេញ (ឧ.​ ថ្ងៃទី​ ខែ ​ឆ្នាំ​)។</li>
+                    <li>ផ្តល់ឧទាហរណ៍អំពីរបៀបដែលកាលបរិច្ឆេទគួរតែត្រូវបានបំពេញ (ឧ.​ ០១​ ០១ ២០២០ ឬ ១​ ១ ២០២០) នៅពេលដែលប្រើប្រអប់បញ្ចូលក្នុងទម្រង់តែមួយ។</li>
+                </ul>
+            </li>
+            <li>នៅពេលស្នើសុំឱ្យអ្នកប្រើប្រាស់បំពេញកាលបរិច្ឆេទដែលមិនអាចបំភ្លេចបាន។
+                <ul>
+                    <li>ជាឧទាហរណ៍ ការសុំថ្ងៃខែឆ្នាំកំណើត មានន័យថាអ្នកគួរតែមាន <code>autocomplete</code> កំណត់សម្រាប់ធាតុទាំងបីនេះ <code>bday-day</code>, <code>bday-month</code> និង <code>bday-year</code> ដើម្បីផ្តល់ភាពងាយស្រួលដល់អ្នកប្រើប្រាស់។</li>
+                    <li>អ្នកនឹងត្រូវរួមបញ្ចូល <code>autocomplete</code> កំណត់ដើម្បីបំពេញ <strong>WCAG 2.1 AA</strong> សម្រាប់ការផលិត។</li>
+                </ul>
+            </li>
+        </ul>
+        <strong>គំរូកាលបរិច្ឆេទមិនគួរតែត្រូវបានប្រើ៖</strong>
+        <ul>
+            <li>
+                ប្រសិនបើអ្នកត្រូវការឱ្យអ្នកប្រើប្រាស់ជ្រើសរើសពីកាលបរិច្ឆេទជាក់លាក់មួយចំនួន យើងសូមណែនាំឱ្យអ្នកប្រើ<a href="/components/radio-button/">ប៊ូតុងមូល</a> សមាសភាគដើម្បីឱ្យពួកគេជ្រើសរើសយ៉ាងងាយស្រួល។ ម៉្យាងទៀត អ្នកអាចប្រើសមាសភាគកម្មវិធីជ្រើសរើសកាលបរិច្ឆេទសម្រាប់អ្នកប្រើប្រាស់ដើម្បីជ្រើសរើសកាលបរិច្ឆេទ។
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- Usability Guidelines Section -->
+    <section name="section-usability-guidelines">
+        <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
+        <p>
+            <strong>នៅពេលស្នើសុំកាលបរិច្ឆេទឯកសារផ្លូវការ</strong><br>
+            ត្រូវប្រាកដថាទម្រង់ត្រូវគ្នានឹងកាលបរិច្ឆេទឯកសារដែលអ្នកកំពុងស្នើសុំ។ ឧទាហរណ៍ DD/MMM/YYYY ឬ DD/MM/YY ។ សូមបញ្ជាក់ផងដែរនៅក្នុងអត្ថបទជំនួយអំពីទម្រង់កាលបរិច្ឆេទ វានឹងជួយកាត់បន្ថយកំហុសនៅពេលបំពេញទម្រង់។
+        </p>
+        <p class="mb-0">
+            <strong>ជួយអ្នកប្រើប្រាស់ជ្រើសរើសកាលបរិច្ឆេទ</strong><br>
+            អ្នកអាចប្រើសមាសធាតុជ្រើសរើសកាលបរិច្ឆេទដើម្បីជួយអ្នកប្រើប្រាស់ជ្រើសរើសកាលបរិច្ឆេទសម្រាប់ការតែងតាំងជាឧទាហរណ៍។ ទោះជាយ៉ាងណាក៏ដោយ ប្រើវាលុះត្រាតែ៖
+            <ul>
+                <li>អ្នកប្រើប្រាស់ត្រូវជ្រើសរើសកាលបរិច្ឆេទនាពេលខាងមុខ ឬអតីតកាល។ ឧ. កុំប្រើសមាសភាគកម្មវិធីជ្រើសរើសកាលបរិច្ឆេទនៅពេលសួររកថ្ងៃខែឆ្នាំកំណើត វាបន្ថែមភាពស្មុគស្មាញដល់កិច្ចការ។ ប្រើគំរូកាលបរិច្ឆេទទម្រង់តែមួយជំនួសវិញ។</li>
+                <li>អ្នកប្រើប្រាស់ត្រូវការមើលកាលបរិច្ឆេទផ្សេងទៀតទាក់ទងនឹងកាលបរិច្ឆេទដែលពួកគេចង់បាន។</li>
+            </ul>
+        </p>
+        <p>
+            <strong>លំនាំដើមទៅកាលបរិច្ឆេទបច្ចុប្បន្ន និងខែ</strong><br>
+            ធ្វើលំនាំដើមនៃសមាសភាគកម្មវិធីជ្រើសរើសកាលបរិច្ឆេទទៅកាលបរិច្ឆេទបច្ចុប្បន្ន និងខែដើម្បីឱ្យអ្នកប្រើប្រាស់មានចំណុចចាប់ផ្តើមនៅពេលជ្រើសរើសកាលបរិច្ឆេទ។
+        </p>
+    </section>
+</div>
+
+<script>
+     function onlyNumberKey( evt ) {
+        // Only ASCII character in that range allowed
+        var ASCIICode = ( evt.which ) ? evt.which : evt.keyCode
+        if ( ASCIICode > 31 && ( ASCIICode < 48 || ASCIICode > 57 ) )
+            return false;
+        return true;
+    }
+</script>
