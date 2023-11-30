@@ -109,3 +109,5 @@ descriptions:
   detail-page-side-nav-extended: Detail page with a side navigation menu and table of contents.
   detail-page-basic: Detail page basic may consist of any relevant information related to a certain product or service.
   landing-page: A landing page is a standalone page distinct from any other pages including homepage, which serves a specific purpose or action. 
+  # Below Patterns
+  date: Use this pattern when you want to ask users for a specific date, e.g. their date of birth or when something was issued to them.
