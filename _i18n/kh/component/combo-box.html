@@ -1,79 +1,25 @@
 {% capture default-combo-box %}
-<label class="form-label" for="formSinglePageSelect1">Label</label>
-<div class="cgds combobox" id="formSinglePageSelect1">
-    <div class="placeholder">Select your favorite Taylor Swift song</div>
-    <i class="bi bi-chevron-down"></i>
-    <div class="option">
-        <label>
-            <input type="radio" name="example" />
-            <span>Sad Beautiful Tragic</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>You Belong with Me</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>cardigan</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>Wildest Dreams</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>Style</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>Last Kiss</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>Cruel Summer</span>
-        </label>
+
+<body>
+    <div style="height:100px;">
+        <cgds-combo-box label="ធាតុ" hinttext="" name="undefined" placeholder="ស្វែងរកធាតុ" value="" close="default"
+            menulist="[
+            &quot;ផ្លែប៉ោម&quot;,
+            &quot;ផ្លែបឺរ&quot;,
+            &quot;ផ្លែទុរេន&quot;]">
+        </cgds-combo-box>
     </div>
-</div>
+</body>
+
 {% endcapture %}
 
 {% capture default-combo-box-code %}
-<label class="form-label" for="formSinglePageSelect1">Label</label>
-<div class="cgds combobox" id="formSinglePageSelect1">
-    <div class="placeholder">Select your favorite Taylor Swift song</div>
-    <i class="bi bi-chevron-down"></i>
-    <div class="option">
-        <label>
-            <input type="radio" name="example" />
-            <span>Sad Beautiful Tragic</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>You Belong with Me</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>cardigan</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>Wildest Dreams</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>Style</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>Last Kiss</span>
-        </label>
-        <label>
-            <input type="radio" name="example" />
-            <span>Cruel Summer</span>
-        </label>
-    </div>
-</div>
-{% endcapture %}
 
+export const ComboboxComponent = () => {
+const menuList = ['apple', 'pear', 'durian'];
+return <Combobox menuList={menuList} id="typeaheadExample" icon={<i className="bi bi-search"></i> } />;
+    };
+    {% endcapture %}
 
     <!-- Page starts here -->
     <div class="page-component">
@@ -82,11 +28,16 @@
 
         <!-- Example Section -->
         <section name="section-examples">
-            <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+            <h2 class="title fw-bold" id="example">Example</h2>
             <div class="section-sub">
-                {% include page-component/component-code-snippet.html
-                compName="default-combo-box" compTitle="ប្រអប់ជម្រើសតាមលំនាំដើម"
-                code=default-combo-box code-react=default-combo-box-code %}
+                {% 
+              include page-component/component-code-snippet.html
+              compName="default-combo-box" 
+              compTitle="លំនំាដើមនៃប្រអប់ជម្រើស"
+              code=default-combo-box 
+              storybook-react="combobox"
+              storybook-spider="combobox"
+      %}
             </div>
         </section>
 
@@ -97,7 +48,7 @@
                 <div class="cgds-example-image-container">
                     <div class="cgds-example-image-grid">
                         <img src="{{site.baseurl}}/assets/img/component/combo-box/anatomy-combo-box-1.svg"
-                             alt="Combo Box Anatomy" />
+                            alt="Combo Box Anatomy" />
                     </div>
                 </div>
                 <ol>
@@ -126,7 +77,7 @@
                 <div class="cgds-example-image-container">
                     <div class="cgds-example-image-grid">
                         <img src="{{site.baseurl}}/assets/img/component/combo-box/spacing-combo-box-1.svg"
-                             alt="Combo Box Spacing" />
+                            alt="Combo Box Spacing" />
                     </div>
                 </div>
                 <h3 class="subtitle fw-bold" id="within-the-combo-box">
@@ -161,9 +112,9 @@
         <!-- Usability guidelines Section -->
         <section name="section-usability-guidelines">
             <h2 class="title fw-bold" id="usability-guidelines">
-                គោលការណ៍ណែនាំនៃការរចនា            </h2>
+                គោលការណ៍ណែនាំនៃការរចនា </h2>
             <p>
-                <b>ប្រធានបទត្រូវសរសេរឱ្យច្បាស់និងចំណុច</b><br/>
+                <b>ប្រធានបទត្រូវសរសេរឱ្យច្បាស់និងចំណុច</b><br />
                 ដើម្បីឱ្យអ្នកប្រើប្រាស់ងាយយល់ពីហេតុផលនៃការជ្រើសរើស។
             </p>
             <p>
@@ -172,8 +123,8 @@
             </p>
             <p>
                 <b>ផ្តល់ជម្រើសទូទៅមួយបើសិនជាអាច</b><br />
-                ជម្រើសទូទៅអាចជាជម្រើសដូចជា "អ្វីក៏បាន"។ ម្យ៉ាងទៀតគួរអនុញ្ញាតឱ្យអ្នកប្រើប្រាស់មិនជ្រើសរើសអ្វីទាំងអស់បើសិនជាអាច។
+                ជម្រើសទូទៅអាចជាជម្រើសដូចជា "អ្វីក៏បាន"។
+                ម្យ៉ាងទៀតគួរអនុញ្ញាតឱ្យអ្នកប្រើប្រាស់មិនជ្រើសរើសអ្វីទាំងអស់បើសិនជាអាច។
             </p>
         </section>
     </div>
-
