@@ -1267,7 +1267,7 @@
      */
     console.warn("The main 'lit-element' module entrypoint is deprecated. Please update your imports to use the 'lit' package: 'lit' and 'lit/decorators.ts' or import from 'lit-element/lit-element.ts'. See https://lit.dev/mcg/deprecated-import-path for more information.");
 
-    var css_248z$3 = i$6 `:host{--datepicker-theme-color:var(--cgds-primary);--datepicker-hover-bg-color:var(--cgds-primary-100);--datepicker-bg-color:#fff;--datepicker-closebutton-bg-color:var();--datepicker-closebutton-hover-bg-color:var(--cgds-primary-600);--datepicker-closebutton-color:#fff}div{display:flex}.datepicker{background-color:var(--datepicker-bg-color)}cgds-input{flex:1;margin-right:0}button.btn{background-color:var(--datepicker-closebutton-bg-color)}button.btn,button.btn:hover{color:var(--datepicker-closebutton-color)}button.btn:hover{background-color:var(--datepicker-closebutton-hover-bg-color)}`;
+    var css_248z$3 = i$6 `:host{--datepicker-theme-color:var(--cgds-primary);--datepicker-hover-bg-color:var(--cgds-primary-100);--datepicker-bg-color:#fff;--datepicker-closebutton-bg-color:var(--cgds-primary);--datepicker-closebutton-hover-bg-color:var(--cgds-primary);--datepicker-closebutton-color:#fff}div{display:flex}.datepicker{background-color:var(--datepicker-bg-color)}cgds-input{flex:1;margin-right:0}button.btn{background-color:var(--datepicker-closebutton-bg-color)}button.btn,button.btn:hover{color:var(--datepicker-closebutton-color)}button.btn:hover{background-color:var(--datepicker-closebutton-hover-bg-color)}`;
 
     /**
      * @license
