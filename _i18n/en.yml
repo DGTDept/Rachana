@@ -111,5 +111,6 @@ descriptions:
   collapsible-page-form: ​A base collection of field components rendered within multi collapsible tabs.
   landing-page: A landing page is a standalone page distinct from any other pages including homepage, which serves a specific purpose or action. 
   multi-page-form: A base collection of field components rendered on a multi page layout.
+  single-page-form: A base collection of field components rendered on a single page.
   # Below Patterns
   date: Use this pattern when you want to ask users for a specific date, e.g. their date of birth or when something was issued to them.
