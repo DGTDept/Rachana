@@ -11,4 +11,6 @@
 - title: templates
   url: /templates/
   has-collection: true
-
+- title: get-started
+  url: /get-started/
+  has-collection: true
