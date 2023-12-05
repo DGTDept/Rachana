@@ -40,7 +40,6 @@
             }
 
             i {
-                font-size: 24px;
                 color: #e9ecef;
                 cursor: pointer;
             }
@@ -61,6 +60,8 @@
 
                         a {
                             color: #e9ecef;
+                            font-size: 24px;
+                            cursor: pointer;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -72,15 +73,22 @@
                             &:active {
                                 border-radius: 6%;
                                 @include gradient-bg($navbar-link-hover-bg);
-
                             }
                         }
 
                         .cgds-line {
-                            height: 24px;
-                            border: 1px solid $navbar-line-color;
-                            margin-left: 1rem;
-                            margin-right: 1rem;
+                            @include media-breakpoint-up(lg) {
+                                height: 24px;
+                                border: 1px solid $navbar-line-color;
+                                margin-bottom: 0.5rem;
+                                margin-left: 1rem;
+                                margin-right: 1rem;
+                            }
+                            @include media-breakpoint-down(lg) {
+                                    height: 24px;
+                                    border: 1px solid $navbar-line-color;
+                                    margin-bottom: 0.5rem;
+                            }
                         }
                     }
                 }
@@ -100,6 +108,10 @@
                     height: 35px;
                     cursor: pointer;
                 }
+            }
+
+            .mobile-toggle {
+                margin-bottom: 0.5rem;
             }
 
             ul.navbar-nav {

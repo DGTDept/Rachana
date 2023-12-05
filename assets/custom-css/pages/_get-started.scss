@@ -1,3 +1,7 @@
-.get-started{
-    width: 120ch;
+
+@include media-breakpoint-up(lg) {
+    .get-started{
+        display: none;
+    }
+    
 }

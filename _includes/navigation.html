@@ -4,7 +4,7 @@
             <a class="navbar-brand" href="/"><img src="/assets/uncompressed_images/logo_dgc_rectangle.svg"
                     alt="Home"></a>
         </div>
-        <div class="d-flex align-items-center me-5">
+        <div class="d-flex align-items-center">
             <nav class="social d-flex me-3">
                 <ul id="menu-social-menu" class="d-flex">
                     <li class="nav-icon-social">
@@ -16,11 +16,11 @@
             </nav>
             <div class="d-flex flag-icon text-center me-2">
                 {% if site.lang == 'kh' %}
-                <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}/en{{page.url}}"><img
+                <a role="button" class="cgds btn {{class}} h1" href="{{site.baseurl_root }}/en{{page.url}}"><img
                         src="/assets/uncompressed_images/united-kingdom-flag-icon.svg" width="32px" height="24px"
                         alt="Home"></a>
                 {%else %}
-                <a role="button" class="cgds btn {{class}}" href="{{site.baseurl_root }}{{page.url}}"><img
+                <a role="button" class="cgds btn {{class}} h1" href="{{site.baseurl_root }}{{page.url}}"><img
                         src="/assets/uncompressed_images/cambodia-flag-icon.svg" width="32px" height="24px"
                         alt="Home"></a>
                 {% endif %}
@@ -32,20 +32,23 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="navbar-nav">
-                {%- assign class = nil -%}
-                {%- if page.url contains 'get-started' -%}
-                {%- assign class = 'active' -%}
-                {%- endif -%}
-                <li class="nav-item align-self-center">
-                    <a class="cgds btn-gt {{class}}" aria-current="page"
-                        href="/get-started/">{% t navigation.get-started %}</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    {%- assign class = nil -%}
+                    {%- if page.url contains 'get-started' -%}
+                    {%- assign class = 'active' -%}
+                    {%- endif -%}
+                    <li class="nav-item align-self-center">
+                        <a class="cgds btn-gt {{class}}" aria-current="page"
+                            href="/get-started/">{% t navigation.get-started %}</a>
+                    </li>
+                </ul>
+            </div>
+            
             <div class="mobile-toggle d-flex align-items-center d-lg-none">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
+                    <i class="bi bi-list h1"></i>
                 </button>
             </div>
         </div>
@@ -58,7 +61,7 @@
                 {%- if page.url contains item.title or page.url == '/' and item.title == 'home' -%}
                 {%- assign class = 'active' -%}
                 {%- endif -%}
-                <li class="nav-item">
+                <li class="nav-item {{item.title}}">
                     {% if site.lang == 'kh' %}
                     <a class="nav-link {{class}}" aria-current="page"
                         href="{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
