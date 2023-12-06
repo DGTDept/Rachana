@@ -1,0 +1,85 @@
+{% capture address-pattern %}
+<div class="cgds form-group mb-3">
+    <label for="postalCode" class="form-label">លេខប្រៃសណីយ៍</label>
+    <input type="text" inputmode="numeric" pattern="[0-9]*" class="form-control" id="postalCode" placeholder="ឧ. 120209" autocomplete="postal-code" maxlength="6" onkeypress="return onlyNumberKey(event)">
+</div>
+<button class="btn btn-primary mb-3" onclick="findAddress()">ស្វែងរកអាសយដ្ឋាន</button>
+<div class="cgds form-group mb-3">
+    <label for="streetName" class="form-label">ឈ្មោះផ្លូវ</label>
+    <input type="text" class="form-control" id="streetName" placeholder="ឧ. អគារលេខ ១៣ មហាវិថីព្រះមុនីវង្ស សង្កាត់ស្រះចក ខណ្ឌដូនពេញ រាជធានីភ្នំពេញ" autocomplete="street-address">
+</div>
+<div class="cgds form-group mb-3">
+    <label for="buildingNumber" class="form-label">អគារ/ផ្ទះលេខ</label>
+    <div id="buildingNumberText" class="form-text">ប្រសិនបើជាមាន</div>
+    <input type="text" class="form-control" id="buildingNumber" autocomplete="on" aria-describedby="buildingNumberText">
+</div>
+<div class="cgds form-group mb-3">
+    <label for="unitNumber" class="form-label">អង្គភាពលេខ</label>
+    <div id="unitNumberText" class="form-text">ប្រសិនបើជាមាន</div>
+    <input type="text" class="form-control" id="unitNumber" autocomplete="on" aria-describedby="unitNumberText">
+</div>
+{% endcapture %}
+
+<!-- Page starts here -->
+<div class="page-component">
+        
+    <!-- Generated header from front end matters -->
+    {% include page-component/component-header.html %}
+
+    <!-- Pattern Section -->
+    <section name="section-pattern">
+        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+        <div class="section-sub">
+            {% include page-component/component-code-snippet.html compName="address-pattern" code=address-pattern %}
+        </div>
+    </section>
+
+    <!-- Usage Guidelines Section -->
+    <section name="section-usage-guidelines">
+        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+        <strong>ការស្វែងរកអាសយដ្ឋានគួរត្រូវបានប្រើ៖</strong>
+        <ul>
+            <li>នៅពេលដែលអ្នកសួរអ្នកប្រើប្រាស់អំពីទីតាំងអាសយដ្ឋាននៅប្រទេសកម្ពុជា។</li>
+        </ul>
+        <strong>ការស្វែងរកអាសយដ្ឋានមិនគួរត្រូវបានប្រើ៖</strong>
+        <ul>
+            <li>ប្រសិនបើអ្នកមានអ្នកប្រើប្រាស់នៅក្រៅប្រទេសកម្ពុជាហើយតម្រូវឲ្យពួកគេកំណត់អាសយដ្ឋានរបស់ពួកគេ។ ជំនួសមកវិញ​​ សូមប្រើប្រាស់ជម្រើសដោយដៃដូចជាប្រអប់បញ្ចូលអក្សរឬប្រអប់បញ្ចូលអត្ថបទ នៅពេលអ្នកប្រើសម្រាប់តែអាសយដ្ឋានអន្តរជាតិប៉ុណ្ណោះ។</li>
+        </ul>
+    </section>
+
+    <!-- Usability Guidelines Section -->
+    <section name="section-usability-guidelines">
+        <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
+        <p>
+            <strong>ជៀសវាងការផ្លាស់ប្តូរលំនាំដើមនៃផ្នែកអាសយដ្ឋាន</strong><br>
+            ត្រូវប្រាកដថាលេខប្រៃសណីយ៍ស្ថិតនៅខាងលើ ព្រោះការស្វែងរកអាសយដ្ឋានអាចបង្កលក្ខណៈងាយស្រួលក្នុងការបំពេញទីតាំងអាសយដ្ឋាន។
+        </p>
+        <p>
+            <strong>លំនាំដើមនៃកាលបរិច្ឆេទ និងខែ</strong><br>
+            ការបំពេញដោយស្វ័យប្រវត្តិជួយអ្នកប្រើប្រាស់បំពេញទម្រង់លឿនជាងមុន, ប៉ុន្តែកុំភ្លេចទុកផ្នែកទាំងនេះសម្រាប់កែសម្រួលដើម្បីផ្តល់ឱ្យអ្នកប្រើប្រាស់ងាយស្រួលក្នុងការគ្រប់គ្រង។
+        </p>
+    </section>
+</div>
+
+<script>
+    function findAddress() {
+        var postalCode = document.getElementById("postalCode").value
+        var streetName = document.getElementById("streetName")
+        fetch(
+            'https://www.google.com/maps/@11.5762281,104.926463,15z?entry=ttu' +
+            postalCode + 
+            '&returnGeom=Y&getAddrDetails=Y'
+        )
+        .then((response) => response.json())
+        .then((json) => 
+            streetName.value = json.results[0].ADDRESS
+        );
+    }
+    function onlyNumberKey( evt ) {
+        // Only ASCII character in that range allowed
+        var ASCIICode = ( evt.which ) ? evt.which : evt.keyCode
+        if ( ASCIICode > 31 && ( ASCIICode < 48 || ASCIICode > 57 ) )
+            return false;
+        return true;
+    }
+</script>
