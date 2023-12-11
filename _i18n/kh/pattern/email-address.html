@@ -1,0 +1,77 @@
+{% capture email-pattern %}
+<div class="cgds form-group">
+    <label class="form-label" for="email">អ៊ីម៉ែល</label>
+    <span class="form-text">អ៊ីម៉ែលរបស់អ្នកនឹងត្រូវបានប្រើសម្រាប់ផ្តល់ព័ត៌មានថ្មីៗ</span>
+    <input class="form-control" type="email" id="email" autocomplete="email" spellcheck="false" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="256" placeholder="បញ្ចូលអ៊ីម៉ែលរបស់អ្នក" oninput="setValidation()" />
+</div>
+{% endcapture %}
+
+<!-- Page starts here -->
+<div class="page-component">
+
+    <!-- Generated header from front end matters -->
+    {% include page-component/component-header.html %}
+
+    <!-- Pattern Section -->
+    <section name="section-pattern">
+        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+        <div class="section-sub">
+            {% include page-component/component-code-snippet.html compName="email-pattern" code=email-pattern %}
+        </div>
+    </section>
+
+    <!-- Usage Guidelines Section -->
+    <section name="section-usage-guidelines">
+        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+        <strong>គំរូអ៊ីម៉ែលគួរតែត្រូវបានប្រើ៖</strong>
+        <ul>
+            <li>នៅពេលដែលអ្នកត្រូវការប្រមូលអ៊ីម៉ែលរបស់អ្នកប្រើប្រាស់។</li>
+        </ul>
+        <strong>គំរូអ៊ីម៉ែលមិនគួរតែត្រូវបានប្រើ៖</strong>
+        <ul>
+            <li>ប្រសិនបើមិនចាំបាច់សុំអ៊ីម៉ែលរបស់អ្នកប្រើប្រាស់។</li>
+        </ul>
+
+    </section>
+
+    <!-- Usability Guidelines Section -->
+    <section name="section-usability-guidelines">
+        <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
+        <p class="mb-0">
+            <strong>សូមពន្យល់ពីហេតុផលនៃការស្នើសុំអ៊ីម៉ែលរបស់អ្នកប្រើប្រាស់</strong><br>
+            នេះការអនុញ្ញាតដើម្បីឱ្យអ្នកប្រើប្រាស់៖
+            <ul>
+                <li>មានការជឿជាក់ថា អ៊ីម៉ែលរបស់ពួកគាត់នឹងមិនត្រូវបានគេក្លែងបន្លំឡើយ។</li>
+                <li>ជ្រើសរើសអ៊ីម៉ែលដែលអ្នកប្រើប្រាស់ចូលចិត្តប្រើ</li>
+            </ul>
+        </p>
+        <p>
+            <strong>ត្រូវប្រាកដថាវាដំណើរការសម្រាប់គ្រប់អ្នកប្រើប្រាស់ទាំងអស់</strong><br>
+            ប្រអប់អត្ថបទរបស់អ្នកគួរតែផ្ទុកនូវប្រវែងអតិបរមានៃអ៊ីម៉ែល (មានអក្សរ ២៥៦ ដោយរួមបញ្ចូលទាំងសញ្ញាវណ្ណយុត្តិ)។
+        </p>
+        <p class="mb-0">
+            <strong>ណែនាំអ្នកប្រើប្រាស់ឱ្យបញ្ចូលអ៊ីម៉ែលរបស់ខ្លួន</strong><br>
+            ធ្វើឱ្យវាងាយស្រួលសម្រាប់អ្នកប្រើប្រាស់ដោយ៖
+            <ul>
+                <li>អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់ចម្លងនិងបិទភ្ជាប់អ៊ីម៉ែលរបស់ខ្លូនបាន។</li>
+                <li>ការកំណត់អត្តសញ្ញាណ <code>type</code> ទៅលើ <code>email</code> ដើម្បីបង្ហាញប៊ូតុងត្រឹមត្រូវ។</li>
+                <li>ការកំណត់អត្តសញ្ញាណ <code>spellcheck</code> ទៅលើ <code>false</code> ដើម្បីឱ្យអ៊ីម៉ែលរបស់អ្នកប្រើប្រាស់ មិនត្រូវបានត្រួតពិនិត្យដោយកម្មវិធីអ៊ីនធឺណិត ឬឧបករណ៍។</li>
+                <li>ការកំណត់អត្តសញ្ញាណ <code>autocomplete</code> ទៅលើ <code>email</code> ដើម្បីឲ្យកម្មវិធីអ៊ីនធឺណិតអាចបំពេញអ៊ីម៉ែលរបស់ខ្លួនបាន ប្រសិនបើអ្នកប្រើប្រាស់បានបញ្ចូលពីមុន។</li>
+                <li>អ្នកនឹងត្រូវរួមបញ្ចូល <code>autocomplete</code> កំណត់ដើម្បីបំពេញ WCAG 2.1 AA សម្រាប់ការផលិត។</li>
+            </ul>
+        </p>
+    </section>
+</div>
+
+<script>
+    function setValidation() {
+        let ele = document.getElementById("email")
+        if (/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(ele.value)) {
+            ele.classList.remove("is-invalid")
+            ele.classList.add("is-valid")
+        } else {
+            ele.classList.remove("is-valid")
+            ele.classList.add("is-invalid")
+        }
+    }
+</script>

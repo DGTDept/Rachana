@@ -116,3 +116,4 @@ descriptions:
   # Below Patterns
   date: Use this pattern when you want to ask users for a specific date, e.g. their date of birth or when something was issued to them.
   address: Use an address lookup when you are asking users for a Cambodia address.
+  email-address: Use this pattern when you need to ask users for their email address.
