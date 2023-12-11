@@ -9,6 +9,7 @@ filters:
   component: Filter Components
   template: Filter Templates
   pattern: Filter Patterns
+  get-started: Filter Documents
 navigation:
   home: Home
   about: About
@@ -22,7 +23,7 @@ sidebar:
 titles:
   about: About
   component: Component Overview
-  get-start: Get Start
+  get-started: Get Start
   pattern: Pattern Overview
   template: Templates Overview
   faqs: FAQs
@@ -105,11 +106,11 @@ descriptions:
   toast: A toast notification is a lightweight popup message that appears temporarily over the main interface to provide brief feedback, notifications, or error message to the user.
   tooltip: Tooltips display more information when users hover over, focus on, or interact with an element.
   # Below templates
+  detail-page-side-nav: Detail page with a side navigation menu.
   detail-page-side-nav-extended: Detail page with a side navigation menu and table of contents.
   detail-page-basic: Detail page basic may consist of any relevant information related to a certain product or service.
-  detail-page-side-nav: Detail page with a side navigation menu.
   collapsible-page-form: ​A base collection of field components rendered within multi collapsible tabs.
-  landing-page: A landing page is a standalone page distinct from any other pages including homepage, which serves a specific purpose or action. 
+  landing-page: A landing page is a standalone page distinct from any other pages including homepage, which serves a specific purpose or action.
   multi-page-form: A base collection of field components rendered on a multi page layout.
   template: Here you'll find basic templates that you can use to start building.
   single-page-form: A base collection of field components rendered on a single page.
