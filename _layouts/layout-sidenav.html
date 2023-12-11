@@ -22,8 +22,8 @@ layout: layout-default
                 <li class="sidenav-item">
                     {% if site.lang == 'en' %}
                     <a role="button" class="cgds btn {{class}}"
-                        href="{{site.baseurl_root }}/en{{item.url}}">{% t item.title %}</a>
-                    {%else %}
+                       href="{{site.baseurl_root }}/en{{item.url}}">{% t item.title %}</a>
+                    {% else %}
                     <a role="button" class="cgds btn {{class}}" href="{{item.url}}">{% t item.title %}</a>
                     {% endif %}
                 </li>
