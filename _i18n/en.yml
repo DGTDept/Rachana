@@ -123,3 +123,4 @@ descriptions:
   address: Use an address lookup when you are asking users for a Cambodia address.
   email-address: Use this pattern when you need to ask users for their email address.
   phone-number: Use this pattern when you need to ask users for their phone number.
+  name: Use this pattern when you need to ask users for their names.
