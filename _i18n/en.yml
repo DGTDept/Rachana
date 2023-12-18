@@ -106,7 +106,6 @@ descriptions:
   toast: A toast notification is a lightweight popup message that appears temporarily over the main interface to provide brief feedback, notifications, or error message to the user.
   tooltip: Tooltips display more information when users hover over, focus on, or interact with an element.
   # Below templates
-  detail-page-side-nav: Detail page with a side navigation menu.
   detail-page-side-nav-extended: Detail page with a side navigation menu and table of contents.
   detail-page-basic: Detail page basic may consist of any relevant information related to a certain product or service.
   collapsible-page-form: ​A base collection of field components rendered within multi collapsible tabs.
@@ -114,6 +113,11 @@ descriptions:
   multi-page-form: A base collection of field components rendered on a multi page layout.
   template: Here you'll find basic templates that you can use to start building.
   single-page-form: A base collection of field components rendered on a single page.
+  # Get started section
+  get-started: These are the guides and resources you need to create a website with CGDS
+  installation: Installation guide that will help you quickly spin up a site using CGDS
+  customise-with-sass: Use <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">Sass</a> to customise how CGDS looks and behaves in your project
+  ui-kit: The CGDS offers a flexible visual style you can apply to any website or product.
   # Below Patterns
   date: Use this pattern when you want to ask users for a specific date, e.g. their date of birth or when something was issued to them.
   address: Use an address lookup when you are asking users for a Cambodia address.
