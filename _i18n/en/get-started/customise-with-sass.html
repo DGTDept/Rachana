@@ -1,0 +1,179 @@
+{% capture sass-folder-structure %}
+site-folder/
+├── scss
+│   └── custom.scss
+└── node_modules/
+    └── {{site.cgds-package-name}}/sass/
+        └── cgds.scss
+{% endcapture %}
+
+{% capture include-all-parts %}
+// Custom.scss
+// Option A: Include all of CGDS theme
+
+// Include any default variable overrides here
+
+@import "~{{site.cgds-package-name}}/sass/cgds.scss";
+
+// Then add additional custom code here
+{% endcapture %}
+
+{% capture include-parts %}
+/// Custom.scss
+// Option B: Include parts of CGDS
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~{{site.cgds-package-name}}/sass/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required CGDS stylesheets
+@import "~{{site.cgds-package-name}}/sass/variables";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+
+@import "~{{site.cgds-package-name}}/sass/mixins";
+@import "~{{site.cgds-package-name}}/sass/root";
+
+// 6. Optionally include any other parts as needed
+@import "~{{site.cgds-package-name}}/sass/utilities";
+@import "~{{site.cgds-package-name}}/sass/reboot";
+@import "~{{site.cgds-package-name}}/sass/type";
+@import "~{{site.cgds-package-name}}/sass/images";
+@import "~{{site.cgds-package-name}}/sass/containers";
+@import "~{{site.cgds-package-name}}/sass/grid";
+@import "~{{site.cgds-package-name}}/sass/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "~{{site.cgds-package-name}}/sass/utilities/api";
+
+// 8. Add additional custom code here
+{% endcapture %}
+{% capture webpack-sass %}
+@import "~{{site.cgds-package-name}}/sass/accordion";
+{% endcapture %}
+
+{% capture sgds-variable %}
+node_modules/
+└── {{site.cgds-package-name}}/sass/
+└── _variables.scss
+{% endcapture %}
+
+{% capture sgds-variable-example %}
+// Required
+@import "~{{site.cgds-package-name}}/sass/functions";
+
+// Default variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+// Required
+@import "~{{site.cgds-package-name}}/sass/sgds-variables";
+
+
+// Optional components here
+@import "~{{site.cgds-package-name}}/sass/accordion";
+@import "~{{site.cgds-package-name}}/sass/alert";
+@import "~{{site.cgds-package-name}}/sass/badge";
+@import "~{{site.cgds-package-name}}/sass/breadcrumb";
+// etc
+{% endcapture %}
+
+{% capture css-variables %}
+--cgds-blue: #1f69ff;
+--cgds-purple: #5925DC;
+--cgds-pink: #d63384;
+--cgds-red: #D7260F;
+--cgds-yellow: #F79009;
+--cgds-green: #0A8217;
+--cgds-cyan: #0F71BB;
+--cgds-white: #fff;
+--cgds-gray: #344054;
+--cgds-gray-dark: #000;
+--cgds-gray-100: #F7F7F9;
+--cgds-gray-200: #E4E7EC;
+--cgds-gray-300: #D0D5DD;
+--cgds-gray-400: #98A2B3;
+--cgds-gray-500: #667085;
+--cgds-gray-600: #344054;
+--cgds-gray-700: #1D2939;
+--cgds-gray-800: #000;
+--cgds-gray-900: #000;
+--cgds-primary: #5925DC;
+--cgds-secondary: #1f69ff;
+--cgds-success: #0A8217;
+--cgds-info: #0F71BB;
+--cgds-warning: #F79009;
+--cgds-danger: #D7260F;
+--cgds-light: #F7F7F9;
+--cgds-dark: #000;
+--cgds-primary-rgb: 89, 37, 220;
+--cgds-secondary-rgb: 31, 105, 255;
+--cgds-success-rgb: 10, 130, 23;
+--cgds-info-rgb: 15, 113, 187;
+--cgds-warning-rgb: 247, 144, 9;
+--cgds-danger-rgb: 215, 38, 15;
+--cgds-light-rgb: 247, 247, 249;
+--cgds-dark-rgb: 0, 0, 0;
+--cgds-white-rgb: 255, 255, 255;
+--cgds-black-rgb: 0, 0, 0;
+--cgds-body-color-rgb: 29, 41, 57;
+--cgds-body-bg-rgb: 255, 255, 255;
+--cgds-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+"Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--cgds-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+--cgds-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+--cgds-body-font-family: var(--cgds-font-sans-serif);
+--cgds-body-font-size: 1rem;
+--cgds-body-font-weight: 400;
+--cgds-body-line-height: 2;
+--cgds-body-color: #1D2939;
+--cgds-body-bg: #fff;
+{% endcapture %}
+
+<div class="page-component">
+    {% include page-component/component-header.html %}
+
+    <section name="section-source-file">
+        <h2 class="title fw-bold" id="anatomy">Working with CGDS's source files</h2>
+        <div class="section-sub">
+            <p>The Sass source files for cgds can be found in the folder<br><code>node_modules/{{site.cgds-package-name}}/sass</code></p>
+            {% highlight bash %}{{sass-folder-structure}}{% endhighlight %}
+            <div role="alert" class="fade d-flex align-items-center alert alert-info show cgds">
+                <div>
+                    <i class="bi bi-exclamation-circle me-2"></i>
+                    Whenever possible, avoid modifying the core sass files in <code>{{site.cgds-package-name}}/sass/</code>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section name="section-importing">
+        <div class="section-sub">
+            <h2 class="title fw-bold" id="anatomy">Importing</h2>
+            <p>In your <code>custom.scss</code>, you can choose to include all <code>sgds-theme</code> files or pick the
+                components you need. However do note that are some requirements and dependencies across the components.</p>
+        </div>
+        <div class="section-sub">
+            <h3 class="title fw-bold" id="anatomy">Include all parts</h3>
+            {% highlight css %}{{include-all-parts}}{% endhighlight %}
+        </div>
+        <div class="section-sub">
+            <h3 class="title fw-bold" id="anatomy">Include parts of CGDS</h3>
+            {% highlight css %}{{include-parts}}{% endhighlight %}
+
+            <p>If you are using Webpack, u can omit the <code>node_modules</code> directory</p>
+            {% highlight css %}{{webpack-sass}}{% endhighlight %}
+        </div>
+    </section>
+    <section name="section-design-tokens">
+        <h2 class="title fw-bold" id="anatomy">Variables</h2>
+        <p>
+            You can find the complete list of  variables inside <code>{{site.cgds-package-name}}/sass/_variables.scss</code> or in our <a href="{{site.gitlab-cgds-variables}}" target="_blank" rel="noopener noreferrer">CGDS github repo</a>
+        </p>
+        <p>Here's an example that changes the <code>background-color</code> and color for the <code>body</code> when importing and compiling <code>sgds-theme</code> via npm:</p>
+        {% highlight scss %}{{sgds-variable-example}}{% endhighlight %}
+
+    </section>
+</div>
