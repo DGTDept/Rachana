@@ -125,3 +125,5 @@ descriptions:
   phone-number: Use this pattern when you need to ask users for their phone number.
   name: Use this pattern when you need to ask users for their names.
   error-summary: This shows a summary of errors the user has made at the top of the page.
+  pattern: We provide baseline patterns that you can easily tweak to suit your products and services.<br>All patterns also have basic accessibility features built-in, e.g. <code>autocomplete</code> where needed.<br> For more information, do visit the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG page</a>.
+ 
