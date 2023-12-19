@@ -15,8 +15,13 @@ import * as bootstrap from 'bootstrap';
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@cgds/cgds/css/cgds.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@cgds/cgds/assets/custom-css/style.css"
+/>
     ...
 </head>
+
 {% endcapture %}
 {% capture cdn-css %}
 <head>
@@ -49,6 +54,14 @@ import * as bootstrap from 'bootstrap';
     <div class="section-sub">
         <h3 class="subtitle fw-bold" id="via-cdn">Via CSS</h3>
         {% highlight html %}{{css}}{% endhighlight %}
+        <p>
+            <b>cgds.css</b><br>
+            Link for all style that we are customized in our cgds.
+        </p>
+        <p>
+            <b>style.css</b><br>
+            Link for customized only image and icon in our cgds.
+        </p>
     </div>
 
     <section name="section-vanillaJS">
