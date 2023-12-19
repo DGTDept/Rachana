@@ -1,132 +1,116 @@
+  <header>
+      {% include breadcrumb.html %}
+      <h1 class="fw-bold">{% t page.title %}</h1>
+  </header>
+  <article>
+      <section>
+          <h2 id="overview">{% t global.overview %}</h2>
+          <p>Along with the development of Industrial Revolution 4.0 in doing digital transformation in Cambodia. The
+              Digital Government Commitee have created Cambodia Government Design System (CGDS), in order to assist with
+              the digital transformation process with the goal to strengthen government agencies to create digital
+              services that are quick, responsive, and easy to use. Additionally, CGDS system also contain sample
+              components, design patterns, and templates.
+          </p>
+          <p>The CGDS system has a strong emphasis on modularity, and a unified code base in order to assist in
+              development, eliminate inconsistency, and improve efficiency.</p>
 
-<header>
-    {% include breadcrumb.html %}
-    <h1 class="fw-bold">{% t page.title %}</h1>
-</header>
-<article>
-    <section>
-        <h2 id="overview">{% t global.overview %}</h2>
-        <p>With greater adoption of digital services over traditional physical delivery methods, there is an increasing
-            need
-            to ensure that they are of optimal quality. In this spirit, the <a
-                href="/">Cambodia Government Design System
-                (CGDS)</a> aims to empower agencies to create fast,
-            accessible, and mobile-friendly digital services with a common set of UI components, patterns, and
-            templates.
-        </p>
-        <p>Where applicable, CGDS complies with the <a
-                href="/guidelines/standards-and-best-practices/digital-service-standards.html" target="_blank">Digital
-                Service Standards (DSS)</a>, which is a set of policies, standards, and guidelines to help agencies
-            implement digital services that meet the goal of delivering digital services that are easy-to-use, seamless,
-            and
-            relevant, as set out in the <a href="https://www.tech.gov.sg/digital-government-blueprint/"
-                target="_blank">Digital Government Blueprint</a>.</p>
 
-        
-    </section>
+      </section>
 
-    <section>
-        <h2 id="what-is-cgds">What is CGDS?</h2>
-        CGDS consists:
-        <ul>
-            <li><strong>Components:</strong> A collection of open-source, front-end components that you can reuse or
-                customise to build websites quickly while not compromising on specific needs. All components have been
-                checked to ensure they adhere to accessibility standards.
-            </li>
-            <li><strong>Templates</strong> to jump-start website development;.</li>
-            <li><strong>Theme Customiser</strong> to customise components and colours according to your needs. It also
-                features a built-in colour contrast checker to help with accessibility checks;</li>
-            <li><strong>Patterns</strong> for common use cases rather than having to build them on your own. All
-                patterns
-                have been checked to ensure they adhere to accessibility standards; and</li>
-            <li><strong>Design files</strong> for Figma is provided to help designers start designing
-                without having to set everything up from scratch.</li>
-        </ul>
-    </section>
+      <section>
+          <h2 id="what-is-cgds">What is CGDS?</h2>
+          CGDS consists:
+          <ul>
+              <li><strong>Components:</strong> A collection of open-source, front-end components that you can reuse or
+                  customise to build websites quickly while not compromising on specific needs. All components have been
+                  checked to ensure they adhere to accessibility standards.
+              </li>
+              <li><strong>Templates</strong> to jump-start website development.​</li>
+              <li><strong>Theme Customiser</strong> to customise components and colours according to your needs. It also
+                  features a built-in colour contrast checker to help with accessibility checks;</li>
+              <li><strong>Patterns</strong> for common use cases rather than having to build them on your own. All
+                  patterns
+                  have been checked to ensure they adhere to accessibility standards; and</li>
+              <li><strong>Design files</strong> for Figma is provided to help designers start designing
+                  without having to set everything up from scratch.</li>
+          </ul>
+      </section>
 
-    <section>
-        <h2 id="why-should-cgds-be-adopted">Why Should CGDS be Adopted?</h2>
-        The benefits of CGDS include:
-        <ul>
+      <section>
+          <h2 id="why-should-cgds-be-adopted">Why Should CGDS be Adopted?</h2>
+          The benefits of CGDS include:
+          <ul>
+              <li><strong>Greater Scalability:</strong> CGDS aims to provide adaptable UI components, catering to
+                  the specific needs of government digital services in Cambodia, ensuring enhanced
+                  scalability.
+              </li>
+              <li><strong>Trust:</strong> CGDS seeks to build user trust by implementing
+                  recognizable design patterns and elements, fostering confidence in government
+                  digital platforms.</li>
+              <li><strong>Focus on User Experience:</strong> CGDS will follow SGDS’s example in emphasizing
+                  user experience, enabling a focus on crafting intuitive user flows while minimiz-
+                  ing time spent on styling.
+              </li>
+              <li><strong>Easy Maintenance and Low Cost:</strong> CGDS aims to reduce technical debt by adopt-
+                  ing evolving design choices, ensuring efficient and low-maintenance digital ser-
+                  vices.
+              </li>
+              <li><strong>Faster Prototyping:</strong> CGDS aspires to expedite the prototyping process by provid-
+                  ing plug-and-play components, allowing government agencies to experiment and
+                  innovate with digital services.
+              </li>
+              <li><strong>UI Standardization:</strong> This design system will serve as factor design system for the
+                  whole government of Cambodia.</li>
+          </ul>
+      </section>
 
-            <li><strong>Greater Scalability:</strong> UI components can be adapted to suit your needs</li>
-            <li><strong>Trust:</strong> Boost confidence with CGDS' recognisable design patterns</li>
-            <li><strong>Focus on User Experience:</strong> Spend less time styling and more time crafting user flows
-            </li>
-            <li><strong>Easy Maintenance and Low Cost:</strong> Reduce technical debt with CGDS' evolving design choices
-            </li>
-            <li><strong>Faster Prototyping:</strong> Build and experiment using CGDS' plug-n-play components</li>
-            <li><strong>Uncomplicated Compliance:</strong> Where applicable, CGDS complies with DSS</li>
-        </ul>
-    </section>
+      <section>
+          <h2 id="how-do-you-use-cgds">How Do You Use CGDS?</h2>
+          There are three main use cases for CGDS:
+          <ul>
 
-    <section>
-        <h2 id="how-do-you-use-cgds">How Do You Use CGDS?</h2>
-        There are three main use cases for CGDS:
-        <ul>
+              <li>
+                  <p><strong>Static Informational Websites</strong> are basic and easy to build. They only provide
+                      client-side
+                      content in the form of HTML pages (alternatively, CSS or JavaScript), and do not require
+                      server-side
+                      processing. To launch such websites, agencies can make use of the CGDS CSS/JavaScript with
+                      template
+                      package and incorporate it into any open-source static site generator like <a
+                          href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Alternatively, agencies can also use
+                      the
+                      CGDS package as a base to start building their websites.</p>
+              </li>
+              <li>
+                  <p><strong>Dynamic Informational Websites</strong> also provide client-side content. However, unlike
+                      Static
+                      Informational Websites, Dynamic Informational Websites generate such content using a server and
+                      database. To launch such websites, agencies can use the CGDS WordPress or Sitefinity package to
+                      develop
+                      locally.</p>
+              </li>
+              <li>
+                  <p><strong>Transactional Websites are</strong> the most complex among the three. They support
+                      transactions
+                      such as online banking and retail purchasing. Agencies are able to use CGDS to start building or
+                      choose
+                      which components they require for their websites.</p>
+              </li>
+          </ul>
 
-            <li>
-                <p><strong>Static Informational Websites</strong> are basic and easy to build. They only provide
-                    client-side
-                    content in the form of HTML pages (alternatively, CSS or JavaScript), and do not require server-side
-                    processing. To launch such websites, agencies can make use of the CGDS CSS/JavaScript with template
-                    package and incorporate it into any open-source static site generator like <a
-                        href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Alternatively, agencies can also use
-                    the
-                    CGDS package as a base to start building their websites.</p>
-            </li>
-            <li>
-                <p><strong>Dynamic Informational Websites</strong> also provide client-side content. However, unlike
-                    Static
-                    Informational Websites, Dynamic Informational Websites generate such content using a server and
-                    database. To launch such websites, agencies can use the CGDS WordPress or Sitefinity package to
-                    develop
-                    locally.</p>
-            </li>
-            <li>
-                <p><strong>Transactional Websites are</strong> the most complex among the three. They support
-                    transactions
-                    such as online banking and retail purchasing. Agencies are able to use CGDS to start building or
-                    choose
-                    which components they require for their websites.</p>
-            </li>
-        </ul>
+          <figure style="text-align: center">
+              <img src="{{site.baseurl}}/assets/img/cgds-fig1.png" width="85%" height="85%" alt="Fig 1: SGDS use cases">
+              <figcaption>Fig 1: CGDS use cases</figcaption>
+          </figure>
+      </section>
 
-        <figure style="text-align: center">
-            <img src="https://www.developer.tech.gov.sg/assets/img/sgds-fig1.png" width="85%" height="85%"
-                alt="Fig 1: SGDS use cases">
-            <figcaption>Fig 1: CGDS use cases</figcaption>
-        </figure>
-    </section>
-
-    <section>
-        <h2 id="success-stories">Success Stories</h2>
-        <p>The <a href="https://singaporediscovers.life.gov.sg/" target="_blank">SingapoRediscover Vouchers</a> website
-            and
-            the <a href="/" target="_blank">Cambodia Government Developer Portal</a> teams made use of CGDS when
-            launching
-            their websites. The teams were able to use CGDS’ ready-made components and framework, rather than starting
-            from
-            scratch, which saved them valuable time.</p>
-    </section>
-
-    <section>
-        <h2 id="whats-next">What's Next</h2>
-        <p>The CGDS team plans to improve the offerings to include frameworks such as React, Vue, and Angular.</p>
-        Feature enhancements are also in the works to add more customisability to the components, such as:
-        <ul>
-            <li>Feature to customise number of pages and items to display when using the pagination component; and</li>
-            <li>Feature for notifications to be manually dismissed or timed to disappear after a defined duration when
-                using
-                the notification component.</li>
-        </ul>
-        <p>On top of feature enhancements, the team will be creating additional patterns and templates.</p>
-    </section>
-
-    <section>
-        <h2 id="contact-information">Contact Information</h2>
-        <p>For enquiries, fill up this <a href="https://form.gov.sg/#!/5bc440ac507956000fdbae91"
-                target="_blank">form</a>
-            and the CGDS team will assist with your query.</p>
-    </section>
-</article>
+      <section>
+          <h2 id="whats-next">Future Plan</h2>
+          <ul>
+              <li>Furnish/Improve existing features related with Wordpress.
+              </li>
+              <li>CGDS team are planning to integrate CGDS design system with frameworks such as React, Vue and Angular.
+              </li>
+          </ul>
+      </section>
+  </article>
