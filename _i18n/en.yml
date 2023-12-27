@@ -106,6 +106,7 @@ descriptions:
   toast: A toast notification is a lightweight popup message that appears temporarily over the main interface to provide brief feedback, notifications, or error message to the user.
   tooltip: Tooltips display more information when users hover over, focus on, or interact with an element.
   # Below templates
+  detail-page-side-nav: Detail page with a side navigation menu.
   detail-page-side-nav-extended: Detail page with a side navigation menu and table of contents.
   detail-page-basic: Detail page basic may consist of any relevant information related to a certain product or service.
   collapsible-page-form: ​A base collection of field components rendered within multi collapsible tabs.
@@ -126,4 +127,3 @@ descriptions:
   name: Use this pattern when you need to ask users for their names.
   error-summary: This shows a summary of errors the user has made at the top of the page.
   pattern: We provide baseline patterns that you can easily tweak to suit your products and services.<br>All patterns also have basic accessibility features built-in, e.g. <code>autocomplete</code> where needed.<br> For more information, do visit the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG page</a>.
- 
