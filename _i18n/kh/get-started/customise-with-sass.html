@@ -9,9 +9,9 @@ site-folder/
 
 {% capture include-all-parts %}
 // Custom.scss
-// ជម្រើសទី១: បញ្ចូលគំរូរចនារបស់ CGDS ទាំងអស់
+// ជម្រើសទី១: បញ្ចូលគំរូរចនារបស់ Rachana ទាំងអស់
 
-// កែប្រែលំនាំដើមរបស់ CGDS នៅក្រោមនេះ
+// កែប្រែលំនាំដើមរបស់ Rachana នៅក្រោមនេះ
 
 @import "~{{site.cgds-package-name}}/sass/cgds.scss";
 
@@ -20,19 +20,19 @@ site-folder/
 
 {% capture include-parts %}
 /// Custom.scss
-// ជម្រើសទី១: បញ្ចូលគំរូរចនារបស់ CGDS ដោយផ្នែក
+// ជម្រើសទី១: បញ្ចូលគំរូរចនារបស់ Rachana ដោយផ្នែក
 
 // 1. បញ្ចូល functions មុនគេ (ដូច្នះអ្នកអាចប្តូរ ពណ៌, SVGs, calc ។ល។)
 @import "~{{site.cgds-package-name}}/sass/functions";
 
-// 2. កែប្រែលំនាំដើមរបស់ CGDS នៅក្រោមនេះ
+// 2. កែប្រែលំនាំដើមរបស់ Rachana នៅក្រោមនេះ
 
-// 3. បញ្ចូលផ្នែកចាំបាច់របស់ CGDS នៅក្រោមនេះ
+// 3. បញ្ចូលផ្នែកចាំបាច់របស់ Rachana នៅក្រោមនេះ
 @import "~{{site.cgds-package-name}}/sass/variables";
 
 // 4. បន្ថែមការកែសម្រួលផ្សេងទៀតនៅទីនេះ
 
-// 5. បញ្ចូលផ្នែកចាំបាច់របស់ CGDS ផ្សេងទៀតនៅក្រោមនេះ
+// 5. បញ្ចូលផ្នែកចាំបាច់របស់ Rachana ផ្សេងទៀតនៅក្រោមនេះ
 
 @import "~{{site.cgds-package-name}}/sass/mixins";
 @import "~{{site.cgds-package-name}}/sass/root";
@@ -137,9 +137,9 @@ $body-color: #111;
     {% include page-component/component-header.html %}
 
     <section name="section-source-file">
-        <h2 class="title fw-bold" id="anatomy">កែសម្រួលនៅក្នុងប្រភពដើមនៃ sass របស់ CGDS</h2>
+        <h2 class="title fw-bold" id="anatomy">កែសម្រួលនៅក្នុងប្រភពដើមនៃ sass របស់ Rachana</h2>
         <div class="section-sub">
-            <p>អ្នកអាចរកប្រភពដើមនៃ Sass របស់ CGDS នៅក្នុងទីតាំង<br><code>node_modules/{{site.cgds-package-name}}/sass</code></p>
+            <p>អ្នកអាចរកប្រភពដើមនៃ Sass របស់ Rachana នៅក្នុងទីតាំង<br><code>node_modules/{{site.cgds-package-name}}/sass</code></p>
             {% highlight bash %}{{sass-folder-structure}}{% endhighlight %}
             <div role="alert" class="fade d-flex align-items-center alert alert-info show cgds">
                 <div>
@@ -160,7 +160,7 @@ $body-color: #111;
             {% highlight css %}{{include-all-parts}}{% endhighlight %}
         </div>
         <div class="section-sub">
-            <h3 class="title fw-bold" id="anatomy">ការរួមបញ្ចូលធាតុនៃ CGDS</h3>
+            <h3 class="title fw-bold" id="anatomy">ការរួមបញ្ចូលធាតុនៃ Rachana</h3>
             {% highlight css %}{{include-parts}}{% endhighlight %}
 
             <p>ប្រសិនបើអ្នកប្រើប្រាស់ Webpack, អ្នកមិនចាំបាច់បញ្ចូល <code>node_modules</code> directory ទេ។</p>
@@ -170,7 +170,7 @@ $body-color: #111;
     <section name="section-design-tokens">
         <h2 class="title fw-bold" id="anatomy">Variables</h2>
         <p>
-           អ្នកអាចចូលមើលបញ្ជីនៃ variables ទាំងអស់ក្នុង <code>{{site.cgds-package-name}}/sass/_variables.scss</code> និងក្នុង <a href="{{site.gitlab-cgds-variables}}" target="_blank" rel="noopener noreferrer">GitLab repository របស់ CGDS។ </a>
+           អ្នកអាចចូលមើលបញ្ជីនៃ variables ទាំងអស់ក្នុង <code>{{site.cgds-package-name}}/sass/_variables.scss</code> និងក្នុង <a href="{{site.gitlab-cgds-variables}}" target="_blank" rel="noopener noreferrer">GitLab repository របស់ Rachana។ </a>
         </p>
         <p>ឧទាហរណ៍ខាងក្រោមបង្ហាញពីការប្តូរ <code>background-color</code> និង color សម្រាប់ <code>body</code> បន្ទាប់ពីការបញ្ជូល <code>cgds-theme</code> តាម npm:</p>
         {% highlight scss %}{{sgds-variable-example}}{% endhighlight %}

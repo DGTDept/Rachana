@@ -22,7 +22,7 @@
 
 <!-- Page starts here -->
 <div class="page-component">
-        
+
     <!-- Generated header from front end matters -->
     {% include page-component/component-header.html %}
 
@@ -52,11 +52,7 @@
         <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
         <p>
             <strong>ជៀសវាងការផ្លាស់ប្តូរលំនាំដើមនៃផ្នែកអាសយដ្ឋាន</strong><br>
-            ត្រូវប្រាកដថាលេខប្រៃសណីយ៍ស្ថិតនៅខាងលើ ព្រោះការស្វែងរកអាសយដ្ឋានអាចបង្កលក្ខណៈងាយស្រួលក្នុងការបំពេញទីតាំងអាសយដ្ឋាន។
-        </p>
-        <p>
-            <strong>លំនាំដើមនៃកាលបរិច្ឆេទ និងខែ</strong><br>
-            ការបំពេញដោយស្វ័យប្រវត្តិជួយអ្នកប្រើប្រាស់បំពេញទម្រង់លឿនជាងមុន, ប៉ុន្តែកុំភ្លេចទុកផ្នែកទាំងនេះសម្រាប់កែសម្រួលដើម្បីផ្តល់ឱ្យអ្នកប្រើប្រាស់ងាយស្រួលក្នុងការគ្រប់គ្រង។
+            ត្រូវប្រាកដថាលេខប្រៃសណីយ៍ស្ថិតនៅខាងលើ ព្រោះការស្វែងរកអាសយដ្ឋានតាមរយៈលេខប្រៃសណីយ៍អាចបង្កលក្ខណៈងាយស្រួលក្នុងការបំពេញទីតាំងអាសយដ្ឋាន។
         </p>
     </section>
 </div>
@@ -67,11 +63,11 @@
         var streetName = document.getElementById("streetName")
         fetch(
             'https://www.google.com/maps/@11.5762281,104.926463,15z?entry=ttu' +
-            postalCode + 
+            postalCode +
             '&returnGeom=Y&getAddrDetails=Y'
         )
         .then((response) => response.json())
-        .then((json) => 
+        .then((json) =>
             streetName.value = json.results[0].ADDRESS
         );
     }

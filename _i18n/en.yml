@@ -115,10 +115,10 @@ descriptions:
   template: Here you'll find basic templates that you can use to start building.
   single-page-form: A base collection of field components rendered on a single page.
   # Get started section
-  get-started: These are the guides and resources you need to create a website with CGDS
-  installation: Installation guide that will help you quickly spin up a site using CGDS
-  customise-with-sass: Use <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">Sass</a> to customise how CGDS looks and behaves in your project
-  ui-kit: The CGDS offers a flexible visual style you can apply to any website or product.
+  get-started: These are the guides and resources you need to create a website with Rachana
+  installation: Installation guide that will help you quickly spin up a site using Rachana
+  customise-with-sass: Use <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">Sass</a> to customise how Rachana looks and behaves in your project
+  ui-kit: The Rachana offers a flexible visual style you can apply to any website or product.
   # Below Patterns
   date: Use this pattern when you want to ask users for a specific date, e.g. their date of birth or when something was issued to them.
   address: Use an address lookup when you are asking users for a Cambodia address.

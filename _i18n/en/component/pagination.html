@@ -70,7 +70,8 @@ $pagination-disabled-bg: $white !default;
 $pagination-disabled-border-color: $border-color !default;
 $pagination-transition: color .15s ease-in-out, background-color .15s
 ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
-!default; $pagination-border-radius-sm: $border-radius-sm !default;
+!default;
+$pagination-border-radius-sm: $border-radius-sm !default;
 $pagination-border-radius-lg: $border-radius-lg !default;
 {% endcapture %}
 <!-- Page starts here -->
@@ -112,7 +113,7 @@ $pagination-border-radius-lg: $border-radius-lg !default;
             <ol>
                 <li>
                     <b>Previous and next buttons:</b> Allows users to go
-                    backward or forward a page, can be text or icon, can be used
+                    backward or forward a page, can be a text or icon, can be used
                     individually depending on situation and space constraints.
                 </li>
                 <li>
@@ -158,11 +159,11 @@ $pagination-border-radius-lg: $border-radius-lg !default;
         <p class="fw-bold mb-0">Pagination should not be used when:</p>
         <ol>
             <li>
-                The page has infinite scrolling, i.e. loading data as the user
+                The page has infinite scrolling, i.e., loading data as the user
                 scrolls down the page.
             </li>
             <li>
-                The content is not part of the same set, consider using
+                If the information doesn't belong together, consider using
                 <a href="​​">navigation</a>
                 instead.
             </li>

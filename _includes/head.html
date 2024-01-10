@@ -13,15 +13,15 @@
 
     {% assign t = page.title | remove: 'titles.' | remove: 'headers.'%}
     {% if page.title contains 'titles.' %}
-    <title>CGDS | {{site.translations[site.lang].titles.[t]}}</title>
+    <title>Rachana | {{site.translations[site.lang].titles.[t]}}</title>
     {% else if page.title contains  'headers.' %}
-    <title>CGDS | {{site.translations[site.lang].headers.[t]}}</title>
+    <title>Rachana | {{site.translations[site.lang].headers.[t]}}</title>
     {% else %}
-    <title>CGDS | {{page.title}}</title>
+    <title>Rachana | {{page.title}}</title>
     {% endif %}
 
-    
+
     <link rel="stylesheet" href="/css/cgds.css">
     <link rel="stylesheet" href="/assets/custom-css/style.css">
-    
+
 </head>
