@@ -92,14 +92,14 @@ $modal-scale-transform: scale(1.02) !default;
 
 {% capture size-demo %}
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalSmall">
+<button type="button" class="btn btn-primary btn-sm cgds" data-bs-toggle="modal" data-bs-target="#exampleModalSmall">
     Launch small modal
 </button>
-<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalMedium">
-    Launch large modal
+<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalSmall">
+  Launch medium modal
 </button>
-<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalLarge">
-    Launch Extra large modal
+<button type="button" class="btn btn-primary btn-lg cgds" data-bs-toggle="modal" data-bs-target="#exampleModalMedium">
+    Launch large modal
 </button>
 
 <!-- Modal -->
@@ -351,10 +351,10 @@ $modal-scale-transform: scale(1.02) !default;
                 </li>
                 <li>
                     <b>Content:</b> Serves to explain what the model is about.
-                    For e.g error messaging or confirmation messaging.
+                    For e.g., error messaging or confirmation messaging.
                 </li>
                 <li>
-                    <b>CTA buttons:</b> Serves to let users take a action or
+                    <b>CTA buttons:</b> Serves to let users take an action or
                     cancel.
                 </li>
             </ol>
@@ -387,7 +387,7 @@ $modal-scale-transform: scale(1.02) !default;
             <li>
                 When you want to interrupt a user’s current task to direct the
                 user’s attention to something important. For example, confirming
-                when a user wants to submit a form, user sign up and login, or
+                when a user wants to submit a form, user signs up and login, or
                 highlighting an important event with an infographic upon
                 entering your website.
             </li>
@@ -398,7 +398,7 @@ $modal-scale-transform: scale(1.02) !default;
             <li>
                 When you need to present simple notifications to the user. It
                 should always accompany something actionable by the user such as
-                confirming or filling in a form. If you need to notifiy the
+                confirming or filling in a form. If you need to notify the
                 user, use something less intrusive such as the notification
                 component instead.
             </li>
@@ -412,9 +412,11 @@ $modal-scale-transform: scale(1.02) !default;
         </h2>
         <p>
             <b>User triggered</b><br />
-            Modals should always appear as a result of a action that a user has
-            taken like when submitting a application. Modals should not be
-            automatically displayed to the user. Some exceptions to the rule
+            Modals should always appear as a result of an action that a user has
+            taken like when submitting an application.
+            Modals should not be
+            automatically displayed to the user.
+            Some exceptions to the rule
             would be if you need to inform users that their session is about to
             time out or if they have to accept cookies before proceeding.
         </p>

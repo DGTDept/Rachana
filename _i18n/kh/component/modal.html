@@ -56,7 +56,7 @@ $modal-scale-transform: scale(1.02) !default;
 {% capture modal-default-demo %}
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    បើកដំណើរការផ្លាកជូនដំណឹងលំនាំដើម
+    ចុចលើនេះដើម្បបើកដំណើរការផ្លាកជូនដំណឹងលំនាំដើម
 </button>
 
 <!-- Modal -->
@@ -84,15 +84,16 @@ $modal-scale-transform: scale(1.02) !default;
 
 {% capture size-demo %}
 <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm cgds" data-bs-toggle="modal" data-bs-target="#exampleModalSmall">
+    ចុចលើនេះដើម្បីបើកដំណើរការផ្លាកជូនដំណឹងទំហំតូច
+</button>
 <button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalSmall">
-    បើកដំណើរការផ្លាកជូនដំណឹងទំហំតូច
+  ចុចលើនេះដើម្បីបើកដំណើរការផ្លាកជូនដំណឹងទំហំមធ្យម
 </button>
-<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalMedium">
-    បើកដំណើរការផ្លាកជូនដំណឹងទំហំធំ
+<button type="button" class="btn btn-primary btn-lg cgds" data-bs-toggle="modal" data-bs-target="#exampleModalMedium">
+    ចុចលើនេះដើម្បីបើកដំណើរការផ្លាកជូនដំណឹងទំហំធំ
 </button>
-<button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalLarge">
-    បើកដំណើរការផ្លាកជូនដំណឹងទំហំធំបន្ថែម
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalSmall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -161,7 +162,7 @@ $modal-scale-transform: scale(1.02) !default;
 {% capture scrollable-demo %}
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
-    បើកដំណើរការផ្លាកជូនដំណឹងដែលអាចអូសបាន
+    ចុចលើនេះដើម្បីបើកដំណើរការផ្លាកជូនដំណឹងដែលអាចអូសបាន
 </button>
 
 <!-- Modal -->
@@ -239,7 +240,7 @@ $modal-scale-transform: scale(1.02) !default;
 {% capture fullscreen-demo %}
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary cgds" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
-    ពេញ​អេក្រង់
+    ផ្លាកជូនដំណឹងពេញ​អេក្រង់
 </button>
 
 <!-- Modal -->
@@ -276,7 +277,7 @@ $modal-scale-transform: scale(1.02) !default;
         </div>
 
         <div class="section-sub">
-            {% include page-component/component-code-snippet.html compTitle="Demo នៃលំនាំដើម"
+            {% include page-component/component-code-snippet.html compTitle="ផ្លាកជូនដំណឹងតាមលំនាំដើម"
             compName="modal-default-demo" code=modal-default-demo %}
         </div>
 
@@ -287,12 +288,12 @@ $modal-scale-transform: scale(1.02) !default;
 
         <div class="section-sub">
             {% include page-component/component-code-snippet.html
-            compTitle="ដែលអាច​អូសបាន" compName="scrollable-demo" code=scrollable-demo %}
+            compTitle="ផ្លាកជូនដំណឹងដែលអាច​អូសបាន" compName="scrollable-demo" code=scrollable-demo %}
         </div>
 
         <div class="section-sub">
             {% include page-component/component-code-snippet.html
-            compTitle="ពេញ​អេក្រង់" compName="fullscreen-demo" code=fullscreen-demo %}
+            compTitle="ផ្លាកជូនដំណឹងពេញ​អេក្រង់" compName="fullscreen-demo" code=fullscreen-demo %}
         </div>
 
         <!-- Add addtional section-sub for more variants -->
@@ -317,14 +318,14 @@ $modal-scale-transform: scale(1.02) !default;
                 </li>
                 <li>
                     <b>រូបតំណាងសម្រាប់បិទ(ដាក់ក៏បានមិនដាក់ក៏បាន)៖</b>
-                    អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់សម្រាប់បិទផ្លាកជូនដំណឹងដោយដៃដោយមិនត្រូវការប្រើប៊ូតុង​។
+                    អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់សម្រាប់បិទផ្លាកជូនដំណឹងដោយដៃ។
                 </li>
                 <li>
-                    <b>ខ្លឹមសារ៖</b> ប្រើដើម្បីពន្យល់អំពីអ្វីដែលផ្លាកជូនដំណឹងបានបង្ហាញ។ ឧទាហរណ៍, ការផ្ញើសារមានកំហុស​​
+                    <b>ខ្លឹមសារ៖</b> ប្រើដើម្បីពន្យល់អំពីអ្វីដែលផ្លាកជូនដំណឹងបានបង្ហាញ។ ឧទាហរណ៍ ការផ្ញើសារមានកំហុស​​
                     ឬ​សារបញ្ជាក់។
                 </li>
                 <li>
-                    <b>ប៊ូតុង​៖</b> ប្រើដើម្បីឱ្យអ្នកប្រើប្រាស់បើកដំណើរការ ឬបដិសេធចោល។
+                    <b>ប៊ូតុង​៖</b> ប្រើដើម្បីឱ្យអ្នកប្រើប្រាស់ចុចបើកបង្ហាញផ្លាកជូនដំណឹង។
                 </li>
             </ol>
         </div>
@@ -352,9 +353,8 @@ $modal-scale-transform: scale(1.02) !default;
         <p class="fw-bold mb-0">ផ្លាកជូនដំណឹង គួរតែត្រូវបានប្រើនៅពេលដែល៖</p>
         <ul>
             <li>
-                នៅពេលអ្នកចង់បង្អាក់កិច្ចការបច្ចុប្បន្នរបស់អ្នកប្រើប្រាស់ដើម្បីត្រួតត្រាការយកចិត្តទុកដាក់របស់អ្នកប្រើប្រាស់ចំពោះអ្វីមួយដែលសំខាន់។
-                ជាឧទាហរណ៍ ការបញ្ជាក់នៅពេលដែលអ្នកប្រើប្រាស់ចង់ដាក់ស្នើទម្រង់ អ្នកប្រើប្រាស់ចុះឈ្មោះ និងចូល
-                ឬការលើកឡើងពីព្រឹត្តិការណ៍សំខាន់មួយជាមួយនឹងរូបភាព នៅពេលចូលគេហទំព័ររបស់អ្នក។
+                នៅពេលអ្នកចង់បង្អាក់កិច្ចការបច្ចុប្បន្នរបស់អ្នកប្រើប្រាស់ដើម្បីបង្វែរការយកចិត្តទុកដាក់របស់អ្នកប្រើប្រាស់ទៅផ្តោតលើអ្វីផ្សេង។
+                ជាឧទាហរណ៍ ការបញ្ជាក់នៅពេលដែលអ្នកប្រើប្រាស់ចង់ដាក់ស្នើទម្រង់ អ្នកប្រើប្រាស់ចុះឈ្មោះ និងចូលប្រើប្រាស់។
             </li>
             <li>នៅពេលអ្នកចង់លើកឡើងអំពីអ្វីមួយ។</li>
         </ul>
@@ -362,9 +362,8 @@ $modal-scale-transform: scale(1.02) !default;
         <ul>
             <li>
                 នៅពេលដែលអ្នកត្រូវការបង្ហាញការជូនដំណឹងសាមញ្ញដល់អ្នកប្រើប្រាស់។
-                វាតែងតែអមជាមួយអ្វីមួយដែលអាចធ្វើសកម្មភាពបានដោយ
-                អ្នកប្រើប្រាស់ ដូចជាការបញ្ជាក់ ឬបំពេញទម្រង់បែបបទ។ ប្រសិនបើអ្នកត្រូវការជូនដំណឹងដល់អ្នកប្រើប្រាស់
-                សូមប្រើអ្វីមួយដែលមានការរំខានតិច ដូចជាសមាសភាគការជូនដំណឹងជំនួសវិញ។
+                វាតែងតែអមជាមួយCTAមួយ ដូចជាការបញ្ជាក់ ឬបំពេញទម្រង់បែបបទ។ ប្រសិនបើអ្នកត្រូវការជូនដំណឹងដល់អ្នកប្រើប្រាស់ដែលមិនភ្ជាប់ជាមួយCTAទេ
+                សូមប្រើអ្វីមួយដែលមិនរំខាននិងមិនបង្អាក់កិច្ចការបច្ចុប្បន្នរបស់អ្នកប្រើប្រាស់ ដូចជាសមាសភាគការជូនដំណឹងជំនួសវិញ។
             </li>
         </ul>
     </section>
@@ -375,20 +374,17 @@ $modal-scale-transform: scale(1.02) !default;
             គោលការណ៍ណែនាំនៃការរចនា
         </h2>
         <p>
-            <b>ការជូនដំណឹងចំពោះអ្នកប្រើប្រាស់</b><br />
-            ផ្លាកជូនដំណឹង​ គួរតែលេចឡើងជាលទ្ធផលនៃសកម្មភាពដែលអ្នកប្រើប្រាស់បានធ្វើដូចជានៅពេលដាក់ពាក្យស្នើសុំអ្វីមួយជាដើម។
-            ផ្លាកជូនដំណឹង​ មិនគួរត្រូវបានបង្ហាញដោយស្វ័យប្រវត្តិចំពោះអ្នកប្រើប្រាស់ទេ។ ការលើកលែងមួយចំនួនចំពោះច្បាប់គឺ
-            ប្រសិនបើអ្នកត្រូវការជូនដំណឹងដល់អ្នកប្រើប្រាស់ថាវគ្គរបស់ពួកគេជិតអស់ពេល
-            ឬប្រសិនបើពួកគេត្រូវទទួលយកខូឃីមុននឹងបន្ត។
+            <b>រំលេចឡើងដោយអ្នកប្រើប្រាស់</b><br />
+            ឧទាហរណ៍ ផ្លាកជូនដំណឹង​គួរតែលេចឡើងក្រោយពេលអ្នកប្រើប្រាស់ចុចដាក់ស្នើរទម្រង់មួយ។
+            ផ្លាកជូនដំណឹង​ មិនគួរត្រូវបានបង្ហាញដោយស្វ័យប្រវត្តិចំពោះអ្នកប្រើប្រាស់ទេ លើកលែងករណីចង់ប្រាប់ពួកគាត់ថាដំណើរការជិតអស់ម៉ោង ឬករណីសុំការអនុញ្ញាតគាត់ក្នុងការទទួលយក cookies ជាដើម។
         </p>
         <p>
             <b>ការសម្រួលនៃចំណងជើង</b><br />
-            ត្រូវប្រាកដថាចំណងជើងច្បាស់លាស់សម្រាប់អ្នកប្រើប្រាស់។ ដោយជៀសវាងពីការភ័ន្តច្រឡំ
-            និងបង្ហាញពីសកម្មភាពអ្វីចាំបាច់ត្រូវយក។
+            ត្រូវប្រាកដថាចំណងជើងច្បាស់លាស់សម្រាប់អ្នកប្រើប្រាស់។ ដើម្បីជៀសវាងពីការភ័ន្តច្រឡំ។
         </p>
         <p>
-            <b>ព្យាយាមជៀសវាងពីខ្លឹមសារវែងជាមួយការអូស</b><br />
-            ខ្លឹមសារវែងជាមួយការរអូសកំណត់សមត្ថភាពរបស់អ្នកប្រើប្រាស់ក្នុងការមើលសារទាំងមូល ដោយសារទំហំមានកំណត់។
+            <b>ព្យាយាមជៀសវាងពីខ្លឹមសារវែងដែលតម្រូវឱ្យអូស</b><br />
+            ខ្លឹមសារវែងពេកនាំឱ្យអ្នកប្រើប្រាស់មិនបានអានវាឱ្យអស់។
         </p>
     </section>
 

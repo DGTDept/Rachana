@@ -1,7 +1,7 @@
 {% capture single-date-input %}
 <div class="cgds form-group">
     <label class="form-label" for="dateInput">Date of Birth</label>
-    <span class="form-text">E.g 10 June 2000</span>
+    <span class="form-text">E.g., 10 June 2000</span>
 </div>
 <cgds-datepicker></cgds-datepicker>
 {% endcapture %}
@@ -51,15 +51,15 @@
             <li>When you require users to fill in dates for your services
 
                 <ul>
-                    <li>State clearly how the data should be filled (e.g. Day Month Year).</li>
-                    <li>Give an example of how the date should be filled in (e.g. 01 01 2020 vs 1 1 2020) when using a
+                    <li>State clearly how the data should be filled (e.g., Day Month Year).</li>
+                    <li>Give an example of how the date should be filled in (e.g., 12 01 2020 vs 01 12 2020) when using a
                         single form input.</li>
                 </ul>
             </li>
             <li>When requesting users to fill in memorable dates
                 <ul>
                     <li>For example, asking for a Date-Of-Birth means you should always have the
-                        <code>autocomplete</code> attribute for these 3 fields, <code>bday-day</code>,
+                        <code>autocomplete</code> attribute for these three fields, <code>bday-day</code>,
                         <code>bday-month</code> and <code>bday-year</code> to bring convenience to users.</li>
                     <li>You will need to include the <code>autocomplete</code> attribute to meet <strong>WCAG 2.1
                             AA</strong> for production.</li>
@@ -82,17 +82,22 @@
         <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
         <p>
             <strong>When asking for official document dates</strong><br>
-            Ensure that the format matches that of the document date that you are requesting for. E.g DD/MMM/YYYY or
-            DD/MM/YY. Do also indicate in the hint text the format of the date, this will help reduce mistakes when
+            Ensure that the format matches that of the document date that you are requesting for.
+            E.g., DD/MM/YYYY or
+            DD/MM/YY.
+            Do also indicate in the hint text the format of the date, this will help reduce mistakes when
             filling up the form
         </p>
         <p class="mb-0">
             <strong>Helping users pick a date</strong><br>
-            You can use the date picker component to help users pick a date for an appointment for example. However, do
+            You can use the date picker component to help users pick a date for an appointment, for example.
+            However, do
             use this only if:
             <ul>
-                <li>Users need to pick a date in the near future or past. E.g. do not use the date picker component when
-                    asking for birthdays, this adds complexity to the task. Do use the single form field date pattern
+                <li>Users need to pick a date in the near future or past.
+                    E.g., do not use the date picker component when
+                    asking for birthdays; this adds complexity to the task.
+                    Do use the single form field date pattern
                     instead</li>
                 <li>Users need to see other dates in relation to the date they want</li>
             </ul>
