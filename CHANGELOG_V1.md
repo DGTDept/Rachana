@@ -11,7 +11,6 @@ We've  changed our base CSS framework from Bulma to Bootstrap v5.1+ with:
 
 - New [redesigned portal](https://www.designsystem.tech.gov.sg)
 - More [components and variants](https://www.designsystem.tech.gov.sg/components)
-- [React storybook](https://react.designsystem.tech.gov.sg)
 - Updated Figma kit
 
 We will be pushing up additional components and features in the upcoming months. Do keep a lookout!
@@ -22,12 +21,12 @@ We will be pushing up additional components and features in the upcoming months.
 
 ## [1.3.21]
 ## 🗓️ 06-09-2021
-- Renamed `cgds-icon/cgds-variables.scss` to `cgds-icon/cgds-icon-variables.scss`  
+- Renamed `cgds-icon/cgds-variables.scss` to `cgds-icon/cgds-icon-variables.scss`
 - Fixed duplicate `is-light` classes for tag component
-- [#229](https://github.com/GovTechSG/sgds/issues/229) Resolved hexadecimal for all state colors 
+- [#229](https://github.com/GovTechSG/sgds/issues/229) Resolved hexadecimal for all state colors
 - Fixed alignment helper interpolation
 - Added alignment css variables
-  
+
   `:root{`
 
   `--global-alignment: 1rem;`
@@ -45,21 +44,21 @@ We will be pushing up additional components and features in the upcoming months.
 - Added border radius css variables, editing the value (default is `0`) will affect all inputs and button border-radius
 
   `:root{`
-  
+
   `--radius: 0;`
 
   `}`
 
-## [1.3.20] 
+## [1.3.20]
 ## 🗓️ 03-08-2021
 ### Added 3 default templates
 - [Template Overview](https://www.designsystem.gov.sg/templates/)
 ## 🗓️ 07-07-2021
-- Fixed cgds step marker height and width properties. 
+- Fixed cgds step marker height and width properties.
 - Remove hero banner container width
 
 ## [1.3.19] - 🗓️ 05-07-2021
-### Added New general components 
+### Added New general components
 - [File upload](https://www.designsystem.gov.sg/docs/file-upload/)
 - [Date picker](https://www.designsystem.gov.sg/docs/datepicker/)
 
@@ -183,7 +182,7 @@ We will be pushing up additional components and features in the upcoming months.
 - #101 Masthead font-size scaling.
 - Masthead link now darkens upon hover.
 - cgds.js no longer initializes a sticky sidebar by default. This feature is not cgds's
-  responsibility and its removal reduces the js library size greatly. Documentation for 
+  responsibility and its removal reduces the js library size greatly. Documentation for
   this feature to follow.
 - Default colours for `info` and `link` classes have been updated.
 - Added more font-weight classes (e.g. `has-text-weight-extra-bold`).

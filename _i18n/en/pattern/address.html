@@ -22,7 +22,7 @@
 
 <!-- Page starts here -->
 <div class="page-component">
-        
+
     <!-- Generated header from front end matters -->
     {% include page-component/component-header.html %}
 
@@ -54,10 +54,6 @@
             <strong>Avoid changing the default order of address fields</strong><br>
             Do ensure that the postal code field is on top as the address lookup can simplify the process of filling out the address field
         </p>
-        <p>
-            <strong>Default to current date and month</strong><br>
-            Auto-filling helps users fill forms faster, but don't forget to leave these fields available for editing to give users control
-        </p>
     </section>
 </div>
 
@@ -71,7 +67,7 @@
             '&returnGeom=Y&getAddrDetails=Y'
         )
         .then((response) => response.json())
-        .then((json) => 
+        .then((json) =>
             streetName.value = json.results[0].ADDRESS
         );
     }
