@@ -1,15 +1,4 @@
 @import '~bootstrap/scss/forms/input-group';
-
-.cgds {
-  &.input-group {
-    .input-group-text {
-      .form-check-input {
-        margin-top: 0;
-      }
-    }
-  }
-}
-
 .cgds {
   &.input-group {
     &[variant="quantity-toggle"] {
@@ -17,6 +6,11 @@
       input::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
+      }
+    }
+    .input-group-text {
+      .form-check-input {
+        margin-top: 0;
       }
     }
   }
