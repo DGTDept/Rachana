@@ -17,175 +17,175 @@ $toast-header-border-color: rgba($black, .05) !default;
 
 {% capture toast-default %}
 <div class="cgds toast show ">
-    <div class="toast-header">
-        <i class="bi bi-check-circle me-2"></i>
-        <strong class="me-auto">ឈ្មោះសារ</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-        នេះជាព័ត៌មានរហ័ស
-    </div>
+  <div class="toast-header">
+    <i class="bi bi-check-circle me-2"></i>
+    <strong class="me-auto">ឈ្មោះសារ</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    នេះជាព័ត៌មានរហ័ស
+  </div>
 </div>
 {% endcapture %}
 
 {% capture toast-variants %}
 <div>
-    <div class="cgds toast show is-warning mb-2" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-            <i class="bi bi-exclamation-triangle me-2"></i>
-            <strong class="me-auto">ការព្រមាន</strong>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-            នេះជាការព្រមាន
-        </div>
+  <div class="cgds toast show is-warning mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <i class="bi bi-exclamation-triangle me-2"></i>
+      <strong class="me-auto">ការព្រមាន</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
-    <div class="cgds toast show is-success mb-2" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-            <i class="bi bi-check-circle me-2"></i>
-            <strong class="me-auto">ភាពជោគជ័យ</strong>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-            នេះជាសារបញ្ជាក់ប្រតិបត្តិការជោគជ័យ
-        </div>
+    <div class="toast-body">
+      នេះជាការព្រមាន
     </div>
-    <div class="cgds toast show is-danger" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-            <i class="bi bi-exclamation-circle me-2"></i>
-            <strong class="me-auto">គ្រោះថ្នាក់</strong>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-            នេះជាសារប្រាប់ពីបញ្ហា
-        </div>
+  </div>
+  <div class="cgds toast show is-success mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <i class="bi bi-check-circle me-2"></i>
+      <strong class="me-auto">ភាពជោគជ័យ</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
+    <div class="toast-body">
+      នេះជាសារបញ្ជាក់ប្រតិបត្តិការជោគជ័យ
+    </div>
+  </div>
+  <div class="cgds toast show is-danger" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <i class="bi bi-exclamation-circle me-2"></i>
+      <strong class="me-auto">គ្រោះថ្នាក់</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      នេះជាសារប្រាប់ពីបញ្ហា
+    </div>
+  </div>
 </div>
 {% endcapture %}
 
 {% capture toast-complex %}
 <div class="cgds toast show is-danger">
-    <div class="toast-header">
-        <i class="bi bi-exclamation-circle me-2"></i>
-        <strong class="me-auto">ដំណើរការបរាជ័យ</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-        ការស្នើសុំបានកើនឡើងលើសពីដែនកំណត់<br />
-        <button class="btn btn-sm btn-outline-dark">ព្យាយាមម្តងទៀត</button>
-    </div>
+  <div class="toast-header">
+    <i class="bi bi-exclamation-circle me-2"></i>
+    <strong class="me-auto">ដំណើរការបរាជ័យ</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    ការស្នើសុំបានកើនឡើងលើសពីដែនកំណត់<br />
+    <button class="btn btn-sm btn-outline-dark">ព្យាយាមម្តងទៀត</button>
+  </div>
 </div>
 {% endcapture %}
 
 <div class="page-component">
-    {% include page-component/component-header.html %}
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="លំនាំដើម"
-            compName="toast-default"
-            code=toast-default
-            %}
-        </div>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="ប្រភេទផ្សេងៗ"
-            compName="toast-variants"
-            code=toast-variants
-            %}
-        </div>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="មានប៊ូតុង"
-            compName="toast-complex"
-            code=toast-complex
-            %}
-        </div>
-        <!-- Add additional section-sub for more variants -->
-    </section>
+  {% include page-component/component-header.html %}
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="លំនាំដើម"
+      compName="toast-default"
+      code=toast-default
+      %}
+    </div>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="ប្រភេទផ្សេងៗ"
+      compName="toast-variants"
+      code=toast-variants
+      %}
+    </div>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="មានប៊ូតុង"
+      compName="toast-complex"
+      code=toast-complex
+      %}
+    </div>
+    <!-- Add additional section-sub for more variants -->
+  </section>
 
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/toast/anatomy-toast-1.svg" alt="Toast Anatomy">
-                </div>
-            </div>
-            <ol>
-                <li>
-                    <b>រូបតំណាង៖</b> ជាធាតុបន្ទាប់បន្សំ ប្រើដើម្បីបន្ថែមអត្ថន័យឱ្យសារ។
-                </li>
-                <li>
-                    <b>ឈ្មោះសារ៖</b> ប្រាប់អ្នកប្រើប្រាស់ពីគោលបំណងរបស់ដំណឹងសាររហ័សនេះ។
-                </li>
-                <li>
-                    <b>ប៊ូតុងបិទ៖</b> ប្រើនៅពេលអ្នកមិនបានកំណត់ពេលវេលាឱ្យដំណឹងសាររហ័សបិទទៅវិញដោយស្វ័យប្រវត្តិ និងតម្រូវឱ្យអ្នកប្រើប្រាស់ចុចបិទដោយខ្លួនឯង។
-                </li>
-                <li>
-                    <b>ប៊ូតុងមុខងារ៖</b> អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់ចុចទៅកាន់មុខងារដែលនៅក្នុងដំណឹងសាររហ័ស។
-                </li>
-            </ol>
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/toast/anatomy-toast-1.svg" alt="Toast Anatomy">
         </div>
-    </section>
+      </div>
+      <ol>
+        <li>
+          <b>រូបតំណាង៖</b> ជាធាតុបន្ទាប់បន្សំ ប្រើដើម្បីបន្ថែមអត្ថន័យឱ្យសារ។
+        </li>
+        <li>
+          <b>ឈ្មោះសារ៖</b> ប្រាប់អ្នកប្រើប្រាស់ពីគោលបំណងរបស់ដំណឹងសាររហ័សនេះ។
+        </li>
+        <li>
+          <b>ប៊ូតុងបិទ៖</b> ប្រើនៅពេលអ្នកមិនបានកំណត់ពេលវេលាឱ្យដំណឹងសាររហ័សបិទទៅវិញដោយស្វ័យប្រវត្តិ និងតម្រូវឱ្យអ្នកប្រើប្រាស់ចុចបិទដោយខ្លួនឯង។
+        </li>
+        <li>
+          <b>ប៊ូតុងមុខងារ៖</b> អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់ចុចទៅកាន់មុខងារដែលនៅក្នុងដំណឹងសាររហ័ស។
+        </li>
+      </ol>
+    </div>
+  </section>
 
-    <!-- Spacing Section -->
-    <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/toast/spacing-toast-1.svg"
-                         alt="Toast Spacing">
-                </div>
-            </div>
-            <p><b>នៅក្នុងដំណឹងសាររហ័ស</b><br />
-                រក្សាគម្លាតយ៉ាងតិច 16 px នៅលើគែមជុំវិញរបស់ដំណឹងសាររហ័ស និង 32px នៅចន្លោះរវាងអក្សរនិងប៊ូតុងមុខងារ។</p>
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/toast/spacing-toast-1.svg"
+               alt="Toast Spacing">
         </div>
-    </section>
+      </div>
+      <p><b>នៅក្នុងដំណឹងសាររហ័ស</b><br />
+        រក្សាគម្លាតយ៉ាងតិច 16 px នៅលើគែមជុំវិញរបស់ដំណឹងសាររហ័ស និង 32px នៅចន្លោះរវាងអក្សរនិងប៊ូតុងមុខងារ។</p>
+    </div>
+  </section>
 
-    <!-- Usage guidelines Section -->
-    <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
-        <p class="fw-bold mb-0">ដំណឹងសាររហ័សគួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-        <ul>
-            <li>នៅពេលអ្នកចង់បង្ហាញព័ត៌មានខ្លីទៅកាន់អ្នកប្រើប្រាស់។ ឧទាហរណ៍ នៅពេលពួកគាត់បានដាក់ស្នើរទម្រង់ដោយជោគជ័យ ឬនៅពេលមានបញ្ហាមួយកើតឡើង។</li>
-        </ul>
-        <p class="fw-bold mb-0">ដំណឹងសាររហ័សមិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-        <ul>
-            <li>
-                នៅពេលបង្ហាញព័ត៌មានសំខាន់។ ឧទាហរណ៍ នៅពេលប្រព័ន្ធរបស់អ្នកកំពុងស្ថិតនៅក្រោមការត្រួតពិនិត្យ និងកែលម្អ។
-            </li>
-        </ul>
-    </section>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+    <p class="fw-bold mb-0">ដំណឹងសាររហ័សគួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ul>
+      <li>នៅពេលអ្នកចង់បង្ហាញព័ត៌មានខ្លីទៅកាន់អ្នកប្រើប្រាស់។ ឧទាហរណ៍ នៅពេលពួកគាត់បានដាក់ស្នើរទម្រង់ដោយជោគជ័យ ឬនៅពេលមានបញ្ហាមួយកើតឡើង។</li>
+    </ul>
+    <p class="fw-bold mb-0">ដំណឹងសាររហ័សមិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ul>
+      <li>
+        នៅពេលបង្ហាញព័ត៌មានសំខាន់។ ឧទាហរណ៍ នៅពេលប្រព័ន្ធរបស់អ្នកកំពុងស្ថិតនៅក្រោមការត្រួតពិនិត្យ និងកែលម្អ។
+      </li>
+    </ul>
+  </section>
 
-    <!-- Usability guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
-        <p>
-            <b>កុំដាក់ដំណឹងសាររហ័សលោតជាន់ពីលើគ្នា</b><br>
-            នៅពេលអ្នកដាក់ការជូនដំណឹងសាររហ័សជាន់ពីលើគ្នា វានឹងធ្វើឱ្យអ្នកប្រើប្រាស់មានការយល់ច្រឡំ។
-            ករណីដែលអាចដាក់ដំណឹងសាររហ័សត្រួតលើគ្នាបានគឺនៅពេលដែលពួកវាមានខ្លឹមសារស្រដៀងគ្នា។ ឧទាហរណ៍ សារប្រាប់ពីបញ្ហាស្រដៀងៗគ្នា។
-        </p>
-        <p>
-            <b>រចនាទំហំវាឱ្យតូច និងកុំឱ្យវាចេញមករំខានសកម្មភាពរបស់អ្នកប្រើប្រាស់</b><br>
-            ដើម្បីការពារកុំឱ្យវាលោតមកបាំងខ្លឹមសារផ្សេងទៀតរបស់ទំព័រ។
-        </p>
-        <p>
-            <b>សរសេរវាឱ្យខ្លីបំផុតតាមតែអាចធ្វើបាន</b><br>
-            ដំណឹងសាររហ័សបង្ហាញសារព័ត៌មានខ្លីៗដែលគួរតែមានប្រវែងមិនឱ្យលើសពី3ជួរ។
-            សារព័ត៌មានត្រូវសង្ខេបឱ្យបានខ្លីប៉ុន្តែអាចអានយល់បាន។
-            ឧទាហរណ៍ គួរសរសេរ "បានបញ្ជូនសារ" ជាជាង "សាររបស់លោកអ្នកត្រូវបានបញ្ជូនទៅឱ្យអ្នកទទួលបានដោយជោគជ័យ"។
-        </p>
-    </section>
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
+    <p>
+      <b>កុំដាក់ដំណឹងសាររហ័សលោតជាន់ពីលើគ្នា</b><br>
+      នៅពេលអ្នកដាក់ការជូនដំណឹងសាររហ័សជាន់ពីលើគ្នា វានឹងធ្វើឱ្យអ្នកប្រើប្រាស់មានការយល់ច្រឡំ។
+      ករណីដែលអាចដាក់ដំណឹងសាររហ័សត្រួតលើគ្នាបានគឺនៅពេលដែលពួកវាមានខ្លឹមសារស្រដៀងគ្នា។ ឧទាហរណ៍ សារប្រាប់ពីបញ្ហាស្រដៀងៗគ្នា។
+    </p>
+    <p>
+      <b>រចនាទំហំវាឱ្យតូច និងកុំឱ្យវាចេញមករំខានសកម្មភាពរបស់អ្នកប្រើប្រាស់</b><br>
+      ដើម្បីការពារកុំឱ្យវាលោតមកបាំងខ្លឹមសារផ្សេងទៀតរបស់ទំព័រ។
+    </p>
+    <p>
+      <b>សរសេរវាឱ្យខ្លីបំផុតតាមតែអាចធ្វើបាន</b><br>
+      ដំណឹងសាររហ័សបង្ហាញសារព័ត៌មានខ្លីៗដែលគួរតែមានប្រវែងមិនឱ្យលើសពី3ជួរ។
+      សារព័ត៌មានត្រូវសង្ខេបឱ្យបានខ្លីប៉ុន្តែអាចអានយល់បាន។
+      ឧទាហរណ៍ គួរសរសេរ "បានបញ្ជូនសារ" ជាជាង "សាររបស់លោកអ្នកត្រូវបានបញ្ជូនទៅឱ្យអ្នកទទួលបានដោយជោគជ័យ"។
+    </p>
+  </section>
 
-    <section>
-        <h2 class="title fw-bold" id="design-tokens">ខ្នាតសម្រាប់រចនា</h2>
-        {%- highlight sass -%}{{toast-design-tokens}}{%- endhighlight -%}
-    </section>
+  <section>
+    <h2 class="title fw-bold" id="design-tokens">ខ្នាតសម្រាប់រចនា</h2>
+    {%- highlight sass -%}{{toast-design-tokens}}{%- endhighlight -%}
+  </section>
 </div>

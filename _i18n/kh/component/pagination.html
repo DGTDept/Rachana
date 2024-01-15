@@ -1,44 +1,48 @@
 {% capture with-texts-arrows %}
 <nav aria-label="Page navigation example">
-    <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i>ថយក្រោយ</a></li>
-        <li class="page-item active"><a class="page-link" href="#">១</a></li>
-        <li class="page-item"><a class="page-link" href="#">២</a></li>
-        <li class="page-item"><a class="page-link" href="#">៣</a></li>
-        <li class="page-item"><a class="page-link" href="#">៤</a></li>
-        <li class="page-item"><a class="page-link" href="#">៥</a></li>
-        <li class="page-item"><a class="page-link" href="#">...</a></li>
-        <li class="page-item"><a class="page-link" href="#">១២</a></li>
-        <li class="page-item"><a class="page-link" href="#">បន្ទាប់<i class="bi bi-chevron-right"></i></a></li>
-    </ul>
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i>ថយក្រោយ</a></li>
+    <li class="page-item active"><a class="page-link" href="#">១</a></li>
+    <li class="page-item"><a class="page-link" href="#">២</a></li>
+    <li class="page-item"><a class="page-link" href="#">៣</a></li>
+    <li class="page-item"><a class="page-link" href="#">៤</a></li>
+    <li class="page-item"><a class="page-link" href="#">៥</a></li>
+    <li class="page-item"><a class="page-link" href="#">...</a></li>
+    <li class="page-item"><a class="page-link" href="#">១២</a></li>
+    <li class="page-item"><a class="page-link" href="#">បន្ទាប់<i class="bi bi-chevron-right"></i></a></li>
+  </ul>
 </nav>
-{% endcapture %} {% capture with-texts %}
+{% endcapture %}
+
+{% capture with-texts %}
 <nav aria-label="Page navigation example">
-    <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#">ថយក្រោយ</a></li>
-        <li class="page-item active"><a class="page-link" href="#">១</a></li>
-        <li class="page-item"><a class="page-link" href="#">២</a></li>
-        <li class="page-item"><a class="page-link" href="#">៣</a></li>
-        <li class="page-item"><a class="page-link" href="#">៤</a></li>
-        <li class="page-item"><a class="page-link" href="#">៥</a></li>
-        <li class="page-item"><a class="page-link" href="#">...</a></li>
-        <li class="page-item"><a class="page-link" href="#">១២</a></li>
-        <li class="page-item"><a class="page-link" href="#">បន្ទាប់</a></li>
-    </ul>
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">ថយក្រោយ</a></li>
+    <li class="page-item active"><a class="page-link" href="#">១</a></li>
+    <li class="page-item"><a class="page-link" href="#">២</a></li>
+    <li class="page-item"><a class="page-link" href="#">៣</a></li>
+    <li class="page-item"><a class="page-link" href="#">៤</a></li>
+    <li class="page-item"><a class="page-link" href="#">៥</a></li>
+    <li class="page-item"><a class="page-link" href="#">...</a></li>
+    <li class="page-item"><a class="page-link" href="#">១២</a></li>
+    <li class="page-item"><a class="page-link" href="#">បន្ទាប់</a></li>
+  </ul>
 </nav>
-{% endcapture %} {% capture with-arrows %}
+{% endcapture %}
+
+{% capture with-arrows %}
 <nav aria-label="Page navigation example">
-    <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
-        <li class="page-item active"><a class="page-link" href="#">១</a></li>
-        <li class="page-item"><a class="page-link" href="#">២</a></li>
-        <li class="page-item"><a class="page-link" href="#">៣</a></li>
-        <li class="page-item"><a class="page-link" href="#">៤</a></li>
-        <li class="page-item"><a class="page-link" href="#">៥</a></li>
-        <li class="page-item"><a class="page-link" href="#">...</a></li>
-        <li class="page-item"><a class="page-link" href="#">១២</a></li>
-        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
-    </ul>
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+    <li class="page-item active"><a class="page-link" href="#">១</a></li>
+    <li class="page-item"><a class="page-link" href="#">២</a></li>
+    <li class="page-item"><a class="page-link" href="#">៣</a></li>
+    <li class="page-item"><a class="page-link" href="#">៤</a></li>
+    <li class="page-item"><a class="page-link" href="#">៥</a></li>
+    <li class="page-item"><a class="page-link" href="#">...</a></li>
+    <li class="page-item"><a class="page-link" href="#">១២</a></li>
+    <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+  </ul>
 </nav>
 {% endcapture %}
 
@@ -70,120 +74,120 @@ $pagination-disabled-bg: $white !default;
 $pagination-disabled-border-color: $border-color !default;
 $pagination-transition: color .15s ease-in-out, background-color .15s
 ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
-!default; 
+!default;
 $pagination-border-radius-sm: $border-radius-sm !default;
 $pagination-border-radius-lg: $border-radius-lg !default;
 {% endcapture %}
 
 <!-- Page starts here -->
 <div class="page-component">
-    <!-- Generated header from front end matters -->
-    {% include page-component/component-header.html %}
+  <!-- Generated header from front end matters -->
+  {% include page-component/component-header.html %}
 
-    <!-- Example Section -->
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html
-            compTitle="ភ្ជាប់ជាមួយអក្សរនិងសញ្ញា" compName="with-texts-arrows"
-            code=with-texts-arrows %}
+  <!-- Example Section -->
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html
+      compTitle="ភ្ជាប់ជាមួយអក្សរនិងសញ្ញា" compName="with-texts-arrows"
+      code=with-texts-arrows %}
+    </div>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html
+      compTitle="ភ្ជាប់ជាមួយអក្សរ" compName="with-texts" code=with-texts %}
+    </div>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html
+      compTitle="ភ្ជាប់ជាមួយសញ្ញាព្រួញ" compName="with-arrows"
+      code=with-arrows %}
+    </div>
+  </section>
+
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/anatomy-pagination-1.svg" alt="Pagination Anatomy"/>
         </div>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html
-            compTitle="ភ្ជាប់ជាមួយអក្សរ" compName="with-texts" code=with-texts %}
+      </div>
+      <ol>
+        <li>
+          <b>ប៊ូតុងថយក្រោយ និង បន្ទាប់៖</b> អនុញ្ញាត​ឱ្យ​អ្នក​ប្រើប្រាស់​ថយ​ក្រោយ ឬ​បញ្ជូន​បន្ត​ទំព័រ​មួយ, អាច​ជា​អក្សរឬរូប​តំណាង, អាចប្រើតែមួយប្រសិនបើគ្មានកន្លែងគ្រប់គ្រាន់។
+        </li>
+        <li>
+          <b>លេខរៀង៖</b> អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់រំលងទៅទំព័រផ្សេងៗបានគ្រប់ពេល។
+        </li>
+        <li>
+          <b>ការកាត់ចេញ៖</b> នៅពេលឈានដល់កម្រិតនៃទំព័រ បញ្ជីត្រូវបានកាត់បន្ថយដោយប្រើសញ្ញាចុច៣។
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-pagination-1.svg"​ alt="Pagination Spacing"/>
         </div>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html
-            compTitle="ភ្ជាប់ជាមួយសញ្ញាព្រួញ" compName="with-arrows"
-            code=with-arrows %}
-        </div>
-    </section>
+      </div>
+      <p>
+        <b>នៅខាងក្នុងទំព័រ</b><br />
+        ត្រូវប្រាកដថាមានគម្លាតបញ្ឈរ 8px និងគម្លាតផ្ដេក 16px។ កម្ពស់មូលដ្ឋាន 48px ។
+      </p>
+    </div>
+  </section>
 
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/anatomy-pagination-1.svg" alt="Pagination Anatomy"/>
-                </div>
-            </div>
-            <ol>
-                <li>
-                    <b>ប៊ូតុងថយក្រោយ និង បន្ទាប់៖</b> អនុញ្ញាត​ឱ្យ​អ្នក​ប្រើប្រាស់​ថយ​ក្រោយ ឬ​បញ្ជូន​បន្ត​ទំព័រ​មួយ, អាច​ជា​អក្សរឬរូប​តំណាង, អាចប្រើតែមួយប្រសិនបើគ្មានកន្លែងគ្រប់គ្រាន់។
-                </li>
-                <li>
-                    <b>លេខរៀង៖</b> អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់រំលងទៅទំព័រផ្សេងៗបានគ្រប់ពេល។
-                </li>
-                <li>
-                    <b>ការកាត់ចេញ៖</b> នៅពេលឈានដល់កម្រិតនៃទំព័រ បញ្ជីត្រូវបានកាត់បន្ថយដោយប្រើសញ្ញាចុច៣។
-                </li>
-            </ol>
-        </div>
-    </section>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+    <p class="fw-bold mb-0">ការរៀបចំទំព័រ គួរតែត្រូវបានប្រើនៅពេលដែល៖</p>
+    <ol>
+      <li>
+        ខ្លឹមសារវែងអាចត្រូវបានបំបែកទៅជាទំព័រជាច្រើនដែលអាចស្វែងរកតាមលំដាប់លំដោយ ឬដោយជ្រើសរើសទំព័រជាក់លាក់មួយនៅក្នុងសំណុំទំព័រ។
+      </li>
+    </ol>
+    <p class="fw-bold mb-0">ការរៀបចំទំព័រ មិនគួរតែត្រូវបានប្រើនៅពេលដែល៖</p>
+    <ol>
+      <li>
+        ទំព័រអាចអូសចុញក្រោមបានរហូត​និងគ្មានដែនកំណត់​​ ឧទាហរណ៍​ ទំព័រ​News Feed។
+      </li>
+      <li>
+        ខ្លឹមសារឬព័ត៌មានមិនស្ថិតនៅក្នុងបរិបទ​ ឬប្រធានបទរួមតែមួយ។​​ ​ពិចារណាប្រើ
+        <a href="">របារខាងលើ</a>ជំនួសវិញ។
+      </li>
+      <li>ការផ្លាស់ប្តូររវាងបទបង្ហាញ ឬខ្លឹមសារនៅក្នុង​ Carousels។</li>
+    </ol>
+  </section>
 
-    <!-- Spacing Section -->
-    <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-pagination-1.svg"​ alt="Pagination Spacing"/>
-                </div>
-            </div>
-            <p>
-                <b>នៅខាងក្នុងទំព័រ</b><br />
-                ត្រូវប្រាកដថាមានគម្លាតបញ្ឈរ 8px និងគម្លាតផ្ដេក 16px។ កម្ពស់មូលដ្ឋាន 48px ។
-            </p>
-        </div>
-    </section>
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">
+      គោលការណ៍ណែនាំនៃការរចនា
+    </h2>
+    <p>
+      <b>បង្ហាញ​ចំនួន​ទំព័រ​សរុប​</b><br>
+      អ្នកប្រើប្រាស់គួរតែដឹងពីចំនួនទំព័រ ឬធាតុសរុប។ ការកាត់ចេញអាចត្រូវបានប្រើនៅពេលដែលចំនួនទំព័រលើសពីដែនកំណត់បង្ហាញទំព័រ។
+    </p>
+    <p>
+      <b>លើកឡើងពីទំព័រថ្មីៗ</b><br />
+      ការរៀបចំទំព័រ​ គួរតែរំលេចឡើងពីទំព័រដែលអ្នកប្រើប្រាស់កំពុងបើក។
+    </p>
+    <p>
+      <b>ការរៀបចំទំព័រនៅផ្នែកខាងក្រោមនៃទំព័រ</b><br/>
+      ដើម្បីឱ្យអ្នកប្រើប្រាស់អាចស្វែងរករវាងទំព័រនីមួយៗបាន។
+    </p>
+  </section>
 
-    <!-- Usage guidelines Section -->
-    <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
-        <p class="fw-bold mb-0">ការរៀបចំទំព័រ គួរតែត្រូវបានប្រើនៅពេលដែល៖</p>
-        <ol>
-            <li>
-                ខ្លឹមសារវែងអាចត្រូវបានបំបែកទៅជាទំព័រជាច្រើនដែលអាចស្វែងរកតាមលំដាប់លំដោយ ឬដោយជ្រើសរើសទំព័រជាក់លាក់មួយនៅក្នុងសំណុំទំព័រ។
-            </li>
-        </ol>
-        <p class="fw-bold mb-0">ការរៀបចំទំព័រ មិនគួរតែត្រូវបានប្រើនៅពេលដែល៖</p>
-        <ol>
-            <li>
-                ទំព័រអាចអូសចុញក្រោមបានរហូត​និងគ្មានដែនកំណត់​​ ឧទាហរណ៍​ ទំព័រ​News Feed។
-            </li>
-            <li>
-                ខ្លឹមសារឬព័ត៌មានមិនស្ថិតនៅក្នុងបរិបទ​ ឬប្រធានបទរួមតែមួយ។​​ ​ពិចារណាប្រើ
-                <a href="">របារខាងលើ</a>ជំនួសវិញ។
-            </li>
-            <li>ការផ្លាស់ប្តូររវាងបទបង្ហាញ ឬខ្លឹមសារនៅក្នុង​ Carousels។</li>
-        </ol>
-    </section>
-
-    <!-- Usability guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="usability-guidelines">
-            គោលការណ៍ណែនាំនៃការរចនា
-        </h2>
-        <p>
-            <b>បង្ហាញ​ចំនួន​ទំព័រ​សរុប​</b><br>
-            អ្នកប្រើប្រាស់គួរតែដឹងពីចំនួនទំព័រ ឬធាតុសរុប។ ការកាត់ចេញអាចត្រូវបានប្រើនៅពេលដែលចំនួនទំព័រលើសពីដែនកំណត់បង្ហាញទំព័រ។
-        </p>
-        <p>
-            <b>លើកឡើងពីទំព័រថ្មីៗ</b><br />
-            ការរៀបចំទំព័រ​ គួរតែរំលេចឡើងពីទំព័រដែលអ្នកប្រើប្រាស់កំពុងបើក។
-        </p>
-        <p>
-            <b>ការរៀបចំទំព័រនៅផ្នែកខាងក្រោមនៃទំព័រ</b><br/>
-            ដើម្បីឱ្យអ្នកប្រើប្រាស់អាចស្វែងរករវាងទំព័រនីមួយៗបាន។
-        </p>
-    </section>
-
-    <!-- Design token Section -->
-    <section name="section-design-tokens">
-        <h2 class="title fw-bold" id="design-tokens">
-            ខ្នាតសម្រាប់រចនា
-        </h2>
-        {%- highlight sass -%}{{pagination-design-tokens}}{%- endhighlight -%}
-    </section>
+  <!-- Design token Section -->
+  <section name="section-design-tokens">
+    <h2 class="title fw-bold" id="design-tokens">
+      ខ្នាតសម្រាប់រចនា
+    </h2>
+    {%- highlight sass -%}{{pagination-design-tokens}}{%- endhighlight -%}
+  </section>
 </div>

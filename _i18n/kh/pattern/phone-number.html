@@ -1,45 +1,45 @@
 {% capture phone-number %}
 <div class="cgds form-group">
-    <label class="form-label" for="phone">លេខទូរសព្ទ</label>
-    <div class="input-group">
-      <span class="input-group-text">+855</span>
-      <input class="form-control" type="text" id="phone" autocomplete="tel-local" pattern="[0-9]" maxlength="8" />
-    </div>
+  <label class="form-label" for="phone">លេខទូរសព្ទ</label>
+  <div class="input-group">
+    <span class="input-group-text">+855</span>
+    <input class="form-control" type="text" id="phone" autocomplete="tel-local" pattern="[0-9]" maxlength="8" />
+  </div>
 </div>
 {% endcapture %}
 
 <!-- Page starts here -->
 <div class="page-component">
 
-    <!-- Generated header from front end matters -->
-    {% include page-component/component-header.html %}
+  <!-- Generated header from front end matters -->
+  {% include page-component/component-header.html %}
 
-    <!-- Pattern Section -->
-    <section name="section-pattern">
-        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html compName="phone-number" code=phone-number %}
-        </div>
-    </section>
+  <!-- Pattern Section -->
+  <section name="section-pattern">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compName="phone-number" code=phone-number %}
+    </div>
+  </section>
 
-    <!-- Guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
-        <p class="mb-0">
-            <strong>សូមពន្យល់ពីហេតុផលនៃការស្នើសុំលេខទូរសព្ទរបស់អ្នកប្រើប្រាស់</strong><br>
-            នេះការអនុញ្ញាតដើម្បីឱ្យអ្នកប្រើប្រាស់៖
-            <ul>
-                <li>មានការជឿជាក់ថា លេខទូរសព្ទរបស់អ្នកប្រើប្រាស់នឹងមិនត្រូវបានគេក្លែងបន្លំឡើយ។</li>
-                <li>ជ្រើសរើសលេខទូរសព្ទដែលអ្នកប្រើប្រាស់ចូលចិត្តប្រើ។</li>
-            </ul>
-        </p>
-        <p class="mb-0">
-            <strong>ត្រូវប្រាកដថាវាដំណើរការសម្រាប់គ្រប់អ្នកប្រើប្រាស់ទាំងអស់</strong>
-            <ul>
-                <li>ប្រអប់អត្ថបទរបស់អ្នកគួរតែមានតែលេខនិង ៨ ឬ ៩ តួអក្សរប៉ុណ្ណោះ។</li>
-                <li>កំណត់ <code>autocomplete</code> ទៅជា <code>tel-local</code> ដើម្បីឲ្យកម្មវិធីអ៊ីនធឺណិតអាចបំពេញលេខទូរស័ព្ទរបស់អ្នកប្រើប្រាស់បានដោយស្វ័យប្រវត្តិ ប្រសិនបើអ្នកប្រើប្រាស់ធ្លាប់បានបញ្ចូលពីមុន។</li>
-            </ul>
-        </p>
-    </section>
+  <!-- Guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+    <p class="mb-0">
+      <strong>សូមពន្យល់ពីហេតុផលនៃការស្នើសុំលេខទូរសព្ទរបស់អ្នកប្រើប្រាស់</strong><br>
+      នេះការអនុញ្ញាតដើម្បីឱ្យអ្នកប្រើប្រាស់៖
+    <ul>
+      <li>មានការជឿជាក់ថា លេខទូរសព្ទរបស់អ្នកប្រើប្រាស់នឹងមិនត្រូវបានគេក្លែងបន្លំឡើយ។</li>
+      <li>ជ្រើសរើសលេខទូរសព្ទដែលអ្នកប្រើប្រាស់ចូលចិត្តប្រើ។</li>
+    </ul>
+    </p>
+    <p class="mb-0">
+      <strong>ត្រូវប្រាកដថាវាដំណើរការសម្រាប់គ្រប់អ្នកប្រើប្រាស់ទាំងអស់</strong>
+    <ul>
+      <li>ប្រអប់អត្ថបទរបស់អ្នកគួរតែមានតែលេខនិង ៨ ឬ ៩ តួអក្សរប៉ុណ្ណោះ។</li>
+      <li>កំណត់ <code>autocomplete</code> ទៅជា <code>tel-local</code> ដើម្បីឲ្យកម្មវិធីអ៊ីនធឺណិតអាចបំពេញលេខទូរស័ព្ទរបស់អ្នកប្រើប្រាស់បានដោយស្វ័យប្រវត្តិ ប្រសិនបើអ្នកប្រើប្រាស់ធ្លាប់បានបញ្ចូលពីមុន។</li>
+    </ul>
+    </p>
+  </section>
 
 </div>

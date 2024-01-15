@@ -65,8 +65,8 @@ $btn-active-border-tint-amount:   10% !default;
 
 {% capture button-block %}
 <div class="d-grid gap-2">
-    <button class="btn btn-primary btn-lg" type="button">ប៊ូតុង</button>
-    <button class="btn btn-outline-dark btn-lg" type="button">ប៊ូតុង</button>
+  <button class="btn btn-primary btn-lg" type="button">ប៊ូតុង</button>
+  <button class="btn btn-outline-dark btn-lg" type="button">ប៊ូតុង</button>
 </div>
 {% endcapture %}
 
@@ -82,155 +82,155 @@ $btn-active-border-tint-amount:   10% !default;
 {% endcapture %}
 
 <div class="page-component">
-    {% include page-component/component-header.html %}
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-        <div class="section-sub">
-            {%
-                include page-component/component-code-snippet.html
-                compTitle="លំនាំដើម"
-                compName="button-default"
-                code=button-default
-            %}
+  {% include page-component/component-header.html %}
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="លំនាំដើម"
+      compName="button-default"
+      code=button-default
+      %}
+    </div>
+
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="ប្រភេទនៃប៊ូតុង"
+      compName="button-variants"
+      code=button-variants
+      compDescTop="ប្រើប៊ូតុងណាមួយក្នុងចំណោមប៊ូតុងដែលមានស្រាប់ទាំងអស់នេះដើម្បីឲ្យកាន់តែមានភាពងាយស្រួល។ ប៊ូតុងខ្លះមានលក្ខណៈជាបន្ទាត់ស៊ុម។ ប៊ូតុងស៊ុមភ្លឺជាឧទាហរណ៍ (<code>btn-outline-light</code>) ទុកសម្រាប់ប្រើប្រាស់ពេលផ្ទាំងខាងក្រោយមានពណ៌ងងឹតដើម្បីរំលេចកម្រិតពណ៌។"
+      %}
+    </div>
+
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="ទំហំ"
+      compName="button-size"
+      code=button-size
+      compDescTop="ទំហំស្វ័យប្រវត្តិនៃប៊ូតុងគឺប៊ូតុងធំ។ ប្រសិនបើចង់ឪ្យវាមានទំហំតូចសូមប្រើ class ក្នុងរង្វង់ក្រចកនេះ (<code>btn-sm</code>)។"
+      %}
+    </div>
+
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="ប៊ូតុង Block"
+      compName="button-block"
+      code=button-block
+      compDescTop="បង្ហាញជាមួយ Grid ដើម្បីបង្កើតជាប៊ូតុងដែលមានទំហំលាតពេញបណ្តោយ ឬដែលអាចហៅម្យ៉ាងទៀតថា ប៊ូតុងBlock។"
+      %}
+    </div>
+
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="ប៊ូតុងដែលមិនអាចចុចបាន"
+      compName="button-disable"
+      code=button-disable
+      compDescTop="ប្រើប្រាស់ class <code>disabled</code> ដើម្បីបង្កើតប៊ូតុងដែលមិនអាចចុចបាន។"
+      %}
+    </div>
+
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="ប៊ូតុងមានសញ្ញា"
+      compName="button-icon"
+      code=button-icon
+      %}
+    </div>
+  </section>
+
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/button/anatomy-button.svg" alt="Button Anatomy">
         </div>
+      </div>
 
-        <div class="section-sub">
-            {%
-                include page-component/component-code-snippet.html
-                compTitle="ប្រភេទនៃប៊ូតុង"
-                compName="button-variants"
-                code=button-variants
-                compDescTop="ប្រើប៊ូតុងណាមួយក្នុងចំណោមប៊ូតុងដែលមានស្រាប់ទាំងអស់នេះដើម្បីឲ្យកាន់តែមានភាពងាយស្រួល។ ប៊ូតុងខ្លះមានលក្ខណៈជាបន្ទាត់ស៊ុម។ ប៊ូតុងស៊ុមភ្លឺជាឧទាហរណ៍ (<code>btn-outline-light</code>) ទុកសម្រាប់ប្រើប្រាស់ពេលផ្ទាំងខាងក្រោយមានពណ៌ងងឹតដើម្បីរំលេចកម្រិតពណ៌។"
-            %}
+      <ol>
+        <li>
+          <b>រូបសញ្ញា (អាចដាក់ក៏បានអត់ក៏បាន)៖</b> សម្រាប់បង្ហាញពីមុខងាររបស់ប៊ូតុងនីមួយៗ។ ឧទារហរណ៍៖ សញ្ញាបូកបង្ហាញថាប៊ូតុងនេះសម្រាប់ការបន្ថែម ឬបង្កើត។
+        </li>
+        <li>
+          <b>ពាក្យសម្គាល់៖</b> សម្រាប់សរសេរប្រាប់អ្នកប្រើប្រាស់ពីគោលបំណងរបស់ប៊ូតុង។ ទំហំតូចធំរបស់អក្សរសម្គាល់អាចតម្រូវបាន។
+        </li>
+        <li>
+          <b>ប្រអប់ប៊ូតុង៖</b> ទំហំរបស់វាអាស្រ័យ និងត្រូវបានតម្រូវដោយស្វ័យប្រវត្តិទៅតាមទំហំជាក់ស្តែងរបស់ពាក្យសម្គាល់។
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/button/spacing-button.svg" alt="Alert Spacing">
         </div>
+      </div>
+      <p><b>គម្លាតក្នុងប៊ូតុង</b><br>
+        ត្រូវរក្សាគម្លាតយ៉ាងហោចណាច់8pxនៅលើអ័ក្សឈររបស់ប៊ូតុង។ <br>
+        <b>កម្ពស់</b><br>
+        ប៊ូតុងធំ - 48px<br>
+        ប៊ូតុងមធ្យម - 40px<br>
+        ប៊ូតុងតូច - 32px</p>
+    </div>
+  </section>
 
-        <div class="section-sub">
-            {%
-                include page-component/component-code-snippet.html
-                compTitle="ទំហំ"
-                compName="button-size"
-                code=button-size
-                compDescTop="ទំហំស្វ័យប្រវត្តិនៃប៊ូតុងគឺប៊ូតុងធំ។ ប្រសិនបើចង់ឪ្យវាមានទំហំតូចសូមប្រើ class ក្នុងរង្វង់ក្រចកនេះ (<code>btn-sm</code>)។"
-            %}
-        </div>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+    <p class="fw-bold mb-0">ប៊ូតុងគួរតែត្រូវបានប្រើប្រាស់នៅពេលដូចជា៖</p>
+    <ul>
+      <li>
+        ប៊ូតុងសម្រាប់ចុចដើម្បីបញ្ជូនទម្រង់បែបបទ។
+      </li>
+    </ul>
+    <p class="fw-bold mb-0">ប៊ូតុងមិនគួរតែត្រូវបានប្រើប្រាស់នៅពេលដូចជា៖</p>
+    <ul>
+      <li>
+        ភ្ជាប់តំណនៃទំព័រមួយទៅកាន់ទំព័រផ្សងៗ។ ករណីនេះគួរតែប្រើជាអក្សរដែលមានតំណភ្ចាប់វិញ។
+      </li>
 
-        <div class="section-sub">
-            {%
-                include page-component/component-code-snippet.html
-                compTitle="ប៊ូតុង Block"
-                compName="button-block"
-                code=button-block
-                compDescTop="បង្ហាញជាមួយ Grid ដើម្បីបង្កើតជាប៊ូតុងដែលមានទំហំលាតពេញបណ្តោយ ឬដែលអាចហៅម្យ៉ាងទៀតថា ប៊ូតុងBlock។"
-            %}
-        </div>
+    </ul>
+  </section>
 
-        <div class="section-sub">
-            {%
-                include page-component/component-code-snippet.html
-                compTitle="ប៊ូតុងដែលមិនអាចចុចបាន"
-                compName="button-disable"
-                code=button-disable
-                compDescTop="ប្រើប្រាស់ class <code>disabled</code> ដើម្បីបង្កើតប៊ូតុងដែលមិនអាចចុចបាន។"
-            %}
-        </div>
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>        <p>
+    <b>ប្រើប៊ូតុងគោលសម្រាប់សកម្មភាពដូចជា ការឆ្លងចូលទៅទំព័រផ្សេង ឬសម្រាប់ការដាក់បញ្ជូនទម្រង់</b><br>
+    ធ្វើបែបនេះដើម្បីប្រាប់ឲ្យអ្នកប្រើប្រាស់ដឹងថានឹងមានសកម្មភាពមួយកើតឡើងពេលពួកគាត់ចុចប៊ូតុង។
+  </p>
+    <p>
+      <b>ប្រើប៊ូតុងរាងជាស៊ុម ឬប៊ូតុងរងសម្រាប់សកម្មភាពបន្ទាប់បន្សំ</b><br>
+      ធ្វើបែបនេះដើម្បីញែកអោយឃើញភាពខុសគ្នារវាងប៊ូតុងគោលសម្រាប់សកម្មភាពគោលចម្បង និងសំខាន់ៗ និងប៊ូតុងរងសម្រាប់សកម្មភាពបន្ទាប់បន្សំ។</p>
+    <p>
+      <b>ត្រូវធ្វើឲ្យប៊ូតុងមើលទៅដូចជាប៊ូតុង និងមើលទៅហាក់ដូចជាអាចចុចបាន</b><br>
+      ធានាថាប៊ូតុងដែលអាចចុចបានមានពណ៌ច្បាស់ និងមិនស្រអាប់មិនស្រមោលដូចប៊ូតុងដែលចុចមិនបាន។
+    </p>
+    <p>
+      <b>កុំប្រើប្រាស់ប៊ូតុងច្រើនដងពេក</b><br>
+      ប៊ូតុងគួរតែត្រូវបានប្រើប្រាស់សម្រាប់សកម្មភាពសំខាន់ៗប៉ុណ្ណោះ។
+      ឧទាហរណ៍៖ សម្រាប់ទម្រង់បែបបទមួយគួរតែប្រើប្រាស់ប៊ូតុងតែ៣គត់។
+    </p>
+    <p>
+      <b>សរសេរពាក្យសម្គាល់ប៊ូតុងឲ្យខ្លី</b><br>
+      ពាក្យសម្គាល់ប៊ូតុងគួរតែជាពាក្យគន្លឹះខ្លីដើម្បីឲ្យអ្នកប្រើប្រាស់ងាយអាន ងាយយល់ នឹងងាយដឹងថានឹងមានអ្វីកើតឡើងនៅពេលដែលពួកគេចុចប៊ូតុង។
+      ឧទាហរណ៍៖ បញ្ជូន ផ្ញើ ទាញយក និងបន្ទាប់។
 
-        <div class="section-sub">
-            {%
-                include page-component/component-code-snippet.html
-                compTitle="ប៊ូតុងមានសញ្ញា"
-                compName="button-icon"
-                code=button-icon
-            %}
-        </div>
-    </section>
+  </section>
 
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
-            <div class="section-sub">
-                <div class="cgds-example-image-container">
-                    <div class="cgds-example-image-grid">
-                        <img src="{{site.baseurl}}/assets/img/component/button/anatomy-button.svg" alt="Button Anatomy">
-                    </div>
-                </div>
-
-                <ol>
-                    <li>
-                        <b>រូបសញ្ញា (អាចដាក់ក៏បានអត់ក៏បាន)៖</b> សម្រាប់បង្ហាញពីមុខងាររបស់ប៊ូតុងនីមួយៗ។ ឧទារហរណ៍៖ សញ្ញាបូកបង្ហាញថាប៊ូតុងនេះសម្រាប់ការបន្ថែម ឬបង្កើត។
-                    </li>
-                    <li>
-                        <b>ពាក្យសម្គាល់៖</b> សម្រាប់សរសេរប្រាប់អ្នកប្រើប្រាស់ពីគោលបំណងរបស់ប៊ូតុង។ ទំហំតូចធំរបស់អក្សរសម្គាល់អាចតម្រូវបាន។
-                    </li>
-                    <li>
-                        <b>ប្រអប់ប៊ូតុង៖</b> ទំហំរបស់វាអាស្រ័យ និងត្រូវបានតម្រូវដោយស្វ័យប្រវត្តិទៅតាមទំហំជាក់ស្តែងរបស់ពាក្យសម្គាល់។
-                    </li>
-                </ol>
-            </div>
-    </section>
-
-    <!-- Spacing Section -->
-    <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
-            <div class="section-sub">
-                    <div class="cgds-example-image-container">
-                        <div class="cgds-example-image-grid">
-                            <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/button/spacing-button.svg" alt="Alert Spacing">
-                        </div>
-                    </div>
-            <p><b>គម្លាតក្នុងប៊ូតុង</b><br>
-            ត្រូវរក្សាគម្លាតយ៉ាងហោចណាច់8pxនៅលើអ័ក្សឈររបស់ប៊ូតុង។ <br>
-            <b>កម្ពស់</b><br>
-            ប៊ូតុងធំ - 48px<br>
-                ប៊ូតុងមធ្យម - 40px<br>
-            ប៊ូតុងតូច - 32px</p>
-            </div>
-    </section>
-
-        <!-- Usage guidelines Section -->
-    <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
-        <p class="fw-bold mb-0">ប៊ូតុងគួរតែត្រូវបានប្រើប្រាស់នៅពេលដូចជា៖</p>
-        <ul>
-            <li>
-                 ប៊ូតុងសម្រាប់ចុចដើម្បីបញ្ជូនទម្រង់បែបបទ។
-            </li>
-        </ul>
-        <p class="fw-bold mb-0">ប៊ូតុងមិនគួរតែត្រូវបានប្រើប្រាស់នៅពេលដូចជា៖</p>
-        <ul>
-            <li>
-                ភ្ជាប់តំណនៃទំព័រមួយទៅកាន់ទំព័រផ្សងៗ។ ករណីនេះគួរតែប្រើជាអក្សរដែលមានតំណភ្ចាប់វិញ។
-            </li>
-
-        </ul>
-        </section>
-
-        <section name="section-usability-guidelines">
-            <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>        <p>
-            <b>ប្រើប៊ូតុងគោលសម្រាប់សកម្មភាពដូចជា ការឆ្លងចូលទៅទំព័រផ្សេង ឬសម្រាប់ការដាក់បញ្ជូនទម្រង់</b><br>
-            ធ្វើបែបនេះដើម្បីប្រាប់ឲ្យអ្នកប្រើប្រាស់ដឹងថានឹងមានសកម្មភាពមួយកើតឡើងពេលពួកគាត់ចុចប៊ូតុង។
-        </p>
-        <p>
-            <b>ប្រើប៊ូតុងរាងជាស៊ុម ឬប៊ូតុងរងសម្រាប់សកម្មភាពបន្ទាប់បន្សំ</b><br>
-            ធ្វើបែបនេះដើម្បីញែកអោយឃើញភាពខុសគ្នារវាងប៊ូតុងគោលសម្រាប់សកម្មភាពគោលចម្បង និងសំខាន់ៗ និងប៊ូតុងរងសម្រាប់សកម្មភាពបន្ទាប់បន្សំ។</p>
-        <p>
-            <b>ត្រូវធ្វើឲ្យប៊ូតុងមើលទៅដូចជាប៊ូតុង និងមើលទៅហាក់ដូចជាអាចចុចបាន</b><br>
-            ធានាថាប៊ូតុងដែលអាចចុចបានមានពណ៌ច្បាស់ និងមិនស្រអាប់មិនស្រមោលដូចប៊ូតុងដែលចុចមិនបាន។
-        </p>
-        <p>
-            <b>កុំប្រើប្រាស់ប៊ូតុងច្រើនដងពេក</b><br>
-            ប៊ូតុងគួរតែត្រូវបានប្រើប្រាស់សម្រាប់សកម្មភាពសំខាន់ៗប៉ុណ្ណោះ។
-            ឧទាហរណ៍៖ សម្រាប់ទម្រង់បែបបទមួយគួរតែប្រើប្រាស់ប៊ូតុងតែ៣គត់។
-        </p>
-        <p>
-            <b>សរសេរពាក្យសម្គាល់ប៊ូតុងឲ្យខ្លី</b><br>
-            ពាក្យសម្គាល់ប៊ូតុងគួរតែជាពាក្យគន្លឹះខ្លីដើម្បីឲ្យអ្នកប្រើប្រាស់ងាយអាន ងាយយល់ នឹងងាយដឹងថានឹងមានអ្វីកើតឡើងនៅពេលដែលពួកគេចុចប៊ូតុង។
-            ឧទាហរណ៍៖ បញ្ជូន ផ្ញើ ទាញយក និងបន្ទាប់។
-
-    </section>
-
-<section name="section-design-tokens">
+  <section name="section-design-tokens">
     <h2 class="title fw-bold" id="design-tokens">ខ្នាតសម្រាប់រចនា</h2>
     {%- highlight sass -%}{{button-design-tokens}}{%- endhighlight -%}
-</section>
+  </section>
 
 </div>

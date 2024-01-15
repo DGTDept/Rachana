@@ -134,47 +134,55 @@ $body-color: #111;
 {% endcapture %}
 
 <div class="page-component">
-    {% include page-component/component-header.html %}
+  {% include page-component/component-header.html %}
 
-    <section name="section-source-file">
-        <h2 class="title fw-bold" id="anatomy">Working with Rachana's source files</h2>
-        <div class="section-sub">
-            <p>The Sass source files for cgds can be found in the folder<br><code>node_modules/{{site.cgds-package-name}}/sass</code></p>
-            {% highlight bash %}{{sass-folder-structure}}{% endhighlight %}
-            <div role="alert" class="fade d-flex align-items-center alert alert-info show cgds">
-                <div>
-                    <i class="bi bi-exclamation-circle me-2"></i>
-                    Whenever possible, avoid modifying the core sass files in <code>{{site.cgds-package-name}}/sass/</code>
-                </div>
-            </div>
+  <section name="section-source-file">
+    <h2 class="title fw-bold" id="anatomy">Working with Rachana's source files</h2>
+    <div class="section-sub">
+      <p>The Sass source files for cgds can be found in the folder<br><code>node_modules/{{site.cgds-package-name}}/sass</code></p>
+      {% highlight bash %}
+        {{sass-folder-structure}}
+      {% endhighlight %}
+      <div role="alert" class="fade d-flex align-items-center alert alert-info show cgds">
+        <div>
+          <i class="bi bi-exclamation-circle me-2"></i>
+          Whenever possible, avoid modifying the core sass files in <code>{{site.cgds-package-name}}/sass/</code>
         </div>
-    </section>
-    <section name="section-importing">
-        <div class="section-sub">
-            <h2 class="title fw-bold" id="anatomy">Importing</h2>
-            <p>In your <code>custom.scss</code>, you can choose to include all <code>sgds-theme</code> files or pick the
-                components you need.
-                However, do note that there are some requirements and dependencies across the components.</p>
-        </div>
-        <div class="section-sub">
-            <h3 class="title fw-bold" id="anatomy">Include all parts</h3>
-            {% highlight css %}{{include-all-parts}}{% endhighlight %}
-        </div>
-        <div class="section-sub">
-            <h3 class="title fw-bold" id="anatomy">Include parts of Rachana</h3>
-            {% highlight css %}{{include-parts}}{% endhighlight %}
-
-            <p>If you are using Webpack, u can omit the <code>node_modules</code> directory</p>
-            {% highlight css %}{{webpack-sass}}{% endhighlight %}
-        </div>
-    </section>
-    <section name="section-design-tokens">
-        <h2 class="title fw-bold" id="anatomy">Variables</h2>
-        <p>
-            You can find the complete list of variables inside <code>{{site.cgds-package-name}}/sass/_variables.scss</code> or in our <a href="{{site.gitlab-cgds-variables}}" target="_blank" rel="noopener noreferrer">Rachana GitHub repo</a>
-        </p>
-        <p>Here's an example that changes the <code>background-color</code> and color for the <code>body</code> when importing and compiling <code>sgds-theme</code> via npm:</p>
-        {% highlight scss %}{{sgds-variable-example}}{% endhighlight %}
-
-    </section>
+      </div>
+    </div>
+  </section>
+  <section name="section-importing">
+    <div class="section-sub">
+      <h2 class="title fw-bold" id="anatomy">Importing</h2>
+      <p>In your <code>custom.scss</code>, you can choose to include all <code>sgds-theme</code> files or pick the
+        components you need.
+        However, do note that there are some requirements and dependencies across the components.</p>
+    </div>
+    <div class="section-sub">
+      <h3 class="title fw-bold" id="anatomy">Include all parts</h3>
+      {% highlight css %}
+        {{include-all-parts}}
+      {% endhighlight %}
+    </div>
+    <div class="section-sub">
+      <h3 class="title fw-bold" id="anatomy">Include parts of Rachana</h3>
+      {% highlight css %}
+        {{include-parts}}
+      {% endhighlight %}
+      <p>If you are using Webpack, u can omit the <code>node_modules</code> directory</p>
+      {% highlight css %}
+        {{webpack-sass}}
+      {% endhighlight %}
+    </div>
+  </section>
+  <section name="section-design-tokens">
+    <h2 class="title fw-bold" id="anatomy">Variables</h2>
+    <p>
+      You can find the complete list of variables inside <code>{{site.cgds-package-name}}/sass/_variables.scss</code> or in our <a href="{{site.gitlab-cgds-variables}}" target="_blank" rel="noopener noreferrer">Rachana GitHub repo</a>
+    </p>
+    <p>Here's an example that changes the <code>background-color</code> and color for the <code>body</code> when importing and compiling <code>sgds-theme</code> via npm:</p>
+    {% highlight scss %}
+      {{sgds-variable-example}}
+    {% endhighlight %}
+  </section>
 </div>

@@ -23,215 +23,226 @@ $accordion-icon-color: $accordion-button-color !default;
 $accordion-icon-active-color: $accordion-button-active-color !default;
 $accordion-icon-transition: transform .2s ease-in-out !default;
 $accordion-icon-transform: rotate(-180deg) !default;
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'
-                                                     fill='#{$accordion-icon-color}'>
-    <path fill-rule='evenodd'
-          d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
+$accordion-button-icon: url("data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'>
+  <path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
 </svg>") !default;
-$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'
-                                                            fill='#{$accordion-icon-active-color}'>
-    <path fill-rule='evenodd'
-          d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
+$accordion-button-active-icon: url("data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'>
+  <path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
 </svg>") !default;
 {% endcapture %}
 
 {% capture default-accordion %}
 <div class="cgds accordion" id="accordionExample">
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                <i class="bi bi-info-circle-fill"></i>
-                Accordion Item #1
-            </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-             data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-        </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+        <i class="bi bi-info-circle-fill"></i>
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong>
+          It is shown by default, until the collapse
+        plugin adds the appropriate classes that we use to style each element.
+        These classes control the overall
+        appearance, as well as the showing and hiding via CSS transitions.
+        You can modify any of this with
+        custom CSS or overriding our default variables.
+        It's also worth noting that just about any HTML can go
+        within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
     </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="bi bi-info-circle-fill"></i>
-                Accordion Item #2
-            </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-             data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-        </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <i class="bi bi-info-circle-fill"></i>
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong>
+          It is hidden by default, until the collapse
+        plugin adds the appropriate classes that we use to style each element.
+        These classes control the overall
+        appearance, as well as the showing and hiding via CSS transitions.
+        You can modify any of this with
+        custom CSS or overriding our default variables.
+        It's also worth noting that just about any HTML can go
+        within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
     </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <i class="bi bi-info-circle-fill"></i>
-                Accordion Item #3
-            </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-             data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-        </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <i class="bi bi-info-circle-fill"></i>
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong>
+          It is hidden by default, until the collapse
+        plugin adds the appropriate classes that we use to style each element.
+        These classes control the overall
+        appearance, as well as the showing and hiding via CSS transitions.
+        You can modify any of this with
+        custom CSS or overriding our default variables.
+        It's also worth noting that just about any HTML can go
+        within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
     </div>
+  </div>
 </div>
 {% endcapture %}
 
 <div class="page-component">
+  {% include page-component/component-header.html %}
+  <!-- Code Example Section -->
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">Example</h2>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="Default Accordion"
+      compName="default-accordion"
+      code=default-accordion
+      %}
+    </div>
+  </section>
 
-    {% include page-component/component-header.html %}
-    <!-- Code Example Section -->
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">Example</h2>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="Default Accordion"
-            compName="default-accordion"
-            code=default-accordion
-            %}
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
+    <div class="section-sub">
+      <h3 class="subtitle fw-bold" id="closed">Closed</h3>
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/accordion/anatomy-accordion-1.svg" alt="Closed Accordion Anatomy">
         </div>
-    </section>
-
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
-        <div class="section-sub">
-            <h3 class="subtitle fw-bold" id="closed">Closed</h3>
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/accordion/anatomy-accordion-1.svg" alt="Closed Accordion Anatomy">
-                </div>
-            </div>
-
-            <ol>
-                <li>
-                    <b>Icon (situational)</b>: Serves to give more context to the accordion.
-                </li>
-                <li>
-                    <b>Text:</b> Serves to tell users what the accordion is being used for.
-                </li>
-                <li>
-                    <b>Container:</b> Encloses the content within, width and height to be adjusted according to content.
-                </li>
-            </ol>
+      </div>
+      <ol>
+        <li>
+          <b>Icon (situational)</b>: Serves to give more context to the accordion.
+        </li>
+        <li>
+          <b>Text:</b> Serves to tell users what the accordion is being used for.
+        </li>
+        <li>
+          <b>Container:</b> Encloses the content within, width and height to be adjusted according to content.
+        </li>
+      </ol>
+    </div>
+    <div class="section-sub">
+      <h3 class="subtitle fw-bold" id="open">Open</h3>
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/accordion/anatomy-accordion-2.svg" alt="Open Accordion Anatomy">
         </div>
-        <div class="section-sub">
-            <h3 class="subtitle fw-bold" id="open">Open</h3>
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/accordion/anatomy-accordion-2.svg" alt="Open Accordion Anatomy">
-                </div>
-            </div>
-            <ol>
-                <li>
-                    <b>Icon (situational)</b>: Serves to give more context to the accordion.
-                </li>
-                <li>
-                    <b>Text:</b> Serves to tell users what the accordion is being used for. Bold when the accordion
-                    is open.
-                </li>
-                <li>
-                    <b>Container:</b> Encloses the content within, width and height to be adjusted according to
-                    content.
-                </li>
-                <li>
-                    <b>Content:</b> Content should be kept as short and to the point as possible to help with
-                    scanning.
-                </li>
-            </ol>
+      </div>
+      <ol>
+        <li>
+          <b>Icon (situational)</b>: Serves to give more context to the accordion.
+        </li>
+        <li>
+          <b>Text:</b> Serves to tell users what the accordion is being used for.
+          Bold when the accordion is open.
+        </li>
+        <li>
+          <b>Container:</b> Encloses the content within, width and height to be adjusted according to
+          content.
+        </li>
+        <li>
+          <b>Content:</b> Content should be kept as short and to the point as possible to help with
+          scanning.
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">Spacing</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/accordion/spacing-accordion-1.svg" alt="Accordion Spacing">
         </div>
-    </section>
-
-    <!-- Spacing Section -->
-    <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">Spacing</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/accordion/spacing-accordion-1.svg" alt="Accordion Spacing">
-                </div>
-            </div>
-            <p><p><b>Within the accordion button</b><br>
-            Ensure that there is a min of 24px horizontal spacing and 16px vertical spacing.
-            The accordion button has a base height of 64px. </p>
+      </div>
+      <p><p><b>Within the accordion button</b><br>
+      Ensure that there is a min of 24px horizontal spacing and 16px vertical spacing.
+      The accordion button has a base height of 64px. </p>
+    </div>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/accordion/spacing-accordion-2.svg"
+               alt="">
         </div>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/accordion/spacing-accordion-2.svg"
-                         alt="">
-                </div>
-            </div>
-            <p><b>Within the accordion</b><br>
-                Ensure that there is a min of 24px spacing within the accordion, and 16px vertical spacing
-                between the accordion title and content.
-                The accordion button has a base height of 64px,
-                while the body size adapts to the length of the content within.</p>
-        </div>
-    </section>
+      </div>
+      <p><b>Within the accordion</b><br>
+        Ensure that there is a min of 24px spacing within the accordion, and 16px vertical spacing
+        between the accordion title and content.
+        The accordion button has a base height of 64px,
+        while the body size adapts to the length of the content within.</p>
+    </div>
+  </section>
 
-    <!-- Usage guidelines Section -->
-    <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
-        <p>Accordion increases the cognitive load for users, as decisions have to be made when clicking on the headers.
-            Users may also ignore important information if it is hidden in an accordion.</p>
-        <p class="fw-bold mb-0">When to use the accordion component:</p>
-        <ol>
-            <li>There is insufficient space within the page to display the necessary information.</li>
-            <li>Displaying frequently asked questions (FAQ) - The questions would be the headers and the detailed answers would be revealed in the expanded sections. </li>
-        </ol>
-        <p class="fw-bold mb-0">When not to use the accordion component:</p>
-        <ol>
-            <li>
-                There is sufficient space within the page to display the necessary information.
-                <ul>
-                    <li>Accordions hide content, and there may be users who may miss the content or not understand how
-                        accordions work.</li>
-                    <li>If users need to see all information in a single page, you can consider reducing your content,
-                        splitting them into smaller sections, or use well-formatted text (e.g., headers, contents,
-                        section).</li>
-                </ul>
-            </li>
-        </ol>
-    </section>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
+    <p>Accordion increases the cognitive load for users, as decisions have to be made when clicking on the headers.
+      Users may also ignore important information if it is hidden in an accordion.</p>
+    <p class="fw-bold mb-0">When to use the accordion component:</p>
+    <ol>
+      <li>There is insufficient space within the page to display the necessary information.</li>
+      <li>Displaying frequently asked questions (FAQ) - The questions would be the headers and the detailed answers would be revealed in the expanded sections. </li>
+    </ol>
+    <p class="fw-bold mb-0">When not to use the accordion component:</p>
+    <ol>
+      <li>
+        There is sufficient space within the page to display the necessary information.
+        <ul>
+          <li>Accordions hide content, and there may be users who may miss the content or not understand how
+            accordions work.</li>
+          <li>If users need to see all information in a single page, you can consider reducing your content,
+            splitting them into smaller sections, or use well-formatted text (e.g., headers, contents,
+            section).</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
 
-    <!-- Usability guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
-        <p>
-            <b>Do ensure that the entire heading is clickable to the user.</b><br>
-            A larger target will make it easier for users to manipulate.
-        </p>
-        <p>
-            <b>Ensure enough space between content and headings</b><br>
-            This is to prevent the user from accidentally closing the accordion.
-        </p>
-    </section>
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
+    <p>
+      <b>Do ensure that the entire heading is clickable to the user.</b><br>
+      A larger target will make it easier for users to manipulate.
+    </p>
+    <p>
+      <b>Ensure enough space between content and headings</b><br>
+      This is to prevent the user from accidentally closing the accordion.
+    </p>
+  </section>
 
-    <section>
-        <h2 class="title fw-bold" id="design-tokens">{% t headers.accordion %} design tokens</h2>
-        {%- highlight sass -%}{{accordion-design-tokens}}{%- endhighlight -%}
-    </section>
+  <!-- Design token Section -->
+  <section>
+    <h2 class="title fw-bold" id="design-tokens">{% t headers.accordion %} design tokens</h2>
+    {%- highlight sass -%}
+      {{accordion-design-tokens}}
+    {%- endhighlight -%}
+  </section>
 
 </div>

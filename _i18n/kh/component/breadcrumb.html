@@ -1,10 +1,10 @@
 {% capture default-breadcrumb %}
 <nav class="cgds" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i>ទំព័រដើម</a></li>
-        <li class="breadcrumb-item"><a href="#">បណ្ណាល័យ</a></li>
-        <li class="breadcrumb-item active" aria-current="page">ទិន្នន័យ</li>
-    </ol>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i>ទំព័រដើម</a></li>
+    <li class="breadcrumb-item"><a href="#">បណ្ណាល័យ</a></li>
+    <li class="breadcrumb-item active" aria-current="page">ទិន្នន័យ</li>
+  </ol>
 </nav>
 {% endcapture %}
 
@@ -25,92 +25,92 @@ $breadcrumb-border-radius: null !default;
 <!-- Page starts here -->
 <div class="page-component">
 
-    <!-- Generated header from front end matters -->
-    {% include page-component/component-header.html %}
+  <!-- Generated header from front end matters -->
+  {% include page-component/component-header.html %}
 
-    <!-- Example Section -->
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html compName="default-breadcrumb" code=default-breadcrumb %}
+  <!-- Example Section -->
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compName="default-breadcrumb" code=default-breadcrumb %}
+    </div>
+  </section>
+
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/breadcrumb/anatomy-breadcrumb.svg"
+               alt="Breadcrumb Anatomy">
         </div>
-    </section>
+      </div>
+      <ol>
+        <li>
+          <b>រូបតំណាង៖</b> ដាក់សម្រាប់តំណាងឱ្យផ្នែកណាមួយរបស់ទំព័រអមជាមួយឈ្មោះរបស់វាដើម្បីឱ្យអ្នកប្រើប្រាស់ងាយស្រួលចំណាំ។
+        </li>
+        <li>
+          <b>ទំព័រដើម៖</b> នេះជាធាតុដំបូងបង្អស់របស់គ្រប់{% t headers.breadcrumb %}នៃគេហទំព័រទាំងអស់។
+        </li>
+        <li>
+          <b>បំណែងចែក៖</b> ខណ្ឌធាតុនីមួយៗរបស់{% t headers.breadcrumb %}ឱ្យដាច់ចេញពីគ្នា។
+        </li>
+        <li>
+          <b>ឈ្មោះទំព័រ៖</b> វាប្រាប់អ្នកប្រើប្រាស់ឱ្យដឹងថាទំព័រដែលគាត់កំពុងស្ថិតនៅជាធាតុរបស់ទំព័រគោលណាខ្លះ
+          ហើយឈ្មោះទំព័រភ្ជាប់ជាមួយតំណភ្ជាប់នៃទំព័រគោលទាំងនោះ។
+        </li>
+      </ol>
+    </div>
+  </section>
 
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/breadcrumb/anatomy-breadcrumb.svg"
-                         alt="Breadcrumb Anatomy">
-                </div>
-            </div>
-            <ol>
-                <li>
-                    <b>រូបតំណាង៖</b> ដាក់សម្រាប់តំណាងឱ្យផ្នែកណាមួយរបស់ទំព័រអមជាមួយឈ្មោះរបស់វាដើម្បីឱ្យអ្នកប្រើប្រាស់ងាយស្រួលចំណាំ។
-                </li>
-                <li>
-                    <b>ទំព័រដើម៖</b> នេះជាធាតុដំបូងបង្អស់របស់គ្រប់{% t headers.breadcrumb %}នៃគេហទំព័រទាំងអស់។
-                </li>
-                <li>
-                    <b>បំណែងចែក៖</b> ខណ្ឌធាតុនីមួយៗរបស់{% t headers.breadcrumb %}ឱ្យដាច់ចេញពីគ្នា។
-                </li>
-                <li>
-                    <b>ឈ្មោះទំព័រ៖</b> វាប្រាប់អ្នកប្រើប្រាស់ឱ្យដឹងថាទំព័រដែលគាត់កំពុងស្ថិតនៅជាធាតុរបស់ទំព័រគោលណាខ្លះ
-                     ហើយឈ្មោះទំព័រភ្ជាប់ជាមួយតំណភ្ជាប់នៃទំព័រគោលទាំងនោះ។
-                </li>
-            </ol>
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/breadcrumb/spacing-breadcrumb.svg"
+               alt="Breadcrumb Spacing">
         </div>
-    </section>
+      </div>
+      <p><b>នៅក្នុង{% t headers.breadcrumb %}</b><br>
+        រក្សាគម្លាតយ៉ាងតិច 8px នៅលើអ័ក្សដេកចន្លោះធាតុនីមួយៗរបស់{% t headers.breadcrumb %}។
+      </p>
+    </div>
+  </section>
 
-    <!-- Spacing Section -->
-    <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/breadcrumb/spacing-breadcrumb.svg"
-                         alt="Breadcrumb Spacing">
-                </div>
-            </div>
-            <p><b>នៅក្នុង{% t headers.breadcrumb %}</b><br>
-                រក្សាគម្លាតយ៉ាងតិច 8px នៅលើអ័ក្សដេកចន្លោះធាតុនីមួយៗរបស់{% t headers.breadcrumb %}។
-            </p>
-        </div>
-    </section>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+    <p class="fw-bold mb-0">{% t headers.breadcrumb %}គួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ol>
+      <li>ដើម្បីឱ្យអ្នកប្រើប្រាស់ងាយស្រួលស្វែងរកទំព័រណាមួយនៅក្នុងគេហទំព័ររបស់អ្នក និងប្រាប់គាត់ថាពេលបច្ចុប្បន្នពួកគាត់កំពុងនៅលើទំព័រណា។</li>
+      <li>ជួយអ្នកប្រើប្រាស់ឱ្យងាយស្រួលឆ្លងទៅកាន់ទំព័រផ្សេងៗដែលនៅពីលើនិងក្រោមគ្នា។</li>
+    </ol>
+    <p class="fw-bold mb-0">{% t headers.breadcrumb %}មិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ol>
+      <li>យើងមិនណែនាំការប្រើប្រាស់{% t headers.breadcrumb %}ដើម្បីជំនួស<a href="{{site.baseurl}}/components/main-navigation/">របារខាងលើ</a>នោះទេ។</li>
+      <li>ពេលបង្ហាញអំពីភាគរយនៃដំណើរការអ្វីមួយ ឧទាហរណ៍ភាគរយនៃដំឡើងឯកសារ។ ករណីនេះគួរប្រើ<a href="{{site.baseurl}}/components/progress-bar/">{% t headers.progress-bar %}</a>ជំនួសវិញ។</li>
+    </ol>
+  </section>
 
-    <!-- Usage guidelines Section -->
-    <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
-        <p class="fw-bold mb-0">{% t headers.breadcrumb %}គួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-        <ol>
-            <li>ដើម្បីឱ្យអ្នកប្រើប្រាស់ងាយស្រួលស្វែងរកទំព័រណាមួយនៅក្នុងគេហទំព័ររបស់អ្នក និងប្រាប់គាត់ថាពេលបច្ចុប្បន្នពួកគាត់កំពុងនៅលើទំព័រណា។</li>
-            <li>ជួយអ្នកប្រើប្រាស់ឱ្យងាយស្រួលឆ្លងទៅកាន់ទំព័រផ្សេងៗដែលនៅពីលើនិងក្រោមគ្នា។</li>
-        </ol>
-        <p class="fw-bold mb-0">{% t headers.breadcrumb %}មិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-        <ol>
-            <li>យើងមិនណែនាំការប្រើប្រាស់{% t headers.breadcrumb %}ដើម្បីជំនួស<a href="{{site.baseurl}}/components/main-navigation/">របារខាងលើ</a>នោះទេ។</li>
-            <li>ពេលបង្ហាញអំពីភាគរយនៃដំណើរការអ្វីមួយ ឧទាហរណ៍ភាគរយនៃដំឡើងឯកសារ។ ករណីនេះគួរប្រើ<a href="{{site.baseurl}}/components/progress-bar/">{% t headers.progress-bar %}</a>ជំនួសវិញ។</li>
-        </ol>
-    </section>
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
+    <p>
+      <b>រចនាជាមួយឈ្មោះទំព័រពេញ</b><br>
+      ធាតុរបស់{% t headers.breadcrumb %}គួរតែប្រើឈ្មោះពេញ និងដូចទៅនឹងទំព័រដែលតំណភ្ជាប់នាំទៅ។
+    </p>
+    <p>
+      <b>ផ្តល់ទំហំឱ្យបានត្រឹមត្រូវ</b><br>
+      ជាទូទៅឈ្មោះទំព័រនៅក្នុង{% t headers.breadcrumb %}មានទំហំតូច តែទោះយ៉ាងណាគួរលៃកុំឱ្យវាតូចពេកដើម្បីចៀសវាងការចុចមិនបាន។
+    </p>
+  </section>
 
-    <!-- Usability guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
-        <p>
-            <b>រចនាជាមួយឈ្មោះទំព័រពេញ</b><br>
-            ធាតុរបស់{% t headers.breadcrumb %}គួរតែប្រើឈ្មោះពេញ និងដូចទៅនឹងទំព័រដែលតំណភ្ជាប់នាំទៅ។
-        </p>
-        <p>
-            <b>ផ្តល់ទំហំឱ្យបានត្រឹមត្រូវ</b><br>
-            ជាទូទៅឈ្មោះទំព័រនៅក្នុង{% t headers.breadcrumb %}មានទំហំតូច តែទោះយ៉ាងណាគួរលៃកុំឱ្យវាតូចពេកដើម្បីចៀសវាងការចុចមិនបាន។
-        </p>
-    </section>
-
-    <!-- Design token Section -->
-    <section name="section-design-tokens">
-        <h2 class="title fw-bold" id="design-tokens">ខ្នាតសម្រាប់រចនា</h2>
-        {%- highlight sass -%}{{breadcrumb-design-tokens}}{%- endhighlight -%}
-    </section>
+  <!-- Design token Section -->
+  <section name="section-design-tokens">
+    <h2 class="title fw-bold" id="design-tokens">ខ្នាតសម្រាប់រចនា</h2>
+    {%- highlight sass -%}{{breadcrumb-design-tokens}}{%- endhighlight -%}
+  </section>
 </div>

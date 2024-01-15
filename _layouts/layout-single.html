@@ -3,10 +3,10 @@ layout: layout-default
 ---
 
 <section class="wrapper {{page.title | downcase | replace: ' ', '-'| remove: 'titles.' }} layout-single">
-    {% if page.title == 'Get Started' %}
-    <header>
-        {% include breadcrumb.html %}
-    </header>+
-    {% endif %}
-    {{content}}
+  {% if page.title == 'Get Started' %}
+  <header>
+    {% include breadcrumb.html %}
+  </header>+
+  {% endif %}
+  {{content}}
 </section>
