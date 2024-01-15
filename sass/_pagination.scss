@@ -14,7 +14,7 @@
         color: $pagination-hover-color;
         text-decoration: if($link-hover-decoration==underline, none, null);
         background-color: $pagination-hover-bg;
-        border: $pagination-border-width solid $pagination-border-color;;
+        border: $pagination-border-width solid $pagination-border-color;
     }
 
     &:focus {
