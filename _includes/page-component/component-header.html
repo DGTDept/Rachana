@@ -1,44 +1,44 @@
 {% include breadcrumb.html %}
 <!-- Section Component header -->
 <section name="section-component-header">
-    {% assign pageHeader = page.title | downcase %}
-    <header class="header-component">
-        <h1 class="fw-bold" id="{{pageHeader}}-component">{% t page.title %}</h1>
-        {% assign class = nil %}
-        {% if page.ready == false %}
-        {% assign class = 'text-danger' %}
-        {% endif %}
-        
-        {% if page.description contains 'descriptions.' %}
-        <p class="header-component-description {{class}}">{% t page.description %}</p>
-        {% else if page.description %}
-        <p class="header-component-description {{class}}">{{page.description}}</p>
-        {% endif %}
+  {% assign pageHeader = page.title | downcase %}
+  <header class="header-component">
+    <h1 class="fw-bold" id="{{pageHeader}}-component">{% t page.title %}</h1>
+    {% assign class = nil %}
+    {% if page.ready == false %}
+    {% assign class = 'text-danger' %}
+    {% endif %}
 
-        {% if page.source-grid %}
-        <div class="component-source-grid">
-            {% if page.category == 'mandatory' %}
-            <div><span class="cgds badge badge-light bg-danger">{{page.category | capitalize}}</span></div>
-            {% elsif page.category == 'required' %}
-            <div><span class="cgds badge badge-light bg-success">{{page.category | capitalize}}</span></div>
-            {% elsif page.category == 'general' %}
-            <div><span class="cgds badge badge-light bg-primary">{{page.category | capitalize}}</span></div>
-            {% endif %}
+    {% if page.description contains 'descriptions.' %}
+    <p class="header-component-description {{class}}">{% t page.description %}</p>
+    {% else if page.description %}
+    <p class="header-component-description {{class}}">{{page.description}}</p>
+    {% endif %}
 
-            {% if page.gitlab-link %}
-            <div>
-                <img src="{{site.baseurl}}/assets/uncompressed_images/icon/gitlab-logo-500.svg" alt="" width="32" height="32"> <a
-                    href="{{site.gitlab-link}}" target="_blank">View it on Gitlab</a>
-            </div>
-            {% endif %}
+    {% if page.source-grid %}
+    <div class="component-source-grid">
+      {% if page.category == 'mandatory' %}
+      <div><span class="cgds badge badge-light bg-danger">{{page.category | capitalize}}</span></div>
+      {% elsif page.category == 'required' %}
+      <div><span class="cgds badge badge-light bg-success">{{page.category | capitalize}}</span></div>
+      {% elsif page.category == 'general' %}
+      <div><span class="cgds badge badge-light bg-primary">{{page.category | capitalize}}</span></div>
+      {% endif %}
 
-            {% if page.vue-link %}
-            <div>
-                <img src="{{site.baseurl}}/assets/img/component/storybook-icon.svg" alt=""> <a
-                    href="{{page.react-link}}" target="_blank">View it on Vue Storybook</a>
-            </div>
-            {% endif %}
-        </div>
-        {% endif %}
-    </header>
+      {% if page.gitlab-link %}
+      <div>
+        <img src="{{site.baseurl}}/assets/uncompressed_images/icon/gitlab-logo-500.svg" alt="" width="32" height="32"> <a
+        href="{{site.gitlab-link}}" target="_blank">View it on Gitlab</a>
+      </div>
+      {% endif %}
+
+      {% if page.vue-link %}
+      <div>
+        <img src="{{site.baseurl}}/assets/img/component/storybook-icon.svg" alt=""> <a
+        href="{{page.react-link}}" target="_blank">View it on Vue Storybook</a>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  </header>
 </section>

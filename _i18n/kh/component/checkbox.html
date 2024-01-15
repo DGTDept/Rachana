@@ -1,45 +1,45 @@
 {% capture checkbox-examples %}
 <div class="row">
-    <div class="col">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="checkboxDefault" />
-            <label class="form-check-label" for="checkboxDefault">
-                លំនាំដើម
-            </label>
-        </div>
+  <div class="col">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="checkboxDefault" />
+      <label class="form-check-label" for="checkboxDefault">
+        លំនាំដើម
+      </label>
     </div>
-    <div class="col">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="checkboxActive" checked />
-            <label class="form-check-label" for="checkboxActive">
-                សកម្ម
-            </label>
-        </div>
+  </div>
+  <div class="col">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="checkboxActive" checked />
+      <label class="form-check-label" for="checkboxActive">
+        សកម្ម
+      </label>
     </div>
-    <div class="col">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="checkboxDisabled" disabled />
-            <label class="form-check-label" for="checkboxDisabled">
-                អសកម្ម
-            </label>
-        </div>
+  </div>
+  <div class="col">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="checkboxDisabled" disabled />
+      <label class="form-check-label" for="checkboxDisabled">
+        អសកម្ម
+      </label>
     </div>
+  </div>
 </div>
 {% endcapture %}
 
 {% capture checkbox-with-label %}
 <h5>ស្លាក</h5>
 <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="checkbox1" />
-    <label class="form-check-label" for="checkbox1"> ប្រអប់គ្រីស </label>
+  <input class="form-check-input" type="checkbox" value="" id="checkbox1" />
+  <label class="form-check-label" for="checkbox1"> ប្រអប់គ្រីស </label>
 </div>
 <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="checkbox2" />
-    <label class="form-check-label" for="checkbox2"> ប្រអប់គ្រីស </label>
+  <input class="form-check-input" type="checkbox" value="" id="checkbox2" />
+  <label class="form-check-label" for="checkbox2"> ប្រអប់គ្រីស </label>
 </div>
 <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="checkbox3" />
-    <label class="form-check-label" for="checkbox3"> ប្រអប់គ្រីស </label>
+  <input class="form-check-input" type="checkbox" value="" id="checkbox3" />
+  <label class="form-check-label" for="checkbox3"> ប្រអប់គ្រីស </label>
 </div>
 {% endcapture %}
 
@@ -64,18 +64,18 @@ $form-check-input-checked-bg-color: $component-active-bg !default;
 $form-check-input-checked-border-color: $form-check-input-checked-bg-color !default;
 $form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24'
                                                                  height='24' fill='#{$form-check-input-checked-color}' viewBox='0 0 16 16'>
-    <path
-        d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
+  <path
+    d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
 </svg>") !default;
 $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'>
-    <circle r='2' fill='#{$form-check-input-checked-color}' /></svg>") !default;
+  <circle r='2' fill='#{$form-check-input-checked-color}' /></svg>") !default;
 $form-check-input-indeterminate-color: $component-active-color !default;
 $form-check-input-indeterminate-bg-color: $component-active-bg !default;
 $form-check-input-indeterminate-border-color: $form-check-input-indeterminate-bg-color !default;
 $form-check-input-indeterminate-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'
                                                                        viewBox='0 0 20 20'>
-    <path fill='none' stroke='#{$form-check-input-indeterminate-color}' stroke-linecap='round' stroke-linejoin='round'
-          stroke-width='3' d='M6 10h8' /></svg>") !default;
+  <path fill='none' stroke='#{$form-check-input-indeterminate-color}' stroke-linecap='round' stroke-linejoin='round'
+        stroke-width='3' d='M6 10h8' /></svg>") !default;
 $form-check-input-disabled-opacity: .5 !default;
 $form-check-label-disabled-opacity: $form-check-input-disabled-opacity !default;
 $form-check-btn-check-disabled-opacity: $btn-disabled-opacity !default;
@@ -85,96 +85,96 @@ $form-check-inline-margin-end: 1rem !default;
 <!-- Page starts here -->
 <div class="page-component">
 
-    <!-- Generated header from front end matters -->
-    {% include page-component/component-header.html %}
+  <!-- Generated header from front end matters -->
+  {% include page-component/component-header.html %}
 
-    <!-- Example Section -->
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html compTitle="មានស្លាក" compName="checkbox-examples" code=checkbox-examples %}
+  <!-- Example Section -->
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="មានស្លាក" compName="checkbox-examples" code=checkbox-examples %}
+    </div>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="គ្មានស្លាក" compName="checkbox-with-label" code=checkbox-with-label %}
+    </div>
+  </section>
+
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/anatomy-checkbox.svg"
+               alt="Checkbox Anatomy">
         </div>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html compTitle="គ្មានស្លាក" compName="checkbox-with-label" code=checkbox-with-label %}
+      </div>
+    </div>
+    <ol>
+      <li>
+        <b>{% t headers.checkbox %}៖</b> អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់អាចជ្រើសរើសឬដកការជ្រើសរើសពីប្រអប់ណាមួយ។
+      </li>
+      <li>
+        <b>ជម្រើស៖ </b> ប្រាប់អ្នកប្រើប្រាស់ឱ្យដឹងថាជម្រើសដែលប្រអប់ផ្តល់ឱ្យគឺជាជម្រើសអ្វី។
+      </li>
+    </ol>
+  </section>
+
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-checkbox.svg"
+               alt="Checkbox Spacing">
         </div>
-    </section>
+      </div>
+    </div>
+    <p><b>នៅក្នុង{% t headers.checkbox %}មួយ</b><br>
+      រក្សាគម្លាតយ៉ាងតិច 16px នៃគម្លាតនៅអ័ក្សដេកចន្លោះរវាងប្រអប់និងជម្រើស។</p>
+  </section>
 
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/anatomy-checkbox.svg"
-                         alt="Checkbox Anatomy">
-                </div>
-            </div>
-        </div>
-        <ol>
-            <li>
-                <b>{% t headers.checkbox %}៖</b> អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់អាចជ្រើសរើសឬដកការជ្រើសរើសពីប្រអប់ណាមួយ។
-            </li>
-            <li>
-                <b>ជម្រើស៖ </b> ប្រាប់អ្នកប្រើប្រាស់ឱ្យដឹងថាជម្រើសដែលប្រអប់ផ្តល់ឱ្យគឺជាជម្រើសអ្វី។
-            </li>
-        </ol>
-    </section>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+    <p class="fw-bold mb-0">{% t headers.checkbox %}គួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ul>
+      <li>ពេលអ្នកចង់ឱ្យអ្នកប្រើប្រាស់អាចរើសយកជម្រើសលើសពីមួយចេញពីជម្រើសមួយក្រុមដែលអ្នកផ្តល់ឱ្យពួកគាត់។</li>
+      <li>ពេលអ្នកតម្រូវឱ្យអ្នកប្រើប្រាស់អាចមើលឃើញជម្រើសទាំងអស់ក្នុងពេលតែមួយ។</li>
+    </ul>
+    <p class="fw-bold mb-0">{% t headers.checkbox %}មិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ul>
+      <li>
+        ពេលអ្នកតម្រូវឱ្យអ្នកជ្រើសរើសអាចរើសយកបានជម្រើសតែមួយគត់។
+      </li>
+    </ul>
+  </section>
 
-    <!-- Spacing Section -->
-    <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/{{page.title | downcase | remove: 'headers.'}}/spacing-checkbox.svg"
-                         alt="Checkbox Spacing">
-                </div>
-            </div>
-        </div>
-        <p><b>នៅក្នុង{% t headers.checkbox %}មួយ</b><br>
-            រក្សាគម្លាតយ៉ាងតិច 16px នៃគម្លាតនៅអ័ក្សដេកចន្លោះរវាងប្រអប់និងជម្រើស។</p>
-    </section>
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
+    <p>
+      <b>សរសេរជម្រើសទាំងអស់ដោយតម្រៀបពីលើចុះក្រោម</b><br>
+      យើងណែនាំឱ្យអ្នកតម្រៀបវាពីលើចុះក្រោម ពីព្រោះការតម្រៀបពីឆ្វេងទៅស្តាំអាចធ្វើឱ្យអ្នកប្រើប្រាស់យល់ច្រឡំ និងពិបាកមើល ពិបាកបែងចែកថាប្រអប់មួយណាត្រូវនឹងជម្រើសមួយណា។
+    </p>
+    <p>
+      <b>សរសេរជម្រើសឱ្យមានប្រសិទ្ធិភាព</b><br>
+      ជម្រើសត្រូវសរសេរយ៉ាងណាឱ្យច្បាស់ៗ ងាយយល់។
+    </p>
+    <p>
+      <b>តម្រៀបជម្រើសតាមលំដាប់លំដោយត្រឹមត្រូវ និងសមហេតុផល</b><br>
+      ត្រូវតម្រៀបជម្រើសឱ្យមានលក្ខណៈសមហេតុផល និងស៊ីចង្វាក់គ្នាដើម្បីឱ្យអ្នកប្រើប្រាស់ងាយស្រួលក្នុងការស្វែងរកជម្រើសដែលពួកគាត់ចង់បាន។
+    </p>
+    <p>
+      <b>រក្សាគម្លាតធំល្មម</b><br>
+      គម្លាតរវាងប្រអប់ និងជម្រើសគួរតែរក្សាទុកចន្លោះធំល្មមសម្រាប់ឱ្យអ្នកប្រើប្រាស់ទូរស័ព្ទដៃចុចត្រូវប្រអប់។
+    </p>
+  </section>
 
-    <!-- Usage guidelines Section -->
-    <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
-        <p class="fw-bold mb-0">{% t headers.checkbox %}គួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-        <ul>
-            <li>ពេលអ្នកចង់ឱ្យអ្នកប្រើប្រាស់អាចរើសយកជម្រើសលើសពីមួយចេញពីជម្រើសមួយក្រុមដែលអ្នកផ្តល់ឱ្យពួកគាត់។</li>
-            <li>ពេលអ្នកតម្រូវឱ្យអ្នកប្រើប្រាស់អាចមើលឃើញជម្រើសទាំងអស់ក្នុងពេលតែមួយ។</li>
-        </ul>
-        <p class="fw-bold mb-0">{% t headers.checkbox %}មិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-        <ul>
-            <li>
-                ពេលអ្នកតម្រូវឱ្យអ្នកជ្រើសរើសអាចរើសយកបានជម្រើសតែមួយគត់។
-            </li>
-        </ul>
-    </section>
-
-    <!-- Usability guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
-        <p>
-            <b>សរសេរជម្រើសទាំងអស់ដោយតម្រៀបពីលើចុះក្រោម</b><br>
-            យើងណែនាំឱ្យអ្នកតម្រៀបវាពីលើចុះក្រោម ពីព្រោះការតម្រៀបពីឆ្វេងទៅស្តាំអាចធ្វើឱ្យអ្នកប្រើប្រាស់យល់ច្រឡំ និងពិបាកមើល ពិបាកបែងចែកថាប្រអប់មួយណាត្រូវនឹងជម្រើសមួយណា។
-        </p>
-        <p>
-            <b>សរសេរជម្រើសឱ្យមានប្រសិទ្ធិភាព</b><br>
-            ជម្រើសត្រូវសរសេរយ៉ាងណាឱ្យច្បាស់ៗ ងាយយល់។
-        </p>
-        <p>
-            <b>តម្រៀបជម្រើសតាមលំដាប់លំដោយត្រឹមត្រូវ និងសមហេតុផល</b><br>
-            ត្រូវតម្រៀបជម្រើសឱ្យមានលក្ខណៈសមហេតុផល និងស៊ីចង្វាក់គ្នាដើម្បីឱ្យអ្នកប្រើប្រាស់ងាយស្រួលក្នុងការស្វែងរកជម្រើសដែលពួកគាត់ចង់បាន។
-        </p>
-        <p>
-            <b>រក្សាគម្លាតធំល្មម</b><br>
-            គម្លាតរវាងប្រអប់ និងជម្រើសគួរតែរក្សាទុកចន្លោះធំល្មមសម្រាប់ឱ្យអ្នកប្រើប្រាស់ទូរស័ព្ទដៃចុចត្រូវប្រអប់។
-        </p>
-    </section>
-
-    <!-- Design token Section -->
-    <section name="section-design-tokens">
-        <h2 class="title fw-bold" id="design-tokens">ខ្នាតសម្រាប់រចនា</h2>
-        {%- highlight sass -%}{{checkbox-design-tokens}}{%- endhighlight -%}
-    </section>
+  <!-- Design token Section -->
+  <section name="section-design-tokens">
+    <h2 class="title fw-bold" id="design-tokens">ខ្នាតសម្រាប់រចនា</h2>
+    {%- highlight sass -%}{{checkbox-design-tokens}}{%- endhighlight -%}
+  </section>
 </div>

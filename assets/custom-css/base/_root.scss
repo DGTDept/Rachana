@@ -1,19 +1,19 @@
 :root {
-    --cgds-font-sans-serif: Kantumruy Pro, "Open Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --cgds-masthead-font-family: var(--cgds-font-sans-serif);
+  --cgds-font-sans-serif: Kantumruy Pro, "Open Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --cgds-masthead-font-family: var(--cgds-font-sans-serif);
 }
 
 body,
 html {
-    overflow-x: clip;
-    width: 100%;
+  overflow-x: clip;
+  width: 100%;
 }
 
 body {
-    position: relative;
-    padding-right: 0 !important;
+  position: relative;
+  padding-right: 0 !important;
 }
 
 *:target {
-    scroll-margin-top: 200px;
+  scroll-margin-top: 200px;
 }

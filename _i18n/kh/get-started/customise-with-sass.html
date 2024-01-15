@@ -134,46 +134,46 @@ $body-color: #111;
 {% endcapture %}
 
 <div class="page-component">
-    {% include page-component/component-header.html %}
+  {% include page-component/component-header.html %}
 
-    <section name="section-source-file">
-        <h2 class="title fw-bold" id="anatomy">កែសម្រួលនៅក្នុងប្រភពដើមនៃ sass របស់ Rachana</h2>
-        <div class="section-sub">
-            <p>អ្នកអាចរកប្រភពដើមនៃ Sass របស់ Rachana នៅក្នុងទីតាំង<br><code>node_modules/{{site.cgds-package-name}}/sass</code></p>
-            {% highlight bash %}{{sass-folder-structure}}{% endhighlight %}
-            <div role="alert" class="fade d-flex align-items-center alert alert-info show cgds">
-                <div>
-                    <i class="bi bi-exclamation-circle me-2"></i>
-                    ទោះបីជាការកែប្រែពីក្នុងប្រភពដើម  <code>{{site.cgds-package-name}}/sass/</code> ជាជម្រើសមួយ តែយើងមិនណែនាំឲ្យអ្នកកែប្រែក្នុងប្រភពដើមនេះទេ ចូរជៀសវាងប្រសិនជាអាចជៀសវាងបាន។
-                </div>
-            </div>
+  <section name="section-source-file">
+    <h2 class="title fw-bold" id="anatomy">កែសម្រួលនៅក្នុងប្រភពដើមនៃ sass របស់ Rachana</h2>
+    <div class="section-sub">
+      <p>អ្នកអាចរកប្រភពដើមនៃ Sass របស់ Rachana នៅក្នុងទីតាំង<br><code>node_modules/{{site.cgds-package-name}}/sass</code></p>
+      {% highlight bash %}{{sass-folder-structure}}{% endhighlight %}
+      <div role="alert" class="fade d-flex align-items-center alert alert-info show cgds">
+        <div>
+          <i class="bi bi-exclamation-circle me-2"></i>
+          ទោះបីជាការកែប្រែពីក្នុងប្រភពដើម  <code>{{site.cgds-package-name}}/sass/</code> ជាជម្រើសមួយ តែយើងមិនណែនាំឲ្យអ្នកកែប្រែក្នុងប្រភពដើមនេះទេ ចូរជៀសវាងប្រសិនជាអាចជៀសវាងបាន។
         </div>
-    </section>
-    <section name="section-importing">
-        <div class="section-sub">
-            <h2 class="title fw-bold" id="anatomy">ការបញ្ចូល</h2>
-            <p>នៅក្នុង <code>custom.scss</code>, អ្នកអាចបញ្ជូលនូវ <code>cgds-theme</code> ទាំងអស់ ឬបញ្ចូលតែធាតុណាដែលអ្នកត្រូវការ។
-               ប៉ុន្តែចូលចងចាំថាធាតុនីមួយៗអាចទាមទារ dependencies មួយចំនួនសម្រាប់ដំណើរការ។</p>
-        </div>
-        <div class="section-sub">
-            <h3 class="title fw-bold" id="anatomy">ការបញ្ចូលធាតុទាំងអស់</h3>
-            {% highlight css %}{{include-all-parts}}{% endhighlight %}
-        </div>
-        <div class="section-sub">
-            <h3 class="title fw-bold" id="anatomy">ការរួមបញ្ចូលធាតុនៃ Rachana</h3>
-            {% highlight css %}{{include-parts}}{% endhighlight %}
+      </div>
+    </div>
+  </section>
+  <section name="section-importing">
+    <div class="section-sub">
+      <h2 class="title fw-bold" id="anatomy">ការបញ្ចូល</h2>
+      <p>នៅក្នុង <code>custom.scss</code>, អ្នកអាចបញ្ជូលនូវ <code>cgds-theme</code> ទាំងអស់ ឬបញ្ចូលតែធាតុណាដែលអ្នកត្រូវការ។
+        ប៉ុន្តែចូលចងចាំថាធាតុនីមួយៗអាចទាមទារ dependencies មួយចំនួនសម្រាប់ដំណើរការ។</p>
+    </div>
+    <div class="section-sub">
+      <h3 class="title fw-bold" id="anatomy">ការបញ្ចូលធាតុទាំងអស់</h3>
+      {% highlight css %}{{include-all-parts}}{% endhighlight %}
+    </div>
+    <div class="section-sub">
+      <h3 class="title fw-bold" id="anatomy">ការរួមបញ្ចូលធាតុនៃ Rachana</h3>
+      {% highlight css %}{{include-parts}}{% endhighlight %}
 
-            <p>ប្រសិនបើអ្នកប្រើប្រាស់ Webpack, អ្នកមិនចាំបាច់បញ្ចូល <code>node_modules</code> directory ទេ។</p>
-            {% highlight css %}{{webpack-sass}}{% endhighlight %}
-        </div>
-    </section>
-    <section name="section-design-tokens">
-        <h2 class="title fw-bold" id="anatomy">Variables</h2>
-        <p>
-           អ្នកអាចចូលមើលបញ្ជីនៃ variables ទាំងអស់ក្នុង <code>{{site.cgds-package-name}}/sass/_variables.scss</code> និងក្នុង <a href="{{site.gitlab-cgds-variables}}" target="_blank" rel="noopener noreferrer">GitLab repository របស់ Rachana។ </a>
-        </p>
-        <p>ឧទាហរណ៍ខាងក្រោមបង្ហាញពីការប្តូរ <code>background-color</code> និង color សម្រាប់ <code>body</code> បន្ទាប់ពីការបញ្ជូល <code>cgds-theme</code> តាម npm:</p>
-        {% highlight scss %}{{sgds-variable-example}}{% endhighlight %}
+      <p>ប្រសិនបើអ្នកប្រើប្រាស់ Webpack, អ្នកមិនចាំបាច់បញ្ចូល <code>node_modules</code> directory ទេ។</p>
+      {% highlight css %}{{webpack-sass}}{% endhighlight %}
+    </div>
+  </section>
+  <section name="section-design-tokens">
+    <h2 class="title fw-bold" id="anatomy">Variables</h2>
+    <p>
+      អ្នកអាចចូលមើលបញ្ជីនៃ variables ទាំងអស់ក្នុង <code>{{site.cgds-package-name}}/sass/_variables.scss</code> និងក្នុង <a href="{{site.gitlab-cgds-variables}}" target="_blank" rel="noopener noreferrer">GitLab repository របស់ Rachana។ </a>
+    </p>
+    <p>ឧទាហរណ៍ខាងក្រោមបង្ហាញពីការប្តូរ <code>background-color</code> និង color សម្រាប់ <code>body</code> បន្ទាប់ពីការបញ្ជូល <code>cgds-theme</code> តាម npm:</p>
+    {% highlight scss %}{{sgds-variable-example}}{% endhighlight %}
 
-    </section>
+  </section>
 </div>

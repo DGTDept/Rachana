@@ -95,7 +95,7 @@ $paragraph-font-size: 1rem;
         .link-name{
           display: none;
         }
-        
+
       }
       &.showMenu .sub-menu{
         display: block;
@@ -149,9 +149,9 @@ $paragraph-font-size: 1rem;
   background-color: #eee;
 }
 .sidebar .nav-links li .sub-menu.blank{
-    opacity: 1;
-    pointer-events: auto;
-    padding: 0 20px 0 16px;
+  opacity: 1;
+  pointer-events: auto;
+  padding: 0 20px 0 16px;
 }
 .sidebar .nav-links li:hover .sub-menu.blank{
   top: 50%;
@@ -167,7 +167,7 @@ $paragraph-font-size: 1rem;
   /*   background: rgb(255 255 255 /0.5); */
   font-size: 0.6rem !important;
   opacity: 0;
-  
+
   &::before{
     background-color: hsl(207,100,42);
     border-radius: 9999px;
@@ -181,7 +181,7 @@ $paragraph-font-size: 1rem;
 
 
 .link-name{
-   white-space: nowrap;
+  white-space: nowrap;
 }
 
 .nav-links li.active{

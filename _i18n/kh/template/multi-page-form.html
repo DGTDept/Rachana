@@ -1,212 +1,212 @@
 {% capture multi-page-form %}
 <div style="background-color: white">
-    <!-- Header section -->
-    <section class="my-8 mx-md-8">
-        <nav class="cgds" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i>ទំព័រដើម</a></li>
-                <li class="breadcrumb-item"><a href="#">បណ្ណាល័យ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">ទិន្នន័យ</li>
-            </ol>
-        </nav>
-        <div class="mb-4 row">
-            <div class="col-md-6 col-12">
-                <h1>ចុះឈ្មោះ</h1>
-                <p class="text-muted">
-                    អ្នកជាសមាជិកហើយឬនៅ?
-                    <a href="" class="text-decoration-none">ចូលគណនី</a>
-                </p>
-            </div>
-            <div class="d-flex justify-content-end align-items-center col-md-6 col-12">
-                <a href="" class="me-4">បោះបង់</a>
-                <button type="button" class="me-4 btn btn-outline-dark cgds">
-                    រក្សាទុក
-                </button>
-                <button type="button" class="btn btn-secondary cgds">
-                    បន្ទាប់
-                </button>
-            </div>
+  <!-- Header section -->
+  <section class="my-8 mx-md-8">
+    <nav class="cgds" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i>ទំព័រដើម</a></li>
+        <li class="breadcrumb-item"><a href="#">បណ្ណាល័យ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">ទិន្នន័យ</li>
+      </ol>
+    </nav>
+    <div class="mb-4 row">
+      <div class="col-md-6 col-12">
+        <h1>ចុះឈ្មោះ</h1>
+        <p class="text-muted">
+          អ្នកជាសមាជិកហើយឬនៅ?
+          <a href="" class="text-decoration-none">ចូលគណនី</a>
+        </p>
+      </div>
+      <div class="d-flex justify-content-end align-items-center col-md-6 col-12">
+        <a href="" class="me-4">បោះបង់</a>
+        <button type="button" class="me-4 btn btn-outline-dark cgds">
+          រក្សាទុក
+        </button>
+        <button type="button" class="btn btn-secondary cgds">
+          បន្ទាប់
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Stepper component -->
+  <div class="cgds stepper">
+    <div class="stepper-item is-completed">
+      <div class="stepper-marker">1</div>
+      <div class="stepper-detail">
+        <p><b>ឈ្មោះជំហាន</b></p>
+      </div>
+    </div>
+    <div class="stepper-item is-active">
+      <div class="stepper-marker">2</div>
+      <div class="stepper-detail">
+        <p><b>ឈ្មោះជំហាន</b></p>
+      </div>
+    </div>
+    <div class="stepper-item">
+      <div class="stepper-marker">3</div>
+      <div class="stepper-detail">
+        <p><b>ឈ្មោះជំហាន</b></p>
+      </div>
+    </div>
+  </div>
+  <!-- Content section -->
+  <section class="shadow rounded p-5 mx-md-8">
+    <form>
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="mb-3 col-md-6 col-12">
+            <label class="form-label" for="formSinglePageInput1">ឈ្មោះ</label>
+            <input placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text" id="formSinglePageInput1"
+                   class="form-control" />
+          </div>
+          <div class="mb-3 col-md-6 col-12">
+            <label class="form-label" for="formSinglePageInput2">អាសយដ្ឋាន</label>
+            <input placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text" id="formSinglePageInput2"
+                   class="form-control" />
+          </div>
         </div>
+        <div class="mb-3">
+          <label class="form-label" for="formSinglePageInput3">អុីម៉ែល</label>
+          <div class="mb-3 input-group cgds">
+            <input placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ"
+                   aria-label="Dollar amount (with dot and two decimal places)" id="formSinglePageInput3"
+                   class="form-control" />
+            <span class="input-group-text">@something</span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="formSinglePageInput4">លេខទូរស័ព្ទ</label>
+          <input placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text" id="formSinglePageInput4"
+                 class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="formSinglePageSelect1">តួនាទី</label>
+          <select class="form-select" id="formSinglePageSelect1">
+            <option>​មន្ត្រី </option>
+            <option>មន្រ្តីកិច្ចសន្យា </option>
+            <option>បុគ្គលិកហាត់ការ </option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </section>
+  <div class="d-flex justify-content-end my-8 mx-md-8">
+    <button type="button" class="btn btn-secondary cgds">បន្ទាប់</button>
+  </div>
+  <!-- Footer component -->
+  <footer class="cgds footer">
+    <section class="footer-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="widget flex-column">
+              <div class="logo">
+                <img src="/assets/uncompressed_images/logo_DGC_Square-new.svg" style="width: 200px"
+                     alt="dgc logo">
+              </div>
+              <div class="social-icon">
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="/assets/uncompressed_images/icon/Facebook.svg"
+                           alt="facebook-icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/assets/uncompressed_images/icon/YouTube.svg" alt="youtube-icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/assets/uncompressed_images/icon/Telegram.svg"
+                           alt="telegram-icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/assets/uncompressed_images/icon/Tiktok.svg" alt="tiktok-icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/assets/uncompressed_images/icon/Linkin.svg" alt="linkin-icon">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="title">
+              ជួរទី១
+            </div>
+            <ul class="links">
+              <li><a href="">អំពីយើង</a></li>
+              <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="title">
+              ជួរទី២
+            </div>
+            <ul class="links">
+              <li><a href="">អំពីយើង</a></li>
+              <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="title">
+              ជួរទី៣
+            </div>
+            <ul class="links">
+              <li><a href="">អំពីយើង</a></li>
+              <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Stepper component -->
-    <div class="cgds stepper">
-        <div class="stepper-item is-completed">
-            <div class="stepper-marker">1</div>
-            <div class="stepper-detail">
-                <p><b>ឈ្មោះជំហាន</b></p>
+    <section class="footer-bottom">
+      <div class="container-fluid">
+        <div class="row footer-copyrights">
+          <div class="col">
+            <div class="d-flex justify-content-lg-start text-start">
+              DGC © 2023 ~ រក្សាសិទ្ធិដោយគណៈកម្មាធិការរដ្ឋាភិបាលឌីជីថល
             </div>
+          </div>
+          <div class="col">
+            <dev class="d-flex justify-content-lg-end text-end">
+              <ul>
+                <li><a href="" target="_blank" rel="noopener noreferrer">រាយការណ៍ពីភាពខ្វះខាត</a></li>
+                <li><a href="">ឯកជនភាព</a></li>
+                <li><a href="">លក្ខខណ្ឌនៃប្រើប្រាស់</a></li>
+              </ul>
+            </dev>
+          </div>
         </div>
-        <div class="stepper-item is-active">
-            <div class="stepper-marker">2</div>
-            <div class="stepper-detail">
-                <p><b>ឈ្មោះជំហាន</b></p>
-            </div>
-        </div>
-        <div class="stepper-item">
-            <div class="stepper-marker">3</div>
-            <div class="stepper-detail">
-                <p><b>ឈ្មោះជំហាន</b></p>
-            </div>
-        </div>
-    </div>
-    <!-- Content section -->
-    <section class="shadow rounded p-5 mx-md-8">
-        <form>
-            <div class="col-sm-8">
-                <div class="row">
-                    <div class="mb-3 col-md-6 col-12">
-                        <label class="form-label" for="formSinglePageInput1">ឈ្មោះ</label>
-                        <input placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text" id="formSinglePageInput1"
-                            class="form-control" />
-                    </div>
-                    <div class="mb-3 col-md-6 col-12">
-                        <label class="form-label" for="formSinglePageInput2">អាសយដ្ឋាន</label>
-                        <input placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text" id="formSinglePageInput2"
-                            class="form-control" />
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="formSinglePageInput3">អុីម៉ែល</label>
-                    <div class="mb-3 input-group cgds">
-                        <input placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ"
-                            aria-label="Dollar amount (with dot and two decimal places)" id="formSinglePageInput3"
-                            class="form-control" />
-                        <span class="input-group-text">@something</span>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="formSinglePageInput4">លេខទូរស័ព្ទ</label>
-                    <input placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text" id="formSinglePageInput4"
-                        class="form-control" />
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="formSinglePageSelect1">តួនាទី</label>
-                    <select class="form-select" id="formSinglePageSelect1">
-                        <option>​មន្ត្រី </option>
-                        <option>មន្រ្តីកិច្ចសន្យា </option>
-                        <option>បុគ្គលិកហាត់ការ </option>
-                    </select>
-                </div>
-            </div>
-        </form>
+      </div>
     </section>
-    <div class="d-flex justify-content-end my-8 mx-md-8">
-        <button type="button" class="btn btn-secondary cgds">បន្ទាប់</button>
-    </div>
-    <!-- Footer component -->
-    <footer class="cgds footer">
-        <section class="footer-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="widget flex-column">
-                            <div class="logo">
-                                <img src="/assets/uncompressed_images/logo_DGC_Square-new.svg" style="width: 200px"
-                                    alt="dgc logo">
-                            </div>
-                            <div class="social-icon">
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <img src="/assets/uncompressed_images/icon/Facebook.svg"
-                                                alt="facebook-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="/assets/uncompressed_images/icon/YouTube.svg" alt="youtube-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="/assets/uncompressed_images/icon/Telegram.svg"
-                                                alt="telegram-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="/assets/uncompressed_images/icon/Tiktok.svg" alt="tiktok-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="/assets/uncompressed_images/icon/Linkin.svg" alt="linkin-icon">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="title">
-                            ជួរទី១
-                        </div>
-                        <ul class="links">
-                            <li><a href="">អំពីយើង</a></li>
-                            <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="title">
-                            ជួរទី២
-                        </div>
-                        <ul class="links">
-                            <li><a href="">អំពីយើង</a></li>
-                            <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="title">
-                            ជួរទី៣
-                        </div>
-                        <ul class="links">
-                            <li><a href="">អំពីយើង</a></li>
-                            <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="footer-bottom">
-            <div class="container-fluid">
-                <div class="row footer-copyrights">
-                    <div class="col">
-                        <div class="d-flex justify-content-lg-start text-start">
-                            DGC © 2023 ~ រក្សាសិទ្ធិដោយគណៈកម្មាធិការរដ្ឋាភិបាលឌីជីថល
-                        </div>
-                    </div>
-                    <div class="col">
-                        <dev class="d-flex justify-content-lg-end text-end">
-                            <ul>
-                                <li><a href="" target="_blank" rel="noopener noreferrer">រាយការណ៍ពីភាពខ្វះខាត</a></li>
-                                <li><a href="">ឯកជនភាព</a></li>
-                                <li><a href="">លក្ខខណ្ឌនៃប្រើប្រាស់</a></li>
-                            </ul>
-                        </dev>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-    {% endcapture %}
+  </footer>
+  {% endcapture %}
 
-    <!-- Page starts here -->
-    <div class="page-component mb-5">
-        <!-- Generated header from front end matters -->
-        {% include page-component/component-header.html %}
+  <!-- Page starts here -->
+  <div class="page-component mb-5">
+    <!-- Generated header from front end matters -->
+    {% include page-component/component-header.html %}
 
-        <section name="section-examples">
-            <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-            <div class="section-sub">
-                {% include page-component/component-code-snippet.html
-                compName="multi-page-form" code=multi-page-form %}
-            </div>
-        </section>
-    </div>
+    <section name="section-examples">
+      <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+      <div class="section-sub">
+        {% include page-component/component-code-snippet.html
+        compName="multi-page-form" code=multi-page-form %}
+      </div>
+    </section>
+  </div>
 </div>

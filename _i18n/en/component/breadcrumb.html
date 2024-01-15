@@ -1,10 +1,10 @@
 {% capture default-breadcrumb %}
 <nav class="cgds" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i>Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Library</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Data</li>
-    </ol>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i>Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
 </nav>
 {% endcapture %}
 
@@ -25,93 +25,95 @@ $breadcrumb-border-radius: null !default;
 <!-- Page starts here -->
 <div class="page-component">
 
-    <!-- Generated header from front end matters -->
-    {% include page-component/component-header.html %}
+  <!-- Generated header from front end matters -->
+  {% include page-component/component-header.html %}
 
-    <!-- Example Section -->
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">Example</h2>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html compName="default-breadcrumb" code=default-breadcrumb %}
+  <!-- Example Section -->
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">Example</h2>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compName="default-breadcrumb" code=default-breadcrumb %}
+    </div>
+  </section>
+
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/breadcrumb/anatomy-breadcrumb.svg"
+               alt="Breadcrumb Anatomy">
         </div>
-    </section>
+      </div>
+      <ol>
+        <li>
+          <b>Icon:</b> Give users visual guides for navigating across the sections.
+        </li>
+        <li>
+          <b>Start Page:</b> Always the first item in the breadcrumb.
+        </li>
+        <li>
+          <b>Separator:</b> To give distinction between the breadcrumb items.
+        </li>
+        <li>
+          <b>Item:</b> Title of the pages which let users know the path they took to reach the current page.
+          Should always be linked.
+        </li>
+      </ol>
+    </div>
+  </section>
 
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/breadcrumb/anatomy-breadcrumb.svg"
-                         alt="Breadcrumb Anatomy">
-                </div>
-            </div>
-            <ol>
-                <li>
-                    <b>Icon:</b> Give users visual guides for navigating across the sections.
-                </li>
-                <li>
-                    <b>Start Page:</b> Always the first item in the breadcrumb.
-                </li>
-                <li>
-                    <b>Separator:</b> To give distinction between the breadcrumb items.
-                </li>
-                <li>
-                    <b>Item:</b> Title of the pages which let users know the path they took to reach the current page.
-                    Should always be linked.
-                </li>
-            </ol>
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">Spacing</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/breadcrumb/spacing-breadcrumb.svg"
+               alt="Breadcrumb Spacing">
         </div>
-    </section>
+      </div>
+      <p><b>Within the breadcrumb</b><br>
+        Ensure that there is a min of 8px horizontal spacing between the breadcrumb items.</p>
+    </div>
+  </section>
 
-    <!-- Spacing Section -->
-    <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">Spacing</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/breadcrumb/spacing-breadcrumb.svg"
-                         alt="Breadcrumb Spacing">
-                </div>
-            </div>
-            <p><b>Within the breadcrumb</b><br>
-                Ensure that there is a min of 8px horizontal spacing between the breadcrumb items.</p>
-        </div>
-    </section>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
+    <p class="fw-bold mb-0">Breadcrumb should be used:</p>
+    <ol>
+      <li>When you want to enable users to understand their current position on the website.</li>
+      <li>When you want to help users to move between different levels.</li>
+    </ol>
+    <p class="fw-bold mb-0">Breadcrumb should not be used:</p>
+    <ol>
+      <li>As a replacement for your primary navigation.</li>
+      <li>For displaying progress such as when completing a transaction.
+        In this case, use the
+        <a href="{{site.baseurl}}/components/progress-bar/">{% t headers.progress-bar %}</a> component.</li>
+    </ol>
+  </section>
 
-    <!-- Usage guidelines Section -->
-    <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
-        <p class="fw-bold mb-0">Breadcrumb should be used:</p>
-        <ol>
-            <li>When you want to enable users to understand their current position on the website.</li>
-            <li>When you want to help users to move between different levels.</li>
-        </ol>
-        <p class="fw-bold mb-0">Breadcrumb should not be used:</p>
-        <ol>
-            <li>As a replacement for your primary navigation.</li>
-            <li>For displaying progress such as when completing a transaction.
-                In this case, use the
-                <a href="{{site.baseurl}}/components/progress-bar/">{% t headers.progress-bar %}</a> component.</li>
-        </ol>
-    </section>
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
+    <p>
+      <b>Use complete page titles</b><br>
+      The wording in the breadcrumb text should be the same as in the page title.
+    </p>
+    <p>
+      <b>Consider the size</b><br>
+      Generally the text for breadcrumbs is smaller, do ensure it is not too small to select.
+    </p>
+  </section>
 
-    <!-- Usability guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
-        <p>
-            <b>Use complete page titles</b><br>
-            The wording in the breadcrumb text should be the same as in the page title.
-        </p>
-        <p>
-            <b>Consider the size</b><br>
-            Generally the text for breadcrumbs is smaller, do ensure it is not too small to select.
-        </p>
-    </section>
-
-    <!-- Design token Section -->
-    <section name="section-design-tokens">
-        <h2 class="title fw-bold" id="design-tokens">{% t headers.card %} design tokens</h2>
-        {%- highlight sass -%}{{breadcrumb-design-tokens}}{%- endhighlight -%}
-    </section>
+  <!-- Design token Section -->
+  <section name="section-design-tokens">
+    <h2 class="title fw-bold" id="design-tokens">{% t headers.card %} design tokens</h2>
+    {%- highlight sass -%}
+      {{breadcrumb-design-tokens}}
+    {%- endhighlight -%}
+  </section>
 </div>

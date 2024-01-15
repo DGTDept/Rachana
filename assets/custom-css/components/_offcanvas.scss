@@ -1,85 +1,85 @@
 .offcanvas {
-    hr {
-        color: rgba(var(--cgds-white-rgb),0.7);
-        margin: 0;
+  hr {
+    color: rgba(var(--cgds-white-rgb),0.7);
+    margin: 0;
+  }
+
+  background-color: var(--cgds-primary);
+
+  &-start {
+    border: 0;
+    width: 80vw;
+  }
+
+  &-header {
+    padding: 2.3rem 2.5rem 1rem 1rem;
+  }
+
+  &-body {
+    // padding:0 0 1.5rem;
+    flex-grow: 0;
+    color: var(--cgds-gray-300);
+
+    .list-group {
+      border-radius: 0;
     }
 
-    background-color: var(--cgds-primary);
+    &.menu {
+      overflow-Y: auto;
+      height: calc(100vh - 7.5rem - 6.75rem);
 
-    &-start {
-        border: 0;
-        width: 80vw;
-    }
+      .cgds.sidenav {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
 
-    &-header {
-        padding: 2.3rem 2.5rem 1rem 1rem;
-    }
+        li.sidenav-item {
+          .cgds.btn {
+            padding-right: 2.5rem;
+            color: var(--cgds-gray-300);
 
-    &-body {
-        // padding:0 0 1.5rem;
-        flex-grow: 0;
-        color: var(--cgds-gray-300);
+            &.active {
+              color: var(--cgds-gray-100);
+              border-left: $navbar-border-bottom-height solid $sidenav-color;
 
-        .list-group {
-            border-radius: 0;
-        }
-
-        &.menu {
-            overflow-Y: auto;
-            height: calc(100vh - 7.5rem - 6.75rem);
-
-            .cgds.sidenav {
-                margin-left: -1.5rem;
-                margin-right: -1.5rem;
-
-                li.sidenav-item {
-                    .cgds.btn {
-                        padding-right: 2.5rem;
-                        color: var(--cgds-gray-300);
-
-                        &.active {
-                            color: var(--cgds-gray-100);
-                            border-left: $navbar-border-bottom-height solid $sidenav-color;
-
-                            &:hover {
-                                font-weight: bold;
-                                border-left: $navbar-border-bottom-height solid $sidenav-color;
-                            }
-                        }
-
-                        &:focus {
-                            box-shadow: none;
-                        }
-
-                        &:hover {
-                            font-weight: normal;
-                            color: var(--cgds-gray-100);
-                            border-left: $navbar-border-bottom-height solid $sidenav-color;
-                        }
-                    }
-
-                    .collapse,
-                    .collapsing {
-                        a.nav-link {
-                            color: var(--cgds-gray-300);
-
-                            &:hover,
-                            &.active {
-                                color: var(--cgds-gray-100);
-                                border-left: $navbar-border-bottom-height solid $sidenav-color;
-                            }
-
-                            &.active {
-                                font-weight: bold;
-                            }
-                        }
-                    }
-                }
+              &:hover {
+                font-weight: bold;
+                border-left: $navbar-border-bottom-height solid $sidenav-color;
+              }
             }
-        }
 
-        a[target="_blank"] {
-            color: var(--cgds-gray-300)
+            &:focus {
+              box-shadow: none;
+            }
+
+            &:hover {
+              font-weight: normal;
+              color: var(--cgds-gray-100);
+              border-left: $navbar-border-bottom-height solid $sidenav-color;
+            }
+          }
+
+          .collapse,
+          .collapsing {
+            a.nav-link {
+              color: var(--cgds-gray-300);
+
+              &:hover,
+              &.active {
+                color: var(--cgds-gray-100);
+                border-left: $navbar-border-bottom-height solid $sidenav-color;
+              }
+
+              &.active {
+                font-weight: bold;
+              }
+            }
+          }
         }
+      }
     }
+
+    a[target="_blank"] {
+      color: var(--cgds-gray-300)
+    }
+  }
 }

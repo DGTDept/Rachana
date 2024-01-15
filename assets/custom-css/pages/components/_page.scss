@@ -1,49 +1,49 @@
 .page{
-    &-component{
-        section[name*='section-']{
-            + section[name*='section-']{
-                margin-top: $spacer * 3.5;
-            }
+  &-component{
+    section[name*='section-']{
+      + section[name*='section-']{
+        margin-top: $spacer * 3.5;
+      }
 
-            .section-sub{
-                + .section-sub{
-                    margin-top: $spacer * 3;
-                }
-            }
+      .section-sub{
+        + .section-sub{
+          margin-top: $spacer * 3;
         }
-        .subtitle{
-            margin-bottom: 0;
-        }
-
-        .cgds.accordion.code-snippet{
-            .accordion-header{
-                display: flex;
-            }
-            .accordion-item{
-                border-top-left-radius: 0;
-                border-top-right-radius: 0;
-                border-top: 0;
-                
-            }
-            .accordion-body{
-                padding: 1rem 2rem 1rem 1rem;
-                background-color: #272822;
-                position: relative;
-                .btn-copy{
-                    position: absolute;
-                    right: 0.5rem;
-                }
-                figure.highlight{
-                    margin-bottom: 0;
-                }
-            }
-
-            + .desc-bottom{
-                margin-top: $spacer;
-            }
-        }
-                
+      }
     }
+    .subtitle{
+      margin-bottom: 0;
+    }
+
+    .cgds.accordion.code-snippet{
+      .accordion-header{
+        display: flex;
+      }
+      .accordion-item{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top: 0;
+
+      }
+      .accordion-body{
+        padding: 1rem 2rem 1rem 1rem;
+        background-color: #272822;
+        position: relative;
+        .btn-copy{
+          position: absolute;
+          right: 0.5rem;
+        }
+        figure.highlight{
+          margin-bottom: 0;
+        }
+      }
+
+      + .desc-bottom{
+        margin-top: $spacer;
+      }
+    }
+
+  }
 }
 
 

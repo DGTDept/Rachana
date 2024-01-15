@@ -3,19 +3,19 @@
 {% include head.html %}
 
 <body>
-    {% if page.title == 'Home' %}
-    <div class="position-absolute hero-bg"></div>
-    {% endif %}
-    <div class="sticky-top">
-        {% include navigation.html %}
-    </div>
-    <main aria-label="Main Content">
-        {{content}}
-    </main>
-    {% include footer.html %}
-    {% include off-canvas-menu.html %}
-    <script src="/assets/js/bundle.js"></script>
-    <script src="/assets/js/vendor.js"></script>
+{% if page.title == 'Home' %}
+<div class="position-absolute hero-bg"></div>
+{% endif %}
+<div class="sticky-top">
+  {% include navigation.html %}
+</div>
+<main aria-label="Main Content">
+  {{content}}
+</main>
+{% include footer.html %}
+{% include off-canvas-menu.html %}
+<script src="/assets/js/bundle.js"></script>
+<script src="/assets/js/vendor.js"></script>
 </body>
 
 </html>
