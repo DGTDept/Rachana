@@ -1,11 +1,7 @@
-
 {% capture fileupload %}
 <form class="">
   <button type="button" class="btn btn-primary cgds">
-    <label for="fileupload1">
-      <i class="bi bi-upload me-2"></i>
-      Choose a file
-    </label>
+    <label for="fileupload1"><i class="bi bi-upload me-2"></i>Choose a file</label>
     <input multiple type="file" id="fileupload1" class="d-none form-control" />
   </button>
   <ul class="fileupload-list cgds">
@@ -31,10 +27,7 @@
 {% capture hint-text %}
 <form class="">
   <button type="button" class="btn btn-primary cgds">
-    <label for="fileupload2">
-      <i class="bi bi-upload me-2"></i>
-      Choose a file
-    </label>
+    <label for="fileupload2"><i class="bi bi-upload me-2"></i>Choose a file</label>
     <input multiple type="file" id="fileupload2" class="d-none form-control" />
   </button>
   <p>This is a hint text</p>
@@ -63,10 +56,8 @@
   <section name="section-examples">
     <h2 class="title fw-bold" id="example">Example</h2>
     <div class="section-sub">
-      {% include page-component/component-code-snippet.html compTitle="Default"
-      compName="fileupload" code=fileupload %}
+      {% include page-component/component-code-snippet.html compTitle="Default" compName="fileupload" code=fileupload %}
     </div>
-    <!-- Add addtional section-sub for more variants -->
   </section>
 
   <!-- Anatomy Section -->
@@ -75,21 +66,17 @@
     <div class="section-sub">
       <div class="cgds-example-image-container">
         <div class="cgds-example-image-grid">
-          <img
-            src="{{site.baseurl}}/assets/img/component/fileupload/anatomy-fileupload-1.svg"
-            alt="File Upload Anatomy"
-          />
+          <img src="{{site.baseurl}}/assets/img/component/fileupload/anatomy-fileupload-1.svg" alt="File Upload Anatomy"/>
         </div>
       </div>
       <ol>
         <li>
-          <b>Icon (situational):</b> Serves to give a visual queue to the upload
-          button.
+          <b>Icon (situational):</b> Serves to give a visual queue to the upload button.
         </li>
-        <li><b>Button:</b> Button component is used.</li>
         <li>
-          <b>Uploaded content:</b> Displayed to show users what has been
-          uploaded.
+          <b>Button:</b> Button component is used.</li>
+        <li>
+          <b>Uploaded content:</b> Displayed to show users what has been uploaded.
         </li>
         <li>
           <b>Validation and remove:</b> Serves to inform users if a file has
@@ -105,11 +92,7 @@
     <div class="section-sub">
       <div class="cgds-example-image-container">
         <div class="cgds-example-image-grid">
-          <img
-            class="img-fluid"
-            src="{{site.baseurl}}/assets/img/component/fileupload/spacing-fileupload-1.svg"
-            alt="File Upload Spacing"
-          />
+          <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/fileupload/spacing-fileupload-1.svg" alt="File Upload Spacing"/>
         </div>
       </div>
       <p><b>Within the file upload</b><br>
@@ -143,18 +126,15 @@
     </h2>
     <p>
       <b>State the format of the file(s)</b><br />
-      This will prevent users from uploading invalid formats and encountering
-      errors.
+      This will prevent users from uploading invalid formats and encountering errors.
     </p>
     <p>
       <b>State the maximum file size</b><br />
-      This is to prevent users from uploading files sizes that are too large and
-      encountering errors.
+      This is to prevent users from uploading files sizes that are too large and encountering errors.
     </p>
     <p>
       <b>Have clear labelling and use hint text</b><br />
-      Ensure you label the file upload clearly as well as hint text when
-      necessary so users know what exactly they have to upload.
+      Ensure you label the file upload clearly as well as hint text when necessary so users know what exactly they have to upload.
     </p>
   </section>
 </div>

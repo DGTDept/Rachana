@@ -31,15 +31,15 @@ $badge-border-radius: $border-radius !default;
 <div class="cgds btn btn-primary">តេស្ត <span class="cgds badge bg-light text-dark">99</span></div>
 <div class="cgds btn btn-primary btn-lg">តេស្ត <span class="cgds badge bg-light text-dark">99</span></div>
 <button type="button" class="cgds btn btn-primary position-relative">
-    ប្រអប់សារ
-    <span class="cgds position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+  ប្រអប់សារ
+  <span class="cgds position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
       99+
       <span class="visually-hidden">សារមិនទាន់បានអាន</span>
     </span>
 </button>
 <button type="button" class="cgds btn btn-primary position-relative">
-    ប្រវត្តិរូប
-    <span class="cgds position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+  ប្រវត្តិរូប
+  <span class="cgds position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
       <span class="visually-hidden">ការជូនដំណឹងថ្មី</span>
     </span>
 </button>
@@ -51,106 +51,106 @@ $badge-border-radius: $border-radius !default;
 {% endcapture %}
 
 <div class="page-component">
-    {% include page-component/component-header.html %}
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="លំនាំដើម"
-            compName="badge-default"
-            code=badge-default
-            %}
-        </div>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="Wrapper"
-            compName="badge-wrapper"
-            code=badge-wrapper
-            %}
-        </div>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="មានមុខងារជាប៊ូតុង"
-            compName="badge-button"
-            code=badge-button
-            %}
-        </div>
-        <!-- Add addtional section-sub for more variants -->
-    </section>
+  {% include page-component/component-header.html %}
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="លំនាំដើម"
+      compName="badge-default"
+      code=badge-default
+      %}
+    </div>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="Wrapper"
+      compName="badge-wrapper"
+      code=badge-wrapper
+      %}
+    </div>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="មានមុខងារជាប៊ូតុង"
+      compName="badge-button"
+      code=badge-button
+      %}
+    </div>
+    <!-- Add addtional section-sub for more variants -->
+  </section>
 
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/badge/anatomy-badge-1.svg" alt="Badge Anatomy">
-                </div>
-            </div>
-            <ol>
-                <li>
-                    <b>រូបតំណាង (ដាក់ក៏បានមិនដាក់ក៏បាន)៖</b> បង្ហាញប្រាប់អ្នកប្រើប្រាស់ពីមុខងាររបស់ផ្លាកសញ្ញា។ រូបតំណាងអាចជា avatar, និមិត្តសញ្ញា, ឬ ស្លាកសញ្ញា។
-                </li>
-                <li>
-                    <b>ប្រអប់៖</b> ទំហំរបស់វាអាស្រ័យលើពាក្យសំគាល់និងរូបតំណាងដែលនៅក្នុងប្រអប់។
-                </li>
-                <li>
-                    <b>ពាក្យសម្គាល់៖</b> ពាក្យសម្គាល់អាចជាពាក្យខ្លីៗសម្រាប់ប្រាប់អ្នកប្រើប្រាស់ពីមុខងាររបស់ផ្លាកសញ្ញា។ ឧទាហរណ៍ ឈ្មោះអង្គភាព ស្លាក និងមុខងារជាដើម។ ទំហំរបស់ពាក្យសម្គាល់អាចកំណត់បាន។
-                </li>
-                <li>
-                    <b>រូបតំណាងមួយទៀត (ដាក់ក៏បានមិនដាក់ក៏បាន)៖</b> អាចដាក់ជាប៊ូតុងសម្រាប់ដកផ្លាកសញ្ញាចេញ។
-                </li>
-            </ol>
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/badge/anatomy-badge-1.svg" alt="Badge Anatomy">
         </div>
-    </section>
+      </div>
+      <ol>
+        <li>
+          <b>រូបតំណាង (ដាក់ក៏បានមិនដាក់ក៏បាន)៖</b> បង្ហាញប្រាប់អ្នកប្រើប្រាស់ពីមុខងាររបស់ផ្លាកសញ្ញា។ រូបតំណាងអាចជា avatar, និមិត្តសញ្ញា, ឬ ស្លាកសញ្ញា។
+        </li>
+        <li>
+          <b>ប្រអប់៖</b> ទំហំរបស់វាអាស្រ័យលើពាក្យសំគាល់និងរូបតំណាងដែលនៅក្នុងប្រអប់។
+        </li>
+        <li>
+          <b>ពាក្យសម្គាល់៖</b> ពាក្យសម្គាល់អាចជាពាក្យខ្លីៗសម្រាប់ប្រាប់អ្នកប្រើប្រាស់ពីមុខងាររបស់ផ្លាកសញ្ញា។ ឧទាហរណ៍ ឈ្មោះអង្គភាព ស្លាក និងមុខងារជាដើម។ ទំហំរបស់ពាក្យសម្គាល់អាចកំណត់បាន។
+        </li>
+        <li>
+          <b>រូបតំណាងមួយទៀត (ដាក់ក៏បានមិនដាក់ក៏បាន)៖</b> អាចដាក់ជាប៊ូតុងសម្រាប់ដកផ្លាកសញ្ញាចេញ។
+        </li>
+      </ol>
+    </div>
+  </section>
 
-    <!-- Spacing Section -->
-    <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/badge/spacing-badge-1.svg"
-                         alt="Badge Spacing">
-                </div>
-            </div>
-            <p><b>នៅក្នុងផ្លាកសញ្ញា៖</b><br>
-                រក្សាគម្លាតយ៉ាងតិច 4px នៅលើគែមនៃអ័ក្សឈរ 8px នៅលើអ័ក្សដេក និង 6px នៅចន្លោះរូបតំណាងនិងអក្សរសម្គាល់។ កម្ពស់សរុបរបស់ផ្លាកសញ្ញាគឺ24px។ </p>
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/badge/spacing-badge-1.svg"
+               alt="Badge Spacing">
         </div>
-    </section>
+      </div>
+      <p><b>នៅក្នុងផ្លាកសញ្ញា៖</b><br>
+        រក្សាគម្លាតយ៉ាងតិច 4px នៅលើគែមនៃអ័ក្សឈរ 8px នៅលើអ័ក្សដេក និង 6px នៅចន្លោះរូបតំណាងនិងអក្សរសម្គាល់។ កម្ពស់សរុបរបស់ផ្លាកសញ្ញាគឺ24px។ </p>
+    </div>
+  </section>
 
-    <!-- Usage guidelines Section -->
-    <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់៖ </h2>
-        <p class="fw-bold mb-0">ផ្លាកសញ្ញាគួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-        <ul>
-            <li>ការជូនដំណឹងនៃការធ្វើបច្ចុប្បន្នភាពទៅលើព័ត៌មានមួយ។ ឧទាហរណ៍ ការផ្ញើសារថ្មីចូលប្រអប់សារ។</li>
-            <li>នៅពេលអ្នកចង់រំលេចឡើងនូវព័ត៌មានមួយ។</li>
-        </ul>
-        <p class="fw-bold mb-0">ផ្លាកសញ្ញាមិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-        <ul>
-            <li>
-                សម្រាប់បង្ហាញពីភាគរយនៃការវិវឌ្ឍ គឺគួរប្រើរបាវឌ្ឍនភាពជំនួសវិញ។
-            </li>
-        </ul>
-    </section>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់៖ </h2>
+    <p class="fw-bold mb-0">ផ្លាកសញ្ញាគួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ul>
+      <li>ការជូនដំណឹងនៃការធ្វើបច្ចុប្បន្នភាពទៅលើព័ត៌មានមួយ។ ឧទាហរណ៍ ការផ្ញើសារថ្មីចូលប្រអប់សារ។</li>
+      <li>នៅពេលអ្នកចង់រំលេចឡើងនូវព័ត៌មានមួយ។</li>
+    </ul>
+    <p class="fw-bold mb-0">ផ្លាកសញ្ញាមិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ul>
+      <li>
+        សម្រាប់បង្ហាញពីភាគរយនៃការវិវឌ្ឍ គឺគួរប្រើរបាវឌ្ឍនភាពជំនួសវិញ។
+      </li>
+    </ul>
+  </section>
 
-    <!-- Usability guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
-        <p>
-            <b>កុំសរសេរប្រយោគវែង</b><br>
-            ពាក្យសម្គាល់របស់ផ្លាកសញ្ញាគួរតែជាឫពាក្យខ្លីៗនិងមិនឱ្យលើសពីបីពាក្យ ប៉ុន្តែផ្តល់ព័ត៌មានច្បាស់ៗចំចំណុច និងងាយស្រួលយល់។
-        </p>
-        <p>
-            <b>ផ្លាកសញ្ញាអាចច្រឡំជាមួយប៊ូតុង</b><br>
-            រចនាយ៉ាងណាឱ្យអ្នកប្រើប្រាស់មើលទៅដឹងថាជាផ្លាកសញ្ញា និងមិនច្រឡំថាជាប៊ូតុងតូច។
-        </p>
-        <p>
-            <b>ក្នុងផ្លាកសញ្ញាគួរតែដាក់ការរូបភាពជំនួញ ដើម្បីផ្តល់ការណែនាំនៃការប្រើប្រាស់</b><br>
-        </p>
-    </section>
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
+    <p>
+      <b>កុំសរសេរប្រយោគវែង</b><br>
+      ពាក្យសម្គាល់របស់ផ្លាកសញ្ញាគួរតែជាឫពាក្យខ្លីៗនិងមិនឱ្យលើសពីបីពាក្យ ប៉ុន្តែផ្តល់ព័ត៌មានច្បាស់ៗចំចំណុច និងងាយស្រួលយល់។
+    </p>
+    <p>
+      <b>ផ្លាកសញ្ញាអាចច្រឡំជាមួយប៊ូតុង</b><br>
+      រចនាយ៉ាងណាឱ្យអ្នកប្រើប្រាស់មើលទៅដឹងថាជាផ្លាកសញ្ញា និងមិនច្រឡំថាជាប៊ូតុងតូច។
+    </p>
+    <p>
+      <b>ក្នុងផ្លាកសញ្ញាគួរតែដាក់ការរូបភាពជំនួញ ដើម្បីផ្តល់ការណែនាំនៃការប្រើប្រាស់</b><br>
+    </p>
+  </section>
 </div>

@@ -1,98 +1,93 @@
 {% capture side-navigation-icon %}
 <nav class="sidenav cgds list-unstyled open1" aria-label="side-navigation menu">
-    <ul>
-        <li class="sidenav-item">
-            <button class="cgds btn collapsed active" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExampleA" aria-expanded="false" aria-controls="collapseExampleA">
-                <i class="bi bi-layers"></i>Sub menu
-                <i class="bi bi-chevron-down"></i>
-            </button>
-            <div class="collapse show" id="collapseExampleA" data-bs-parent=".open1">
-                <ul class="list-unstyled">
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link active">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                </ul>
-            </div>
-        </li>
-        <li class="sidenav-item">
-            <button class="cgds btn collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExampleB" aria-expanded="false" aria-controls="collapseExampleB">
-                <i class="bi bi-layers"></i>Sub menu
-                <i class="bi bi-chevron-down"></i>
-            </button>
-            <div class="collapse" id="collapseExampleB" data-bs-parent=".open1">
-                <ul class="list-unstyled">
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                </ul>
-            </div>
-        </li>
-        <li class="sidenav-item">
-            <button class="cgds btn collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExampleC" aria-expanded="false" aria-controls="collapseExampleC">
-                <i class="bi bi-layers"></i>Sub menu
-                <i class="bi bi-chevron-down"></i>
-            </button>
-            <div class="collapse" id="collapseExampleC" data-bs-parent=".open1">
-                <ul class="list-unstyled">
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
+  <ul>
+    <li class="sidenav-item">
+      <button class="cgds btn collapsed active" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseExampleA" aria-expanded="false" aria-controls="collapseExampleA">
+        <i class="bi bi-layers"></i>Sub menu
+        <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="collapse show" id="collapseExampleA" data-bs-parent=".open1">
+        <ul class="list-unstyled">
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="sidenav-item">
+      <button class="cgds btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleB" aria-expanded="false" aria-controls="collapseExampleB">
+        <i class="bi bi-layers"></i>Sub menu
+        <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="collapse" id="collapseExampleB" data-bs-parent=".open1">
+        <ul class="list-unstyled">
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="sidenav-item">
+      <button class="cgds btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseExampleC" aria-expanded="false" aria-controls="collapseExampleC">
+        <i class="bi bi-layers"></i>Sub menu
+        <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="collapse" id="collapseExampleC" data-bs-parent=".open1">
+        <ul class="list-unstyled">
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
 </nav>
 {% endcapture %}
 
 {% capture side-navigation-no-icon %}
 <nav class="sidenav cgds list-unstyled open2" aria-label="side-navigation menu">
-    <ul>
-        <li class="sidenav-item">
-            <button class="cgds btn collapsed active" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExampleD" aria-expanded="false" aria-controls="collapseExampleD">
-                Sub menu
-                <i class="bi bi-chevron-down"></i>
-            </button>
-            <div class="collapse show" id="collapseExampleD" data-bs-parent=".open2">
-                <ul class="list-unstyled">
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link active">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                </ul>
-            </div>
-        </li>
-        <li class="sidenav-item">
-            <button class="cgds btn collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExampleE" aria-expanded="false" aria-controls="collapseExampleE">
-                Sub menu
-                <i class="bi bi-chevron-down"></i>
-            </button>
-            <div class="collapse" id="collapseExampleE" data-bs-parent=".open2">
-                <ul class="list-unstyled">
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                </ul>
-            </div>
-        </li>
-        <li class="sidenav-item">
-            <button class="cgds btn collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExampleF" aria-expanded="false" aria-controls="collapseExampleF">
-                Sub menu
-                <i class="bi bi-chevron-down"></i>
-            </button>
-            <div class="collapse" id="collapseExampleF" data-bs-parent=".open2">
-                <ul class="list-unstyled">
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                    <li><a href="#" class="nav-link">Sub menu item</a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
+  <ul>
+    <li class="sidenav-item">
+      <button class="cgds btn collapsed active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleD" aria-expanded="false" aria-controls="collapseExampleD">
+        Sub menu
+        <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="collapse show" id="collapseExampleD" data-bs-parent=".open2">
+        <ul class="list-unstyled">
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+          <li><a href="#" class="nav-link active">Sub menu item</a></li>
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="sidenav-item">
+      <button class="cgds btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleE" aria-expanded="false" aria-controls="collapseExampleE">
+        Sub menu
+        <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="collapse" id="collapseExampleE" data-bs-parent=".open2">
+        <ul class="list-unstyled">
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="sidenav-item">
+      <button class="cgds btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleF" aria-expanded="false" aria-controls="collapseExampleF">
+        Sub menu
+        <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="collapse" id="collapseExampleF" data-bs-parent=".open2">
+        <ul class="list-unstyled">
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+          <li><a href="#" class="nav-link">Sub menu item</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
 </nav>
 {% endcapture %}
 
@@ -109,104 +104,107 @@ $sidenav-btn-padding-y: 0.5rem;
 <!-- Page starts here -->
 <div class="page-component">
 
-    <!-- Generated header from front end matters -->
-    {% include page-component/component-header.html %}
+  <!-- Generated header from front end matters -->
+  {% include page-component/component-header.html %}
 
-    <!-- Example Section -->
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">Example</h2>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html compTitle="With icon" compName="side-navigation-icon" code=side-navigation-icon %}
+  <!-- Example Section -->
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">Example</h2>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="With icon" compName="side-navigation-icon" code=side-navigation-icon %}
+    </div>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="With no icon" compName="side-navigation-no-icon" code=side-navigation-no-icon %}
+    </div>
+  </section>
+
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/side-navigation/anatomy-side-navigation-1.svg"
+               alt="Side Navigation Anatomy">
         </div>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html compTitle="With no icon" compName="side-navigation-no-icon" code=side-navigation-no-icon %}
+      </div>
+      <ol>
+        <li>
+          <b>Indicator:</b> Used when it is active, this allows the user to know what page/item they are on.
+        </li>
+        <li>
+          <b>Submenu label (expanded):</b> Serve to tell the user what the page is about.
+        </li>
+        <li>
+          <b>Icon (situational):</b> Used when there are submenu items to indicate that submenu can be
+          expanded or collapsed.
+        </li>
+        <li>
+          <b>Submenu item label:</b> Serve to tell the user what the item is about.
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">Spacing</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/side-navigation/spacing-side-navigation-1.svg"
+               alt="Side Navigation Spacing 1">
         </div>
-    </section>
-
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">Anatomy</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/side-navigation/anatomy-side-navigation-1.svg"
-                         alt="Side Navigation Anatomy">
-                </div>
-            </div>
-            <ol>
-                <li>
-                    <b>Indicator:</b> Used when it is active, this allows the user to know what page/item they are on.
-                </li>
-                <li>
-                    <b>Submenu label (expanded):</b> Serve to tell the user what the page is about.
-                </li>
-                <li>
-                    <b>Icon (situational):</b> Used when there are submenu items to indicate that submenu can be
-                    expanded or collapsed.
-                </li>
-                <li>
-                    <b>Submenu item label:</b> Serve to tell the user what the item is about.
-                </li>
-            </ol>
+      </div>
+      <p><b>Within the submenu item</b><br>
+        Ensure that there is a min 32px horizontal spacing between dropdown items.</p>
+    </div>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/side-navigation/spacing-side-navigation-2.svg"
+               alt="Side Navigation Spacing 2">
         </div>
-    </section>
+      </div>
+      <p><b>Within & outside the submenu</b><br>
+        Ensure that there is a min of 16px spacing between label and icon/indicator.</p>
+    </div>
+  </section>
 
-    <!-- Spacing Section -->
-    <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">Spacing</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/side-navigation/spacing-side-navigation-1.svg"
-                         alt="Side Navigation Spacing 1">
-                </div>
-            </div>
-            <p><b>Within the submenu item</b><br>
-                Ensure that there is a min 32px horizontal spacing between dropdown items.</p>
-        </div>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/side-navigation/spacing-side-navigation-2.svg"
-                         alt="Side Navigation Spacing 2">
-                </div>
-            </div>
-            <p><b>Within & outside the submenu</b><br>
-                Ensure that there is a min of 16px spacing between label and icon/indicator.</p>
-        </div>
-    </section>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
+    <p class="fw-bold mb-0">Side navigation should be used when</p>
+    <ul>
+      <li>For websites with a deep information architecture or lots of categories/subpages, a side nav provides an easy way to navigate through the sections.</li>
+    </ul>
+    <p class="fw-bold mb-0">Side navigation should not be used when.</p>
+    <ul>
+      <li>There are not many navigation options in the selected section.</li>
+    </ul>
+  </section>
 
-    <!-- Usage guidelines Section -->
-    <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">Usage guidelines</h2>
-        <p class="fw-bold mb-0">Side navigation should be used when</p>
-        <ul>
-            <li>For websites with a deep information architecture or lots of categories/subpages, a side nav provides an easy way to navigate through the sections.</li>
-        </ul>
-        <p class="fw-bold mb-0">Side navigation should not be used when.</p>
-        <ul>
-            <li>There are not many navigation options in the selected section.</li>
-        </ul>
-    </section>
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
+    <p>
+      <b>Highlight the current section</b><br>
+      Show users where they are by highlighting it in the side navigation, so they know which section they are
+      currently in.
+    </p>
+    <p>
+      <b>Use straightforward labels</b><br>
+      Labels should be clear to your users.
+      You should avoid jargon or unfamiliar terms that users cannot
+      understand.
+    </p>
+  </section>
 
-    <!-- Usability guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="usability-guidelines">Usability guidelines</h2>
-        <p>
-            <b>Highlight the current section</b><br>
-            Show users where they are by highlighting it in the side navigation, so they know which section they are
-            currently in.
-        </p>
-        <p>
-            <b>Use straightforward labels</b><br>
-            Labels should be clear to your users. You should avoid jargon or unfamiliar terms that users cannot
-            understand.
-        </p>
-    </section>
-
-    <!-- Design token Section -->
-    <section name="section-design-tokens">
-        <h2 class="title fw-bold" id="design-tokens">Side navigation design tokens</h2>
-        {%- highlight sass -%}{{side-navigation-design-tokens}}{%- endhighlight -%}
-    </section>
+  <!-- Design token Section -->
+  <section name="section-design-tokens">
+    <h2 class="title fw-bold" id="design-tokens">Side navigation design tokens</h2>
+    {%- highlight sass -%}
+      {{side-navigation-design-tokens}}
+    {%- endhighlight -%}
+  </section>
 </div>

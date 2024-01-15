@@ -1,63 +1,63 @@
 {% capture general-name-field %}
 <div class="cgds form-group">
-    <label class="form-label" for="fullName">គោត្តនាម និងនាម​​​</label>
-    <input class="form-control" type="text" id="fullName" autocomplete="name" required />
+  <label class="form-label" for="fullName">គោត្តនាម និងនាម​​​</label>
+  <input class="form-control" type="text" id="fullName" autocomplete="name" required />
 </div>
 {% endcapture %}
 
 {% capture multiline-name-field %}
 <div class="cgds form-group">
-    <label class="form-label" for="familyName">គោត្តនាម</label>
-    <input class="form-control" type="text" id="familyName" autocomplete="family-name" required />
+  <label class="form-label" for="familyName">គោត្តនាម</label>
+  <input class="form-control" type="text" id="familyName" autocomplete="family-name" required />
 </div>
 <div class="cgds form-group mb-3">
-    <label class="form-label" for="givenName">នាម​​​</label>
-    <input class="form-control" type="text" id="givenName" autocomplete="given-name" required />
+  <label class="form-label" for="givenName">នាម​​​</label>
+  <input class="form-control" type="text" id="givenName" autocomplete="given-name" required />
 </div>
 {% endcapture %}
 
 <!-- Page starts here -->
 <div class="page-component">
 
-    <!-- Generated header from front end matters -->
-    {% include page-component/component-header.html %}
+  <!-- Generated header from front end matters -->
+  {% include page-component/component-header.html %}
 
-    <!-- Pattern Section -->
-    <section name="section-pattern">
-        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html compTitle="ឈ្មោះពេញ" compName="general-name-field" code=general-name-field %}
-        </div>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html compTitle="គោត្តនាម និងនាម" compName="multiline-name-field" code=multiline-name-field %}
-        </div>
-    </section>
+  <!-- Pattern Section -->
+  <section name="section-pattern">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="ឈ្មោះពេញ" compName="general-name-field" code=general-name-field %}
+    </div>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="គោត្តនាម និងនាម" compName="multiline-name-field" code=multiline-name-field %}
+    </div>
+  </section>
 
-    <!-- Usability Guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
-        <p class="mb-0">
-            <strong>ប្រអប់​នៃឈ្មោះ</strong>
-            <ul>
-                <li>ប្រអប់​នៃឈ្មោះគួរតែវែងគ្រប់គ្រាន់ដើម្បីបំពេញឈ្មោះអ្នកប្រើប្រាស់របស់អ្នក។</li>
-                <li>ប្រអប់ឈ្មោះគឺអាចបំពេញគ្រប់តួអក្សរទាំងអស់ដែលអ្នកប្រើប្រាស់បញ្ចូល រួមទាំងនិមិត្តសញ្ញា និងលេខផងដែរ។</li>
-            </ul>
-        </p>
-        <p class="mb-0">
-            <strong>ឈ្មោះពេញ</strong>
-            <ul>
-                <li>វាអាចទទួលយកបាននូវប្រភេទនិងទម្រង់នៃការសរសេរឈ្មោះបានគ្រប់ប្រភេទ។</li>
-                <li>កាត់បន្ថយហានិភ័យនៃអ្នកប្រើប្រាស់ដែលបញ្ចូលឈ្មោះរបស់ពួកគាត់នៅក្នុងទម្រង់មិនត្រឹមត្រូវ។</li>
-                <li>កំណត់ <code>autocomplete</code> ទៅជា <code>name</code> ដើម្បីឲ្យកម្មវិធីអ៊ីនធឺណិតអាចបំពេញឈ្មោះរបស់អ្នកប្រើប្រាស់បានដោយស្វ័យប្រវត្តិ ប្រសិនបើអ្នកប្រើប្រាស់ធ្លាប់បានបញ្ចូលពីមុន។</li>
-            </ul>
-        </p>
-        <p class="mb-0">
-            <strong>គោត្តនាម និងនាម</strong>
-            <ul>
-                <li>ប្រើទៅតាមគំរូឈ្មោះគោត្តនាម និងនាម​ ដោយចិត្តទុកដាក់ ព្រោះមិនប្រាកដថាឈ្មោះអ្នកប្រើប្រាស់ទាំងអស់ត្រូវតែសរសេរគំរូនាមមុនគោត្តនាមនោះទេ។</li>
-                <li>កំណត់ <code>autocomplete</code> ទៅជា <code>given-name</code> និង <code>family-name</code> ដើម្បីឲ្យកម្មវិធីអ៊ីនធឺណិតអាចបំពេញឈ្មោះរបស់អ្នកប្រើប្រាស់បានដោយស្វ័យប្រវត្តិ ប្រសិនបើអ្នកប្រើប្រាស់ធ្លាប់បានបញ្ចូលពីមុន។</li>
-            </ul>
-        </p>
-    </section>
+  <!-- Usability Guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+    <p class="mb-0">
+      <strong>ប្រអប់​នៃឈ្មោះ</strong>
+    <ul>
+      <li>ប្រអប់​នៃឈ្មោះគួរតែវែងគ្រប់គ្រាន់ដើម្បីបំពេញឈ្មោះអ្នកប្រើប្រាស់របស់អ្នក។</li>
+      <li>ប្រអប់ឈ្មោះគឺអាចបំពេញគ្រប់តួអក្សរទាំងអស់ដែលអ្នកប្រើប្រាស់បញ្ចូល រួមទាំងនិមិត្តសញ្ញា និងលេខផងដែរ។</li>
+    </ul>
+    </p>
+    <p class="mb-0">
+      <strong>ឈ្មោះពេញ</strong>
+    <ul>
+      <li>វាអាចទទួលយកបាននូវប្រភេទនិងទម្រង់នៃការសរសេរឈ្មោះបានគ្រប់ប្រភេទ។</li>
+      <li>កាត់បន្ថយហានិភ័យនៃអ្នកប្រើប្រាស់ដែលបញ្ចូលឈ្មោះរបស់ពួកគាត់នៅក្នុងទម្រង់មិនត្រឹមត្រូវ។</li>
+      <li>កំណត់ <code>autocomplete</code> ទៅជា <code>name</code> ដើម្បីឲ្យកម្មវិធីអ៊ីនធឺណិតអាចបំពេញឈ្មោះរបស់អ្នកប្រើប្រាស់បានដោយស្វ័យប្រវត្តិ ប្រសិនបើអ្នកប្រើប្រាស់ធ្លាប់បានបញ្ចូលពីមុន។</li>
+    </ul>
+    </p>
+    <p class="mb-0">
+      <strong>គោត្តនាម និងនាម</strong>
+    <ul>
+      <li>ប្រើទៅតាមគំរូឈ្មោះគោត្តនាម និងនាម​ ដោយចិត្តទុកដាក់ ព្រោះមិនប្រាកដថាឈ្មោះអ្នកប្រើប្រាស់ទាំងអស់ត្រូវតែសរសេរគំរូនាមមុនគោត្តនាមនោះទេ។</li>
+      <li>កំណត់ <code>autocomplete</code> ទៅជា <code>given-name</code> និង <code>family-name</code> ដើម្បីឲ្យកម្មវិធីអ៊ីនធឺណិតអាចបំពេញឈ្មោះរបស់អ្នកប្រើប្រាស់បានដោយស្វ័យប្រវត្តិ ប្រសិនបើអ្នកប្រើប្រាស់ធ្លាប់បានបញ្ចូលពីមុន។</li>
+    </ul>
+    </p>
+  </section>
 
 </div>

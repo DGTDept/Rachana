@@ -1,152 +1,152 @@
 {% capture textarea-default %}
 <div class="cgds form-group">
-    <div class="d-flex justify-content-between">
-        <div for="exampleFormControlTextarea1" class="form-label">ស្លាកសញ្ញាជាអក្សរ</div>
-        <div class="form-text">0/200</div>
-    </div>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="សូមសរសេរនៅត្រង់នេះ"></textarea>
+  <div class="d-flex justify-content-between">
+    <div for="exampleFormControlTextarea1" class="form-label">ស្លាកសញ្ញាជាអក្សរ</div>
+    <div class="form-text">0/200</div>
+  </div>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="សូមសរសេរនៅត្រង់នេះ"></textarea>
 </div>
 {% endcapture %}
 
 {% capture textarea-hover %}
 <div class="cgds form-group">
-    <div class="d-flex justify-content-between">
-        <div for="exampleFormControlTextarea1" class="form-label">ស្លាកសញ្ញាជាអក្សរ</div>
-        <div class="form-text">0/200</div>
-    </div>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="សូមសរសេរនៅត្រង់នេះ" autofocus></textarea>
+  <div class="d-flex justify-content-between">
+    <div for="exampleFormControlTextarea1" class="form-label">ស្លាកសញ្ញាជាអក្សរ</div>
+    <div class="form-text">0/200</div>
+  </div>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="សូមសរសេរនៅត្រង់នេះ" autofocus></textarea>
 </div>
 {% endcapture %}
 
 {% capture textarea-error %}
 <div class="cgds form-group was-validated">
-    <div class="d-flex justify-content-between">
-        <div for="exampleFormControlTextarea1" class="form-label">ស្លាកសញ្ញាជាអក្សរ</div>
-        <div class="form-text">0/200</div>
-    </div>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="សូមសរសេរនៅត្រង់នេះ" required></textarea>
-    <div class="invalid-feedback">សារប្រាប់ពីបញ្ហា</div>
+  <div class="d-flex justify-content-between">
+    <div for="exampleFormControlTextarea1" class="form-label">ស្លាកសញ្ញាជាអក្សរ</div>
+    <div class="form-text">0/200</div>
+  </div>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="សូមសរសេរនៅត្រង់នេះ" required></textarea>
+  <div class="invalid-feedback">សារប្រាប់ពីបញ្ហា</div>
 </div>
 {% endcapture %}
 
 {% capture textarea-disabled %}
 <div class="cgds form-group">
-    <div class="d-flex justify-content-between">
-        <div for="exampleFormControlTextarea1" class="form-label">ស្លាកសញ្ញាជាអក្សរ</div>
-        <div class="form-text">0/200</div>
-    </div>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="សូមសរសេរនៅត្រង់នេះ" disabled></textarea>
+  <div class="d-flex justify-content-between">
+    <div for="exampleFormControlTextarea1" class="form-label">ស្លាកសញ្ញាជាអក្សរ</div>
+    <div class="form-text">0/200</div>
+  </div>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="សូមសរសេរនៅត្រង់នេះ" disabled></textarea>
 </div>
 {% endcapture %}
 
 <div class="page-component">
-    {% include page-component/component-header.html %}
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="ប្រអប់បញ្ចូលអត្ថបទតាមលំនាំដើម"
-            compName="textarea-default"
-            code=textarea-default
-            compDescTop="ដើម្បីបន្ថែមចំនួនជួរក្នុងប្រអប់បញ្ចូលអត្ថបទ អ្នកអាចបង្កើនចំនួនរបស់វានៅក្នុង class <code>row</code> នៅក្នុងកូដ។"
-            %}
-        </div>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="Hover"
-            compName="textarea-hover"
-            code=textarea-hover
-            %}
-        </div>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="មានបញ្ហា"
-            compName="textarea-error"
-            code=textarea-error
-            %}
-        </div>
-        <div class="section-sub">
-            {%
-            include page-component/component-code-snippet.html
-            compTitle="បិទដំណើរការ"
-            compName="textarea-disabled"
-            code=textarea-disabled
-            compDescTop="ដាក់បញ្ចូល class <code>disabled</code> ទៅក្នុងកូដប្រសិនបើអ្នកចង់បិទដំណើរការប្រអប់បញ្ចូលអត្ថបទ។"
-            %}
-        </div>
-    </section>
+  {% include page-component/component-header.html %}
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="ប្រអប់បញ្ចូលអត្ថបទតាមលំនាំដើម"
+      compName="textarea-default"
+      code=textarea-default
+      compDescTop="ដើម្បីបន្ថែមចំនួនជួរក្នុងប្រអប់បញ្ចូលអត្ថបទ អ្នកអាចបង្កើនចំនួនរបស់វានៅក្នុង class <code>row</code> នៅក្នុងកូដ។"
+      %}
+    </div>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="Hover"
+      compName="textarea-hover"
+      code=textarea-hover
+      %}
+    </div>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="មានបញ្ហា"
+      compName="textarea-error"
+      code=textarea-error
+      %}
+    </div>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="បិទដំណើរការ"
+      compName="textarea-disabled"
+      code=textarea-disabled
+      compDescTop="ដាក់បញ្ចូល class <code>disabled</code> ទៅក្នុងកូដប្រសិនបើអ្នកចង់បិទដំណើរការប្រអប់បញ្ចូលអត្ថបទ។"
+      %}
+    </div>
+  </section>
 
-    <!-- Anatomy Section -->
-    <section name="section-anatomy">
-        <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img src="{{site.baseurl}}/assets/img/component/textarea/anatomy-textarea.svg" alt="Text Area Anatomy">
-                </div>
-            </div>
-
-            <ol>
-                <li>
-                    <b>ស្លាកសញ្ញាជាអក្សរ៖</b> ប្រាប់អ្នកប្រើប្រាស់អំពីអ្វីដែលត្រូវបញ្ចូលក្នុងប្រអប់បញ្ចូលអត្ថបទ។ ស្លាកសញ្ញាជាអក្សរត្រូវតែនៅពីខាងក្រៅប្រអប់។
-                </li>
-                <li>
-                    <b>ការរាប់ចំនួនពាក្យ (ដាក់ក៏បានមិនដាក់ក៏បាន)៖</b> ដើម្បីប្រាប់អ្នកប្រើប្រាស់ពីចំនួនពាក្យច្រើនបំផុតដែលអាចសរសេរដាក់ក្នុងប្រអប់បញ្ចូលអត្ថបទ។
-                </li>
-            </ol>
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/textarea/anatomy-textarea.svg" alt="Text Area Anatomy">
         </div>
-    </section>
+      </div>
 
-    <!-- Spacing Section -->
-    <section name="section-spacing">
-        <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
-        <div class="section-sub">
-            <div class="cgds-example-image-container">
-                <div class="cgds-example-image-grid">
-                    <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/textarea/spacing-textarea.svg"
-                         alt="Text Area Spacing">
-                </div>
-            </div>
-            <p><b>នៅក្នុងប្រអប់បញ្ចូលអត្ថបទ</b><br />
-                រក្សាគម្លាតយ៉ាងតិច 16px នៅលើគែមនៃអ័ក្សដេករវាងប្រអប់នឹងអក្សរ និង 8px នៅលើគែមនៃអ័ក្សឈរ។</p>
+      <ol>
+        <li>
+          <b>ស្លាកសញ្ញាជាអក្សរ៖</b> ប្រាប់អ្នកប្រើប្រាស់អំពីអ្វីដែលត្រូវបញ្ចូលក្នុងប្រអប់បញ្ចូលអត្ថបទ។ ស្លាកសញ្ញាជាអក្សរត្រូវតែនៅពីខាងក្រៅប្រអប់។
+        </li>
+        <li>
+          <b>ការរាប់ចំនួនពាក្យ (ដាក់ក៏បានមិនដាក់ក៏បាន)៖</b> ដើម្បីប្រាប់អ្នកប្រើប្រាស់ពីចំនួនពាក្យច្រើនបំផុតដែលអាចសរសេរដាក់ក្នុងប្រអប់បញ្ចូលអត្ថបទ។
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img class="img-fluid" src="{{site.baseurl}}/assets/img/component/textarea/spacing-textarea.svg"
+               alt="Text Area Spacing">
         </div>
-    </section>
+      </div>
+      <p><b>នៅក្នុងប្រអប់បញ្ចូលអត្ថបទ</b><br />
+        រក្សាគម្លាតយ៉ាងតិច 16px នៅលើគែមនៃអ័ក្សដេករវាងប្រអប់នឹងអក្សរ និង 8px នៅលើគែមនៃអ័ក្សឈរ។</p>
+    </div>
+  </section>
 
-    <!-- Usage guidelines Section -->
-    <section name="section-usage-guidelines">
-        <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
-        <p class="fw-bold mb-0">ប្រអប់បញ្ចូលអត្ថបទគួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-        <ul>
-            <li>ពេលអ្នកចង់ឱ្យអ្នកប្រើប្រាស់បញ្ចូលខ្លឹមសារជាអក្សរ និងមានប្រវែងច្រើនបន្ទាត់។</li>
-        </ul>
-        <p class="fw-bold mb-0">ប្រអប់បញ្ចូលអត្ថបទមិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-        <ul>
-            <li>
-                ពេលសំណួររបស់អ្នកមានលក្ខណៈស្មុគស្មាញនឹងតម្រូវឱ្យអ្នកប្រើប្រាស់ឆ្លើយចម្លើយដែលមានច្រើនផ្នែក។
-                ករណីនេះយើងណែនាំឱ្យអ្នកបំបែកសំណួរជាផ្នែកតូចៗ រួចប្រើប្រាស់ធាតុផ្សេងដូចជាប្រអប់ជម្រើសឱ្យពួកគាត់បញ្ចូលចម្លើយជំនួសវិញ។
-            </li>
-        </ul>
-    </section>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+    <p class="fw-bold mb-0">ប្រអប់បញ្ចូលអត្ថបទគួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ul>
+      <li>ពេលអ្នកចង់ឱ្យអ្នកប្រើប្រាស់បញ្ចូលខ្លឹមសារជាអក្សរ និងមានប្រវែងច្រើនបន្ទាត់។</li>
+    </ul>
+    <p class="fw-bold mb-0">ប្រអប់បញ្ចូលអត្ថបទមិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ul>
+      <li>
+        ពេលសំណួររបស់អ្នកមានលក្ខណៈស្មុគស្មាញនឹងតម្រូវឱ្យអ្នកប្រើប្រាស់ឆ្លើយចម្លើយដែលមានច្រើនផ្នែក។
+        ករណីនេះយើងណែនាំឱ្យអ្នកបំបែកសំណួរជាផ្នែកតូចៗ រួចប្រើប្រាស់ធាតុផ្សេងដូចជាប្រអប់ជម្រើសឱ្យពួកគាត់បញ្ចូលចម្លើយជំនួសវិញ។
+      </li>
+    </ul>
+  </section>
 
-    <!-- Usability guidelines Section -->
-    <section name="section-usability-guidelines">
-        <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
-        <p>
-            <b>ផ្តល់ការរាប់ចំនួនពាក្យ</b><br>
-            ករណីអ្នកចង់ដាក់ការកំណត់ទៅលើប្រវែងរបស់ចម្លើយដែលអ្នកប្រើប្រាស់បញ្ចូល អ្នកគួរបង្ហាញការរាប់ចំនួនពាក្យទៅកាន់ពួកគាត់។
-        </p>
-        <p>
-            <b>ស្លាកសញ្ញាជាអក្សរត្រូវនៅពីក្រៅប្រអប់</b><br>
-            ស្លាកសញ្ញាជាអក្សរត្រូវនៅនៅពីលើ ឬនៅសងខាង ឬជិតប្រអប់ ប៉ុន្តែដាច់ខាតមិនត្រូវដាក់ក្នុងប្រអប់ទេ។
-        </p>
-        <p>
-            <b>កុំប្រើប្រាស់អក្សរចាំកន្លែង</b><br>
-            អក្សរចាំកន្លែងនឹងបានរលុបចេញពេលអ្នកប្រើប្រាស់បានបញ្ចូលទិន្នន័យចូល។ ប្រសិនបើអក្សរចាំកន្លែងមិនមាននៅទីនេះទេ អ្នកប្រើប្រាស់នឹងមិនបានមើលឃើញពីប្រភេទទិន្នន័យដែលគាត់ត្រូវបញ្ចូលទេ។
-            ដូចនេះគួរប្រើសេចក្តីណែនាំជំនួសវិញព្រោះវាមិនរលុបបាត់ទៅវិញ។
-        </p>
-    </section>
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
+    <p>
+      <b>ផ្តល់ការរាប់ចំនួនពាក្យ</b><br>
+      ករណីអ្នកចង់ដាក់ការកំណត់ទៅលើប្រវែងរបស់ចម្លើយដែលអ្នកប្រើប្រាស់បញ្ចូល អ្នកគួរបង្ហាញការរាប់ចំនួនពាក្យទៅកាន់ពួកគាត់។
+    </p>
+    <p>
+      <b>ស្លាកសញ្ញាជាអក្សរត្រូវនៅពីក្រៅប្រអប់</b><br>
+      ស្លាកសញ្ញាជាអក្សរត្រូវនៅនៅពីលើ ឬនៅសងខាង ឬជិតប្រអប់ ប៉ុន្តែដាច់ខាតមិនត្រូវដាក់ក្នុងប្រអប់ទេ។
+    </p>
+    <p>
+      <b>កុំប្រើប្រាស់អក្សរចាំកន្លែង</b><br>
+      អក្សរចាំកន្លែងនឹងបានរលុបចេញពេលអ្នកប្រើប្រាស់បានបញ្ចូលទិន្នន័យចូល។ ប្រសិនបើអក្សរចាំកន្លែងមិនមាននៅទីនេះទេ អ្នកប្រើប្រាស់នឹងមិនបានមើលឃើញពីប្រភេទទិន្នន័យដែលគាត់ត្រូវបញ្ចូលទេ។
+      ដូចនេះគួរប្រើសេចក្តីណែនាំជំនួសវិញព្រោះវាមិនរលុបបាត់ទៅវិញ។
+    </p>
+  </section>
 
 </div>

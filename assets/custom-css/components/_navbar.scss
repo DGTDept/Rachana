@@ -1,103 +1,103 @@
 .cgds {
-    &.navbar {
+  &.navbar {
 
-        header {
-            background-color: $navbar-bg-color !important;
+    header {
+      background-color: $navbar-bg-color !important;
 
-            .btn-gt {
-                color: $primary !important;
-                background-color: $white;
-                width: 85px;
-                height: 40px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
-                font-size: 14px;
+      .btn-gt {
+        color: $primary !important;
+        background-color: $white;
+        width: 85px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 14px;
 
-                &.active {
-                    color: $white !important;
-                    font-weight: $font-weight-bold;
-                    @include gradient-bg($navbar-link-hover-bg);
-                }
-
-                &:hover {
-                    color: $white !important;
-                    @include gradient-bg($navbar-link-hover-bg);
-                }
-            }
+        &.active {
+          color: $white !important;
+          font-weight: $font-weight-bold;
+          @include gradient-bg($navbar-link-hover-bg);
         }
 
-        background-color: $navbar-bg-color;
-        border-bottom: 1px solid rgba(var(--cgds-body-color-rgb), 0.2);
-
-        .navbar-nav {
-            gap: 5px;
+        &:hover {
+          color: $white !important;
+          @include gradient-bg($navbar-link-hover-bg);
         }
-
-        .navbar-mobile-widget {
-            display: flex;
-            height: 100%;
-            gap: 1rem;
-        }
-
-        .navbar-toggler {
-            &:focus {
-                box-shadow: none;
-            }
-        }
-
-        .navbar-brand {
-            @include media-breakpoint-down(sm) {
-
-                img,
-                svg {
-                    width: 195px;
-                }
-            }
-
-            @include media-breakpoint-up(sm) {
-
-                img,
-                svg {
-                    width: 195px;
-                }
-            }
-
-            @include media-breakpoint-up(md) {
-
-                img,
-                svg {
-                    width: 480px;
-                    width: 70%;
-                }
-            }
-
-            @include media-breakpoint-up(lg) {
-
-                img,
-                svg {
-                    width: 500px;
-                    width: 80%;
-                }
-            }
-
-            @include media-breakpoint-up(xl) {
-
-                img,
-                svg {
-                    width: 90%;
-                }
-            }
-
-            @include media-breakpoint-up(xxl) {
-
-                img,
-                svg {
-                    width: 100%;
-                    min-width: 10.75rem;
-                }
-            }
-        }
+      }
     }
+
+    background-color: $navbar-bg-color;
+    border-bottom: 1px solid rgba(var(--cgds-body-color-rgb), 0.2);
+
+    .navbar-nav {
+      gap: 5px;
+    }
+
+    .navbar-mobile-widget {
+      display: flex;
+      height: 100%;
+      gap: 1rem;
+    }
+
+    .navbar-toggler {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .navbar-brand {
+      @include media-breakpoint-down(sm) {
+
+        img,
+        svg {
+          width: 195px;
+        }
+      }
+
+      @include media-breakpoint-up(sm) {
+
+        img,
+        svg {
+          width: 195px;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+
+        img,
+        svg {
+          width: 480px;
+          width: 70%;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+
+        img,
+        svg {
+          width: 500px;
+          width: 80%;
+        }
+      }
+
+      @include media-breakpoint-up(xl) {
+
+        img,
+        svg {
+          width: 90%;
+        }
+      }
+
+      @include media-breakpoint-up(xxl) {
+
+        img,
+        svg {
+          width: 100%;
+          min-width: 10.75rem;
+        }
+      }
+    }
+  }
 }

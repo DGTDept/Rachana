@@ -1,127 +1,127 @@
 {% capture quantity-toggle-left-disabled %}
 <div class="cgds input-group" variant="quantity-toggle">
-    <button type="button" class="btn btn-primary btn-sm cgds" disabled><i class="bi bi-dash"></i></button>
-    <input id="quantityLeftDisabled" type="number" class="form-control text-center" value="0">
-    <button type="button" class="btn btn-primary btn-sm cgds" onclick="increment('LeftDisabled')"><i class="bi bi-plus"></i></button>
+  <button type="button" class="btn btn-primary btn-sm cgds" disabled><i class="bi bi-dash"></i></button>
+  <input id="quantityLeftDisabled" type="number" class="form-control text-center" value="0">
+  <button type="button" class="btn btn-primary btn-sm cgds" onclick="increment('LeftDisabled')"><i class="bi bi-plus"></i></button>
 </div>
 {% endcapture %}
 
 {% capture quantity-toggle-right-disabled %}
 <div class="cgds input-group" variant="quantity-toggle">
-    <button type="button" class="btn btn-primary btn-sm cgds" onclick="decrement('RightDisabled')"><i class="bi bi-dash"></i></button>
-    <input id="quantityRightDisabled" type="number" class="form-control text-center" value="1">
-    <button type="button" class="btn btn-primary btn-sm cgds" disabled><i class="bi bi-plus"></i></button>
+  <button type="button" class="btn btn-primary btn-sm cgds" onclick="decrement('RightDisabled')"><i class="bi bi-dash"></i></button>
+  <input id="quantityRightDisabled" type="number" class="form-control text-center" value="1">
+  <button type="button" class="btn btn-primary btn-sm cgds" disabled><i class="bi bi-plus"></i></button>
 </div>
 {% endcapture %}
 
 {% capture quantity-toggle-left-right-disabled %}
 <div class="cgds input-group" variant="quantity-toggle">
-    <button type="button" class="btn btn-primary btn-sm cgds" disabled" disabled><i class="bi bi-dash"></i></button>
-    <input id="quantityLeftRightDisabled" type="number" class="form-control text-center" value="2" disabled>
-    <button type="button" class="btn btn-primary btn-sm cgds" disabled><i class="bi bi-plus"></i></button>
+  <button type="button" class="btn btn-primary btn-sm cgds" disabled" disabled><i class="bi bi-dash"></i></button>
+  <input id="quantityLeftRightDisabled" type="number" class="form-control text-center" value="2" disabled>
+  <button type="button" class="btn btn-primary btn-sm cgds" disabled><i class="bi bi-plus"></i></button>
 </div>
 {% endcapture %}
 
 {% capture quantity-toggle-enabled %}
 <div class="cgds input-group" variant="quantity-toggle">
-    <button type="button" class="btn btn-primary btn-sm cgds" onclick="decrement('Enabled')"><i class="bi bi-dash"></i></button>
-    <input id="quantityEnabled" type="number" class="form-control text-center" value="3">
-    <button type="button" class="btn btn-primary btn-sm cgds" onclick="increment('Enabled')"><i class="bi bi-plus"></i></button>
+  <button type="button" class="btn btn-primary btn-sm cgds" onclick="decrement('Enabled')"><i class="bi bi-dash"></i></button>
+  <input id="quantityEnabled" type="number" class="form-control text-center" value="3">
+  <button type="button" class="btn btn-primary btn-sm cgds" onclick="increment('Enabled')"><i class="bi bi-plus"></i></button>
 </div>
 {% endcapture %}
 
 <!-- Page starts here -->
 <div class="page-component">
 
-        <!-- Generated header from front end matters -->
-        {% include page-component/component-header.html %}
+  <!-- Generated header from front end matters -->
+  {% include page-component/component-header.html %}
 
-        <!-- Example Section -->
-        <section name="section-examples">
-            <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-            <div class="section-sub">
-                {% include page-component/component-code-snippet.html compTitle="ខាងឆ្វេងបិទដំណើរការ" compName="quantity-toggle-left-disabled" code=quantity-toggle-left-disabled %}
-            </div>
-            <div class="section-sub">
-                {% include page-component/component-code-snippet.html compTitle="ខាងស្តំាបិទដំណើរការ" compName="quantity-toggle-right-disabled" code=quantity-toggle-right-disabled %}
-            </div>
-            <div class="section-sub">
-                {% include page-component/component-code-snippet.html compTitle="សងខាងមិនដំណើរការ" compName="quantity-toggle-left-right-disabled" code=quantity-toggle-left-right-disabled %}
-            </div>
-            <div class="section-sub">
-                {% include page-component/component-code-snippet.html compTitle="បើកដំណើរការទាំងសងខាង" compName="quantity-toggle-enabled" code=quantity-toggle-enabled %}
-            </div>
-        </section>
+  <!-- Example Section -->
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="ខាងឆ្វេងបិទដំណើរការ" compName="quantity-toggle-left-disabled" code=quantity-toggle-left-disabled %}
+    </div>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="ខាងស្តំាបិទដំណើរការ" compName="quantity-toggle-right-disabled" code=quantity-toggle-right-disabled %}
+    </div>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="សងខាងមិនដំណើរការ" compName="quantity-toggle-left-right-disabled" code=quantity-toggle-left-right-disabled %}
+    </div>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html compTitle="បើកដំណើរការទាំងសងខាង" compName="quantity-toggle-enabled" code=quantity-toggle-enabled %}
+    </div>
+  </section>
 
-        <!-- Anatomy Section -->
-        <section name="section-anatomy">
-            <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
-            <div class="section-sub">
-                <div class="cgds-example-image-container">
-                    <div class="cgds-example-image-grid">
-                        <img src="{{site.baseurl}}/assets/img/component/quantity-toggle/anatomy-quantity-toggle-1.svg" alt="Quantity Toggle Anatomy">
-                    </div>
-                </div>
-                <ol>
-                    <li>
-                        <b>បរិមាណ៖</b> បង្ហាញអ្នកប្រើប្រាស់ពីចំនួននា​ពេល​បច្ចុប្បន្ន។
-                    </li>
-                    <li>
-                        <b>ប៊ូតុង៖</b> អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់ចុចបន្ថែម ឬបន្ថយចំនួន។
-                    </li>
-                </ol>
-            </div>
-        </section>
+  <!-- Anatomy Section -->
+  <section name="section-anatomy">
+    <h2 class="title fw-bold" id="anatomy">ធាតុផ្សំ</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/quantity-toggle/anatomy-quantity-toggle-1.svg" alt="Quantity Toggle Anatomy">
+        </div>
+      </div>
+      <ol>
+        <li>
+          <b>បរិមាណ៖</b> បង្ហាញអ្នកប្រើប្រាស់ពីចំនួននា​ពេល​បច្ចុប្បន្ន។
+        </li>
+        <li>
+          <b>ប៊ូតុង៖</b> អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់ចុចបន្ថែម ឬបន្ថយចំនួន។
+        </li>
+      </ol>
+    </div>
+  </section>
 
-        <!-- Spacing Section -->
-        <section name="section-spacing">
-            <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
-            <div class="section-sub">
-                <div class="cgds-example-image-container">
-                    <div class="cgds-example-image-grid">
-                        <img src="{{site.baseurl}}/assets/img/component/quantity-toggle/spacing-quantity-toggle-1.svg" alt="Quantity Toggle Spacing">
-                    </div>
-                </div>
-                <p><b>នៅក្នុង{% t headers.quantity-toggle %}</b><br>
-                    រក្សាគម្លាតយ៉ាងតិច 16px នៅ​លើអ័ក្សឈរនៃគែមរបស់ប៊ូតុង។</p>
-            </div>
-        </section>
+  <!-- Spacing Section -->
+  <section name="section-spacing">
+    <h2 class="title fw-bold" id="spacing">គម្លាត</h2>
+    <div class="section-sub">
+      <div class="cgds-example-image-container">
+        <div class="cgds-example-image-grid">
+          <img src="{{site.baseurl}}/assets/img/component/quantity-toggle/spacing-quantity-toggle-1.svg" alt="Quantity Toggle Spacing">
+        </div>
+      </div>
+      <p><b>នៅក្នុង{% t headers.quantity-toggle %}</b><br>
+        រក្សាគម្លាតយ៉ាងតិច 16px នៅ​លើអ័ក្សឈរនៃគែមរបស់ប៊ូតុង។</p>
+    </div>
+  </section>
 
-        <!-- Usage guidelines Section -->
-        <section name="section-usage-guidelines">
-            <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
-            <p class="fw-bold mb-0">{% t headers.quantity-toggle %}គួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-            <ul>
-                <li>ពេលបរិមាណត្រូវការបន្ថែម ឬបន្ថយចំនួនបន្តិចបន្តួច។</li>
-            </ul>
-            <p class="fw-bold mb-0">{% t headers.quantity-toggle %}មិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
-            <ul>
-                <li>ពេលបរិមាណត្រូវការបន្ថែម ឬបន្ថយចំនួនច្រើន។</li>
-            </ul>
-        </section>
+  <!-- Usage guidelines Section -->
+  <section name="section-usage-guidelines">
+    <h2 class="title fw-bold" id="usage-guidelines">គោលការណ៍ណែនាំនៃការប្រើប្រាស់</h2>
+    <p class="fw-bold mb-0">{% t headers.quantity-toggle %}គួរតែត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ul>
+      <li>ពេលបរិមាណត្រូវការបន្ថែម ឬបន្ថយចំនួនបន្តិចបន្តួច។</li>
+    </ul>
+    <p class="fw-bold mb-0">{% t headers.quantity-toggle %}មិនគួរត្រូវបានប្រើប្រាស់នៅពេល៖</p>
+    <ul>
+      <li>ពេលបរិមាណត្រូវការបន្ថែម ឬបន្ថយចំនួនច្រើន។</li>
+    </ul>
+  </section>
 
-        <!-- Usability guidelines Section -->
-        <section name="section-usability-guidelines">
-            <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
-            <p>
-                <b>បង្ហាញអ្នកប្រើប្រាស់ពីចំនួនចាប់ផ្តើមនិងចំនួនបច្ចុប្បន្ន</b><br>
-                ដាក់បង្ហាញចំនួនដែលអ្នកប្រើប្រាស់បានបញ្ចូល ដើម្បីពួកគាត់ងាយដឹងថាគាត់ត្រូវចុចប៊ូតុងបន្ថែម ឬបន្ថយប៉ុន្មានដងទៀតដើម្បីកំណត់បានចំនួនដែលពួកគាត់ចង់បាន។
-            </p>
-            <p>
-                <b>អនុញ្ញាតឱ្យពួកគាត់អាចចុចបញ្ចូលលេខចំនួនដោយផ្ទាល់ដៃបាន</b><br>
-                អ្នកប្រើប្រាស់អាចចង់ចុចបញ្ចូលលេខចំនួនដោយផ្ទាល់ដៃដោយផ្ទាល់ដៃតាមរយៈក្តារចុចរបស់គាត់ជាជាងការចុចប៊ូតុង ដូច្នេះគួរផ្តល់ជម្រើសនេះឱ្យពួកគាត់។
-            </p>
-        </section>
+  <!-- Usability guidelines Section -->
+  <section name="section-usability-guidelines">
+    <h2 class="title fw-bold" id="usability-guidelines">គោលការណ៍ណែនាំនៃការរចនា</h2>
+    <p>
+      <b>បង្ហាញអ្នកប្រើប្រាស់ពីចំនួនចាប់ផ្តើមនិងចំនួនបច្ចុប្បន្ន</b><br>
+      ដាក់បង្ហាញចំនួនដែលអ្នកប្រើប្រាស់បានបញ្ចូល ដើម្បីពួកគាត់ងាយដឹងថាគាត់ត្រូវចុចប៊ូតុងបន្ថែម ឬបន្ថយប៉ុន្មានដងទៀតដើម្បីកំណត់បានចំនួនដែលពួកគាត់ចង់បាន។
+    </p>
+    <p>
+      <b>អនុញ្ញាតឱ្យពួកគាត់អាចចុចបញ្ចូលលេខចំនួនដោយផ្ទាល់ដៃបាន</b><br>
+      អ្នកប្រើប្រាស់អាចចង់ចុចបញ្ចូលលេខចំនួនដោយផ្ទាល់ដៃដោយផ្ទាល់ដៃតាមរយៈក្តារចុចរបស់គាត់ជាជាងការចុចប៊ូតុង ដូច្នេះគួរផ្តល់ជម្រើសនេះឱ្យពួកគាត់។
+    </p>
+  </section>
 </div>
 
 <script>
-    function decrement(val) {
-        let input = document.getElementById("quantity" + val)
-        input.value = parseInt(input.value) - 1
-    }
+  function decrement(val) {
+    let input = document.getElementById("quantity" + val)
+    input.value = parseInt(input.value) - 1
+  }
 
-    function increment(val) {
-        let input = document.getElementById("quantity" + val)
-        input.value = parseInt(input.value) + 1
-    }
+  function increment(val) {
+    let input = document.getElementById("quantity" + val)
+    input.value = parseInt(input.value) + 1
+  }
 </script>

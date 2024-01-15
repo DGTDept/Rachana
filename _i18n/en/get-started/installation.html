@@ -8,26 +8,27 @@ import "{{site.cgds-package-name}}/css/cgds.css";
 // or get all the named exports for further usage
 import * as bootstrap from 'bootstrap';
 {% endcapture %}
+
 {% capture css %}
 <head>
-    ...
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@cgds/cgds/css/cgds.css"
-    />
-    <link
+  ...
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@cgds/cgds/css/cgds.css"
+  />
+  <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@cgds/cgds/assets/custom-css/style.css"
-/>
-    ...
+  />
+  ...
 </head>
-
 {% endcapture %}
+
 {% capture cdn-css %}
 <head>
-    ...
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    ...
+  ...
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  ...
 </head>
 
 <body>
@@ -38,60 +39,67 @@ import * as bootstrap from 'bootstrap';
 {% endcapture %}
 
 <div class="page-component">
-    {% include page-component/component-header.html %}
+  {% include page-component/component-header.html %}
 
-    <section name="section-notification">
-        <div role="alert" class="fade d-flex align-items-center alert alert-info show cgds">
-            <i class="bi bi-exclamation-circle me-4"></i>
-            <div>
-                <div class="alert-heading h4"><a href="/components/">Rachana components</a> make use of <a
-                    href="https://getbootstrap.com/docs/5.1/getting-started/javascript/" target="_blank">bootstrap
-                    v{{site.bootstrap-version}} js library</a> as an external dependency.</div>
-            </div>
-        </div>
-    </section>
-
-    <div class="section-sub">
-        <h3 class="subtitle fw-bold" id="via-cdn">Via CSS</h3>
-        {% highlight html %}{{css}}{% endhighlight %}
-        <p>
-            <b>cgds.css</b><br>
-            Link to all styles we customized in Rachana.
-        </p>
-        <p>
-            <b>style.css</b><br>
-            Link to customized image and icon in Rachana.
-        </p>
+  <section name="section-notification">
+    <div role="alert" class="fade d-flex align-items-center alert alert-info show cgds">
+      <i class="bi bi-exclamation-circle me-4"></i>
+      <div>
+        <div class="alert-heading h4"><a href="/components/">Rachana components</a> make use of <a
+          href="https://getbootstrap.com/docs/5.1/getting-started/javascript/" target="_blank">bootstrap
+          v{{site.bootstrap-version}} js library</a> as an external dependency.</div>
+      </div>
     </div>
+  </section>
 
-    <section name="section-vanillaJS">
-        <h2 class="title fw-bold" id="vanilla-js">For Vanilla JS</h2>
-        <p>
-            Frontend developers can use npm to download Rachana and use it as a dependency in their projects.
-            Using npm is
-            especially useful when using a module bundler or build tool,
-            such as <a href="https://webpack.js.org/"
-                                                                                    target="_blank">Webpack</a>.
-        </p>
-        <p>
-            <code>{{site.cgds-package-name}}</code> uses <code>bootstrap-icons</code> for certain components like Form, but it is not ship
-            with it. Install <code>bootstrap-icons</code> or use CDN if you need it. Please refer to <a
-            href="https://icons.getbootstrap.com/#install" target="_blank">bootstrap-icons</a> for usage instructions.
-        </p>
-        <div class="section-sub">
-            <h3 class="subtitle fw-bold" id="via-node">Via node</h3>
-            <div class="mb-4">
-                {% highlight bash %}{{using-node}}{% endhighlight %}
-            </div>
+  <div class="section-sub">
+    <h3 class="subtitle fw-bold" id="via-cdn">Via CSS</h3>
+    {% highlight html %}{{css}}{% endhighlight %}
+    <p>
+      <b>cgds.css</b><br>
+      Link to all styles we customized in Rachana.
+    </p>
+    <p>
+      <b>style.css</b><br>
+      Link to customized image and icon in Rachana.
+    </p>
+  </div>
 
-            <div>
-                <p>If you use a module bundler like Webpack, import cgds in your entry point:</p>
-                {% highlight javascript %}{{webpack}}{% endhighlight %}
-            </div>
-        </div>
-        <div class="section-sub">
-            <h3 class="subtitle fw-bold" id="via-cdn">Via CDN</h3>
-            {% highlight html %}{{cdn-css}}{% endhighlight %}
-        </div>
-    </section>
+  <section name="section-vanillaJS">
+    <h2 class="title fw-bold" id="vanilla-js">For Vanilla JS</h2>
+    <p>
+      Frontend developers can use npm to download Rachana and use it as a dependency in their projects.
+      Using npm is
+      especially useful when using a module bundler or build tool,
+      such as <a href="https://webpack.js.org/"
+                 target="_blank">Webpack</a>.
+    </p>
+    <p>
+      <code>{{site.cgds-package-name}}</code> uses <code>bootstrap-icons</code> for certain components like Form, but it is not ship with it.
+      Install <code>bootstrap-icons</code> or use CDN if you need it.
+      Please refer to
+      <a href="https://icons.getbootstrap.com/#install" target="_blank">bootstrap-icons</a> for usage instructions.
+    </p>
+    <div class="section-sub">
+      <h3 class="subtitle fw-bold" id="via-node">Via node</h3>
+      <div class="mb-4">
+        {% highlight bash %}
+          {{using-node}}
+        {% endhighlight %}
+      </div>
+
+      <div>
+        <p>If you use a module bundler like Webpack, import cgds in your entry point:</p>
+        {% highlight javascript %}
+          {{webpack}}
+        {% endhighlight %}
+      </div>
+    </div>
+    <div class="section-sub">
+      <h3 class="subtitle fw-bold" id="via-cdn">Via CDN</h3>
+      {% highlight html %}
+        {{cdn-css}}
+      {% endhighlight %}
+    </div>
+  </section>
 </div>

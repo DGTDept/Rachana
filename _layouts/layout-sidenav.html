@@ -6,43 +6,43 @@ layout: layout-default
 {% assign class = 'with-toc' %}
 {% endif %}
 <section class="wrapper layout-sidenav {{class}}">
-    <aside aria-label="Side Navigation Container">
-        <nav class="cgds sidenav" aria-label="Side Navigation">
-            <ul class="list-unstyled mb-0">
-                {% assign collections = site.collections | sort: 'order' %}
-                {% for collection in collections %}
-                {% if collection.category == page.pageCategory %}
-                {% assign name = collection.label %}
-                {% for item in site[collection.label] %}
-                {%- assign class = 'inactive' -%}
-                {%- assign title = item.title -%}
-                {%- if page.title == title -%}
-                {%- assign class = 'active' -%}
-                {%- endif -%}
-                <li class="sidenav-item">
-                    {% if site.lang == 'en' %}
-                    <a role="button" class="cgds btn {{class}}"
-                       href="{{site.baseurl_root }}/en{{item.url}}">{% t item.title %}</a>
-                    {% else %}
-                    <a role="button" class="cgds btn {{class}}" href="{{item.url}}">{% t item.title %}</a>
-                    {% endif %}
-                </li>
-                {% endfor %}
-                {% endif %}
-                {% endfor %}
-            </ul>
-        </nav>
-    </aside>
-    <article>
-        {{content}}
-    </article>
+  <aside aria-label="Side Navigation Container">
+    <nav class="cgds sidenav" aria-label="Side Navigation">
+      <ul class="list-unstyled mb-0">
+        {% assign collections = site.collections | sort: 'order' %}
+        {% for collection in collections %}
+        {% if collection.category == page.pageCategory %}
+        {% assign name = collection.label %}
+        {% for item in site[collection.label] %}
+        {%- assign class = 'inactive' -%}
+        {%- assign title = item.title -%}
+        {%- if page.title == title -%}
+        {%- assign class = 'active' -%}
+        {%- endif -%}
+        <li class="sidenav-item">
+          {% if site.lang == 'en' %}
+          <a role="button" class="cgds btn {{class}}"
+             href="{{site.baseurl_root }}/en{{item.url}}">{% t item.title %}</a>
+          {% else %}
+          <a role="button" class="cgds btn {{class}}" href="{{item.url}}">{% t item.title %}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </aside>
+  <article>
+    {{content}}
+  </article>
 
-    {% if page.overview == null %}
-    <aside class="toc-container" aria-label="Table of Content">
-        <div class="toc-wrapper">
-            <div class="h4">{% t sidebar.on-this-page %}</div>
-            {% toc %}
-        </div>
-    </aside>
-    {% endif %}
+  {% if page.overview == null %}
+  <aside class="toc-container" aria-label="Table of Content">
+    <div class="toc-wrapper">
+      <div class="h4">{% t sidebar.on-this-page %}</div>
+      {% toc %}
+    </div>
+  </aside>
+  {% endif %}
 </section>

@@ -1,264 +1,264 @@
 {% capture collapsible-page-form %}
 <div style="background-color: white">
-    <!-- Header section -->
-    <section class="my-8 mx-md-8">
-        <nav class="cgds" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i>ទំព័រដើម</a></li>
-                <li class="breadcrumb-item"><a href="#">បណ្ណាល័យ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">ទិន្នន័យ</li>
-            </ol>
-        </nav>
-        <div class="mb-4 row">
-            <div class="col-md-6 col-12">
-                <h1>ចុះឈ្មោះ</h1>
-                <p class="text-muted">
-                    អ្នកជាសមាជិកហើយឬនៅ?
-                    <a href="" class="text-decoration-none">ចូលគណនី</a>
-                </p>
-            </div>
-            <div class="d-flex justify-content-end align-items-center col-md-6 col-12">
-                <a href="" class="me-4">បោះបង់</a>
-                <button type="button" class="me-4 btn btn-outline-dark cgds">
-                    រក្សាទុក​
-                </button>
-                <button type="button" class="btn btn-secondary cgds">
-                    បន្ទាប់
-                </button>
-            </div>
+  <!-- Header section -->
+  <section class="my-8 mx-md-8">
+    <nav class="cgds" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i>ទំព័រដើម</a></li>
+        <li class="breadcrumb-item"><a href="#">បណ្ណាល័យ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">ទិន្នន័យ</li>
+      </ol>
+    </nav>
+    <div class="mb-4 row">
+      <div class="col-md-6 col-12">
+        <h1>ចុះឈ្មោះ</h1>
+        <p class="text-muted">
+          អ្នកជាសមាជិកហើយឬនៅ?
+          <a href="" class="text-decoration-none">ចូលគណនី</a>
+        </p>
+      </div>
+      <div class="d-flex justify-content-end align-items-center col-md-6 col-12">
+        <a href="" class="me-4">បោះបង់</a>
+        <button type="button" class="me-4 btn btn-outline-dark cgds">
+          រក្សាទុក​
+        </button>
+        <button type="button" class="btn btn-secondary cgds">
+          បន្ទាប់
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Accordion component nesting form -->
+  <div class="mx-md-8 shadow cgds accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+          <i class="bi bi-info-circle-fill"></i>
+          ស្រោមសំបុត្រទី១
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+           data-bs-parent="#accordionExample">
+        <div class="p-5 accordion-body">
+          <div class="col-sm-8">
+            <form>
+              <div class="row">
+                <div class="mb-3 col-md-6 col-12">
+                  <label class="form-label" for="formCollapsibleInput1">ឈ្មោះ</label><input
+                  placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text"
+                  id="formCollapsibleInput1" class="form-control" />
+                </div>
+                <div class="mb-3 col-md-6 col-12">
+                  <label class="form-label"
+                         for="formCollapsibleSinglePageInput2">អាសយដ្ឋាន</label><input
+                  placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text"
+                  id="formCollapsibleSinglePageInput2" class="form-control" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formCollapsibleInput3">អុីម៉ែល</label>
+                <div class="mb-3 input-group cgds">
+                  <input placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ"
+                         aria-label="Dollar amount (with dot and two decimal places)"
+                         id="formCollapsibleInput3" class="form-control" /><span
+                  class="input-group-text">@something</span>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formCollapsibleInput4">លេខទូរស័ព្ទ</label><input
+                placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text"
+                id="formCollapsibleInput4" class="form-control" />
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <i class="bi bi-info-circle-fill"></i>
+          ស្រោមសំបុត្រទី២
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+           data-bs-parent="#accordionExample">
+        <div class="p-5 accordion-body">
+          <div class="col-sm-8">
+            <div class="mb-3">
+              <label class="form-label" for="formCollapsibleSelect1">តួនាទី</label><select
+              class="form-select" id="formCollapsibleSelect1">
+              <option>មន្រ្តី</option>
+              <option>មន្រ្តីកិច្ចសន្យា</option>
+              <option>បុគ្គលិកហាត់ការ</option>
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <i class="bi bi-info-circle-fill"></i>
+          ស្រោមសំបុត្រទី៣
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+           data-bs-parent="#accordionExample">
+        <div class="p-5 accordion-body">
+          <div class="col-sm-8">
+            <div class="mb-3">
+              <label class="form-label" for="formCollapsibleRadio1">ភេទ</label>
+              <div class="form-check">
+                <input name="radioGroup1" type="radio" id="formCollapsibleRadio1"
+                       class="form-check-input" /><label title="" for="formCollapsibleRadio1"
+                                                         class="form-check-label">ស្រី</label>
+              </div>
+              <div class="form-check">
+                <input name="radioGroup1" type="radio" id="formCollapsibleRadio1"
+                       class="form-check-input" /><label title="" for="formCollapsibleRadio1"
+                                                         class="form-check-label">ប្រុស</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="formCollapsibleInput5">មតិបន្ថែមរបស់អ្នក</label><textarea
+              rows="5" placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text"
+              id="formCollapsibleInput5" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input type="checkbox" id="formCollapsibleCheckbox1" class="form-check-input" /><label
+                title="" for="formCollapsibleCheckbox1"
+                class="form-check-label">ខ្ញុំយល់ព្រមនឹងលក្ខខណ្ឌនៃកិច្ចព្រមព្រៀងអតិថិជន
+                និងគោលការណ៍ឯកជនភាព</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-end my-8 mx-md-8">
+    <button type="button" class="btn btn-primary cgds">​ដាក់​ស្នើ</button>
+  </div>
+  <!-- Footer component -->
+  <footer class="cgds footer">
+    <section class="footer-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="widget flex-column">
+              <div class="logo">
+                <img src="/assets/uncompressed_images/logo_DGC_Square-new.svg" style="width: 200px"
+                     alt="dgc logo">
+              </div>
+              <div class="social-icon">
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="/assets/uncompressed_images/icon/Facebook.svg"
+                           alt="facebook-icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/assets/uncompressed_images/icon/YouTube.svg" alt="youtube-icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/assets/uncompressed_images/icon/Telegram.svg"
+                           alt="telegram-icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/assets/uncompressed_images/icon/Tiktok.svg" alt="tiktok-icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/assets/uncompressed_images/icon/Linkin.svg" alt="linkin-icon">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="title">
+              ជួរទី១
+            </div>
+            <ul class="links">
+              <li><a href="">អំពីយើង</a></li>
+              <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="title">
+              ជួរទី២
+            </div>
+            <ul class="links">
+              <li><a href="">អំពីយើង</a></li>
+              <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="title">
+              ជួរទី៣
+            </div>
+            <ul class="links">
+              <li><a href="">អំពីយើង</a></li>
+              <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+              <li><a href="">តេស្ត</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Accordion component nesting form -->
-    <div class="mx-md-8 shadow cgds accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <i class="bi bi-info-circle-fill"></i>
-                    ស្រោមសំបុត្រទី១
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="p-5 accordion-body">
-                    <div class="col-sm-8">
-                        <form>
-                            <div class="row">
-                                <div class="mb-3 col-md-6 col-12">
-                                    <label class="form-label" for="formCollapsibleInput1">ឈ្មោះ</label><input
-                                        placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text"
-                                        id="formCollapsibleInput1" class="form-control" />
-                                </div>
-                                <div class="mb-3 col-md-6 col-12">
-                                    <label class="form-label"
-                                        for="formCollapsibleSinglePageInput2">អាសយដ្ឋាន</label><input
-                                        placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text"
-                                        id="formCollapsibleSinglePageInput2" class="form-control" />
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="formCollapsibleInput3">អុីម៉ែល</label>
-                                <div class="mb-3 input-group cgds">
-                                    <input placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ"
-                                        aria-label="Dollar amount (with dot and two decimal places)"
-                                        id="formCollapsibleInput3" class="form-control" /><span
-                                        class="input-group-text">@something</span>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="formCollapsibleInput4">លេខទូរស័ព្ទ</label><input
-                                    placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text"
-                                    id="formCollapsibleInput4" class="form-control" />
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <section class="footer-bottom">
+      <div class="container-fluid">
+        <div class="row footer-copyrights">
+          <div class="col">
+            <div class="d-flex justify-content-lg-start text-start">
+              DGC © 2023 ~ រក្សាសិទ្ធិដោយគណៈកម្មាធិការរដ្ឋាភិបាលឌីជីថល
             </div>
+          </div>
+          <div class="col">
+            <dev class="d-flex justify-content-lg-end text-end">
+              <ul>
+                <li><a href="" target="_blank" rel="noopener noreferrer">រាយការណ៍ពីភាពខ្វះខាត</a></li>
+                <li><a href="">ឯកជនភាព</a></li>
+                <li><a href="">លក្ខខណ្ឌនៃប្រើប្រាស់</a></li>
+              </ul>
+            </dev>
+          </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <i class="bi bi-info-circle-fill"></i>
-                    ស្រោមសំបុត្រទី២
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="p-5 accordion-body">
-                    <div class="col-sm-8">
-                        <div class="mb-3">
-                            <label class="form-label" for="formCollapsibleSelect1">តួនាទី</label><select
-                                class="form-select" id="formCollapsibleSelect1">
-                                <option>មន្រ្តី</option>
-                                <option>មន្រ្តីកិច្ចសន្យា</option>
-                                <option>បុគ្គលិកហាត់ការ</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <i class="bi bi-info-circle-fill"></i>
-                    ស្រោមសំបុត្រទី៣
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="p-5 accordion-body">
-                    <div class="col-sm-8">
-                        <div class="mb-3">
-                            <label class="form-label" for="formCollapsibleRadio1">ភេទ</label>
-                            <div class="form-check">
-                                <input name="radioGroup1" type="radio" id="formCollapsibleRadio1"
-                                    class="form-check-input" /><label title="" for="formCollapsibleRadio1"
-                                    class="form-check-label">ស្រី</label>
-                            </div>
-                            <div class="form-check">
-                                <input name="radioGroup1" type="radio" id="formCollapsibleRadio1"
-                                    class="form-check-input" /><label title="" for="formCollapsibleRadio1"
-                                    class="form-check-label">ប្រុស</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="formCollapsibleInput5">មតិបន្ថែមរបស់អ្នក</label><textarea
-                                rows="5" placeholder="បញ្ចូល​អត្ថបទ​របស់​អ្នក​នៅ​ទីនេះ" type="text"
-                                id="formCollapsibleInput5" class="form-control"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <div class="form-check">
-                                <input type="checkbox" id="formCollapsibleCheckbox1" class="form-check-input" /><label
-                                    title="" for="formCollapsibleCheckbox1"
-                                    class="form-check-label">ខ្ញុំយល់ព្រមនឹងលក្ខខណ្ឌនៃកិច្ចព្រមព្រៀងអតិថិជន
-                                    និងគោលការណ៍ឯកជនភាព</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="d-flex justify-content-end my-8 mx-md-8">
-        <button type="button" class="btn btn-primary cgds">​ដាក់​ស្នើ</button>
-    </div>
-    <!-- Footer component -->
-    <footer class="cgds footer">
-        <section class="footer-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="widget flex-column">
-                            <div class="logo">
-                                <img src="/assets/uncompressed_images/logo_DGC_Square-new.svg" style="width: 200px"
-                                    alt="dgc logo">
-                            </div>
-                            <div class="social-icon">
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <img src="/assets/uncompressed_images/icon/Facebook.svg"
-                                                alt="facebook-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="/assets/uncompressed_images/icon/YouTube.svg" alt="youtube-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="/assets/uncompressed_images/icon/Telegram.svg"
-                                                alt="telegram-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="/assets/uncompressed_images/icon/Tiktok.svg" alt="tiktok-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="/assets/uncompressed_images/icon/Linkin.svg" alt="linkin-icon">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="title">
-                            ជួរទី១
-                        </div>
-                        <ul class="links">
-                            <li><a href="">អំពីយើង</a></li>
-                            <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="title">
-                            ជួរទី២
-                        </div>
-                        <ul class="links">
-                            <li><a href="">អំពីយើង</a></li>
-                            <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="title">
-                            ជួរទី៣
-                        </div>
-                        <ul class="links">
-                            <li><a href="">អំពីយើង</a></li>
-                            <li><a href="">អក្សរនេះសម្រាប់មើលតេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                            <li><a href="">តេស្ត</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="footer-bottom">
-            <div class="container-fluid">
-                <div class="row footer-copyrights">
-                    <div class="col">
-                        <div class="d-flex justify-content-lg-start text-start">
-                            DGC © 2023 ~ រក្សាសិទ្ធិដោយគណៈកម្មាធិការរដ្ឋាភិបាលឌីជីថល
-                        </div>
-                    </div>
-                    <div class="col">
-                        <dev class="d-flex justify-content-lg-end text-end">
-                            <ul>
-                                <li><a href="" target="_blank" rel="noopener noreferrer">រាយការណ៍ពីភាពខ្វះខាត</a></li>
-                                <li><a href="">ឯកជនភាព</a></li>
-                                <li><a href="">លក្ខខណ្ឌនៃប្រើប្រាស់</a></li>
-                            </ul>
-                        </dev>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
+      </div>
+    </section>
+  </footer>
 </div>
 {% endcapture %}
 
 <!-- Page starts here -->
 <div class="page-component mb-5">
-    <!-- Generated header from front end matters -->
-    {% include page-component/component-header.html %}
+  <!-- Generated header from front end matters -->
+  {% include page-component/component-header.html %}
 
-    <section name="section-examples">
-        <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
-        <div class="section-sub">
-            {% include page-component/component-code-snippet.html
-            compName="collapsible-page-form" code=collapsible-page-form %}
-        </div>
-    </section>
+  <section name="section-examples">
+    <h2 class="title fw-bold" id="example">ឧទាហរណ៍</h2>
+    <div class="section-sub">
+      {% include page-component/component-code-snippet.html
+      compName="collapsible-page-form" code=collapsible-page-form %}
+    </div>
+  </section>
 </div>

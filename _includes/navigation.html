@@ -1,77 +1,77 @@
 <nav class="cgds navbar flex-column navbar-expand-lg">
-    <header class="container d-flex flex-nowrap px-4 px-md-5">
-        <div class="w-100 d-flex align-items-center justify-content-between px-4 px-md-5 py-4 py-sm-6 py-md-3 py-lg-4">
-            <a class="navbar-brand" href="/"><img src="/assets/uncompressed_images/logo_dgc_rectangle.svg"
-                    alt="Home"></a>
-        </div>
-        <div class="d-flex align-items-center">
-            <nav class="social d-flex me-3">
-                <ul id="menu-social-menu" class="d-flex">
-                    <li class="nav-icon-social">
-                        <a class="nav-link" aria-current="page" href="{{site.gitlab-link}}">
-                            <i class="bi bi-gitlab" target="_blank" style="line-height: 1;"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="d-flex flag-icon text-center me-2">
-                {% if site.lang == 'kh' %}
-                <a role="button" class="cgds btn {{class}} h1" href="{{site.baseurl_root }}/en{{page.url}}"><img
-                        src="/assets/uncompressed_images/united-kingdom-flag-icon.svg" width="32px" height="24px"
-                        alt="Home"></a>
-                {%else %}
-                <a role="button" class="cgds btn {{class}} h1" href="{{site.baseurl_root }}{{page.url}}"><img
-                        src="/assets/uncompressed_images/cambodia-flag-icon.svg" width="32px" height="24px"
-                        alt="Home"></a>
-                {% endif %}
-            </div>
-            <nav class="social d-lg-block me-1">
-                <ul id="menu-social-menu" class="d-flex">
-                    <li class="nav-icon-social">
-                        <span class="cgds-line"></span>
-                    </li>
-                </ul>
-            </nav>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    {%- assign class = nil -%}
-                    {%- if page.url contains 'get-started' -%}
-                    {%- assign class = 'active' -%}
-                    {%- endif -%}
-                    <li class="nav-item align-self-center">
-                        <a class="cgds btn-gt {{class}}" aria-current="page"
-                            href="/get-started/">{% t navigation.get-started %}</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="mobile-toggle d-flex align-items-center d-lg-none">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list h1"></i>
-                </button>
-            </div>
-        </div>
-    </header>
-    <div class="px-4 px-md-5">
-        <div class="collapse navbar-collapse px-4 px-md-5" id="navbarNav">
-            <ul class="navbar-nav">
-                {% for item in site.data.navigation %}
-                {%- assign class = nil -%}
-                {%- if page.url contains item.title or page.url == '/' and item.title == 'home' -%}
-                {%- assign class = 'active' -%}
-                {%- endif -%}
-                <li class="nav-item {{item.title}}">
-                    {% if site.lang == 'kh' %}
-                    <a class="nav-link {{class}}" aria-current="page"
-                        href="{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
-                    {%else %}
-                    <a class="nav-link {{class}}" aria-current="page"
-                        href="/en{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
-                    {% endif %}
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+  <header class="container d-flex flex-nowrap px-4 px-md-5">
+    <div class="w-100 d-flex align-items-center justify-content-between px-4 px-md-5 py-4 py-sm-6 py-md-3 py-lg-4">
+      <a class="navbar-brand" href="/"><img src="/assets/uncompressed_images/logo_dgc_rectangle.svg"
+                                            alt="Home"></a>
     </div>
+    <div class="d-flex align-items-center">
+      <nav class="social d-flex me-3">
+        <ul id="menu-social-menu" class="d-flex">
+          <li class="nav-icon-social">
+            <a class="nav-link" aria-current="page" href="{{site.gitlab-link}}">
+              <i class="bi bi-gitlab" target="_blank" style="line-height: 1;"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-flex flag-icon text-center me-2">
+        {% if site.lang == 'kh' %}
+        <a role="button" class="cgds btn {{class}} h1" href="{{site.baseurl_root }}/en{{page.url}}"><img
+          src="/assets/uncompressed_images/united-kingdom-flag-icon.svg" width="32px" height="24px"
+          alt="Home"></a>
+        {%else %}
+        <a role="button" class="cgds btn {{class}} h1" href="{{site.baseurl_root }}{{page.url}}"><img
+          src="/assets/uncompressed_images/cambodia-flag-icon.svg" width="32px" height="24px"
+          alt="Home"></a>
+        {% endif %}
+      </div>
+      <nav class="social d-lg-block me-1">
+        <ul id="menu-social-menu" class="d-flex">
+          <li class="nav-icon-social">
+            <span class="cgds-line"></span>
+          </li>
+        </ul>
+      </nav>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          {%- assign class = nil -%}
+          {%- if page.url contains 'get-started' -%}
+          {%- assign class = 'active' -%}
+          {%- endif -%}
+          <li class="nav-item align-self-center">
+            <a class="cgds btn-gt {{class}}" aria-current="page"
+               href="/get-started/">{% t navigation.get-started %}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-toggle d-flex align-items-center d-lg-none">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list h1"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="px-4 px-md-5">
+    <div class="collapse navbar-collapse px-4 px-md-5" id="navbarNav">
+      <ul class="navbar-nav">
+        {% for item in site.data.navigation %}
+        {%- assign class = nil -%}
+        {%- if page.url contains item.title or page.url == '/' and item.title == 'home' -%}
+        {%- assign class = 'active' -%}
+        {%- endif -%}
+        <li class="nav-item {{item.title}}">
+          {% if site.lang == 'kh' %}
+          <a class="nav-link {{class}}" aria-current="page"
+             href="{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
+          {%else %}
+          <a class="nav-link {{class}}" aria-current="page"
+             href="/en{{item.url}}">{{site.translations[site.lang].navigation.[item.title]}}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </nav>
