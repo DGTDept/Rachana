@@ -17,12 +17,14 @@
 
     {% if page.source-grid %}
     <div class="component-source-grid">
-      {% if page.category == 'mandatory' %}
-      <div><span class="cgds badge badge-light bg-danger">{{page.category | capitalize}}</span></div>
-      {% elsif page.category == 'required' %}
-      <div><span class="cgds badge badge-light bg-success">{{page.category | capitalize}}</span></div>
-      {% elsif page.category == 'general' %}
-      <div><span class="cgds badge badge-light bg-primary">{{page.category | capitalize}}</span></div>
+      {% if page.category contains 'categories.' %}
+        {% if page.category == "categories.mandatory" %}
+        <div><span class="cgds badge badge-light bg-danger">{% t page.category %}</span></div>
+        {% elsif page.category == 'categories.required' %}
+        <div><span class="cgds badge badge-light bg-success">{% t page.category %}</span></div>
+        {% elsif page.category == 'categories.general' %}
+        <div><span class="cgds badge badge-light bg-primary">{% t page.category %}</span></div>
+        {% endif %}
       {% endif %}
 
       {% if page.gitlab-link %}
