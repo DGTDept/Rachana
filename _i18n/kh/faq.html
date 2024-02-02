@@ -1,0 +1,88 @@
+<section class="page-faqs">
+  <header>
+    {% include breadcrumb.html %}
+    <h1 class="fw-bold">តើ​យើង​អាច​ជួយ​អ្នក​ដោយ​របៀបណា​? </h1>
+    {% if site.search %}
+    <div class="cgds form-group">
+      <label for="search" class="form-label">ស្វែងរក៖</label>
+      <input type="text" class="js-shuffle-search form-control" id="search">
+    </div>
+    {% endif %}
+  </header>
+
+  <!-- FAQ 1 -->
+  <div class="cgds accordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFaq1" aria-expanded="false" aria-controls="collapseFaq1">
+          តើអ្នកណាខ្លះអាចប្រើប្រាស់សមាសភាគរបស់​ Rachana បាន​?
+        </button>
+      </h2>
+      <div id="collapseFaq1" class="accordion-collapse collapse" aria-labelledby="faq1">
+        <div class="accordion-body">
+          សមាសភាគរបស់​ Rachana ត្រូវបានរចនាឡើងសម្រាប់មនុស្សគ្រប់គ្នា។​​ យើងលើកទឹកចិត្តឱ្យទាំងស្ថាប័នរដ្ឋ​ និងឯកជនប្រើប្រាស់វា​ ពីព្រោះ Rachana បានផ្តល់ដំណោះស្រាយសម្រាប់បញ្ហាក្នុងការប្រើប្រាស់មួយចំនួនធំ​ និងផ្តល់លទ្ធភាពប្រើប្រាស់ទៅកាន់មនុស្សគ្រប់រូប។
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 2 -->
+  <div class="cgds accordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
+          តើខ្ញុំគួរជ្រើសយកសមាសភាគណាមកប្រើប្រសិនបើរបារខាងលើមានធាតុច្រើន?
+        </button>
+      </h2>
+      <div id="collapseFaq2" class="accordion-collapse collapse" aria-labelledby="faq2">
+        <div class="accordion-body">
+          អ្នកអាចយករបារខាងលើប្រភេទ mega menu សម្រាប់របារដែលមានធាតុ៣ថ្នាក់បាន។ ចុច <a href="/components/main-navigation">ទីនេះ</a> ដើម្បីមើលវា។
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 3 -->
+  <div class="cgds accordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFaq3" aria-expanded="false" aria-controls="collapseFaq3">
+          តើមានបញ្ហាអ្វីជាចម្បងប្រសិនបើយើងប្រើប្រាស់ Rachana?
+        </button>
+      </h2>
+      <div id="collapseFaq3" class="accordion-collapse collapse" aria-labelledby="faq3">
+        <div class="accordion-body">
+          ការអភិវឌ្ឍ Rachana ឡើងគឺយើងបានបង្កើតវាដោយធានាឱ្យមានបញ្ហាតិចបំផុត ទាំងក្នុងករណីប្រើប្រាស់វាតែមួយគត់ និងករណីប្រើប្រាស់វាជាមួយក្របខ័ណ្ឌដទៃ។
+          <br>
+          <br>ដើម្បីកាត់បន្ថយបញ្ហាដែលអាចកើតមាន ចូរអ្នកចងចាំចំណុចមួយចំនួនខាងក្រោមនេះនៅពេលអ្នកប្រើប្រាស់វាជាមួយក្របខ័ណ្ឌដទៃ៖
+          <br>
+          <ol>
+            <li>ត្រូវ include កូដ cgds.css នៅចុងក្រោយគេបង្អស់នៅក្នុង
+              <<code>head</code>> ដើម្បីធានាថា Rachana ជាក្របខ័ណ្ឌអាទិភាព សម្រាប់ការរចនាសមាសភាគសំខាន់ៗដូចជា របារខាងលើ របារសងខាង និងបាតកថា។
+            </li>
+            <li>
+              Rachana អាស្រ័យ និងយកតាមប្រព័ន្ធ grid របស់ក្របខ័ណ្ឌ Bootstrap's ជំនាន់ទី៥។
+            </li>
+          </ol>
+          អ្នកអាចអានការណែនាំខាងក្រោមដើម្បីដឹងពីរបៀបបញ្ចូលកូដ SASS របស់ Rachana និង Bootstrap នៅក្នុងឯកសារខាងក្រោមនេះ៖
+          <ul>
+            <li>
+              <a href="https://www.designsystem.tech.gov.sg/get-started/customise-with-sass">Customise with
+                Sass</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.1/customize/sass/">Bootstrap
+                Sass customisation</a>
+            </li>
+          </ul>
+          <p>
+            ការណែនាំនេះក៏អាចជួយឱ្យអ្នកអាចលុបចោលនូវសមាសភាគដែលមិនត្រូវការពីក្នុងកូដCSSដើម្បីឱ្យការដំណើរការលឿនជាងមុន។
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
