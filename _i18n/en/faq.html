@@ -1,0 +1,91 @@
+<section class="page-faqs">
+  <header>
+    {% include breadcrumb.html %}
+    <h1 class="fw-bold">How can we help you?</h1>
+    {% if site.search %}
+    <div class="cgds form-group">
+      <label for="search" class="form-label">Search:</label>
+      <input type="text" class="js-shuffle-search form-control" id="search">
+    </div>
+    {% endif %}
+  </header>
+
+  <!-- FAQ 1 -->
+  <div class="cgds accordion" id="accordion1">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFaq1" aria-expanded="false" aria-controls="collapseFaq1">
+          Who can use the components?
+        </button>
+      </h2>
+      <div id="collapseFaq1" class="accordion-collapse collapse" aria-labelledby="faq1">
+        <div class="accordion-body">
+          The components are built for everyone. We want government and private sector to embrace the components. It aims to solve common usability and accessibility problems in a simple and robust way.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 2 -->
+  <div class="cgds accordion" id="accordion2">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
+          Which component to use if Main Nav requires multiple dropdown?
+        </button>
+      </h2>
+      <div id="collapseFaq2" class="accordion-collapse collapse" aria-labelledby="faq2">
+        <div class="accordion-body">
+          You can consider using the mega menu component for level 3 navigation. An example can be found <a href="/components/main-navigation">here</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 3 -->
+  <div class="cgds accordion" id="accordion3">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFaq3" aria-expanded="false" aria-controls="collapseFaq3">
+          Will there be any performance issue if the system adopts Rachana style?
+        </button>
+      </h2>
+      <div id="collapseFaq3" class="accordion-collapse collapse" aria-labelledby="faq3">
+        <div class="accordion-body">
+          Rachana are built to ensure minimum conflicts and any reduction of performance when stack with other frameworks.<br>
+
+          <br>To further minimise the conflict, these are some important points you need to take note when using both Rachana and other css framework:<br>
+          <ol>
+            <li>Always include the cgds.css after other css framework in the
+
+              <code>head</code> tag. This is to ensure the Rachana stylesheet takes priority over bootstrap for the mandatory components styles (masthead, main navigation, side navigation & footer).
+            </li>
+            <li>
+              As much as possible, try to keep the same html structure to the mandatory components as they may be updated if there is amendment to the DSS.
+            </li>
+            <li>
+              We leverage on Bootstrap's v5 grid system and is built into the Rachana framework.
+            </li>
+          </ol>
+          You can also read up on the documentation on how to use SASS import here:
+          <ul>
+            <li>
+              <a href="{{site.baseurl}}/get-started/customise-with-sass">Customise with
+                Sass</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.1/customize/sass/">Bootstrap
+                Sass customisation</a>
+            </li>
+          </ul>
+          <p>
+            This method can also be used to remove unused components and can reduce the file size and loading time for both CSS.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
