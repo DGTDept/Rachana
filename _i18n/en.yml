@@ -39,8 +39,8 @@ headers:
   breadcrumb: Breadcrumb
   button: Button
   card: Card
-  checkbox: CheckBox
-  combo-box: Cambo Box
+  checkbox: Checkbox
+  combo-box: Combo Box
   dropdown: Dropdown
   file-upload: File Upload
   footer: Footer
