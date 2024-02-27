@@ -44,30 +44,6 @@
 
                     .logo {
                         margin-bottom: 20px;
-
-                        @include media-breakpoint-down(lg) {
-
-                            img,
-                            svg {
-                                width: 292px;
-                            }
-                        }
-
-                        @include media-breakpoint-up(lg) {
-
-                            img,
-                            svg {
-                                width: 254px;
-                            }
-                        }
-
-                        @include media-breakpoint-up(xxl) {
-
-                            img,
-                            svg {
-                                width: 320px;
-                            }
-                        }
                     }
 
                     @include media-breakpoint-down(sm) {
