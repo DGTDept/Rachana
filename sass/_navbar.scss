@@ -75,21 +75,6 @@
                                 @include gradient-bg($navbar-link-hover-bg);
                             }
                         }
-
-                        .cgds-line {
-                            @include media-breakpoint-up(lg) {
-                                height: 24px;
-                                border: 1px solid $navbar-line-color;
-                                margin-bottom: 0.5rem;
-                                margin-left: 1rem;
-                                margin-right: 1rem;
-                            }
-                            @include media-breakpoint-down(lg) {
-                                    height: 24px;
-                                    border: 1px solid $navbar-line-color;
-                                    margin-bottom: 0.5rem;
-                            }
-                        }
                     }
                 }
             }

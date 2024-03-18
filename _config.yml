@@ -17,9 +17,9 @@ search_placeholder: "What are you looking for?"
 
 
 #github links
-gitlab-link: https://git.anakotlab.com/cgds/cgds.git
-gitlab-cgds-variables: https://git.anakotlab.com/cgds/cgds/-/blob/dev/sass/_variables.scss
-gitlab-changelog: https://git.anakotlab.com/cgds/cgds/-/blob/dev/CHANGELOG.md
+github-link: https://github.com/DGTDept/Rachana
+github-cgds-variables: https://github.com/DGTDept/Rachana/blob/dev/sass/_variables.scss
+github-changelog: https://github.com/DGTDept/Rachana/blob/dev/CHANGELOG.md
 
 #footer links
 report-vulnerability: "https://form.gov.kh/651cea27dc95760012665cbc"
