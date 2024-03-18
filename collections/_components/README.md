@@ -14,7 +14,7 @@ description: A dropdown mechanism that allow users to either show or hide relate
 category: general 
 react-link: https://....
 vue-link: https://....
-gitlab-link: https://....
+github-link: https://....
 toc: true
 ---
 ```
@@ -31,7 +31,7 @@ toc: true
 >
 > vue-link: Link to the component in vue storybook, if any
 >
-> gitlab-link: Link to the component in github repo
+> github-link: Link to the component in github repo
 >
 > toc: **true** / **false** enable table of contents
 
