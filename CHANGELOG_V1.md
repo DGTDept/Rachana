@@ -164,7 +164,7 @@ We will be pushing up additional components and features in the upcoming months.
     - `Info` -> `#008196`
     - `Link` -> `#0070F2`
 
-- Added instructions for releasing. See [Readme.md](https://github.com/GovTechSG/sgds/blob/master/README.md)
+- Added instructions for releasing. See [Readme.md](https://github.com/DGTDept/Rachana/blob/dev/README.md)
 
 ### Fixes
 - Fixed missing gutters (left/right) for `cgds-container`

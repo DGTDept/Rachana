@@ -152,11 +152,11 @@ This section contains the anatomy of all variants
 >
 > This contain your main image for Anatomy
 >
-> ![Anatomy Master](https://github.com/GovTechSG/sgds/blob/2.0.0-dev/assets/uncompressed_images/example-template/anatomy-1.png?raw=true)
+> ![Anatomy Master](https://github.com/DGTDept/Rachana/blob/dev/assets/uncompressed_images/example-template/anatomy-1.png?raw=true)
 >
 > If you need to add in more images, add ```div.sgds-example-image-subgrid``` inside the image grid
 >
-> ![Anatomy Master](https://github.com/GovTechSG/sgds/blob/2.0.0-dev/assets/uncompressed_images/example-template/anatomy-2.png?raw=true)
+> ![Anatomy Master](https://github.com/DGTDept/Rachana/blob/dev/assets/uncompressed_images/example-template/anatomy-2.png?raw=true)
 >
 ## Folder structure for anatomy images.
 
@@ -190,11 +190,11 @@ This section contains the spacing of all variants
 >
 > This contain your main image for Spacing
 >
-> ![Anatomy Master](https://github.com/GovTechSG/sgds/blob/2.0.0-dev/assets/uncompressed_images/example-template/spacing-1.png?raw=true)
+> ![Anatomy Master](https://github.com/DGTDept/Rachana/blob/dev/assets/uncompressed_images/example-template/spacing-1.png?raw=true)
 >
 > If you need to add in more images, add ```div.sgds-example-image-subgrid``` inside the image grid
 >
-> ![Anatomy Master](https://github.com/GovTechSG/sgds/blob/2.0.0-dev/assets/uncompressed_images/example-template/spacing-2.png?raw=true)
+> ![Anatomy Master](https://github.com/DGTDept/Rachana/blob/dev/assets/uncompressed_images/example-template/spacing-2.png?raw=true)
 >
 
 ## Folder structure for spacing images.

@@ -1,7 +1,7 @@
 # Contributing Guide
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-Thank you so much for contributing to @govtechsg/sgds. Please read this guideline before starting your development works. 
+Thank you so much for contributing to @dgtdept/rachana. Please read this guideline before starting your development works. 
 
 ## Development
 
