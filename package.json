@@ -20,6 +20,7 @@
     "build": "npm run build:site && bundle exec jekyll build",
     "build:lib": "rm -rf ./css && webpack --mode=production",
     "build:site": "npm run build:lib",
+    "build:cloudfare": "npm install && bundle install && npm run build",
     "dev": "concurrently npm:dev:static npm:dev:jekyll",
     "dev:jekyll": "bundle exec jekyll serve --host 0.0.0.0",
     "dev:static": "webpack --watch",
@@ -28,6 +29,7 @@
     "start": "bundle exec jekyll serve",
     "prepare": "husky install"
   },
+
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
