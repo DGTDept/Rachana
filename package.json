@@ -20,7 +20,7 @@
     "build": "npm run build:site && bundle exec jekyll build",
     "build:lib": "rm -rf ./css && webpack --mode=production",
     "build:site": "npm run build:lib",
-    "build:cloudfare": "npm install && npm audit fix && bundle install && npm run build",
+    "build:cloudfare": "npm install && bundle install && npm run build",
     "dev": "concurrently npm:dev:static npm:dev:jekyll",
     "dev:jekyll": "bundle exec jekyll serve --host 0.0.0.0",
     "dev:static": "webpack --watch",
