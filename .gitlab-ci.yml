@@ -21,6 +21,8 @@ staging-deploy:
     - chmod 700 ~/.ssh
     - curl -sL https://deb.nodesource.com/setup_16.x | bash - 
     - apt install nodejs
+    - bundle config set --local specific_platform true
+    - gem install sassc
   script:
     - npm install
     - bundle install

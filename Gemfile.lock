@@ -89,12 +89,12 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.0)
   jekyll-get-json (~> 1.0)
-  jekyll-multiple-languages-plugin (~> 1.8.0)
+  jekyll-multiple-languages-plugin
   jekyll-redirect-from (~> 0.16)
   jekyll-seo-tag (~> 2.6)
-  jekyll-sitemap (~> 1.4.0)
-  jekyll-toc (~> 0.17.1)
-  rouge (~> 3.0)
+  jekyll-sitemap
+  jekyll-toc
+  rouge
   tzinfo-data
   webrick (~> 1.7)
 
