@@ -1,7 +1,7 @@
 stages:
-- sonar
-- staging-deploy
-- release-package
+  - sonar
+  - staging-deploy
+  - release-package
 
 sonarqube-check:
   stage: sonar
@@ -12,36 +12,38 @@ sonarqube-check:
 
 staging-deploy:
   stage: staging-deploy
-  image: ruby:2.7.6-slim
+  image: ruby:3.1.0-slim
   before_script:
     - apt-get update -qq && apt-get install -y build-essential -y curl -y openssh-client
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
-    - curl -sL https://deb.nodesource.com/setup_16.x | bash - 
+    - curl -sL https://deb.nodesource.com/setup_16.x | bash -
     - apt install nodejs
+    - bundle config set --local specific_platform true
   script:
     - npm install
     - bundle install
     - npm run build
     - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r _site/* $DEST_FOLDER_URL
   only:
-  - dev
+    - dev
 
 release-package:
   stage: release-package
-  image: ruby:2.7.6-slim
+  image: ruby:3.1.0-slim
   before_script:
     - apt-get update -qq && apt-get install -y build-essential -y curl -y openssh-client
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
-    - curl -sL https://deb.nodesource.com/setup_16.x | bash - 
+    - curl -sL https://deb.nodesource.com/setup_16.x | bash -
     - apt install nodejs
+    - bundle config set --local specific_platform true
   script:
-    - npm i nstall
+    - npm install
     - bundle install
     - npm ci
     - npm run build:lib
