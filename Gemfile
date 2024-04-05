@@ -1,14 +1,14 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~>4.0"
-gem 'rouge', '~>3.0'
+gem 'rouge'
 
 group :jekyll_plugins do
   gem "jekyll-seo-tag", "~>2.6"
   gem 'jekyll-redirect-from', "~>0.16"
-  gem 'jekyll-toc', '~>0.17.1'
-  gem 'jekyll-sitemap', '~>1.4.0'
-  gem 'jekyll-multiple-languages-plugin', '~>1.8.0'
+  gem 'jekyll-toc'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-multiple-languages-plugin'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
