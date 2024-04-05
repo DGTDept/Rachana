@@ -12,7 +12,7 @@ sonarqube-check:
 
 staging-deploy:
   stage: staging-deploy
-  image: ruby:3.1.0-slim
+  image: ruby:3.2.2-slim
   before_script:
     - apt-get update -qq && apt-get install -y build-essential -y curl -y openssh-client
     - eval $(ssh-agent -s)  
@@ -34,7 +34,7 @@ staging-deploy:
 
 release-package:  
   stage: release-package
-  image: ruby:3.1.0-slim
+  image: ruby:3.2.2-slim
   before_script:
     - apt-get update -qq && apt-get install -y build-essential -y curl -y openssh-client
     - eval $(ssh-agent -s)
