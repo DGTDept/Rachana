@@ -1,16 +1,16 @@
 # For Jekyll SEO
-title: Cambodia Government Design System
+title: Government Design Component 
 description-en: >-
-  The Cambodia Government Design System was developed to empower teams in creating fast, accessible and mobile-friendly digital services.
+  The Government Design Component  was developed to empower teams in creating fast, accessible and mobile-friendly digital services.
 description-kh: >-
   យើងធ្វើឱ្យវាកាន់តែងាយស្រួលក្នុងការបង្កើតគេហទំព័ររដ្ឋាភិបាលដែលងាយស្រួលប្រើ និងឆាប់រហ័សក្នុងការបង្កើត។
 logo: /assets/img/logo_dgc_rectangle.svg
-url: http://www.ds.anakotlab.com/
+url: https://rachana.gov.kh/
   
 # Site data
 cgds-version: 1.0.0
 cgds-package-name: >- 
-  @cgds/cgds
+  @dgtdept/rachana
 bootstrap-version: 5.1.3
 
 search_placeholder: "What are you looking for?"
@@ -35,7 +35,7 @@ feedback-form: "https://form.gov.kh/"
 bootstrap-version: 5.1.3
 
 #offcanvas link
-npm-link: https://www.npmjs.com/package/@cgds/cgds
+npm-link: https://www.npmjs.com/package/@dgtdept/rachana
 
 plugins:
   - jekyll-seo-tag
@@ -141,7 +141,7 @@ toc:
     
 jekyll_get_json: 
   - data: npm-data-prev-ver
-    json: 'https://registry.npmjs.org/-/v1/search?text=@cgds/cgds'
+    json: 'https://registry.npmjs.org/-/v1/search?text=@dgtdept/rachana'
 
 languages: ['kh', 'en']
 exclude_from_localizations: ['javascript', 'images', 'css', 'html']
