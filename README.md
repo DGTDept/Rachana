@@ -1,6 +1,6 @@
-# Cambodia Government Design System
+# Government Design Component 
 
-The [Cambodia Government Design System](https://www.rachana.gov.kh) was developed to empower teams in creating fast, accessible and mobile-friendly digital services.
+The [Government Design Component ](https://www.rachana.gov.kh) was developed to empower teams in creating fast, accessible and mobile-friendly digital services.
 
 
 ***
