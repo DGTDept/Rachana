@@ -1,8 +1,13 @@
 <nav class="cgds navbar flex-column navbar-expand-lg">
   <header class="container d-flex px-4 px-md-5">
     <div class="d-flex align-items-center justify-content-between px-4 px-md-5 py-4 py-sm-6 py-md-3 py-lg-4">
+      {% if site.lang == 'kh' %}
       <a class="navbar-brand" href="/">
         <img src="/assets/uncompressed_images/rachana.svg" alt="Home" height="80"></a>
+      {%else %}
+      <a class="navbar-brand" href="/en">
+        <img src="/assets/uncompressed_images/rachana.svg" alt="Home" height="80"></a>
+      {% endif %}
     </div>
     <div class="d-flex align-items-center">
       <nav class="social d-flex me-3">
