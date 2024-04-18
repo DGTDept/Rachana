@@ -1,65 +1,34 @@
 # Government Design Component 
 
-The [Government Design Component ](https://www.rachana.gov.kh) was developed to empower teams in creating fast, accessible and mobile-friendly digital services.
+<p align="center">
+  <a href="https://rachana.gov.kh"><img src="https://rachana.gov.kh/assets/uncompressed_images/rachana.svg"></a>
+</p>
 
+ [![npm Version](https://img.shields.io/npm/v/@dgtdept/rachana?style=for-the-badge)](https://www.npmjs.com/package/@dgtdept/rachana) 
+ [![ruby: v3.2.2 up](https://img.shields.io/badge/Ruby-v3.2.2_up-CC342D?style=for-the-badge)](https://www.ruby-lang.org/en/)
+ [![ruby: v2.3.13 up](https://img.shields.io/badge/Bundle-v2.3.13_up-417e33?style=for-the-badge)](https://www.ruby-lang.org/en/)
+ [![GitHub issues](https://img.shields.io/github/issues/DGTDept/Rachana?style=for-the-badge&logo=github)](https://github.com/DGTDept/Rachana/issues) 
+ ![code style: beautify](https://img.shields.io/badge/code_style-beautify-ff69b4?style=for-the-badge)
+
+The [Government Design Component ](https://www.rachana.gov.kh) was developed to empower teams in creating fast, accessible and mobile-friendly digital services includes a library of open source UI components for Cambodia government websites.
 
 ***
+## Table of Content
+- **Designers:** Check out our [Getting started for designers information](https://rachana.gov.kh/en/get-started/ui-kit).
+- **Developers:** Check out our [Getting started for developers information](https://rachana.gov.kh/en/get-started/). If your want install project from our repo, follow the instructions in this README to [Guide for install Rachana.](/src/README.MD)
+- **Wordpress Theme:** (WORK-IN-PROGRESS)
 
-## Installation
-### CSS
+***
+## Contribute
 
-```html
-<head>
-    ...
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@dgtdept/rachana/css/cgds.css"
-    />
-    ...
-</head>
-```
+To Contribute and for repository setup, please read [CONTRIBUTTING.md](/CONTRIBUTING.md)
 
-### Vanilla JavaScript
+*** 
+## Acknowledgements
 
-Rachana components makes use of [bootstrap v5.1.3 js library](https://getbootstrap.com/docs/5.1/getting-started/javascript/) as an external dependency.
-
-
->`@dgtdept/rachana` uses `bootstrap-icons` for certain components like Form but it is not ship with it. Install `bootstrap-icons` or use CDN if you need it. Please refer to [bootstrap-icons](bootstrap-icons) for usage instructions.
-
-```html
-<head>
-  ...
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dgtdept/rachana/css/cgds.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  ...
-</head>
-
-<body>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-</body>
-```
-
-For more information, please refer to the [components documentation](https://www.rachana.gov.kh/components).
-
-### Via NPM
-
-```sh
-$ npm i @dgtdept/rachana bootstrap-icons
-```
-
-### For Webpack
-
-```js
-//importing css
-import "@dgtdept/rachana/css/cgds.css";
-
-import '@popperjs/core';
-import * as bootstrap from 'bootstrap';
-```
-
-
-## Patch Notes
-
-See [Changelog](./CHANGELOG.md)
+Contributions have also been made by:  
+[@Jame007](https://github.com/RathanakSreang)  
+[@Virakden](https://github.com/Virakden126)  
+[@Neron](https://github.com/pr0meth4us)  
+[@LengHeang](https://github.com/lengheang-0116)  
+[@Sreytoch](https://github.com/chamsreytouch)  
