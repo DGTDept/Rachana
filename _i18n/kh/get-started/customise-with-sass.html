@@ -55,13 +55,13 @@ site-folder/
 @import "~{{site.cgds-package-name}}/sass/accordion";
 {% endcapture %}
 
-{% capture sgds-variable %}
+{% capture cgds-variable %}
 node_modules/
 └── {{site.cgds-package-name}}/sass/
 └── _variables.scss
 {% endcapture %}
 
-{% capture sgds-variable-example %}
+{% capture cgds-variable-example %}
 // Required
 @import "~{{site.cgds-package-name}}/sass/functions";
 
@@ -70,7 +70,7 @@ $body-bg: #000;
 $body-color: #111;
 
 // Required
-@import "~{{site.cgds-package-name}}/sass/sgds-variables";
+@import "~{{site.cgds-package-name}}/sass/cgds-variables";
 
 
 // Optional components here
@@ -173,7 +173,7 @@ $body-color: #111;
       អ្នកអាចចូលមើលបញ្ជីនៃអញ្ញាត្តិទាំងអស់ក្នុង <code>{{site.cgds-package-name}}/sass/_variables.scss</code> និងក្នុង <a href="{{site.gitlab-cgds-variables}}" target="_blank" rel="noopener noreferrer">GitLab repository របស់ Rachana។ </a>
     </p>
     <p>ឧទាហរណ៍ខាងក្រោមបង្ហាញពីការប្តូរ <code>background-color</code> និង color សម្រាប់ <code>body</code> បន្ទាប់ពីការបញ្ជូល <code>cgds-theme</code> តាម npm:</p>
-    {% highlight scss %}{{sgds-variable-example}}{% endhighlight %}
+    {% highlight scss %}{{cgds-variable-example}}{% endhighlight %}
 
   </section>
 </div>

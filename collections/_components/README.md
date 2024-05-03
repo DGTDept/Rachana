@@ -154,7 +154,7 @@ This section contains the anatomy of all variants
 >
 > ![Anatomy Master](https://github.com/DGTDept/Rachana/blob/dev/assets/uncompressed_images/example-template/anatomy-1.png?raw=true)
 >
-> If you need to add in more images, add ```div.sgds-example-image-subgrid``` inside the image grid
+> If you need to add in more images, add ```div.cgds-example-image-subgrid``` inside the image grid
 >
 > ![Anatomy Master](https://github.com/DGTDept/Rachana/blob/dev/assets/uncompressed_images/example-template/anatomy-2.png?raw=true)
 >
@@ -186,13 +186,13 @@ This section contains the spacing of all variants
     </div>
 </section>
 ```
-> ```.sgds-example-image-grid``` 
+> ```.cgds-example-image-grid``` 
 >
 > This contain your main image for Spacing
 >
 > ![Anatomy Master](https://github.com/DGTDept/Rachana/blob/dev/assets/uncompressed_images/example-template/spacing-1.png?raw=true)
 >
-> If you need to add in more images, add ```div.sgds-example-image-subgrid``` inside the image grid
+> If you need to add in more images, add ```div.cgds-example-image-subgrid``` inside the image grid
 >
 > ![Anatomy Master](https://github.com/DGTDept/Rachana/blob/dev/assets/uncompressed_images/example-template/spacing-2.png?raw=true)
 >
