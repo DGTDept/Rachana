@@ -3600,7 +3600,7 @@
      * @cssprop --overlay-background-color - The drawer and modal component overlay background color
      * @cssprop --zindex-modal - The drawer and modal component z-index value
      */
-    class SgdsElement extends s$3 {
+    class CgdsElement extends s$3 {
         /** Emits a custom event with more convenient defaults. */
         emit(name, options) {
             const event = new CustomEvent(name, Object.assign({ bubbles: true, cancelable: false, composed: true, detail: {} }, options));
@@ -3608,7 +3608,7 @@
             return event;
         }
     }
-    SgdsElement.styles = css_248z$1;
+    CgdsElement.styles = css_248z$1;
   
     function genId (componentName = "", elementName = "") {
         return `id-${Math.random().toString().substring(2, 6)}-cgds-${componentName}-${elementName}`;
@@ -3624,7 +3624,7 @@
      * @event cgds-after-hide - Emitted event when dropdown has hidden to the user and CSS transitions have completed
      * @event cgds-select - Emitted event when a slot item is selected
      */
-    class DropdownElement extends SgdsElement {
+    class DropdownElement extends CgdsElement {
         constructor() {
             super(...arguments);
             /** @internal */
@@ -3645,7 +3645,7 @@
             this.modifierOpt = [];
             /** When true, dropdown menu shows on first load */
             this.menuIsOpen = false;
-            /** Controls the close behaviour of dropdown menu. By default menu auto-closes when SgdsDropdownItem or area outside dropdown is clicked */
+            /** Controls the close behaviour of dropdown menu. By default menu auto-closes when CgdsDropdownItem or area outside dropdown is clicked */
             this.close = "default";
             /** Disables the dropdown toggle */
             this.disabled = false;
@@ -3749,7 +3749,7 @@
             }
         }
     }
-    DropdownElement.styles = SgdsElement.styles;
+    DropdownElement.styles = CgdsElement.styles;
     __decorate([
         n$4({ type: Boolean, state: true })
     ], DropdownElement.prototype, "noFlip", void 0);
@@ -4008,7 +4008,7 @@
      * @event cgds-blur - Emitted when input is not in focus.
      *
      */
-    class SgdsInput extends SgdsElement {
+    class CgdsInput extends CgdsElement {
         constructor() {
             super(...arguments);
             /**@internal */
@@ -4146,76 +4146,76 @@
       `;
         }
     }
-    SgdsInput.styles = SgdsElement.styles;
+    CgdsInput.styles = CgdsElement.styles;
     __decorate([
         i$1("input.form-control")
-    ], SgdsInput.prototype, "input", void 0);
+    ], CgdsInput.prototype, "input", void 0);
     __decorate([
         n$4({ reflect: true })
-    ], SgdsInput.prototype, "type", void 0);
+    ], CgdsInput.prototype, "type", void 0);
     __decorate([
         n$4({ reflect: true })
-    ], SgdsInput.prototype, "label", void 0);
+    ], CgdsInput.prototype, "label", void 0);
     __decorate([
         n$4({ reflect: true })
-    ], SgdsInput.prototype, "hintText", void 0);
+    ], CgdsInput.prototype, "hintText", void 0);
     __decorate([
         n$4({ reflect: true })
-    ], SgdsInput.prototype, "name", void 0);
+    ], CgdsInput.prototype, "name", void 0);
     __decorate([
         n$4({ reflect: true })
-    ], SgdsInput.prototype, "inputClasses", void 0);
+    ], CgdsInput.prototype, "inputClasses", void 0);
     __decorate([
         n$4({ type: String })
-    ], SgdsInput.prototype, "icon", void 0);
+    ], CgdsInput.prototype, "icon", void 0);
     __decorate([
         n$4({ type: Number, reflect: true })
-    ], SgdsInput.prototype, "minlength", void 0);
+    ], CgdsInput.prototype, "minlength", void 0);
     __decorate([
         n$4({ type: Number, reflect: true })
-    ], SgdsInput.prototype, "maxlength", void 0);
+    ], CgdsInput.prototype, "maxlength", void 0);
     __decorate([
         n$4({ type: String, reflect: true })
-    ], SgdsInput.prototype, "placeholder", void 0);
+    ], CgdsInput.prototype, "placeholder", void 0);
     __decorate([
         n$4({ type: String })
-    ], SgdsInput.prototype, "pattern", void 0);
+    ], CgdsInput.prototype, "pattern", void 0);
     __decorate([
         n$4({ type: Boolean, reflect: true })
-    ], SgdsInput.prototype, "autofocus", void 0);
+    ], CgdsInput.prototype, "autofocus", void 0);
     __decorate([
         n$4({ type: Boolean, reflect: true })
-    ], SgdsInput.prototype, "disabled", void 0);
+    ], CgdsInput.prototype, "disabled", void 0);
     __decorate([
         n$4({ type: Boolean, reflect: true })
-    ], SgdsInput.prototype, "required", void 0);
+    ], CgdsInput.prototype, "required", void 0);
     __decorate([
         n$4({ type: Boolean, reflect: true })
-    ], SgdsInput.prototype, "readonly", void 0);
+    ], CgdsInput.prototype, "readonly", void 0);
     __decorate([
         n$4({ reflect: true })
-    ], SgdsInput.prototype, "value", void 0);
+    ], CgdsInput.prototype, "value", void 0);
     __decorate([
         defaultValue()
-    ], SgdsInput.prototype, "defaultValue", void 0);
+    ], CgdsInput.prototype, "defaultValue", void 0);
     __decorate([
         n$4({ type: Boolean, reflect: true })
-    ], SgdsInput.prototype, "hasFeedback", void 0);
+    ], CgdsInput.prototype, "hasFeedback", void 0);
     __decorate([
         n$4({ type: String, reflect: true })
-    ], SgdsInput.prototype, "invalidFeedback", void 0);
+    ], CgdsInput.prototype, "invalidFeedback", void 0);
     __decorate([
         t$2()
-    ], SgdsInput.prototype, "invalid", void 0);
+    ], CgdsInput.prototype, "invalid", void 0);
     __decorate([
         t$2()
-    ], SgdsInput.prototype, "valid", void 0);
+    ], CgdsInput.prototype, "valid", void 0);
     __decorate([
         watch("disabled", { waitUntilFirstUpdate: true })
-    ], SgdsInput.prototype, "handleDisabledChange", null);
+    ], CgdsInput.prototype, "handleDisabledChange", null);
     __decorate([
         watch("value", { waitUntilFirstUpdate: true })
-    ], SgdsInput.prototype, "handleValueChange", null);
+    ], CgdsInput.prototype, "handleValueChange", null);
   
     var css_248z = i$5`.form-control-icon{bottom:0}`;
   
@@ -4250,7 +4250,7 @@
             const currentItemNo = items.indexOf(e.target);
             this.nextDropdownItemNo = currentItemNo + 1;
             this.prevDropdownItemNo = currentItemNo <= 0 ? items.length - 1 : currentItemNo - 1;
-            /** Emitted event from SgdsDropdown element when a slot item is selected */
+            /** Emitted event from CgdsDropdown element when a slot item is selected */
             const selectedItem = e.target;
             if (!selectedItem.disabled) {
                 this.emit("cgds-select");
@@ -4350,11 +4350,11 @@
      * @event cgds-select - Emitted when the combo box's selected value changes.
      * @event cgds-input -  Emitted when user input is received and its value changes.
      */
-    class SgdsComboBox extends ScopedElementsMixin(DropdownListElement) {
+    class CgdsComboBox extends ScopedElementsMixin(DropdownListElement) {
         /**@internal */
         static get scopedElements() {
             return {
-                "cgds-input": SgdsInput
+                "cgds-input": CgdsInput
             };
         }
         constructor() {
@@ -4451,51 +4451,51 @@
       `;
         }
     }
-    SgdsComboBox.styles = [DropdownElement.styles, css_248z];
+    CgdsComboBox.styles = [DropdownElement.styles, css_248z];
     __decorate([
         n$4({ reflect: true })
-    ], SgdsComboBox.prototype, "label", void 0);
+    ], CgdsComboBox.prototype, "label", void 0);
     __decorate([
         n$4({ reflect: true })
-    ], SgdsComboBox.prototype, "hintText", void 0);
+    ], CgdsComboBox.prototype, "hintText", void 0);
     __decorate([
         n$4({ reflect: true })
-    ], SgdsComboBox.prototype, "name", void 0);
+    ], CgdsComboBox.prototype, "name", void 0);
     __decorate([
         n$4({ type: String, reflect: true })
-    ], SgdsComboBox.prototype, "placeholder", void 0);
+    ], CgdsComboBox.prototype, "placeholder", void 0);
     __decorate([
         n$4({ type: Boolean, reflect: true })
-    ], SgdsComboBox.prototype, "autofocus", void 0);
+    ], CgdsComboBox.prototype, "autofocus", void 0);
     __decorate([
         n$4({ type: Boolean, reflect: true })
-    ], SgdsComboBox.prototype, "disabled", void 0);
+    ], CgdsComboBox.prototype, "disabled", void 0);
     __decorate([
         n$4({ type: Boolean, reflect: true })
-    ], SgdsComboBox.prototype, "required", void 0);
+    ], CgdsComboBox.prototype, "required", void 0);
     __decorate([
         n$4({ type: Boolean, reflect: true })
-    ], SgdsComboBox.prototype, "readonly", void 0);
+    ], CgdsComboBox.prototype, "readonly", void 0);
     __decorate([
         n$4({ reflect: true })
-    ], SgdsComboBox.prototype, "value", void 0);
+    ], CgdsComboBox.prototype, "value", void 0);
     __decorate([
         defaultValue()
-    ], SgdsComboBox.prototype, "defaultValue", void 0);
+    ], CgdsComboBox.prototype, "defaultValue", void 0);
     __decorate([
         n$4({ type: Array })
-    ], SgdsComboBox.prototype, "menuList", void 0);
+    ], CgdsComboBox.prototype, "menuList", void 0);
     __decorate([
         n$4({ type: Function })
-    ], SgdsComboBox.prototype, "filterFunction", void 0);
+    ], CgdsComboBox.prototype, "filterFunction", void 0);
     __decorate([
         t$2()
-    ], SgdsComboBox.prototype, "filteredMenuList", void 0);
+    ], CgdsComboBox.prototype, "filteredMenuList", void 0);
     __decorate([
         watch("value")
-    ], SgdsComboBox.prototype, "handleFilterMenu", null);
+    ], CgdsComboBox.prototype, "handleFilterMenu", null);
   
-    customElements.define("cgds-combo-box", SgdsComboBox);
+    customElements.define("cgds-combo-box", CgdsComboBox);
   
   }));
   //# sourceMappingURL=index.umd.js.map

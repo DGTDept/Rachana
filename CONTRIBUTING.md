@@ -20,7 +20,7 @@ Test out the latest development build:
 
 ```html
 <!-- CSS in <head> -->
-<link rel="stylesheet" href="https://dev.designsystem.gov.sg/css/sgds.css"/>
+<link rel="stylesheet" href="https://rachana.gov.kh/css/cgds.css"/>
 
 <!-- JS in <body> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
