@@ -55,7 +55,7 @@
     <div class="card-body">
       <h5 class="card-title">Card Title</h5>
       <a class="card-text">Some quick example text to build on the card
-      title and make up the bulk of the card's content.</a>
+        title and make up the bulk of the card's content.</a>
     </div>
   </div>
   <div class="card cgds">
@@ -106,6 +106,35 @@
           Go somewhere
         </a>
       </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture card-horizontal %}
+<div class="cgds-example-card-grid">
+  <div class="card cgds" variant="card-horizontal">
+    <img class="card-img-left" src="{{site.baseurl}}/assets/img/component/card/image-in-horizontal-card.svg"/>
+    <div class="card-body">
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a class="card-link blog-btn" href="#">
+        <i class="bi bi-arrow-right-circle-fill"></i>
+        Go somewhere
+      </a>
+    </div>
+  </div>
+  <div class="card cgds" variant="card-horizontal">
+    <img class="card-img-left" src="{{site.baseurl}}/assets/img/component/card/image-in-horizontal-card.svg"/>
+    <div class="card-body">
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a class="card-link blog-btn" href="#">
+        <i class="bi bi-arrow-right-circle-fill"></i>
+        Go somewhere
+      </a>
     </div>
   </div>
 </div>
@@ -252,6 +281,14 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
       compTitle="Customise card sub-components' HTML Elements"
       compName="customise-card"
       code=customise-card
+      %}
+    </div>
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
+      compTitle="Horizontal card"
+      compName="card-horizontal"
+      code=card-horizontal
       %}
     </div>
     <div class="section-sub">
@@ -444,7 +481,7 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
   <section name="section-design-tokens">
     <h2 class="title fw-bold" id="design-tokens">{% t headers.card %} design tokens</h2>
     {%- highlight sass -%}
-      {{card-design-tokens}}
+    {{card-design-tokens}}
     {%- endhighlight -%}
   </section>
 

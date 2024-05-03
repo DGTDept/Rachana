@@ -113,6 +113,35 @@
 </div>
 {% endcapture %}
 
+{% capture card-horizontal %}
+<div class="cgds-example-card-grid">
+  <div class="card cgds" variant="card-horizontal">
+    <img class="card-img-left" src="{{site.baseurl}}/assets/img/component/card/image-in-horizontal-card.svg"/>
+    <div class="card-body">
+      <p class="card-text"><small class="text-muted">ធ្វើបច្ចុប្បន្នភាពចុងក្រោយនៅ៣នាទីមុន</small></p>
+      <h3 class="card-title">ចំណងជើងកាត</h3>
+      <p class="card-text">ដាក់ពាក្យគន្លឹះខ្លីៗនៅលើចំណងជើងកាតដើម្បីតំណាងឱ្យអត្ថន័យរួមនៅក្នុងកាត។</p>
+      <a class="card-link blog-btn" href="#">
+        <i class="bi bi-arrow-right-circle-fill"></i>
+          ចុចសម្រាប់ទៅទំព័រផ្សេងៗ
+      </a>
+    </div>
+  </div>
+  <div class="card cgds" variant="card-horizontal">
+    <img class="card-img-left" src="{{site.baseurl}}/assets/img/component/card/image-in-horizontal-card.svg"/>
+    <div class="card-body">
+      <p class="card-text"><small class="text-muted">ធ្វើបច្ចុប្បន្នភាពចុងក្រោយនៅ៣នាទីមុន</small></p>
+      <h3 class="card-title">ចំណងជើងកាត</h3>
+      <p class="card-text">ដាក់ពាក្យគន្លឹះខ្លីៗនៅលើចំណងជើងកាតដើម្បីតំណាងឱ្យអត្ថន័យរួមនៅក្នុងកាត។</p>
+      <a class="card-link blog-btn" href="#">
+        <i class="bi bi-arrow-right-circle-fill"></i>
+          ចុចសម្រាប់ទៅទំព័រផ្សេងៗ
+      </a>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
 {% capture card-action %}
 <div class="cgds-example-card-grid">
   <div tabindex="0" variant="card-action" class="card cgds">
@@ -271,6 +300,15 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
     <div class="section-sub">
       {%
       include page-component/component-code-snippet.html
+      compTitle="កាតផ្តេក"
+      compName="card-horizontal"
+      code=card-horizontal
+      %}
+    </div>
+
+    <div class="section-sub">
+      {%
+      include page-component/component-code-snippet.html
       compTitle="បណ្តុំកាត"
       compName="card-group"
       code=card-group
@@ -311,10 +349,10 @@ $card-active-border: inset 0px 0px 0px 2.1px $link-color !default;
           <b>ដំណឹងបច្ចុប្បន្នភាព៖</b> ដើម្បីប្រាប់អ្នកប្រើប្រាស់អំពីពេលវេលានៃការធ្វើបច្ចុប្បន្នភាពចុងក្រោយរបស់ខ្លឹមសារនៅក្នុងកាត។
         </li>
         <li>
-          <b>ចំណងជើង៖</b> ប្រាប់ពីគោលបំណងកាត ដែលជាចំណងជើងខ្លីនិងចំចំណុច ។ 
+          <b>ចំណងជើង៖</b> ប្រាប់ពីគោលបំណងកាត ដែលជាចំណងជើងខ្លីនិងចំចំណុច ។
         </li>
         <li>
-          <b>ការបរិយាយ៖</b> រៀបរាប់ប្រាប់អ្នកប្រើប្រាស់ពីព័ត៌មានរបស់កាត។ 
+          <b>ការបរិយាយ៖</b> រៀបរាប់ប្រាប់អ្នកប្រើប្រាស់ពីព័ត៌មានរបស់កាត។
         </li>
         <li>
           <b>CTA (ដាក់ក៏បានមិនដាក់ក៏បាន)៖</b> ពេលអ្នកចង់ឱ្យអ្នកប្រើប្រាស់អ្វីមួយ ឧទាហរណ៍៖ ចុចលើប៊ូតុងដើម្បីឆ្លងទៅកាន់ទំព័រមួយទៀត។ CTA មិនចាំបាច់ដាក់ក៏បានក្នុងករណីដែលកាតធ្វើឡើងដើម្បីតែផ្តល់ព័ត៌មាននិងគ្មានមុខងារអ្វីផ្សេងទេ។
