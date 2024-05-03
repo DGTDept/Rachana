@@ -53,6 +53,9 @@
         width: 100%;
       }
     }
+    &[variant="card-horizontal"]{
+      width: 40rem;
+    }
   }
 
   &-card-grid {

@@ -10,8 +10,13 @@
             color: $primary;
 
             &:hover {
-              color: $highlight;
+                color: $highlight;
             }
+        }
+
+        &-text{
+            text-align: justify;
+            text-justify: auto;
         }
     }
 
@@ -114,6 +119,19 @@
                         display: block;
                     }
                 }
+            }
+        }
+
+        &[variant="card-horizontal"] {
+            flex-direction: row !important;
+            .card-img-left {
+                width: 50%;
+                border-radius: $card-border-radius 0 0 $card-border-radius;
+                object-fit: cover;
+            }
+            .card-body{
+                width: 50%;
+                align-content: center;
             }
         }
     }
