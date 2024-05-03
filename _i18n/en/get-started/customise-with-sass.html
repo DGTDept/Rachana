@@ -55,13 +55,13 @@ site-folder/
 @import "~{{site.cgds-package-name}}/sass/accordion";
 {% endcapture %}
 
-{% capture sgds-variable %}
+{% capture cgds-variable %}
 node_modules/
 └── {{site.cgds-package-name}}/sass/
 └── _variables.scss
 {% endcapture %}
 
-{% capture sgds-variable-example %}
+{% capture cgds-variable-example %}
 // Required
 @import "~{{site.cgds-package-name}}/sass/functions";
 
@@ -70,7 +70,7 @@ $body-bg: #000;
 $body-color: #111;
 
 // Required
-@import "~{{site.cgds-package-name}}/sass/sgds-variables";
+@import "~{{site.cgds-package-name}}/sass/cgds-variables";
 
 
 // Optional components here
@@ -154,7 +154,7 @@ $body-color: #111;
   <section name="section-importing">
     <div class="section-sub">
       <h2 class="title fw-bold" id="anatomy">Importing</h2>
-      <p>In your <code>custom.scss</code>, you can choose to include all <code>sgds-theme</code> files or pick the
+      <p>In your <code>custom.scss</code>, you can choose to include all <code>cgds-theme</code> files or pick the
         components you need.
         However, do note that there are some requirements and dependencies across the components.</p>
     </div>
@@ -180,9 +180,9 @@ $body-color: #111;
     <p>
       You can find the complete list of variables inside <code>{{site.cgds-package-name}}/sass/_variables.scss</code> or in our <a href="{{site.gitlab-cgds-variables}}" target="_blank" rel="noopener noreferrer">Rachana GitHub repo</a>
     </p>
-    <p>Here's an example that changes the <code>background-color</code> and color for the <code>body</code> when importing and compiling <code>sgds-theme</code> via npm:</p>
+    <p>Here's an example that changes the <code>background-color</code> and color for the <code>body</code> when importing and compiling <code>cgds-theme</code> via npm:</p>
     {% highlight scss %}
-      {{sgds-variable-example}}
+      {{cgds-variable-example}}
     {% endhighlight %}
   </section>
 </div>
