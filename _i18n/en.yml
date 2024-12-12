@@ -17,15 +17,17 @@ navigation:
   templates: Templates
   patterns: Patterns
   faqs: FAQs
-  get-started: Get started
+  get-started: Get Started
+  rachana-wordpress: Rachana WordPress
 sidebar:
   on-this-page: On this page
 titles:
   about: About
   component: Component Overview
-  get-started: Get Start
+  get-started: Get Started
   pattern: Pattern Overview
   template: Templates Overview
+  rachana-wordpress: Rachana WordPress
   faqs: FAQs
   home: Home
   privacy-statement: Government Agency Privacy Statement
@@ -50,6 +52,8 @@ headers:
   pagination: Pagination
   progress-bar: Progress Bar
   quantity-toggle: Quantity Toggle
+  rachana-theme: Rachana Theme
+  rachana-plugin: Rachana Plugin
   radio-button: Radio Button
   side-navigation: Side Navigation
   stepper: Stepper
@@ -79,6 +83,9 @@ headers:
   customise-with-sass: Customise with SASS
   installation: Installation
   ui-kit: UI Kit
+  wp-theme: Rachana Theme
+  wp-plugin: Rachana Plugin
+  wp-demo: WordPress Demo
 descriptions:
   accordion: A dropdown mechanism that allows users to either show or hide related content.
   alert: Alerts provide short, timely, and relevant information for your users.
@@ -96,6 +103,10 @@ descriptions:
   pagination: The pagination component is used to display a list of page numbers for your users, so that they can navigate to the next or previous page.
   progress-bar: Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
   quantity-toggle: The quantity toggle component is used to increase or decrease an incremental venue, usually best used when the user needs to enter or adjust the quantity of a selected item.
+  rachana-wordpress: |
+    You can build fast and responsive websites using WordPress with the Rachana Theme and Plugin. These tools are designed to help you create stunning, user-friendly websites quickly and easily. With Rachana WordPress, you can:
+  rachana-theme: Rachana Theme is a flexible and versatile WordPress theme designed specifically for government digital services in Cambodia. This theme aims to streamline the process of creating modern, user-friendly websites for various government agencies and administrations.
+  rachana-plugin: Rachana Plugin is a powerful and versatile WordPress plugin that brings the beauty of Cambodia's Rachana theme to life through a comprehensive set of well-designed blocks. Developed by the Cambodia Digital Government Committee, this plugin empowers users to create stunning, professional-looking websites with ease.
   radio-button: Radio buttons allow the user to select one option from a set while seeing all available options.
   side-navigation: The side navigation is used to display a list of links to move between pages within a related category. It is used as a secondary form of navigation where the primary navigation is located hierarchically above the page frame.
   stepper: Used to inform users which step they are at in a form or a process.
@@ -109,7 +120,7 @@ descriptions:
   detail-page-side-nav: Detail page with a side navigation menu.
   detail-page-side-nav-extended: Detail page with a side navigation menu and table of contents.
   detail-page-basic: Detail page basic may consist of any relevant information related to a certain product or service.
-  collapsible-page-form: ​A base collection of field components rendered within multi collapsible tabs.
+  collapsible-page-form: A base collection of field components rendered within multi collapsible tabs.
   landing-page: A landing page is a standalone page distinct from any other pages including homepage, which serves a specific purpose or action.
   multi-page-form: A base collection of field components rendered on a multi page layout.
   template: Here you'll find basic templates that you can use to start building.
@@ -119,6 +130,9 @@ descriptions:
   installation: Installation guide that will help you quickly spin up a site using Rachana
   customise-with-sass: Use <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">Sass</a> to customise how Rachana looks and behaves in your project
   ui-kit: The Rachana offers a flexible visual style you can apply to any website or product.
+  wp-theme: This section will guide you through the process of installing the Rachana Theme in WordPress.
+  wp-plugin: This section will guide you through the process of installing the Rachana Plugin in WordPress.
+  wp-demo: This section will guide you how to clone the WordPress Demo from our GitHub repository and run it on your local.
   # Below Patterns
   date: Use this pattern when you want to ask users for a specific date, e.g. their date of birth or when something was issued to them.
   address: Use an address lookup when you are asking users for a Cambodia address.

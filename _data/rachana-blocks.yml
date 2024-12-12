@@ -1,0 +1,37 @@
+- title: Alert Block
+  description: This block functions as a notification that appears to inform users of important information.
+  tag: alert-block
+- title: Button Block
+  description: This block allows users to click and be redirected to another page where they can access the full options or functionality specific to that page.
+  tag: button-block
+- title: Carousel Block
+  description: This block is like a slide show on the latest post or the important post.
+  tag: carousel-block
+- title: Table Structure Block
+  description: This block organizes and displays information such as rankings, roles, and names on the administrative website.
+  tag: table-structure-block
+- title: Organization Chart Uploader Block
+  description: This block displays an image representing a hierarchical ranking. You can click the button below the chart to download the image.
+  tag: organization-chart-block
+- title: Profile Block
+  description: This block functions similarly to the leadership page. It displays all the senior members or key personnel of the organization.
+  tag: profile-block
+- title: Table Block
+  description: This block functions as a notification that appears to inform users of important information.
+  tag: table-block
+- title: Announcement Block
+  description: This block displays the latest updates and announcements for the website in form of cards.
+  tag: anouncement-block
+- title: Card Block
+  description: This Block updates content with the accompanying picture.
+  tag: card-block
+- title: News Block
+  description: This block is similar to the Card block but is specifically designed for displaying current news and updates.
+  tag: news-block
+- title: Page Portal Block
+  description: This block functions like a button but redirects users to one of the main pages within the menu categories.
+  tag: page-portal-block
+- title: YouTube Playlist Block
+  description: This block allows you to display a list of videos from YouTube.
+  tag: yt-playlist-block
+

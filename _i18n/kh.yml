@@ -19,6 +19,7 @@ navigation:
   patterns: គំរូ
   faqs: សំណួរ
   get-started: ការចាប់ផ្ដើម
+  rachana-wordpress: Rachana WordPress
 sidebar:
   on-this-page: មាតិកា​
 titles:
@@ -27,6 +28,7 @@ titles:
   get-started: ការចាប់ផ្តើម
   pattern: ទិដ្ឋភាពទូទៅនៃគំរូ
   template: ទិដ្ឋភាពទូទៅនៃពុម្ព
+  rachana-wordpress: Rachana WordPress
   faqs: សំណួរ
   home: ទំព័រដើម
   privacy-statement: សេចក្ដីថ្លែងការណ៍ឯកជនភាពរបស់ទីភ្នាក់ងាររដ្ឋាភិបាល
@@ -51,6 +53,8 @@ headers:
   pagination: លេខរៀងទំព័រ
   progress-bar: របា​រវឌ្ឍនភាព
   quantity-toggle: ប៊ូតុងបន្ថែមបន្ថយចំនួន
+  rachana-theme: Rachana Theme
+  rachana-plugin: Rachana Plugin
   radio-button: ប៊ូតុងមូល
   side-navigation: របាសងខាង
   stepper: ជំហាននៃដំណើរការ
@@ -80,6 +84,9 @@ headers:
   customise-with-sass: កែសម្រួលជាមួយ sass
   installation: ការដំឡើង
   ui-kit: កញ្ចប់នៃការរចនាផ្នែកខាងមុខ
+  wp-theme: Rachana Theme
+  wp-plugin: Rachana Plugin
+  wp-demo: WordPress Demo
   faqs: សំនួរ
 descriptions:
   accordion: ការដាក់មាតិកានៅក្នុងប្រអប់មួយដែលអ្នកប្រើប្រាស់អាចចុចបិទឬបើកបាន។
@@ -98,6 +105,10 @@ descriptions:
   pagination: ត្រូវបានប្រើដើម្បីបង្ហាញពីបញ្ជីលេខនៃទំព័រសម្រាប់អ្នកប្រើប្រាស់​ ដូច្នេះអ្នកប្រើប្រាស់អាចស្វែងរកទំព័រ​បន្ទាប់ ឬត្រឡប់ក្រោយបាន។
   progress-bar: ផ្ដល់ដំណឹងពីបច្ចុប្បន្នភាពរបស់ដំណើរការឬសកម្មភាពណាមួយរបស់អ្នកប្រើប្រាស់ ជាមួយនឹងរបារវឌ្ឍនភាពសាមញ្ញ និងបត់បែនបាន។
   quantity-toggle: ប្រើសម្រាប់បន្ថែម ឬបន្ថយចំនួន ដែលជាទូទៅត្រូវបានប្រើដើម្បីឱ្យអ្នកប្រើប្រាស់ងាយស្រួលកំណត់ចំនួនធាតុណាមួយ។
+  rachana-wordpress: |
+    You can build fast and responsive websites using WordPress with the Rachana Theme and Plugin. These tools are designed to help you create stunning, user-friendly websites quickly and easily. With Rachana WordPress, you can:
+  rachana-theme: Rachana Theme is a flexible and versatile WordPress theme designed specifically for government digital services in Cambodia. This theme aims to streamline the process of creating modern, user-friendly websites for various government agencies and administrations.
+  rachana-plugin: Rachana Plugin is a powerful and versatile WordPress plugin that brings the beauty of Cambodia's Rachana theme to life through a comprehensive set of well-designed blocks. Developed by the Cambodia Digital Government Committee, this plugin empowers users to create stunning, professional-looking websites with ease.
   radio-button: ពេលអ្នកចង់បង្ហាញជម្រើសមួយឱ្យអ្នកប្រើប្រាស់ឃើញ និងអនុញ្ញាតឱ្យជ្រើសរើសយកបានតែមួយគត់ប៉ុណ្ណោះ។
   stepper: សម្រាប់ប្រាប់អ្នកប្រើប្រាស់ឱ្យដឹងថាពួកគាត់នៅក្នុងជំហានទីប៉ុន្មាននៅក្នុងដំណើរការណាមួយដែលមានដូចជាដំណើរការនៃការបំពេញទម្រង់បែបបទជាដើម។
   side-navigation: ប្រើសម្រាប់ដាក់តំណភ្ជាប់ដែលបញ្ជូនអ្នកប្រើប្រាស់ទៅកាន់ផ្នែកផ្សេងៗរបស់ទំព័រ ឬទៅកាន់ទំព័រផ្សេងៗដែលពាក់ព័ន្ធនឹងទំព័រដើម។ វាជារបារបន្ទាប់បន្សំរបស់របារខាងលើដែលជារបារសំខាន់គោល។
@@ -121,6 +132,9 @@ descriptions:
   installation: ការណែនាំស្ដីពីការតម្លើងដែលអាចជួយអ្នកចាប់ផ្ដើមប្រើប្រាស់ Rachana ដើម្បីបង្កើតគេហទំព័ររបស់អ្នក។
   customise-with-sass: ប្រើ <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">Sass</a> ដើម្បីកំណត់ពីរូបរាង និងសកម្មភាពរបស់ធាតុនីមួយៗរបស់ Rachana.
   ui-kit: Rachana ផ្តល់គំរូរចនាដែលអាចកែសម្រួលបានដើម្បីយកអនុវត្តទៅលើគេហទំព័រឬផលិតផលណាមួយ។
+  wp-theme: This section will guide you through the process of installing the Rachana Theme in WordPress.
+  wp-plugin: This section will guide you through the process of installing the Rachana Plugin in WordPress.
+  wp-demo: This section will guide you how to clone the WordPress Demo from our GitHub repository and run it on your local.
   # Below Patterns
   date: សូមប្រើគំរូនេះនៅពេលដែលអ្នកចង់សួរអ្នកប្រើប្រាស់អំពីកាលបរិច្ឆេទជាក់លាក់ដូចជាកាលបរិច្ឆេទនៃថ្ងៃខែ​ឆ្នាំ​កំណើតឬនៅពេលដែលមានការប្រគល់ឱ្យអ្វីមួយ។
   address: សូមប្រើការស្វែងរកអាសយដ្ឋាន នៅពេលដែលអ្នកសួរអ្នកប្រើប្រាស់អំពីទីតាំងអាសយដ្ឋានរបស់គេនៅប្រទេសកម្ពុជា។

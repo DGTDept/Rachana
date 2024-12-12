@@ -1,0 +1,41 @@
+<div class="page-component">
+  {% include page-component/component-header.html %}
+  <section name="section-resources">
+    <div class="section-sub">
+      <div>
+        <h3 class="subtitle fw-bold" id="step-1">1. Cloning from GitHub</h3>
+        <span>To clone our WordPress Demo, simply go to our <a
+            href="https://github.com/MPTCDITR/rachana-demo" target="_blank"
+            rel="noopener noreferrer"><u>GitHub repository</u></a>
+        </span>
+
+        <ul class="mx-3">
+          <li>Open your terminal or command prompt</li>
+          <li>Navigate to the directory where you want to store the cloned repository</li>
+          <li>Run the following command: git clone https://git.anakotlab.com/cgds/cgds-wordpress-theme.git</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="subtitle fw-bold" id="step-2">2. Installing Packages and Building the Rachana Block Plugin</h3>
+        <span>To address the style errors in the Rachana blocks and ensure the plugin is properly set up, follow these
+          steps:</span>
+        <ul class="mx-3">
+          <li>Open the project and navigate to the Rachana Block directory: cd plugins/rachana-block/</li>
+          <li>Next, run the following command: npm install</li>
+          <li>Then, run the following command: npm run build</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="subtitle fw-bold" id="step-3">3. Setting Up and Running the Project</h3>
+        <ul class="mx-3">
+          <li>In the project folder, run the following command: docker compose up or docker compose up -d</li>
+          <li>After that, the Rachana WordPress Demo should be accessible at http://localhost:10033/</li>
+        </ul>
+        <div class="cgds-example-image-container">
+        <img class="w-75" src="/assets/img/rachana-demo.png" alt="">
+      </div>
+    </div>
+</div>
+</section>
+</div>
