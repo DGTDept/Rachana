@@ -10,9 +10,9 @@
     {% endif %}
 
     {% if page.description contains 'descriptions.' %}
-    <p class="header-component-description {{class}}">{% t page.description %}</p>
+    <p class="{{class}}">{% t page.description %}</p>
     {% else if page.description %}
-    <p class="header-component-description {{class}}">{{page.description}}</p>
+    <p class="{{class}}">{{page.description}}</p>
     {% endif %}
 
     {% if page.source-grid %}

@@ -1,0 +1,28 @@
+<div class="page-component">
+  {% include page-component/component-header.html %}
+  <section class="page-component-overview">
+    <article>
+      <div id="grid" class="page-component-item-wrapper picture-item">
+        {% for item in site.data.rachana-blocks %}
+        <div class="cgds card">
+          <img src="/assets/img/rachana-block/{{item.tag}}.png" class="card-img-top" alt="{{item.title}}" />
+          <div class="card-body">
+            <h4 id="{{item.tag}}" class="text-primary card-title">
+              {{item.title}}
+            </h4>
+            <p class="card-text">
+              {{item.description}}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="pt-4">
+        <p>By leveraging Rachana Blocks, you can create visually stunning, functional, and accessible websites that
+          align with Cambodia's digital government initiatives. Whether you're building a personal blog, a business
+          website, or a government service platform, these well-designed blocks will help you achieve your goals
+          efficiently and effectively.</p>
+      </div>
+    </article>
+  </section>
+</div>

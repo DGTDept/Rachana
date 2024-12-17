@@ -1,15 +1,15 @@
 # For Jekyll SEO
-title: Government Design Component 
+title: Government Design Component
 description-en: >-
   The Government Design Component  was developed to empower teams in creating fast, accessible and mobile-friendly digital services.
 description-kh: >-
   យើងធ្វើឱ្យវាកាន់តែងាយស្រួលក្នុងការបង្កើតគេហទំព័ររដ្ឋាភិបាលដែលងាយស្រួលប្រើ និងឆាប់រហ័សក្នុងការបង្កើត។
 logo: /assets/img/logo_dgc_rectangle.svg
 url: https://rachana.gov.kh/
-  
+
 # Site data
 cgds-version: 1.0.0
-cgds-package-name: >- 
+cgds-package-name: >-
   @dgtdept/rachana
 bootstrap-version: 5.1.3
 
@@ -68,6 +68,13 @@ collections:
       - landing-page.html
       - single-page-form.html
       - multi-page-form.html
+  rachana-wordpress:
+    permalink: /:collection/:name
+    output: true
+    category: rachana-wordpress
+    order:
+      - rachana-theme.html
+      - rachana-plugin.html
   get-started:
     permalink: /:collection/:name
     output: true
@@ -76,12 +83,14 @@ collections:
       - installation.html
       - customise-with-sass.html
       - ui-kit.html
-
+      - wp-theme.html
+      - wp-plugin.html
+      - wp-demo.html
 # set all patterns collection to use certain layouts
 defaults:
   -
     scope:
-      type: "patterns" 
+      type: "patterns"
     values:
       layout: "layout-sidenav"
       pageCategory: "patterns"
@@ -89,7 +98,7 @@ defaults:
       toc: true
   -
     scope:
-      type: "components" 
+      type: "components"
     values:
       layout: "layout-sidenav"
       pageCategory: "components"
@@ -97,7 +106,7 @@ defaults:
       toc: true
   -
     scope:
-      type: "templates" 
+      type: "templates"
     values:
       layout: "layout-sidenav"
       pageCategory: "templates"
@@ -105,13 +114,21 @@ defaults:
       toc: true
   -
     scope:
-      type: "get-started" 
+      type: "rachana-wordpress"
+    values:
+      layout: "layout-sidenav"
+      pageCategory: "rachana-wordpress"
+      source-grid: false
+      toc: true
+  -
+    scope:
+      type: "get-started"
     values:
       layout: "layout-sidenav"
       pageCategory: "get-started"
       source-grid: false
       toc: true
-      
+
 exclude:
   - src
   - node_modules
@@ -132,14 +149,14 @@ sass:
 toc:
   list_id: toc # Default: "toc"
   list_class: toc # Default: "section-nav"
-  no_toc_section_class: 
+  no_toc_section_class:
     - cgds-example
     - code-snippet
   sublist_class: toc-sublist # Default: no class for sublists
   item_class: toc-item # Default: "toc-entry"
   item_prefix: item- # Default: "toc-":
-    
-jekyll_get_json: 
+
+jekyll_get_json:
   - data: npm-data-prev-ver
     json: 'https://registry.npmjs.org/-/v1/search?text=@dgtdept/rachana'
 
