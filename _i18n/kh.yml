@@ -106,9 +106,9 @@ descriptions:
   progress-bar: ផ្ដល់ដំណឹងពីបច្ចុប្បន្នភាពរបស់ដំណើរការឬសកម្មភាពណាមួយរបស់អ្នកប្រើប្រាស់ ជាមួយនឹងរបារវឌ្ឍនភាពសាមញ្ញ និងបត់បែនបាន។
   quantity-toggle: ប្រើសម្រាប់បន្ថែម ឬបន្ថយចំនួន ដែលជាទូទៅត្រូវបានប្រើដើម្បីឱ្យអ្នកប្រើប្រាស់ងាយស្រួលកំណត់ចំនួនធាតុណាមួយ។
   rachana-wordpress: |
-    You can build fast and responsive websites using WordPress with the Rachana Theme and Plugin. These tools are designed to help you create stunning, user-friendly websites quickly and easily. With Rachana WordPress, you can:
-  rachana-theme: Rachana Theme is a flexible and versatile WordPress theme designed specifically for government digital services in Cambodia. This theme aims to streamline the process of creating modern, user-friendly websites for various government agencies and administrations.
-  rachana-plugin: Rachana Plugin is a powerful and versatile WordPress plugin that brings the beauty of Cambodia's Rachana theme to life through a comprehensive set of well-designed blocks. Developed by the Cambodia Digital Government Committee, this plugin empowers users to create stunning, professional-looking websites with ease.
+    អ្នក​អាច​បង្កើត និង​ទាញយកគេហទំព័រ​រហ័សមួយនេះដោយ​ប្រើ WordPress ជាមួយ Rachana Theme និង Rachana Plugin។ កម្មវិធីបច្ចេកវិទ្យាទាំងនេះត្រូវបានរចនាឡើងដើម្បីជួយអ្នកបង្កើតគេហទំព័រថ្មីដែល​ ងាយស្រួលប្រើ និងរហ័ស។ ជាមួយ Rachana WordPress អ្នកអាច៖
+  rachana-theme: Rachana Theme គឺជាប្រធានបទ WordPress ដែលអាចបត់បែនបាន និងអាចប្រើប្រាស់បានដែលត្រូវបានរចនាឡើងជាពិសេសសម្រាប់សេវាកម្មឌីជីថលរបស់រដ្ឋាភិបាលក្នុងប្រទេសកម្ពុជា។ ប្រធានបទនេះមានគោលបំណងសម្រួលដំណើរការនៃការបង្កើតគេហទំព័រទំនើប និងងាយស្រួលប្រើសម្រាប់ទីភ្នាក់ងាររដ្ឋាភិបាល និងរដ្ឋបាលផ្សេងៗ។
+  rachana-plugin: Rachana Plugin គឺជាកម្មវិធីជំនួយ WordPress ដ៏មានអានុភាព ហើយនិងអាចប្រើប្រាស់បាននូវភាពស្រស់ស្អាតនៃ Cambodia's Rachana theme តាមរយៈបណ្តុំដ៏ទូលំទូលាយដែលរចនាបានយ៉ាងល្អ។ គណៈកម្មាធិការរដ្ឋាភិបាលឌីជីថលកម្ពុជាបានបង្កើតកម្មវិធីជំនួយនេះឡើង ដើម្បីផ្តល់សិទ្ធិអំណាចដល់អ្នកប្រើប្រាស់ក្នុងការបង្កើតគេហទំព័រដ៏ស្រស់ស្អាត និងមើលទៅប្រកបដោយវិជ្ជាជីវៈដោយភាពងាយស្រួល។
   radio-button: ពេលអ្នកចង់បង្ហាញជម្រើសមួយឱ្យអ្នកប្រើប្រាស់ឃើញ និងអនុញ្ញាតឱ្យជ្រើសរើសយកបានតែមួយគត់ប៉ុណ្ណោះ។
   stepper: សម្រាប់ប្រាប់អ្នកប្រើប្រាស់ឱ្យដឹងថាពួកគាត់នៅក្នុងជំហានទីប៉ុន្មាននៅក្នុងដំណើរការណាមួយដែលមានដូចជាដំណើរការនៃការបំពេញទម្រង់បែបបទជាដើម។
   side-navigation: ប្រើសម្រាប់ដាក់តំណភ្ជាប់ដែលបញ្ជូនអ្នកប្រើប្រាស់ទៅកាន់ផ្នែកផ្សេងៗរបស់ទំព័រ ឬទៅកាន់ទំព័រផ្សេងៗដែលពាក់ព័ន្ធនឹងទំព័រដើម។ វាជារបារបន្ទាប់បន្សំរបស់របារខាងលើដែលជារបារសំខាន់គោល។
@@ -132,9 +132,9 @@ descriptions:
   installation: ការណែនាំស្ដីពីការតម្លើងដែលអាចជួយអ្នកចាប់ផ្ដើមប្រើប្រាស់ Rachana ដើម្បីបង្កើតគេហទំព័ររបស់អ្នក។
   customise-with-sass: ប្រើ <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">Sass</a> ដើម្បីកំណត់ពីរូបរាង និងសកម្មភាពរបស់ធាតុនីមួយៗរបស់ Rachana.
   ui-kit: Rachana ផ្តល់គំរូរចនាដែលអាចកែសម្រួលបានដើម្បីយកអនុវត្តទៅលើគេហទំព័រឬផលិតផលណាមួយ។
-  wp-theme: This section will guide you through the process of installing the Rachana Theme in WordPress.
-  wp-plugin: This section will guide you through the process of installing the Rachana Plugin in WordPress.
-  wp-demo: This section will guide you how to clone the WordPress Demo from our GitHub repository and run it on your local.
+  wp-theme: ផ្នែកនេះនឹងណែនាំអ្នកអំពីដំណើរការនៃការដំឡើង Rachana Theme នៅក្នុង WordPress។
+  wp-plugin: ផ្នែកនេះនឹងណែនាំអ្នកអំពីដំណើរការនៃការដំឡើង Rachana Plugin នៅក្នុង WordPress ។
+  wp-demo: ផ្នែកនេះនឹងណែនាំអ្នកពីរបៀបដើម្បី clone WordPress Demo ពី GitHub របស់យើង ហើយអាចដំណើរការនៅលើ local របស់អ្នក។
   # Below Patterns
   date: សូមប្រើគំរូនេះនៅពេលដែលអ្នកចង់សួរអ្នកប្រើប្រាស់អំពីកាលបរិច្ឆេទជាក់លាក់ដូចជាកាលបរិច្ឆេទនៃថ្ងៃខែ​ឆ្នាំ​កំណើតឬនៅពេលដែលមានការប្រគល់ឱ្យអ្វីមួយ។
   address: សូមប្រើការស្វែងរកអាសយដ្ឋាន នៅពេលដែលអ្នកសួរអ្នកប្រើប្រាស់អំពីទីតាំងអាសយដ្ឋានរបស់គេនៅប្រទេសកម្ពុជា។
