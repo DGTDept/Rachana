@@ -1,37 +1,37 @@
 - title: Alert Block
-  description: This block functions as a notification that appears to inform users of important information.
+  description: Block នេះមានមុខងារជាការជូនដំណឹងដែលលេចឡើងដើម្បីជូនដំណឹងដល់អ្នកប្រើប្រាស់នូវព័ត៌មានសំខាន់ៗ។
   tag: alert-block
 - title: Button Block
-  description: This block allows users to click and be redirected to another page where they can access the full options or functionality specific to that page.
+  description: Block នេះអនុញ្ញាតឱ្យអ្នកប្រើចុច និងបញ្ជូនបន្តទៅទំព័រផ្សេងទៀត ដែលពួកគេអាចចូលប្រើជម្រើសពេញលេញ ឬមុខងារជាក់លាក់ចំពោះទំព័រនោះ។
   tag: button-block
 - title: Carousel Block
-  description: This block is like a slide show on the latest post or the important post.
+  description: Block នេះគឺដូចជាការបញ្ចាំងស្លាយនៅលើប្រកាសចុងក្រោយបំផុតឬប្រកាសសំខាន់។
   tag: carousel-block
 - title: Table Structure Block
-  description: This block organizes and displays information such as rankings, roles, and names on the administrative website.
+  description: Block នេះរៀបចំ និងដើម្បីបង្ហាញព័ត៌មានដូចជា ចំណាត់ថ្នាក់ តួនាទី និងឈ្មោះនៅលើគេហទំព័ររដ្ឋបាល។
   tag: table-structure-block
 - title: Organization Chart Uploader Block
-  description: This block displays an image representing a hierarchical ranking. You can click the button below the chart to download the image.
+  description: Block នេះបង្ហាញរូបភាពតំណាងឱ្យចំណាត់ថ្នាក់ឋានានុក្រម។ អ្នកអាចចុចប៊ូតុងខាងក្រោមតារាងដើម្បីទាញយករូបភាព។
   tag: organization-chart-block
 - title: Profile Block
-  description: This block functions similarly to the leadership page. It displays all the senior members or key personnel of the organization.
+  description: Block នេះមានមុខងារស្រដៀងគ្នាទៅនឹងទំព័រអ្នកដឹកនាំ។ វាបង្ហាញសមាជិកជាន់ខ្ពស់ទាំងអស់ ឬបុគ្គលិកសំខាន់ៗនៅក្នុងស្ថាប័ន។
   tag: profile-block
 - title: Table Block
-  description: This block functions as a notification that appears to inform users of important information.
+  description: Block នេះមានមុខងារជាការជូនដំណឹងដែលលេចឡើងដើម្បីជូនដំណឹងដល់អ្នកប្រើប្រាស់នូវព័ត៌មានសំខាន់ៗ។
   tag: table-block
 - title: Announcement Block
-  description: This block displays the latest updates and announcements for the website in form of cards.
+  description: Block នេះបង្ហាញការអាប់ដេតចុងក្រោយបំផុត និងការប្រកាសសម្រាប់គេហទំព័រក្នុងទម្រង់ជាកាត។
   tag: anouncement-block
 - title: Card Block
-  description: This Block updates content with the accompanying picture.
+  description: Block នេះសម្រាប់អាប់ដេតមាតិកាជាមួយរូបភាពអម។
   tag: card-block
 - title: News Block
-  description: This block is similar to the Card block but is specifically designed for displaying current news and updates.
+  description: Block នេះស្រដៀងទៅនឹង Card Block ប៉ុន្តែត្រូវបានរចនាឡើងជាពិសេសសម្រាប់បង្ហាញព័ត៌មាន និងបច្ចុប្បន្នភាពបច្ចុប្បន្ន។
   tag: news-block
 - title: Page Portal Block
-  description: This block functions like a button but redirects users to one of the main pages within the menu categories.
+  description: Block នេះមានមុខងារដូចជាប៊ូតុងមួយ ប៉ុន្តែបញ្ជូនអ្នកប្រើប្រាស់ទៅកាន់ទំព័រសំខាន់មួយនៅក្នុង menu categories ។
   tag: page-portal-block
 - title: YouTube Playlist Block
-  description: This block allows you to display a list of videos from YouTube.
+  description: Block នេះអនុញ្ញាតឱ្យអ្នកបង្ហាញបញ្ជីវីដេអូពី YouTube ។
   tag: yt-playlist-block
 
